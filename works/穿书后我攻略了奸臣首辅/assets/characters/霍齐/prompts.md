@@ -1,4 +1,4 @@
-# 霍齐 - 三视图 Prompt
+# 霍齐 - 四视图提示词
 
 ## 角色概述
 - 角色：霍齐（配角）
@@ -6,124 +6,78 @@
 
 ---
 
-## 三视图合一 Prompt
+## 基础角色描述
 
 ```
-Character reference sheet, full body turnaround design, three-view drawing:
-front view, side view (left), side view (right), back view,
-same character in different angles, white background,
-professional character design sheet, clean line art,
-consistent character appearance across all views,
-Chinese ancient style anime, high quality, detailed.
-
-Character description:
-Male, 30 years old, 185cm tall, muscular and burly body.
-Tanned wheat-colored skin from outdoor work.
-Square face with rugged rough features.
-Round honest eyes, loyal and straightforward gaze.
-Thick bushy eyebrows, wide nose, firm lips.
-Short black hair tied loosely, unkempt style.
-Full beard and thick stubble covering lower face.
-
-Outfit:
-Rough cloth short tunic and trousers, hunter's practical outfit,
-brown and earth-yellow color scheme, worn fabric.
-Bow and arrows at waist, cloth boots.
-Ready for action and physical work.
-
-Personality & vibe:
-Loyal, honest, brave, straightforward, protective.
-Sturdy standing posture, always ready to serve and protect his master.
-
-Style: Chinese ancient anime style, warm earth tones, rustic and rugged aesthetic.
-Strong dependable character design.
+男性，30岁，185厘米高，身材健壮魁梧，肌肉结实。
+肤色小麦色，常年劳作晒黑。
+方脸，轮廓粗犷硬朗。
+圆眼，目光耿直忠诚，愤怒时金刚怒目。
+浓眉粗犷，鼻梁宽厚，唇厚表情刚毅。
+短发黑色，随意束起，不修边幅。
+络腮胡浓密粗犷。
+身穿粗布短打，便于行动的猎人装束，棕色土黄灰黑色调。
+腰间弓箭，铁锨铁铲，草鞋或布靴。
+古风硬汉风格，暖色调，土黄色系，朴实感。
+憨厚忠仆，对主人忠心耿耿，对外人警惕防备。
+站姿挺拔，随时准备行动。
+沈清起落难后唯一的忠仆，将辛四娘买来冲喜。
 ```
 
 ---
 
-## 正面图 Prompt
+## 正面图提示词（主视图）
 
 ```
-Character design, front view, full body,
-male, 30 years old, 185cm tall, muscular burly body,
-tanned wheat-colored skin, square rugged face,
-round honest eyes with loyal straightforward gaze,
-thick eyebrows, wide nose, firm lips,
-full beard and thick stubble, full beard covering jaw,
-short black hair tied loosely,
-brown rough cloth tunic and trousers, hunter outfit,
-bow and quiver at waist, cloth boots,
-standing straight, strong confident posture,
-white background, Chinese ancient anime style,
-rugged warrior aesthetic,
-masterpiece, best quality, highly detailed.
-```
-
----
-
-## 侧面图 Prompt（左）
-
-```
-Character design, left side view, full body profile,
-male, 30 years old, 185cm tall, muscular silhouette,
-tanned skin, side profile showing rugged features,
-full beard profile, strong jaw line visible,
-short black hair tied back,
-brown hunter outfit, bow at back,
-sturdy standing pose, left side profile,
-white background, Chinese ancient anime style,
-rugged dependable aesthetic,
-masterpiece, best quality, highly detailed.
+角色设计图，正面视角，全身站立，
+男性，30岁，185厘米高，身材健壮魁梧，肌肉结实。
+肤色小麦色，常年劳作晒黑。
+方脸，轮廓粗犷硬朗。
+圆眼，目光耿直忠诚。
+浓眉粗犷，鼻梁宽厚，唇厚表情刚毅。
+短发黑色，随意束起，不修边幅。
+络腮胡浓密粗犷。
+身穿粗布短打，便于行动的猎人装束，棕色土黄色调。
+腰间弓箭箭囊，布靴。
+古风硬汉风格，暖色调，土黄色系，朴实感。
+挺拔站立，强壮自信姿态，
+纯白背景，正面参考图，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 侧面图 Prompt（右）
+## 四视图设计图提示词
 
 ```
-Character design, right side view, full body profile,
-male, 30 years old, 185cm tall, muscular silhouette,
-tanned skin, side profile showing rugged features,
-full beard profile, strong jaw line visible,
-short black hair tied back,
-brown hunter outfit, quiver visible at waist,
-sturdy standing pose, right side profile,
-white background, Chinese ancient anime style,
-rugged dependable aesthetic,
-masterpiece, best quality, highly detailed.
-```
-
----
-
-## 背面图 Prompt
-
-```
-Character design, back view, full body,
-male, 30 years old, 185cm tall, broad muscular back,
-short black hair tied at nape,
-brown hunter outfit back view,
-bow and quiver visible on back,
-sturdy back posture, ready for action,
-white background, Chinese ancient anime style,
-rugged dependable aesthetic,
-masterpiece, best quality, highly detailed.
+角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，
+同一角色不同角度展示，全身站立，
+男性，30岁，185厘米高，身材健壮魁梧，肌肉结实。
+肤色小麦色，常年劳作晒黑。
+方脸，轮廓粗犷硬朗。
+圆眼，目光耿直忠诚。
+浓眉粗犷，鼻梁宽厚，唇厚表情刚毅。
+短发黑色，随意束起，不修边幅。
+络腮胡浓密粗犷。
+身穿粗布短打，便于行动的猎人装束，棕色土黄色调。
+腰间弓箭箭囊，布靴。
+古风硬汉风格，暖色调，土黄色系，朴实感。
+纯白背景，参考图布局，设计图风格，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 表情图 Prompt
+## 表情图提示词
 
 ```
-Character expression sheet, Huo Qi,
-multiple facial expressions on white background,
-expressions: loyal (determined gaze), angry (furious glare),
-concerned (worried frown), surprised (wide eyes),
-neutral (calm), disgusted (scornful at villain),
-protective (alert guard), relieved (sigh of relief),
-same character, consistent design, Chinese ancient anime style,
-head shots only, expressive round eyes,
-30 year old male, tanned skin, full beard, rugged features,
-masterpiece, best quality, highly detailed.
+角色表情图，霍齐，
+纯白背景上的多个表情，
+9个表情3x3排列：忠诚坚定目光、愤怒凶狠怒视、担忧皱眉、惊讶睁大眼、平静从容、厌恶鄙视、警惕护卫、如释重负，
+同一角色脸部，设计一致，仅头部特写，
+男性，30岁，肤色小麦，络腮胡，粗犷五官，
+古风硬汉风格，圆眼表情丰富，
+杰作，最佳画质，细节丰富。
 ```
 
 ---
@@ -131,20 +85,9 @@ masterpiece, best quality, highly detailed.
 ## 画质增强词
 
 ```
-masterpiece, best quality, highly detailed,
-8k resolution, sharp focus, professional artwork,
-intricate details, clean lines,
-Chinese gufeng rustic aesthetic, strong masculine character,
-dependable loyal warrior design.
-```
-
-## 负面词（Negative Prompt）
-
-```
-low quality, bad anatomy, worst quality,
-deformed, disfigured, missing limbs,
-extra limbs, blurry, watermark, signature,
-text, logo, cropped, out of frame,
-clean shaven, feminine features, slender body,
-bright colors, delicate appearance.
+杰作，最佳画质，细节丰富，
+8k分辨率，清晰对焦，专业作品，
+精致细节，干净线条，
+古风朴实美学，强壮阳刚角色，
+可靠忠诚战士设计。
 ```

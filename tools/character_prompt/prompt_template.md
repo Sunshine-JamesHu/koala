@@ -1,93 +1,62 @@
-# 角色三视图 Prompt 模板
+# 角色四视图提示词模板
 
 ## 使用说明
 
 1. 复制 `character_template.json` 到角色目录，重命名为 `character.json`
 2. 填写角色特征信息
-3. 使用下方的 Prompt 模板，替换 `{变量}` 部分
-4. 在 AI 绘图工具中使用生成的 Prompt
+3. 使用下方的提示词模板，替换 `{变量}` 部分
+4. 在 AI 绘图工具中使用生成的提示词
 
 ---
 
-## 三视图基础 Prompt（通用）
+## 正面图提示词（主视图）
 
 ```
-Character reference sheet, full body turnaround design, three-view drawing:
-front view, side view (left), side view (right), back view,
-same character in different angles, white background,
-professional character design sheet, clean line art,
-consistent character appearance across all views,
-{art_style}, high quality, detailed.
-
-Character description:
-{gender}, {age} years old appearance, {height}, {body_type} body.
-{face_shape} face, {skin_tone} skin.
-{eye_description}, {eyebrow_description}.
-{nose_description}, {lip_description}.
-{hair_description}.
-
-Outfit:
-{clothing_description}, {color_scheme}.
-{accessories_description}.
-{shoes_description}.
-
-Personality & vibe:
-{personality_keywords}, {overall_vibe}.
-{posture_description}.
-
-{special_features}
-
-Style: {art_base}, {color_tone}, {reference_style}.
+角色设计图，正面视角，全身站立，
+{性别}，{年龄}岁，{身高}，{体型}。
+{肤色}，{脸型}，{五官特征}。
+{眼睛描述}，{眉毛描述}。
+{鼻子描述}，{嘴唇描述}。
+{发型描述}。
+身穿{服装描述}，{配色}。
+{配饰描述}。
+{画风}，高质量动漫风格。
+对称正面姿势，双臂自然下垂，中性表情，
+纯白背景，正面参考图，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 完整 Prompt 示例
-
-### 正面图 Prompt
+## 四视图设计图提示词
 
 ```
-Character design, front view, full body,
-{gender}, {age} years old, {detailed_appearance},
-{clothing}, {accessories},
-standing straight, arms at sides,
-white background, {art_style}, high quality,
-front facing camera, symmetrical composition.
-```
-
-### 侧面图 Prompt（左/右）
-
-```
-Character design, side view ({left/right}), full body,
-{gender}, {age} years old, {detailed_appearance},
-{clothing}, {accessories},
-standing straight, profile view,
-white background, {art_style}, high quality,
-side facing camera, showing {hair_side} profile.
-```
-
-### 背面图 Prompt
-
-```
-Character design, back view, full body,
-{gender}, {age} years old, {back_hair_description},
-{clothing_back_view}, {accessories_back_view},
-standing straight, back to camera,
-white background, {art_style}, high quality,
-rear view, showing full back design.
+角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，
+同一角色不同角度展示，全身站立，
+{性别}，{年龄}岁，{身高}，{体型}。
+{肤色}，{脸型}，{五官特征}。
+{眼睛描述}，{眉毛描述}。
+{鼻子描述}，{嘴唇描述}。
+{发型描述}。
+身穿{服装描述}，{配色}。
+{配饰描述}。
+{画风}，高质量动漫风格。
+纯白背景，参考图布局，设计图风格，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 表情图 Prompt 模板
+## 表情图提示词模板
 
 ```
-Character expression sheet, {character_name},
-multiple facial expressions on white background,
-expressions: happy, sad, angry, surprised, neutral, embarrassed,
-same character, consistent design,
-head shots only, {art_style},
-expressive eyes, detailed facial features.
+角色表情图，{角色名}，
+纯白背景上的多个表情，
+9个表情3x3排列：开心、悲伤、愤怒、惊讶、平静、害羞、困惑、坚定、恐惧，
+同一角色脸部，设计一致，仅头部特写，
+{性别}，{年龄}岁，{头部特征描述}。
+{画风}，高质量动漫风格。
+杰作，最佳画质，细节丰富。
 ```
 
 ---
@@ -96,32 +65,23 @@ expressive eyes, detailed facial features.
 
 | 变量 | 说明 | 示例 |
 |------|------|------|
-| `{art_style}` | 整体画风 | anime, realistic, semi-realistic |
-| `{gender}` | 性别 | male, female |
-| `{age}` | 外观年龄 | young adult, 24 years old |
-| `{height}` | 身高 | tall, 175cm, slender |
-| `{body_type}` | 体型 | slender, athletic, muscular |
-| `{skin_tone}` | 肤色 | pale, fair, tan, dark |
-| `{hair_description}` | 发型描述 | long black hair, flowing |
-| `{clothing}` | 服装描述 | ancient Chinese robe, blue and white |
-| `{color_scheme}` | 配色 | cool tones, warm palette |
-| `{personality_keywords}` | 性格词 | elegant, mysterious, cold |
+| `{性别}` | 性别 | 男性、女性 |
+| `{年龄}` | 外观年龄 | 24岁、年轻成人 |
+| `{身高}` | 身高 | 175厘米高、高挑 |
+| `{体型}` | 体型 | 纤细、健壮、魁梧 |
+| `{肤色}` | 肤色 | 雪白、小麦色、古铜色 |
+| `{脸型}` | 脸型 | 鹅蛋脸、方脸、瓜子脸 |
+| `{发型描述}` | 发型描述 | 长发及腰乌黑如墨 |
+| `{服装描述}` | 服装描述 | 淡青色古代汉服襦裙 |
+| `{配色}` | 配色 | 月白色、淡青色 |
+| `{画风}` | 画风 | 古风动漫风格、现代动漫风格 |
 
 ---
 
 ## 画质增强词（可选添加）
 
 ```
-masterpiece, best quality, highly detailed,
-8k resolution, sharp focus, professional artwork,
-intricate details, clean lines, vivid colors.
-```
-
-## 负面词（Negative Prompt 参考）
-
-```
-low quality, bad anatomy, worst quality,
-deformed, disfigured, missing limbs,
-extra limbs, blurry, watermark, signature,
-text, logo, cropped, out of frame.
+杰作，最佳画质，细节丰富，
+8k分辨率，清晰对焦，专业作品，
+精致细节，干净线条，鲜艳色彩。
 ```

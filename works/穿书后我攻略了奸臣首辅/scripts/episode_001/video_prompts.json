@@ -1,0 +1,2171 @@
+{
+  "episode": 1,
+  "target_model": "all",
+  "generation_settings": {
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "default_duration": 5.0
+  },
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_001_kf_001.png",
+        "end_frame_image": "keyframes/shot_001_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium close-up, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "slow dolly in, transitioning from medium shot to medium close-up, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 镜头推进, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera slow dolly in, transitioning from medium shot to medium close-up, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 推进, 古风, 动漫风格",
+            "motion_description": "推进",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "dolly_in",
+          "description": "slow dolly in, transitioning from medium shot to medium close-up",
+          "speed": "ease_in_out",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_002",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_002_kf_001.png",
+        "end_frame_image": "keyframes/shot_002_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "看来先前, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "看来先前, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, close-up, in 看来先前, anime style, cinematic, high quality, 看来先前, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "看来先前, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, close-up, 看来先前, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "看来先前, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, close-up",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_003",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_003_kf_001.png",
+        "end_frame_image": "keyframes/shot_003_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_004",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_004_kf_001.png",
+        "end_frame_image": "keyframes/shot_004_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "男人微微向前, night, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "男人微微向前, night, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 男人微微向前, anime style, cinematic, high quality, 男人微微向前, night, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "男人微微向前, night, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 男人微微向前, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "男人微微向前, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_005",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_005_kf_001.png",
+        "end_frame_image": "keyframes/shot_005_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_006",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_006_kf_001.png",
+        "end_frame_image": "keyframes/shot_006_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "仔细打量着眼前, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "仔细打量着眼前, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 仔细打量着眼前, featuring 辛月影, anime style, cinematic, high quality, 仔细打量着眼前, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "仔细打量着眼前, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 仔细打量着眼前, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "仔细打量着眼前, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_007",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_007_kf_001.png",
+        "end_frame_image": "keyframes/shot_007_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_008",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_008_kf_001.png",
+        "end_frame_image": "keyframes/shot_008_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "本是名将之后, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "本是名将之后, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 本是名将之后, featuring 沈清起, anime style, cinematic, high quality, 本是名将之后, day, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "本是名将之后, day, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 本是名将之后, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "本是名将之后, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_009",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_009_kf_001.png",
+        "end_frame_image": "keyframes/shot_009_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, day, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_010",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_010_kf_001.png",
+        "end_frame_image": "keyframes/shot_010_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "之后, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "之后, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 之后, featuring 沈清起, anime style, cinematic, high quality, 之后, day, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "之后, day, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 之后, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "之后, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_011",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_011_kf_001.png",
+        "end_frame_image": "keyframes/shot_011_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_012",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_012_kf_001.png",
+        "end_frame_image": "keyframes/shot_012_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_013",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_013_kf_001.png",
+        "end_frame_image": "keyframes/shot_013_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_014",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_014_kf_001.png",
+        "end_frame_image": "keyframes/shot_014_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "之后, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "之后, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, close-up, in 之后, anime style, cinematic, high quality, 之后, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "之后, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, close-up, 之后, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "之后, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, close-up",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_015",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_015_kf_001.png",
+        "end_frame_image": "keyframes/shot_015_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_016",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_016_kf_001.png",
+        "end_frame_image": "keyframes/shot_016_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_017",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_017_kf_001.png",
+        "end_frame_image": "keyframes/shot_017_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 沈清起, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 沈清起, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_018",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_018_kf_001.png",
+        "end_frame_image": "keyframes/shot_018_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_019",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_019_kf_001.png",
+        "end_frame_image": "keyframes/shot_019_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_020",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_020_kf_001.png",
+        "end_frame_image": "keyframes/shot_020_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_021",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_021_kf_001.png",
+        "end_frame_image": "keyframes/shot_021_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_022",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_022_kf_001.png",
+        "end_frame_image": "keyframes/shot_022_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_023",
+      "duration": 3.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_023_kf_001.png",
+        "end_frame_image": "keyframes/shot_023_kf_002.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, 霍齐, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, 霍齐, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium full shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium full shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium full shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_024",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_024_kf_001.png",
+        "end_frame_image": "keyframes/shot_024_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_025",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_025_kf_001.png",
+        "end_frame_image": "keyframes/shot_025_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_026",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_026_kf_001.png",
+        "end_frame_image": "keyframes/shot_026_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 辛月影, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 辛月影, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 辛月影, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_027",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_027_kf_001.png",
+        "end_frame_image": "keyframes/shot_027_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, anime style, cinematic, high quality, 未指定场景, day, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 静止镜头, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_028",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_028_kf_001.png",
+        "end_frame_image": "keyframes/shot_028_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_029",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_029_kf_001.png",
+        "end_frame_image": "keyframes/shot_029_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "Static shot, medium shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, night, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, night, 静止镜头, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera Static shot, medium shot, 未指定场景, night, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 静止, 古风, 动漫风格",
+            "motion_description": "静止",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "static",
+          "description": "Static shot, medium shot",
+          "speed": "constant",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    },
+    {
+      "shot_id": "shot_030",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "keyframes/shot_030_kf_001.png",
+        "end_frame_image": "keyframes/shot_030_kf_003.png",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+          "end_frame": "未指定场景, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "slow dolly out, transitioning from medium shot to medium full shot, in 未指定场景, featuring 沈清起, anime style, cinematic, high quality, 未指定场景, day, young man, anime style, highly detailed, cinematic, 8K quality",
+            "parameters": {
+              "duration": 3.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "SeeDance": {
+            "prompt": "未指定场景, day, 镜头拉远, 沈清起, neutral, 古风动漫风格, 高画质, 精细画面",
+            "extended_prompt": "Camera slow dolly out, transitioning from medium shot to medium full shot, 未指定场景, day, anime style, cinematic, high quality",
+            "parameters": {
+              "duration": 3.0,
+              "resolution": "1080p",
+              "creativity": 0.7
+            }
+          },
+          "Kling": {
+            "prompt": "未指定场景, 沈清起, 拉远, 古风, 动漫风格",
+            "motion_description": "拉远",
+            "parameters": {
+              "duration": 3.0,
+              "mode": "standard"
+            }
+          }
+        }
+      },
+      "motion_guidance": {
+        "camera_movement": {
+          "type": "dolly_out",
+          "description": "slow dolly out, transitioning from medium shot to medium full shot",
+          "speed": "ease_in_out",
+          "smoothness": "high"
+        },
+        "character_motion": {
+          "primary": "",
+          "secondary": "",
+          "subtle": "breathing motion"
+        },
+        "environment_motion": {
+          "weather_effect": "clear",
+          "lighting_change": "subtle"
+        }
+      },
+      "style_consistency": {
+        "art_style": "anime",
+        "era_style": "ancient_chinese",
+        "color_palette": [
+          "#2C3E50",
+          "#E74C3C",
+          "#ECF0F1"
+        ],
+        "lighting_style": "cinematic",
+        "mood": ""
+      }
+    }
+  ]
+}

@@ -1,146 +1,89 @@
-# 沈清起 - 三视图 Prompt
+# 沈清起 - 四视图提示词
 
 ## 角色概述
 - 角色：沈清起（男主角）
-- 特征：22-24岁男性，消瘦苍白，狭长凤眼，高挺鼻梁，双腿残废坐轮椅，病娇偏执气质
+- 特征：22-24岁男性，消瘦苍白，狭长凤眼，高挺鼻梁，双腿残废坐轮椅（古代木质轮椅），病娇偏执气质
 
 ---
 
-## 三视图合一 Prompt（上半身）
+## 基础角色描述
 
 ```
-Character reference sheet, upper body turnaround design, three-view drawing:
-front view, side view (left), side view (right), back view,
-same character in different angles, white background,
-professional character design sheet, clean line art,
-consistent character appearance across all views,
-Chinese ancient style anime, high quality, detailed.
-
-Character description:
-Male, 23 years old, slender sickly body, pale porcelain-like skin without color.
-Angular handsome face with sharp jawline, cold and elegant features.
-Narrow phoenix eyes, deep dark pupils, cold sinister gaze hiding pain and hatred.
-Sword-like eyebrows slightly raised.
-High straight nose bridge, thin pale lips usually pressed tight.
-Long raven black hair loosely tied back, somewhat messy.
-
-Outfit:
-Ancient Chinese dark robe, ink-black and gray-white color scheme.
-Tattered and worn fabric (early story), black cloth boots.
-Sitting in worn-out wheelchair.
-
-Personality & vibe:
-Yandere, obsessive, cold, sinister, dangerous.
-Chilling aura of someone who has known despair and darkness.
-Sits in shadows, occasionally coughs.
-
-Special: Legs are disabled (tortured in prison), sits in broken wheelchair.
-Hands may have scars from gripping broken porcelain.
-
-Style: Chinese ancient anime style, cold color tone, low saturation, heavy shadows.
-Melancholic and sinister aesthetic, dark beauty.
+男性，23岁，消瘦病弱体型，坐在轮椅上。
+肤色苍白如白瓷，轮廓分明，棱角清晰，英挺俊美。
+狭长凤眼，深邃幽暗，眼神阴鸷冰冷，眼底藏着痛苦与恨意。
+剑眉微微上挑，高挺笔直的鼻梁，薄唇常年紧抿，唇色淡白。
+长发及背乌黑如墨，随意束在脑后，有些凌乱。
+身穿黑色或深色长袍，破败旧衣，玄黑色墨青色灰白色调。
+残破轮椅，手中碎瓷片，黑色布靴无法行走。
+古风病娇美男风格，阴郁冷峻，冷色调低饱和度阴影较重。
+生人勿近的凛冽感，坐在阴翳中的绝望与疯狂。
 ```
 
 ---
 
-## 正面图 Prompt（上半身+轮椅）
+## 正面图提示词（主视图）
 
 ```
-Character design, front view, sitting in wheelchair, upper body focus,
-male, 23 years old, slender sickly body, deathly pale skin,
-angular handsome face, sharp features like carved jade,
-narrow phoenix eyes with cold dark gaze,
-sword eyebrows, high nose, thin pale lips pressed tight,
-long raven black hair loosely tied, messy strands,
-dark ancient Chinese robe, tattered and worn,
-sitting in broken wheelchair, legs covered by robe,
-hands resting on armrests, cold expression,
-white background, Chinese ancient anime style,
-dark aesthetic, yandere vibes,
-masterpiece, best quality, highly detailed.
-```
-
----
-
-## 侧面图 Prompt（左）
-
-```
-Character design, left side view, sitting in wheelchair, profile,
-male, 23 years old, slender silhouette,
-side profile showing sharp facial features,
-high straight nose bridge, elegant neck,
-narrow phoenix eye profile, cold gaze,
-long raven black hair flowing down back,
-dark ancient Chinese robe,
-sitting posture in worn wheelchair,
-white background, Chinese ancient anime style,
-dark melancholic aesthetic,
-masterpiece, best quality, highly detailed.
+角色设计图，正面视角，坐在轮椅上，上半身特写，
+男性，23岁，消瘦病弱体型，坐在轮椅上。
+肤色苍白如白瓷，轮廓分明，棱角清晰，英挺俊美。
+狭长凤眼，深邃幽暗，眼神阴鸷冰冷，眼底藏着痛苦与恨意。
+剑眉微微上挑，高挺笔直的鼻梁，薄唇常年紧抿，唇色淡白。
+长发及背乌黑如墨，随意束在脑后，有些凌乱。
+身穿黑色或深色长袍，破败旧衣，玄黑色墨青色灰白色调。
+残破轮椅，手中碎瓷片，黑色布靴无法行走。
+古风病娇美男风格，阴郁冷峻，冷色调低饱和度阴影较重。
+双手扶在扶手上，冰冷表情，双腿被长袍遮盖，
+纯白背景，正面参考图，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 侧面图 Prompt（右）
+## 四视图设计图提示词
 
 ```
-Character design, right side view, sitting in wheelchair, profile,
-male, 23 years old, slender silhouette,
-side profile showing sharp facial features,
-high straight nose bridge, elegant neck,
-narrow phoenix eye profile, cold gaze,
-long raven black hair flowing down back,
-dark ancient Chinese robe,
-sitting posture in worn wheelchair,
-white background, Chinese ancient anime style,
-dark melancholic aesthetic,
-masterpiece, best quality, highly detailed.
-```
-
----
-
-## 背面图 Prompt
-
-```
-Character design, back view, sitting in wheelchair,
-male, 23 years old, slender back silhouette,
-long raven black hair loosely tied, flowing down back,
-dark ancient Chinese robe back view,
-wheelchair back visible, wheel spokes,
-slumped sitting posture, air of despair,
-white background, Chinese ancient anime style,
-dark melancholic aesthetic,
-masterpiece, best quality, highly detailed.
+角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，
+同一角色不同角度展示，坐在轮椅上，上半身特写，
+男性，23岁，消瘦病弱体型，坐在轮椅上。
+肤色苍白如白瓷，轮廓分明，棱角清晰，英挺俊美。
+狭长凤眼，深邃幽暗，眼神阴鸷冰冷，眼底藏着痛苦与恨意。
+剑眉微微上挑，高挺笔直的鼻梁，薄唇常年紧抿，唇色淡白。
+长发及背乌黑如墨，随意束在脑后，有些凌乱。
+身穿黑色或深色长袍，破败旧衣，玄黑色墨青色灰白色调。
+残破轮椅，手中碎瓷片，黑色布靴无法行走。
+古风病娇美男风格，阴郁冷峻，冷色调低饱和度阴影较重。
+纯白背景，参考图布局，设计图风格，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ---
 
-## 表情图 Prompt
+## 表情图提示词
 
 ```
-Character expression sheet, Shen Qingqi,
-multiple facial expressions on white background,
-expressions: cold (empty stare), sinister smile (creepy),
-angry (furious glare), pained (coughing), surprised (raised eyebrow),
-tender (rare soft look), mocking (sneering), despair (hopeless),
-yandere love (obsessive gaze), murderous (killing intent),
-same character, consistent design, Chinese ancient anime style,
-head shots only, expressive narrow phoenix eyes,
-23 year old male, pale skin, sharp features,
-masterpiece, best quality, highly detailed.
+角色表情图，沈清起，
+纯白背景上的多个表情，
+9个表情3x3排列：冰冷空洞凝视、阴险诡异微笑、愤怒凶狠怒视、痛苦闷咳、惊讶挑眉、温柔罕见柔和、嘲讽冷笑、绝望空洞、病娇痴迷注视，
+同一角色脸部，设计一致，仅头部特写，
+男性，23岁，肤色苍白，狭长凤眼，英挺俊美，
+古风病娇美男风格，
+杰作，最佳画质，细节丰富。
 ```
 
 ---
 
-## 轮椅特写 Prompt
+## 轮椅特写提示词
 
 ```
-Ancient Chinese wooden wheelchair design, prop reference,
-broken and worn wooden wheelchair, rustic appearance,
-wooden wheels with spokes, woven rattan seat,
-scratched armrests, signs of heavy use,
-simple medieval construction, no modern elements,
-white background, detailed prop design sheet,
-front view and side view, technical reference.
+古代中式木质轮椅设计图，道具参考，
+破旧磨损的木质轮椅，古朴外观，
+木制车轮带辐条，编织藤座，
+扶手有划痕，使用痕迹明显，
+简单古代结构，无现代元素，
+纯白背景，详细道具设计图，
+正面视角和侧面视角，技术参考。
 ```
 
 ---
@@ -148,20 +91,9 @@ front view and side view, technical reference.
 ## 画质增强词
 
 ```
-masterpiece, best quality, highly detailed,
-8k resolution, sharp focus, professional artwork,
-intricate details, clean lines,
-Chinese gufeng dark aesthetic, elegant but dangerous,
-yandere character design, melancholic beauty.
-```
-
-## 负面词（Negative Prompt）
-
-```
-low quality, bad anatomy, worst quality,
-deformed, disfigured, missing limbs,
-extra limbs, blurry, watermark, signature,
-text, logo, cropped, out of frame,
-standing, walking, healthy legs,
-bright colors, cheerful expression.
+杰作，最佳画质，细节丰富，
+8k分辨率，清晰对焦，专业作品，
+精致细节，干净线条，
+古风阴郁美学，优雅但危险，
+病娇角色设计，忧郁之美。
 ```

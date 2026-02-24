@@ -25,12 +25,10 @@ koala/
 │       ├── assets/                  # 资源文件夹
 │       │   ├── characters/          # 角色资源
 │       │   │   └── {角色名}/
-│       │   │       ├── front.png    # 正面
-│       │   │       ├── side_l.png   # 左侧
-│       │   │       ├── side_r.png   # 右侧
-│       │   │       ├── back.png     # 背面
-│       │   │       ├── expressions/ # 表情
-│       │   │       └── poses/       # 姿态
+│       │   │       ├── front.png        # 主视图（正面）
+│       │   │       ├── views.png        # 四视图设计图
+│       │   │       ├── expressions/     # 表情
+│       │   │       └── poses/           # 姿态
 │       │   │
 │       │   ├── props/               # 道具
 │       │   │   └── {道具名}/

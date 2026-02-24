@@ -1,189 +1,1235 @@
 {
   "episode": 1,
-  "title": "第一集 你自尽吧",
-  "duration": 21,
-  "sourceChapter": "chapter_001",
-
-  "characters": [
-    {
-      "name": "辛月影",
-      "description": "女性、24岁，175cm的身材，拥有者九头身的比例，肌肤似雪，五官像是建模脸一样，精致无比，是当下数一数二的美人",
-      "reference": "assets/characters/辛月影/front.png"
-    },
-    {
-      "name": "沈清起",
-      "description": "名将之后、浑身上下透露者生人勿近的凛冽感，高高的鼻梁，深邃的眼睛，透露着他那不知不让人知的过往",
-      "reference": "assets/characters/沈清起/front.png"
-    }
-  ],
-
+  "title": "第1集 初遇",
+  "source_chapter": "chapter_001",
+  "total_duration": 142.0,
+  "total_shots": 30,
+  "global_settings": {
+    "art_style": "anime",
+    "era_style": "ancient_chinese",
+    "aspect_ratio": "16:9",
+    "fps": 24
+  },
   "shots": [
     {
-      "id": "shot_001",
-      "type": "scene",
+      "shot_id": "shot_001",
+      "sequence": 1,
+      "source_event": "evt_001",
+      "beat_type": "opening",
+      "narrative_purpose": "一道清朗的声音传入辛月影的耳畔，鼻尖缭绕着一股发霉的气味，她吃力的掀开眼帘。",
       "duration": 5.0,
-      "timestamp": {
-        "start": 0.0,
-        "end": 5.0
-      },
       "scene": {
-        "location": "深山老林",
-        "timeOfDay": "night",
-        "weather": "cloudy",
-        "description": "一座木房子透出影影约约的青灯"
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
       },
       "camera": {
-        "angle": "long",
-        "movement": "push"
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "dolly_in",
+        "movement_direction": "in",
+        "movement_speed": "slow",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_001"
+    },
+    {
+      "shot_id": "shot_002",
+      "sequence": 2,
+      "source_event": "evt_003",
+      "beat_type": "opening",
+      "narrative_purpose": "看来先前在高速公路上刹车失灵导致她坠下山崖车毁人亡竟是大梦一场，对么，她老司机了，怎么可能开车出事故...",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_435",
+        "location_name": "看来先前",
+        "location_type": "outdoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "close_up",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
       },
       "characters": [],
       "dialogue": null,
-      "narration": {
-        "text": "你自尽吧",
-        "voiceFile": ""
-      },
-      "sfx": ["风吹树林声", "乌鸦声"],
-      "bgm": "",
-      "notes": "开场建立氛围"
-    },
-    {
-      "id": "shot_002",
-      "type": "action",
-      "duration": 3.0,
-      "timestamp": {
-        "start": 5.0,
-        "end": 8.0
-      },
-      "scene": {
-        "location": "木房内",
-        "timeOfDay": "night",
-        "weather": null,
-        "description": "阴冷的地面"
-      },
-      "camera": {
-        "angle": "close-up",
-        "movement": "push"
-      },
-      "characters": [
-        {
-          "name": "辛月影",
-          "position": "center",
-          "expression": "pain",
-          "action": "躺在地上，面色苍白，嘴角有淡淡血迹，手微微抽动，眉头紧缩，眼睛慢慢睁开闭上"
-        }
-      ],
-      "dialogue": null,
-      "narration": null,
+      "narration": "",
+      "bgm_mood": "中性",
       "sfx": [],
-      "bgm": "",
-      "notes": "女主角出场，展现受伤状态"
+      "transition_type": "cut",
+      "notes": "基于事件: evt_003"
     },
     {
-      "id": "shot_003",
-      "type": "scene",
+      "shot_id": "shot_003",
+      "sequence": 3,
+      "source_event": "evt_005",
+      "beat_type": "opening",
+      "narrative_purpose": "对面的男人听见了她的笑声，声音愈发寒冽：“莫不是要我亲自送你一程？”",
       "duration": 5.0,
-      "timestamp": {
-        "start": 8.0,
-        "end": 13.0
-      },
       "scene": {
-        "location": "木房内",
-        "timeOfDay": "night",
-        "weather": null,
-        "description": "昏暗的室内"
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
       },
       "camera": {
-        "angle": "long",
-        "movement": "static"
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
       },
-      "characters": [
-        {
-          "name": "沈清起",
-          "position": "center",
-          "expression": "cold",
-          "action": "高高的站在她的身前，背身对着辛月影"
-        }
-      ],
+      "characters": [],
       "dialogue": null,
-      "narration": null,
+      "narration": "",
+      "bgm_mood": "中性",
       "sfx": [],
-      "bgm": "",
-      "notes": "男主出场，背影建立神秘感"
+      "transition_type": "cut",
+      "notes": "基于事件: evt_005"
     },
     {
-      "id": "shot_004",
-      "type": "action",
-      "duration": 3.0,
-      "timestamp": {
-        "start": 13.0,
-        "end": 16.0
-      },
-      "scene": {
-        "location": "木房内",
-        "timeOfDay": "night",
-        "weather": null,
-        "description": null
-      },
-      "camera": {
-        "angle": "medium",
-        "movement": "static"
-      },
-      "characters": [
-        {
-          "name": "辛月影",
-          "position": "center",
-          "expression": "sneer",
-          "action": "冷笑一声"
-        }
-      ],
-      "dialogue": null,
-      "narration": null,
-      "sfx": [],
-      "bgm": "",
-      "notes": "女主反应"
-    },
-    {
-      "id": "shot_005",
-      "type": "dialogue",
+      "shot_id": "shot_004",
+      "sequence": 4,
+      "source_event": "evt_007",
+      "beat_type": "opening",
+      "narrative_purpose": "青灯摇曳，男人微微向前躬身，一双狭长的凤眼淬着浓烈的寒意，笔挺的鼻梁之下薄唇衔着一抹混沌的笑意。",
       "duration": 5.0,
-      "timestamp": {
-        "start": 16.0,
-        "end": 21.0
-      },
       "scene": {
-        "location": "木房内",
-        "timeOfDay": "night",
-        "weather": null,
-        "description": null
+        "location_id": "loc_179",
+        "location_name": "男人微微向前",
+        "location_type": "outdoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
       },
       "camera": {
-        "angle": "long",
-        "movement": "static"
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_007"
+    },
+    {
+      "shot_id": "shot_005",
+      "sequence": 5,
+      "source_event": "evt_011",
+      "beat_type": "rising_action",
+      "narrative_purpose": "薄唇轻轻一颤，他反问：“辛四娘，你在等什么？”",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_011"
+    },
+    {
+      "shot_id": "shot_006",
+      "sequence": 6,
+      "source_event": "evt_013",
+      "beat_type": "rising_action",
+      "narrative_purpose": "辛月影打了个寒颤，笑意刹那僵在唇边，她抬眼，仔细打量着眼前的男人。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_918",
+        "location_name": "仔细打量着眼前",
+        "location_type": "outdoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
       },
       "characters": [
         {
-          "name": "沈清起",
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
           "position": "center",
-          "expression": "cold",
-          "action": "听见她的笑声，声音更加寒冽"
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
         }
       ],
-      "dialogue": {
-        "speaker": "沈清起",
-        "text": "莫不是要我亲自送你一程",
-        "voiceFile": "assets/audio/voice/episode_001/shot_005.wav"
-      },
-      "narration": null,
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
       "sfx": [],
-      "bgm": "assets/audio/bgm/tense.mp3",
-      "notes": "男主台词，建立威胁感"
+      "transition_type": "cut",
+      "notes": "基于事件: evt_013"
+    },
+    {
+      "shot_id": "shot_007",
+      "sequence": 7,
+      "source_event": "evt_014",
+      "beat_type": "rising_action",
+      "narrative_purpose": "准确的说，这是她开车时听的一本小说里的人物。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_014"
+    },
+    {
+      "shot_id": "shot_008",
+      "sequence": 8,
+      "source_event": "evt_015",
+      "beat_type": "rising_action",
+      "narrative_purpose": "沈清起是书中的反派疯批男配，本是名将之后，因得沈父得罪权贵，致使沈家蒙冤下狱，判了个秋后问斩。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_108",
+        "location_name": "本是名将之后",
+        "location_type": "outdoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_015"
+    },
+    {
+      "shot_id": "shot_009",
+      "sequence": 9,
+      "source_event": "evt_019",
+      "beat_type": "rising_action",
+      "narrative_purpose": "她像是沈清起黑暗的人生里的那道光，她鼓励着沈清起重拾信心，最后沈清起投了旧敌麾下忍辱负重，他从一个小...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_019"
+    },
+    {
+      "shot_id": "shot_010",
+      "sequence": 10,
+      "source_event": "evt_020",
+      "beat_type": "rising_action",
+      "narrative_purpose": "之后他更是取而代之成为朝堂之中的权臣，当沈清起披荆斩棘的回来，准备迎娶孟如心的时候。",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_227",
+        "location_name": "之后",
+        "location_type": "outdoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_020"
+    },
+    {
+      "shot_id": "shot_011",
+      "sequence": 11,
+      "source_event": "evt_021",
+      "beat_type": "rising_action",
+      "narrative_purpose": "却猛然发现孟如心和男主生的孩子都能打酱油了。",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_021"
+    },
+    {
+      "shot_id": "shot_012",
+      "sequence": 12,
+      "source_event": "evt_025",
+      "beat_type": "rising_action",
+      "narrative_purpose": "当时，看到这里的辛月影怒从心头起，恶向胆边生，她抓起手机开始评论：",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_025"
+    },
+    {
+      "shot_id": "shot_013",
+      "sequence": 13,
+      "source_event": "evt_026",
+      "beat_type": "climax",
+      "narrative_purpose": "“这是什么狗屁剧情？男二难道不配拥有个好结局吗？他是为了女主才一步步走到今天这个地位的啊！难道换不回...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_026"
+    },
+    {
+      "shot_id": "shot_014",
+      "sequence": 14,
+      "source_event": "evt_028",
+      "beat_type": "climax",
+      "narrative_purpose": "只因这辛四娘嫁过来之后，发现这个男人不仅是个残废，还每天对她视若无物。",
+      "duration": 4.0,
+      "scene": {
+        "location_id": "loc_227",
+        "location_name": "之后",
+        "location_type": "outdoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "close_up",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_028"
+    },
+    {
+      "shot_id": "shot_015",
+      "sequence": 15,
+      "source_event": "evt_031",
+      "beat_type": "climax",
+      "narrative_purpose": "她言语暗示给老王，说自己到底是有夫之妇，家里还有个瘫子夫君。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_031"
+    },
+    {
+      "shot_id": "shot_016",
+      "sequence": 16,
+      "source_event": "evt_032",
+      "beat_type": "climax",
+      "narrative_purpose": "老王说那还不简单，于是便给了辛四娘一包毒药。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_032"
+    },
+    {
+      "shot_id": "shot_017",
+      "sequence": 17,
+      "source_event": "evt_033",
+      "beat_type": "climax",
+      "narrative_purpose": "辛四娘鬼迷心窍，动了杀心，终于在今夜将药下在了沈清起的吃食之中，可对方没有吃，甚至还警惕的发现了饭菜...",
+      "duration": 4.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_033"
+    },
+    {
+      "shot_id": "shot_018",
+      "sequence": 18,
+      "source_event": "evt_035",
+      "beat_type": "climax",
+      "narrative_purpose": "辛月影伏在地上，脑海飞速旋转，默默捋顺了这一切，重新看向摆在自己面前的三尺剑锋。",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_035"
+    },
+    {
+      "shot_id": "shot_019",
+      "sequence": 19,
+      "source_event": "evt_040",
+      "beat_type": "falling_action",
+      "narrative_purpose": "她霎时浑身一颤，艰涩的出声：“......如果我说，我穿越了，您信吗？”",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_040"
+    },
+    {
+      "shot_id": "shot_020",
+      "sequence": 20,
+      "source_event": "evt_044",
+      "beat_type": "falling_action",
+      "narrative_purpose": "长剑几乎贴着辛月影纤细的脖颈挥来，“嗡”地一声刺入她身后的木柱之上，伴着嗡鸣不绝的剑音。",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_044"
+    },
+    {
+      "shot_id": "shot_021",
+      "sequence": 21,
+      "source_event": "evt_048",
+      "beat_type": "falling_action",
+      "narrative_purpose": "忠仆开腔了：“你吃了熊心豹子胆！敢给二爷下毒？我都查得明明白白，你借着卖猎物为名，终日逗留在一个姓王...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_048"
+    },
+    {
+      "shot_id": "shot_022",
+      "sequence": 22,
+      "source_event": "evt_049",
+      "beat_type": "falling_action",
+      "narrative_purpose": "前人不要脸，后人背锅，辛月影试问她招谁惹谁了？！",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_049"
+    },
+    {
+      "shot_id": "shot_023",
+      "sequence": 23,
+      "source_event": "evt_050",
+      "beat_type": "falling_action",
+      "narrative_purpose": "霍齐抬手一推辛月影，便就将身子轻枯的她推回到了那令人窒息的房间之中。",
+      "duration": 3.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_full_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        },
+        {
+          "character_id": "char_872",
+          "name": "霍齐",
+          "importance": "secondary",
+          "position": "left",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_050"
+    },
+    {
+      "shot_id": "shot_024",
+      "sequence": 24,
+      "source_event": "evt_052",
+      "beat_type": "falling_action",
+      "narrative_purpose": "他似笑非笑，像是一只慵懒的猫，逗弄着一只无处可逃的小老鼠。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_052"
+    },
+    {
+      "shot_id": "shot_025",
+      "sequence": 25,
+      "source_event": "evt_056",
+      "beat_type": "falling_action",
+      "narrative_purpose": "沈清起如今身为逃犯，此刻还在这穷乡僻壤的乡村蛰伏隐忍，平日里本就草木皆兵，想到这里，辛月影灵机一动，...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        },
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "secondary",
+          "position": "left",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_056"
+    },
+    {
+      "shot_id": "shot_026",
+      "sequence": 26,
+      "source_event": "evt_057",
+      "beat_type": "resolution",
+      "narrative_purpose": "“哦！我明白了！”辛月影两手“啪”地合掌一拍，演上了：“有人逼我的。他给了我一包粉末，命我将其下在你...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_057"
+    },
+    {
+      "shot_id": "shot_027",
+      "sequence": 27,
+      "source_event": "evt_059",
+      "beat_type": "resolution",
+      "narrative_purpose": "“那人威胁我，说我若不今日把这东西放在你的饭菜里，他便取我性命，我当时吓坏了，根本来不及想太多，回来...",
+      "duration": 6.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_059"
+    },
+    {
+      "shot_id": "shot_028",
+      "sequence": 28,
+      "source_event": "evt_060",
+      "beat_type": "resolution",
+      "narrative_purpose": "辛月影说完了话，诧然看着沈清起：“你莫不是得罪了什么仇家吧？仇家可能找上门来了？咱们怎么办？”",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        },
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "secondary",
+          "position": "left",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_060"
+    },
+    {
+      "shot_id": "shot_029",
+      "sequence": 29,
+      "source_event": "evt_061",
+      "beat_type": "resolution",
+      "narrative_purpose": "沈清起扬着唇角，他的笑声随之变得绵长，笑得辛月影只觉脊背生寒。",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "static",
+        "movement_direction": "",
+        "movement_speed": "",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        },
+        {
+          "character_id": "char_054",
+          "name": "辛月影",
+          "importance": "secondary",
+          "position": "left",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_061"
+    },
+    {
+      "shot_id": "shot_030",
+      "sequence": 30,
+      "source_event": "evt_062",
+      "beat_type": "resolution",
+      "narrative_purpose": "沈清起的笑声戛然而止，不紧不慢的开口：“不论是谁来都好，且让他下黄泉去陪你，好不好？”",
+      "duration": 5.0,
+      "scene": {
+        "location_id": "loc_550",
+        "location_name": "未指定场景",
+        "location_type": "indoor",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "",
+        "atmosphere": ""
+      },
+      "camera": {
+        "shot_size": "medium_shot",
+        "angle": "eye_level",
+        "movement_type": "dolly_out",
+        "movement_direction": "out",
+        "movement_speed": "slow",
+        "focus_subject": ""
+      },
+      "characters": [
+        {
+          "character_id": "char_550",
+          "name": "沈清起",
+          "importance": "primary",
+          "position": "center",
+          "pose": "",
+          "action": "",
+          "expression": "neutral",
+          "expression_intensity": "moderate",
+          "costume_id": "",
+          "gaze_direction": ""
+        }
+      ],
+      "dialogue": null,
+      "narration": "",
+      "bgm_mood": "中性",
+      "sfx": [],
+      "transition_type": "cut",
+      "notes": "基于事件: evt_062"
     }
   ],
-
   "metadata": {
-    "createdAt": "2024-01-01",
-    "updatedAt": "2024-01-01",
     "status": "draft",
-    "notes": "第一幕分镜，共5个镜头，总时长21秒"
+    "version": "1.0"
   }
 }

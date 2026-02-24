@@ -1,14 +1,24 @@
-# character-sheet-generator
+# 角色四视图生成器
 
-根据小说角色描述，生成 AI 绘图可用的三视图 Prompt，并调用 text-to-image skill 生成图片。
+根据小说角色描述，生成 AI 绘图可用的四视图提示词。先生成主视图 front.png，再基于主视图调用图生图生成包含多视角的角色设计图（四视图在一张图中），确保角色一致性。
 
 ## 触发条件
 
 当用户请求：
-- 为角色生成三视图
+- 为角色生成四视图/三视图
 - 生成角色设计图
-- 创建角色 Prompt
+- 创建角色提示词
 - 绘制角色参考图
+
+## 目录结构
+
+```
+assets/characters/{角色名}/
+├── front.png              # 主视图（正面）
+├── views.png              # 四视图设计图（正面+左侧+右侧+背面在一张图中）
+├── expressions/           # 表情
+└── poses/                 # 姿态
+```
 
 ## 工作流程
 
@@ -50,137 +60,132 @@
 - 备注：
 
 【画风】
-- 基础风格：anime/realistic/semi-realistic
+- 基础风格：动漫/写实/半写实
 - 参考风格：
 - 色调：
 ```
 
-### 2. 生成 Prompt
+### 2. 生成提示词模板
 
-根据收集的信息，按以下模板生成 Prompt：
+**重要原则**：四视图必须保持角色一致性，使用统一的角色描述基础 + 视角变化。
 
-#### 三视图合一 Prompt
-
-```
-Character reference sheet, full body turnaround design, three-view drawing:
-front view, side view (left), side view (right), back view,
-same character in different angles, white background,
-professional character design sheet, clean line art,
-consistent character appearance across all views,
-{art_style}, high quality, detailed.
-
-Character description:
-{gender}, {age} years old, {height}, {body_type}.
-{face_features}, {skin_tone} skin.
-{eye_description}, {eyebrow_description}.
-{nose_description}, {lip_description}.
-{hair_description}.
-
-Outfit:
-{clothing_description}, {color_scheme}.
-{accessories_description}.
-{shoes_description}.
-
-Personality & vibe:
-{personality_keywords}, {overall_vibe}.
-{posture_description}.
-
-{special_features}
-
-Style: {art_base}, {color_tone}, {reference_style}.
-```
-
-#### 正面图 Prompt
+#### 基础角色描述（所有视图共用）
 
 ```
-Character design, front view, full body,
-{gender}, {age} years old, {detailed_appearance},
-{clothing}, {accessories},
-standing straight, arms at sides,
-white background, {art_style}, high quality,
-front facing camera, symmetrical composition.
+{性别}，{年龄}岁，{身高}，{体型}。
+{肤色}，{脸型}，{五官特征}。
+{眼睛描述}，{眉毛描述}。
+{鼻子描述}，{嘴唇描述}。
+{发型描述}。
+身穿{服装描述}，{配色}。
+{配饰描述}。
+{画风}，高质量动漫风格。
 ```
 
-#### 侧面图 Prompt（左/右）
+#### 正面图提示词（主视图）
 
 ```
-Character design, side view ({left/right}), full body,
-{gender}, {age} years old, {detailed_appearance},
-{clothing}, {accessories},
-standing straight, profile view,
-white background, {art_style}, high quality,
-side facing camera, showing {hair_side} profile.
+角色设计图，正面视角，全身站立，
+{基础角色描述}
+对称正面姿势，双臂自然下垂，中性表情，
+纯白背景，正面参考图，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
-#### 背面图 Prompt
+#### 四视图设计图提示词
 
 ```
-Character design, back view, full body,
-{gender}, {age} years old, {back_hair_description},
-{clothing_back_view}, {accessories_back_view},
-standing straight, back to camera,
-white background, {art_style}, high quality,
-rear view, showing full back design.
+角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，
+同一角色不同角度展示，全身站立，
+{基础角色描述}
+纯白背景，参考图布局，设计图风格，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
-#### 表情图 Prompt
+#### 表情图提示词（可选）
 
 ```
-Character expression sheet, {character_name},
-multiple facial expressions on white background,
-expressions: happy, sad, angry, surprised, neutral, embarrassed,
-same character, consistent design,
-head shots only, {art_style},
-expressive eyes, detailed facial features.
+角色表情图，{角色名}，
+纯白背景上的多个表情，
+9个表情3x3排列：开心、悲伤、愤怒、惊讶、平静、害羞、困惑、坚定、恐惧，
+同一角色脸部，设计一致，仅头部特写，
+{基础角色描述（仅头部）}
+杰作，最佳画质，细节丰富。
 ```
 
-### 3. 画质增强词
-
-根据需要添加：
+### 3. 负面词
 
 ```
-masterpiece, best quality, highly detailed,
-8k resolution, sharp focus, professional artwork,
-intricate details, clean lines, vivid colors.
+低质量，人体结构错误，最差质量，变形，畸形，
+缺少肢体，多余肢体，模糊，水印，签名，
+文字，标志，裁剪，画框外，比例失调，
+不同的脸，特征不一致，多人，
+背景杂乱，复杂背景，深色背景。
 ```
 
-### 4. 负面词
+### 4. 特殊情况处理
 
+#### 坐姿角色（如轮椅）
+
+在所有提示词中添加：
 ```
-low quality, bad anatomy, worst quality,
-deformed, disfigured, missing limbs,
-extra limbs, blurry, watermark, signature,
-text, logo, cropped, out of frame.
+坐在轮椅上，上半身特写，腿部被遮盖，
 ```
 
-## 调用方式
+#### 持有道具
 
-生成 Prompt 后，使用 Bash 工具调用 text-to-image skill：
+在所有提示词中保持道具一致：
+```
+手持{道具名}，{道具描述}，
+```
+
+### 5. 调用方式
+
+#### 步骤1：使用文生图生成正面主视图
 
 ```bash
+# 加载环境变量并生成正面图
+set -a && source .env && set +a && \
 uv run python .claude/skills/text-to-image/text_to_image.py \
-  --prompt "完整的Prompt文本" \
+  --prompt "完整的正面图提示词文本" \
   --output "works/{项目名}/assets/characters/{角色名}" \
-  --filename "{图片类型}"
+  --filename "front"
 ```
+
+#### 步骤2：使用图生图生成四视图设计图
+
+基于正面图生成包含四个视角的角色设计图：
+```bash
+set -a && source .env && set +a && \
+uv run python .claude/skills/image-to-image/image_to_image.py \
+  --image "works/{项目名}/assets/characters/{角色名}/front.png" \
+  --prompt "角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，同一角色不同角度展示，全身站立，纯白背景，参考图布局，保持所有角色特征完全一致" \
+  --strength 0.6 \
+  --output "works/{项目名}/assets/characters/{角色名}" \
+  --filename "views"
+```
+
+### 6. 生成顺序
+
+1. **文生图生成正面图** front.png 作为角色定稿和参考图
+2. **图生图生成四视图设计图** views.png（基于front.png，包含四个视角在一张图中）
+3. 检查一致性，如有明显差异可调整编辑强度参数重新生成
+4. 最后生成表情集（可选）：expressions.png
+
+### 7. 编辑强度建议
+
+| 生成内容 | 建议强度 | 说明 |
+|---------|---------|------|
+| 正面 → 四视图设计图 | 0.5-0.7 | 中高强度，将单视角转换为多视角设计图 |
+| 表情变化 | 0.2-0.4 | 低强度，仅调整表情 |
 
 ## 输出格式
 
-为每个角色创建以下文件：
-
-| 图片类型 | 文件名 | 存放路径 |
-|---------|--------|---------|
-| 正面图 | `front.png` | `{项目}/assets/characters/{角色名}/` |
-| 左侧图 | `side_l.png` | `{项目}/assets/characters/{角色名}/` |
-| 右侧图 | `side_r.png` | `{项目}/assets/characters/{角色名}/` |
-| 背面图 | `back.png` | `{项目}/assets/characters/{角色名}/` |
-| 表情集 | `expressions.png` | `{项目}/assets/characters/{角色名}/` |
-
-## 生成顺序
-
-1. 先生成三视图合一图（character_sheet.png）作为主要参考
-2. 然后依次生成：front.png → side_l.png → side_r.png → back.png
-3. 最后生成表情集（可选）：expressions.png
+| 图片类型 | 文件名 | 说明 |
+|---------|--------|------|
+| 主视图 | `front.png` | 正面单视角图，作为参考 |
+| 四视图设计图 | `views.png` | 包含正面、左侧、右侧、背面四个视角 |
+| 表情集 | `expressions.png` | 可选，多种表情 |
 
 ## 示例
 
@@ -195,25 +200,43 @@ uv run python .claude/skills/text-to-image/text_to_image.py \
 - 沙雕腹黑，机智狡黠
 ```
 
-### 输出 prompt（正面图）
+### 基础描述
 
 ```
-Character design, front view, full body,
-female, 24 years old, 175cm tall, slender nine-head body proportion,
-oval face, flawless model-like beauty, snow-white skin,
-beautiful almond eyes with dark bright pupils,
-willow-leaf eyebrows, elegant nose, cherry lips,
-long raven black hair in ancient Chinese updo,
-pale cyan ancient Chinese ruqun dress, moon-white sleeves,
-wooden hairpin, sachet at waist, embroidered shoes,
-standing straight, elegant posture,
-white background, Chinese ancient anime style,
-masterpiece, best quality, highly detailed.
+女性，24岁，175厘米高，身材纤细优雅。
+肤色雪白，鹅蛋脸，五官精致完美。
+杏眼明亮有神，柳叶眉。
+鼻梁高挺秀气，樱桃小口淡粉色。
+长发及腰乌黑如墨，梳成古代仕女发髻，几缕碎发垂于耳侧。
+身穿淡青色古代汉服襦裙，月白色衣袖。
+木簪挽发，腰间香囊，绣花布鞋。
+古风动漫风格，清新优雅。
+```
+
+### 正面图提示词
+
+```
+角色设计图，正面视角，全身站立，
+女性，24岁，175厘米高，身材纤细优雅。
+肤色雪白，鹅蛋脸，五官精致完美。
+杏眼明亮有神，柳叶眉。
+鼻梁高挺秀气，樱桃小口淡粉色。
+长发及腰乌黑如墨，梳成古代仕女发髻，几缕碎发垂于耳侧。
+身穿淡青色古代汉服襦裙，月白色衣袖。
+木簪挽发，腰间香囊，绣花布鞋。
+古风动漫风格，清新优雅。
+对称正面姿势，双臂自然下垂，中性表情，
+纯白背景，正面参考图，
+杰作，最佳画质，细节丰富，8k分辨率。
 ```
 
 ## 注意事项
 
-1. **一致性**：同一角色的多个 Prompt 保持描述一致
-2. **特殊状态**：如轮椅、残疾等特殊设定需在所有 Prompt 中体现
-3. **画风统一**：确保同一项目的角色使用相同画风
-4. **文化适配**：古代背景使用古风描述词，现代背景使用现代词
+1. **先生成主视图**：必须先生成 front.png，四视图设计图基于它生成
+2. **四视图在一张图中**：views.png 包含正面、左侧、右侧、背面四个视角
+3. **图生图优势**：使用图生图生成四视图可以保持角色特征一致性
+4. **编辑强度调整**：如果转换后角色特征变化过大，降低强度；如果视角变化不够，提高强度
+5. **特殊状态**：轮椅、道具等特殊设定需在提示词中体现
+6. **画风统一**：同一项目的角色使用相同画风关键词
+7. **文化适配**：古代背景用古风描述词，现代背景用现代词
+8. **描述准确**：用自然语言描述画面内容，用短语描述美学风格

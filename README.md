@@ -30,14 +30,12 @@ novel/
 
 ### 3. 准备角色资源
 
-为每个主要角色创建三视图和表情包：
+为每个主要角色创建主视图和四视图设计图：
 
 ```
 assets/characters/萧炎/
-├── front.png          # 正面立绘
-├── side_l.png         # 左侧面
-├── side_r.png         # 右侧面
-├── back.png           # 背面
+├── front.png          # 主视图（正面立绘）
+├── views.png          # 四视图设计图（正面+左侧+右侧+背面在一张图中）
 ├── expressions/       # 表情变体
 │   ├── happy.png
 │   ├── angry.png
@@ -137,7 +135,7 @@ output/
 | `novel/chapters/` | 存放拆分好的章节原文 | 是 |
 | `novel/outline.md` | 故事大纲、角色设定 | 建议 |
 | `scripts/` | 分镜剧本，按剧集组织 | 是 |
-| `assets/characters/` | 角色三视图、表情、姿态 | 是 |
+| `assets/characters/` | 角色设计图、表情、姿态 | 是 |
 | `assets/props/` | 重要道具图 | 按需 |
 | `assets/scenes/` | 场景背景图 | 是 |
 | `assets/audio/` | BGM、音效、配音 | 是 |

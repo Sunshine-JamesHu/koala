@@ -1,0 +1,4481 @@
+{
+  "episode": 1,
+  "style_settings": {
+    "art_style": "anime",
+    "era_style": "ancient_chinese",
+    "quality_tags": [
+      "masterpiece",
+      "best quality",
+      "highly detailed",
+      "8k resolution",
+      "cinematic composition"
+    ]
+  },
+  "keyframes": [
+    {
+      "keyframe_id": "shot_001_kf_001",
+      "shot_id": "shot_001",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 一道清朗的声音传入辛月影的耳畔，鼻尖缭绕着一股发霉的气味，她吃力的掀开眼帘。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_001_kf_002",
+      "shot_id": "shot_001",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 一道清朗的声音传入辛月影的耳畔，鼻尖缭绕着一股发霉的气味，她吃力的掀开眼帘。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_001_kf_003",
+      "shot_id": "shot_001",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 一道清朗的声音传入辛月影的耳畔，鼻尖缭绕着一股发霉的气味，她吃力的掀开眼帘。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_close_up",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium close-up, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_002_kf_001",
+      "shot_id": "shot_002",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 看来先前在高速公路上刹车失灵导致她坠下山崖车毁人亡竟是大梦一场，对么，她老司机了，怎么可能开车出事故...",
+      "scene_description": {
+        "location": "看来先前",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "看来先前, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_002_kf_002",
+      "shot_id": "shot_002",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 看来先前在高速公路上刹车失灵导致她坠下山崖车毁人亡竟是大梦一场，对么，她老司机了，怎么可能开车出事故...",
+      "scene_description": {
+        "location": "看来先前",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "看来先前, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_002_kf_003",
+      "shot_id": "shot_002",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 看来先前在高速公路上刹车失灵导致她坠下山崖车毁人亡竟是大梦一场，对么，她老司机了，怎么可能开车出事故...",
+      "scene_description": {
+        "location": "看来先前",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "看来先前, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_003_kf_001",
+      "shot_id": "shot_003",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 对面的男人听见了她的笑声，声音愈发寒冽：“莫不是要我亲自送你一程？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_003_kf_002",
+      "shot_id": "shot_003",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 对面的男人听见了她的笑声，声音愈发寒冽：“莫不是要我亲自送你一程？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_003_kf_003",
+      "shot_id": "shot_003",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 对面的男人听见了她的笑声，声音愈发寒冽：“莫不是要我亲自送你一程？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_004_kf_001",
+      "shot_id": "shot_004",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 青灯摇曳，男人微微向前躬身，一双狭长的凤眼淬着浓烈的寒意，笔挺的鼻梁之下薄唇衔着一抹混沌的笑意。",
+      "scene_description": {
+        "location": "男人微微向前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "男人微微向前, night, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_004_kf_002",
+      "shot_id": "shot_004",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 青灯摇曳，男人微微向前躬身，一双狭长的凤眼淬着浓烈的寒意，笔挺的鼻梁之下薄唇衔着一抹混沌的笑意。",
+      "scene_description": {
+        "location": "男人微微向前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "男人微微向前, night, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_004_kf_003",
+      "shot_id": "shot_004",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 青灯摇曳，男人微微向前躬身，一双狭长的凤眼淬着浓烈的寒意，笔挺的鼻梁之下薄唇衔着一抹混沌的笑意。",
+      "scene_description": {
+        "location": "男人微微向前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "男人微微向前, night, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_005_kf_001",
+      "shot_id": "shot_005",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 薄唇轻轻一颤，他反问：“辛四娘，你在等什么？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_005_kf_002",
+      "shot_id": "shot_005",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 薄唇轻轻一颤，他反问：“辛四娘，你在等什么？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_005_kf_003",
+      "shot_id": "shot_005",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 薄唇轻轻一颤，他反问：“辛四娘，你在等什么？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_006_kf_001",
+      "shot_id": "shot_006",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 辛月影打了个寒颤，笑意刹那僵在唇边，她抬眼，仔细打量着眼前的男人。",
+      "scene_description": {
+        "location": "仔细打量着眼前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "仔细打量着眼前, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_006_kf_002",
+      "shot_id": "shot_006",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 辛月影打了个寒颤，笑意刹那僵在唇边，她抬眼，仔细打量着眼前的男人。",
+      "scene_description": {
+        "location": "仔细打量着眼前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "仔细打量着眼前, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_006_kf_003",
+      "shot_id": "shot_006",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 辛月影打了个寒颤，笑意刹那僵在唇边，她抬眼，仔细打量着眼前的男人。",
+      "scene_description": {
+        "location": "仔细打量着眼前",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "仔细打量着眼前, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_007_kf_001",
+      "shot_id": "shot_007",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 准确的说，这是她开车时听的一本小说里的人物。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_007_kf_002",
+      "shot_id": "shot_007",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 准确的说，这是她开车时听的一本小说里的人物。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_007_kf_003",
+      "shot_id": "shot_007",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 准确的说，这是她开车时听的一本小说里的人物。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_008_kf_001",
+      "shot_id": "shot_008",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 沈清起是书中的反派疯批男配，本是名将之后，因得沈父得罪权贵，致使沈家蒙冤下狱，判了个秋后问斩。",
+      "scene_description": {
+        "location": "本是名将之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "本是名将之后, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_008_kf_002",
+      "shot_id": "shot_008",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 沈清起是书中的反派疯批男配，本是名将之后，因得沈父得罪权贵，致使沈家蒙冤下狱，判了个秋后问斩。",
+      "scene_description": {
+        "location": "本是名将之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "本是名将之后, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_008_kf_003",
+      "shot_id": "shot_008",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 沈清起是书中的反派疯批男配，本是名将之后，因得沈父得罪权贵，致使沈家蒙冤下狱，判了个秋后问斩。",
+      "scene_description": {
+        "location": "本是名将之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "本是名将之后, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_009_kf_001",
+      "shot_id": "shot_009",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 她像是沈清起黑暗的人生里的那道光，她鼓励着沈清起重拾信心，最后沈清起投了旧敌麾下忍辱负重，他从一个小...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_009_kf_002",
+      "shot_id": "shot_009",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 她像是沈清起黑暗的人生里的那道光，她鼓励着沈清起重拾信心，最后沈清起投了旧敌麾下忍辱负重，他从一个小...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_009_kf_003",
+      "shot_id": "shot_009",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 她像是沈清起黑暗的人生里的那道光，她鼓励着沈清起重拾信心，最后沈清起投了旧敌麾下忍辱负重，他从一个小...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_010_kf_001",
+      "shot_id": "shot_010",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 之后他更是取而代之成为朝堂之中的权臣，当沈清起披荆斩棘的回来，准备迎娶孟如心的时候。",
+      "scene_description": {
+        "location": "之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "之后, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_010_kf_002",
+      "shot_id": "shot_010",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 之后他更是取而代之成为朝堂之中的权臣，当沈清起披荆斩棘的回来，准备迎娶孟如心的时候。",
+      "scene_description": {
+        "location": "之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "之后, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_011_kf_001",
+      "shot_id": "shot_011",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 却猛然发现孟如心和男主生的孩子都能打酱油了。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_011_kf_002",
+      "shot_id": "shot_011",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 却猛然发现孟如心和男主生的孩子都能打酱油了。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_012_kf_001",
+      "shot_id": "shot_012",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 当时，看到这里的辛月影怒从心头起，恶向胆边生，她抓起手机开始评论：",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_012_kf_002",
+      "shot_id": "shot_012",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 当时，看到这里的辛月影怒从心头起，恶向胆边生，她抓起手机开始评论：",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_013_kf_001",
+      "shot_id": "shot_013",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - “这是什么狗屁剧情？男二难道不配拥有个好结局吗？他是为了女主才一步步走到今天这个地位的啊！难道换不回...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_013_kf_002",
+      "shot_id": "shot_013",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - “这是什么狗屁剧情？男二难道不配拥有个好结局吗？他是为了女主才一步步走到今天这个地位的啊！难道换不回...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_013_kf_003",
+      "shot_id": "shot_013",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - “这是什么狗屁剧情？男二难道不配拥有个好结局吗？他是为了女主才一步步走到今天这个地位的啊！难道换不回...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_014_kf_001",
+      "shot_id": "shot_014",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 只因这辛四娘嫁过来之后，发现这个男人不仅是个残废，还每天对她视若无物。",
+      "scene_description": {
+        "location": "之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "之后, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_014_kf_002",
+      "shot_id": "shot_014",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 只因这辛四娘嫁过来之后，发现这个男人不仅是个残废，还每天对她视若无物。",
+      "scene_description": {
+        "location": "之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "之后, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_014_kf_003",
+      "shot_id": "shot_014",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 只因这辛四娘嫁过来之后，发现这个男人不仅是个残废，还每天对她视若无物。",
+      "scene_description": {
+        "location": "之后",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "之后, day, close-up, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_015_kf_001",
+      "shot_id": "shot_015",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 她言语暗示给老王，说自己到底是有夫之妇，家里还有个瘫子夫君。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_015_kf_002",
+      "shot_id": "shot_015",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 她言语暗示给老王，说自己到底是有夫之妇，家里还有个瘫子夫君。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_015_kf_003",
+      "shot_id": "shot_015",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 她言语暗示给老王，说自己到底是有夫之妇，家里还有个瘫子夫君。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_016_kf_001",
+      "shot_id": "shot_016",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 老王说那还不简单，于是便给了辛四娘一包毒药。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_016_kf_002",
+      "shot_id": "shot_016",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 老王说那还不简单，于是便给了辛四娘一包毒药。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_016_kf_003",
+      "shot_id": "shot_016",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 老王说那还不简单，于是便给了辛四娘一包毒药。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_017_kf_001",
+      "shot_id": "shot_017",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 辛四娘鬼迷心窍，动了杀心，终于在今夜将药下在了沈清起的吃食之中，可对方没有吃，甚至还警惕的发现了饭菜...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_017_kf_002",
+      "shot_id": "shot_017",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 辛四娘鬼迷心窍，动了杀心，终于在今夜将药下在了沈清起的吃食之中，可对方没有吃，甚至还警惕的发现了饭菜...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_017_kf_003",
+      "shot_id": "shot_017",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 辛四娘鬼迷心窍，动了杀心，终于在今夜将药下在了沈清起的吃食之中，可对方没有吃，甚至还警惕的发现了饭菜...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_018_kf_001",
+      "shot_id": "shot_018",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 辛月影伏在地上，脑海飞速旋转，默默捋顺了这一切，重新看向摆在自己面前的三尺剑锋。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_018_kf_002",
+      "shot_id": "shot_018",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 辛月影伏在地上，脑海飞速旋转，默默捋顺了这一切，重新看向摆在自己面前的三尺剑锋。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_019_kf_001",
+      "shot_id": "shot_019",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 她霎时浑身一颤，艰涩的出声：“......如果我说，我穿越了，您信吗？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_019_kf_002",
+      "shot_id": "shot_019",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 她霎时浑身一颤，艰涩的出声：“......如果我说，我穿越了，您信吗？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_019_kf_003",
+      "shot_id": "shot_019",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 她霎时浑身一颤，艰涩的出声：“......如果我说，我穿越了，您信吗？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_020_kf_001",
+      "shot_id": "shot_020",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 长剑几乎贴着辛月影纤细的脖颈挥来，“嗡”地一声刺入她身后的木柱之上，伴着嗡鸣不绝的剑音。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_020_kf_002",
+      "shot_id": "shot_020",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 长剑几乎贴着辛月影纤细的脖颈挥来，“嗡”地一声刺入她身后的木柱之上，伴着嗡鸣不绝的剑音。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_021_kf_001",
+      "shot_id": "shot_021",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 忠仆开腔了：“你吃了熊心豹子胆！敢给二爷下毒？我都查得明明白白，你借着卖猎物为名，终日逗留在一个姓王...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_021_kf_002",
+      "shot_id": "shot_021",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 忠仆开腔了：“你吃了熊心豹子胆！敢给二爷下毒？我都查得明明白白，你借着卖猎物为名，终日逗留在一个姓王...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_021_kf_003",
+      "shot_id": "shot_021",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 忠仆开腔了：“你吃了熊心豹子胆！敢给二爷下毒？我都查得明明白白，你借着卖猎物为名，终日逗留在一个姓王...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_022_kf_001",
+      "shot_id": "shot_022",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 前人不要脸，后人背锅，辛月影试问她招谁惹谁了？！",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_022_kf_002",
+      "shot_id": "shot_022",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 前人不要脸，后人背锅，辛月影试问她招谁惹谁了？！",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_022_kf_003",
+      "shot_id": "shot_022",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 前人不要脸，后人背锅，辛月影试问她招谁惹谁了？！",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_023_kf_001",
+      "shot_id": "shot_023",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 霍齐抬手一推辛月影，便就将身子轻枯的她推回到了那令人窒息的房间之中。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "霍齐",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, 霍齐, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_023_kf_002",
+      "shot_id": "shot_023",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 霍齐抬手一推辛月影，便就将身子轻枯的她推回到了那令人窒息的房间之中。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "霍齐",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, 霍齐, neutral, medium full shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_024_kf_001",
+      "shot_id": "shot_024",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - 他似笑非笑，像是一只慵懒的猫，逗弄着一只无处可逃的小老鼠。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_024_kf_002",
+      "shot_id": "shot_024",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 他似笑非笑，像是一只慵懒的猫，逗弄着一只无处可逃的小老鼠。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_024_kf_003",
+      "shot_id": "shot_024",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 他似笑非笑，像是一只慵懒的猫，逗弄着一只无处可逃的小老鼠。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_025_kf_001",
+      "shot_id": "shot_025",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 沈清起如今身为逃犯，此刻还在这穷乡僻壤的乡村蛰伏隐忍，平日里本就草木皆兵，想到这里，辛月影灵机一动，...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_025_kf_002",
+      "shot_id": "shot_025",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 沈清起如今身为逃犯，此刻还在这穷乡僻壤的乡村蛰伏隐忍，平日里本就草木皆兵，想到这里，辛月影灵机一动，...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_025_kf_003",
+      "shot_id": "shot_025",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 沈清起如今身为逃犯，此刻还在这穷乡僻壤的乡村蛰伏隐忍，平日里本就草木皆兵，想到这里，辛月影灵机一动，...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_026_kf_001",
+      "shot_id": "shot_026",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - “哦！我明白了！”辛月影两手“啪”地合掌一拍，演上了：“有人逼我的。他给了我一包粉末，命我将其下在你...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_026_kf_002",
+      "shot_id": "shot_026",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - “哦！我明白了！”辛月影两手“啪”地合掌一拍，演上了：“有人逼我的。他给了我一包粉末，命我将其下在你...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_026_kf_003",
+      "shot_id": "shot_026",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - “哦！我明白了！”辛月影两手“啪”地合掌一拍，演上了：“有人逼我的。他给了我一包粉末，命我将其下在你...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "辛月影"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_027_kf_001",
+      "shot_id": "shot_027",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "建立场景 - “那人威胁我，说我若不今日把这东西放在你的饭菜里，他便取我性命，我当时吓坏了，根本来不及想太多，回来...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_027_kf_002",
+      "shot_id": "shot_027",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - “那人威胁我，说我若不今日把这东西放在你的饭菜里，他便取我性命，我当时吓坏了，根本来不及想太多，回来...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_027_kf_003",
+      "shot_id": "shot_027",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - “那人威胁我，说我若不今日把这东西放在你的饭菜里，他便取我性命，我当时吓坏了，根本来不及想太多，回来...",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "golden_ratio",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "场景中心"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_028_kf_001",
+      "shot_id": "shot_028",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 辛月影说完了话，诧然看着沈清起：“你莫不是得罪了什么仇家吧？仇家可能找上门来了？咱们怎么办？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_028_kf_002",
+      "shot_id": "shot_028",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 辛月影说完了话，诧然看着沈清起：“你莫不是得罪了什么仇家吧？仇家可能找上门来了？咱们怎么办？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_028_kf_003",
+      "shot_id": "shot_028",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 辛月影说完了话，诧然看着沈清起：“你莫不是得罪了什么仇家吧？仇家可能找上门来了？咱们怎么办？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_029_kf_001",
+      "shot_id": "shot_029",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 沈清起扬着唇角，他的笑声随之变得绵长，笑得辛月影只觉脊背生寒。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_029_kf_002",
+      "shot_id": "shot_029",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 沈清起扬着唇角，他的笑声随之变得绵长，笑得辛月影只觉脊背生寒。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_029_kf_003",
+      "shot_id": "shot_029",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 沈清起扬着唇角，他的笑声随之变得绵长，笑得辛月影只觉脊背生寒。",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "night",
+        "weather": "clear",
+        "lighting": "昏暗，局部照明",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        },
+        {
+          "name": "辛月影",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "symmetrical",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "人工照明",
+          "direction": "侧面",
+          "quality": "温暖"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, night, 沈清起, neutral, 辛月影, neutral, medium shot, balanced, 人工照明 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_030_kf_001",
+      "shot_id": "shot_030",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "引入角色 - 沈清起的笑声戛然而止，不紧不慢的开口：“不论是谁来都好，且让他下黄泉去陪你，好不好？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "subtle"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_030_kf_002",
+      "shot_id": "shot_030",
+      "position_in_shot": 0.5,
+      "type": "emotion_peak",
+      "narrative_purpose": "情绪高潮 - 沈清起的笑声戛然而止，不紧不慢的开口：“不论是谁来都好，且让他下黄泉去陪你，好不好？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "戏剧性明暗对比",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    },
+    {
+      "keyframe_id": "shot_030_kf_003",
+      "shot_id": "shot_030",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格情绪 - 沈清起的笑声戛然而止，不紧不慢的开口：“不论是谁来都好，且让他下黄泉去陪你，好不好？”",
+      "scene_description": {
+        "location": "未指定场景",
+        "time_of_day": "day",
+        "weather": "clear",
+        "lighting": "自然光",
+        "atmosphere": "",
+        "environmental_details": []
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "",
+          "position_in_frame": "center",
+          "body_position": "",
+          "pose": "",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "",
+            "description": ""
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_full_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": [
+          "前景",
+          "中景",
+          "背景"
+        ],
+        "focal_point": "沈清起"
+      },
+      "lighting_and_color": {
+        "key_light": {
+          "source": "自然光",
+          "direction": "侧面",
+          "quality": "柔和"
+        },
+        "fill_light": {
+          "source": "环境反射",
+          "quality": "柔和"
+        },
+        "color_temperature": "中性",
+        "shadows": "柔和阴影",
+        "color_mood": "balanced"
+      },
+      "image_prompt": "未指定场景, day, 沈清起, neutral, medium full shot, balanced, 自然光 lighting, anime, ancient_chinese, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition",
+      "negative_prompt": "low quality, blurry, deformed, bad anatomy, extra limbs, missing fingers, modern objects, western elements, text, watermark"
+    }
+  ]
+}
