@@ -1,0 +1,32 @@
+{
+  "name": "小说名称",
+  "title": "显示标题",
+  "author": "原作者",
+  "description": "作品简介",
+  "genre": ["玄幻", "热血"],
+  "tags": ["修仙", "冒险"],
+
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 24,
+    "format": "mp4"
+  },
+
+  "style": {
+    "artStyle": "anime",
+    "colorPalette": "assets/styles/color_palette.json"
+  },
+
+  "chapters": {
+    "total": 0,
+    "adapted": 0
+  },
+
+  "episodes": {
+    "total": 0,
+    "completed": 0
+  },
+
+  "createdAt": "",
+  "updatedAt": ""
+}

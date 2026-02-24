@@ -1,0 +1,38 @@
+{
+  "name": "默认色板",
+  "description": "项目整体配色方案",
+
+  "primary": {
+    "main": "#4A90D9",
+    "light": "#7BB3E8",
+    "dark": "#2E6BB0"
+  },
+
+  "secondary": {
+    "main": "#E8A838",
+    "light": "#F0C06E",
+    "dark": "#C4872A"
+  },
+
+  "background": {
+    "day": "#87CEEB",
+    "night": "#1A1A2E",
+    "indoor": "#F5F5DC"
+  },
+
+  "character": {
+    "skin": "#FFDAB9",
+    "hair": {
+      "black": "#1C1C1C",
+      "brown": "#8B4513",
+      "blonde": "#F0E68C"
+    }
+  },
+
+  "mood": {
+    "happy": "#FFE4B5",
+    "sad": "#B0C4DE",
+    "angry": "#FF6B6B",
+    "tense": "#4A4A6A"
+  }
+}

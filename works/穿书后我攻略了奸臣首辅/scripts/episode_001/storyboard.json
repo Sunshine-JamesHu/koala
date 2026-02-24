@@ -1,0 +1,189 @@
+{
+  "episode": 1,
+  "title": "第一集 你自尽吧",
+  "duration": 21,
+  "sourceChapter": "chapter_001",
+
+  "characters": [
+    {
+      "name": "辛月影",
+      "description": "女性、24岁，175cm的身材，拥有者九头身的比例，肌肤似雪，五官像是建模脸一样，精致无比，是当下数一数二的美人",
+      "reference": "assets/characters/辛月影/front.png"
+    },
+    {
+      "name": "沈清起",
+      "description": "名将之后、浑身上下透露者生人勿近的凛冽感，高高的鼻梁，深邃的眼睛，透露着他那不知不让人知的过往",
+      "reference": "assets/characters/沈清起/front.png"
+    }
+  ],
+
+  "shots": [
+    {
+      "id": "shot_001",
+      "type": "scene",
+      "duration": 5.0,
+      "timestamp": {
+        "start": 0.0,
+        "end": 5.0
+      },
+      "scene": {
+        "location": "深山老林",
+        "timeOfDay": "night",
+        "weather": "cloudy",
+        "description": "一座木房子透出影影约约的青灯"
+      },
+      "camera": {
+        "angle": "long",
+        "movement": "push"
+      },
+      "characters": [],
+      "dialogue": null,
+      "narration": {
+        "text": "你自尽吧",
+        "voiceFile": ""
+      },
+      "sfx": ["风吹树林声", "乌鸦声"],
+      "bgm": "",
+      "notes": "开场建立氛围"
+    },
+    {
+      "id": "shot_002",
+      "type": "action",
+      "duration": 3.0,
+      "timestamp": {
+        "start": 5.0,
+        "end": 8.0
+      },
+      "scene": {
+        "location": "木房内",
+        "timeOfDay": "night",
+        "weather": null,
+        "description": "阴冷的地面"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "push"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "pain",
+          "action": "躺在地上，面色苍白，嘴角有淡淡血迹，手微微抽动，眉头紧缩，眼睛慢慢睁开闭上"
+        }
+      ],
+      "dialogue": null,
+      "narration": null,
+      "sfx": [],
+      "bgm": "",
+      "notes": "女主角出场，展现受伤状态"
+    },
+    {
+      "id": "shot_003",
+      "type": "scene",
+      "duration": 5.0,
+      "timestamp": {
+        "start": 8.0,
+        "end": 13.0
+      },
+      "scene": {
+        "location": "木房内",
+        "timeOfDay": "night",
+        "weather": null,
+        "description": "昏暗的室内"
+      },
+      "camera": {
+        "angle": "long",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "cold",
+          "action": "高高的站在她的身前，背身对着辛月影"
+        }
+      ],
+      "dialogue": null,
+      "narration": null,
+      "sfx": [],
+      "bgm": "",
+      "notes": "男主出场，背影建立神秘感"
+    },
+    {
+      "id": "shot_004",
+      "type": "action",
+      "duration": 3.0,
+      "timestamp": {
+        "start": 13.0,
+        "end": 16.0
+      },
+      "scene": {
+        "location": "木房内",
+        "timeOfDay": "night",
+        "weather": null,
+        "description": null
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "sneer",
+          "action": "冷笑一声"
+        }
+      ],
+      "dialogue": null,
+      "narration": null,
+      "sfx": [],
+      "bgm": "",
+      "notes": "女主反应"
+    },
+    {
+      "id": "shot_005",
+      "type": "dialogue",
+      "duration": 5.0,
+      "timestamp": {
+        "start": 16.0,
+        "end": 21.0
+      },
+      "scene": {
+        "location": "木房内",
+        "timeOfDay": "night",
+        "weather": null,
+        "description": null
+      },
+      "camera": {
+        "angle": "long",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "cold",
+          "action": "听见她的笑声，声音更加寒冽"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "莫不是要我亲自送你一程",
+        "voiceFile": "assets/audio/voice/episode_001/shot_005.wav"
+      },
+      "narration": null,
+      "sfx": [],
+      "bgm": "assets/audio/bgm/tense.mp3",
+      "notes": "男主台词，建立威胁感"
+    }
+  ],
+
+  "metadata": {
+    "createdAt": "2024-01-01",
+    "updatedAt": "2024-01-01",
+    "status": "draft",
+    "notes": "第一幕分镜，共5个镜头，总时长21秒"
+  }
+}

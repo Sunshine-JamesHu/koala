@@ -1,0 +1,32 @@
+{
+  "name": "示例小说",
+  "title": "示例小说 - 漫剧化项目",
+  "author": "作者名",
+  "description": "这是一个示例项目，展示项目的目录结构和配置方式",
+  "genre": ["玄幻"],
+  "tags": ["示例"],
+
+  "video": {
+    "resolution": "1920x1080",
+    "fps": 24,
+    "format": "mp4"
+  },
+
+  "style": {
+    "artStyle": "anime",
+    "colorPalette": "assets/styles/color_palette.json"
+  },
+
+  "chapters": {
+    "total": 0,
+    "adapted": 0
+  },
+
+  "episodes": {
+    "total": 0,
+    "completed": 0
+  },
+
+  "createdAt": "2024-01-01",
+  "updatedAt": "2024-01-01"
+}
