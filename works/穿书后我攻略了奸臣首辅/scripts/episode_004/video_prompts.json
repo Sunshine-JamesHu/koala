@@ -1,0 +1,660 @@
+{
+  "episode": 4,
+  "target_model": "all",
+  "generation_settings": {
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "default_duration": 5.0
+  },
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国树林，夜晚，一轮残月高垂于苍穹，夜色凄迷，林海莽莽，月光穿透树冠，神秘凄凉的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "古代中国树林，夜晚，残月高悬，神秘凄凉的氛围，动漫风格，高细节，电影级光影"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国树林场景，夜晚，一轮残月高悬于苍穹，夜色凄迷中，林海莽莽。月光昏暗穿透茂密树冠，树影斑驳。镜头静止，营造凄凉神秘的氛围，持续6秒。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "古代中国树林，夜晚，残月高悬，林海莽莽，神秘凄凉的氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_002",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png",
+          "assets/characters/霍齐/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国树林中，夜晚，残月微光。辛月影与霍齐挖坑埋尸，辛月影24岁女性，高挑修长，肤色雪白，身穿粗布长衫，表情悲伤疲惫，手持铁锨。霍齐站在右侧，仆从服饰，表情愤怒，挥动铁锨挖土。新挖的土坑，散落的泥土，压抑悲凉的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "树林中挖坑埋尸场景，辛月影和霍齐持续挖土，压抑氛围，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国树林中，夜晚，残月微光。辛月影与霍齐在青山脚下挖坑埋尸。辛月影24岁女性，高挑修长，肤色雪白，长发及腰，身穿粗布长衫，表情悲伤疲惫，弯腰挖土。霍齐站在右侧，身穿仆从服饰，表情愤怒，挥动铁锨挖坑。新挖的土坑，散落的泥土。静止中景镜头，持续6秒，营造压抑悲凉的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "树林中夜晚，辛月影和霍齐挖坑埋尸，辛月影悲伤疲惫，霍齐愤怒，压抑氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_003",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败茅屋外，夜晚，残月微光。辛月影疲惫地拖着铁锨跟随霍齐回房，24岁女性，高挑修长，身穿粗布长衫，表情疲惫，沾满泥土，压抑氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影拖着铁锨走向茅屋，跟拍镜头"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败茅屋外，夜晚，残月微光。辛月影疲惫地拖着铁锨跟随霍齐回房。辛月影24岁女性，高挑修长，肤色雪白，长发及腰，身穿粗布长衫，表情疲惫，衣服沾满泥土。跟拍镜头，持续5秒，营造压抑疲惫的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "破败茅屋外，夜晚，辛月影拖着铁锨疲惫行走，跟拍镜头，压抑氛围，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_004",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败灶房，夜晚，昏暗烛火，歪歪斜斜的墙壁，简陋灶台，破旧水缸，蜘蛛网，压抑简陋的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "破败灶房场景，昏暗烛火，简陋陈设，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败灶房场景，夜晚，昏暗烛火摇曳。左边房子歪歪斜斜，勉强算是个灶房。简陋的灶台，破旧的水缸，蜘蛛网挂在角落。静止中景镜头，持续5秒，营造压抑简陋的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "破败灶房，夜晚，昏暗烛火，歪歪斜斜的墙壁，简陋陈设，压抑氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_005",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png",
+          "assets/characters/霍齐/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败灶房内，夜晚，昏暗烛火。辛月影站在中央舀水痛饮，24岁女性，高挑修长，身穿粗布长衫，表情口渴满足。霍齐站在右侧拿木盆倒入热水，仆从服饰，表情愤怒。压抑氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "灶房场景，辛月影喝水，霍齐倒热水，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败灶房内，夜晚，昏暗烛火。辛月影站在中央，24岁女性，高挑修长，长发及腰，身穿粗布长衫，舀起水痛饮，表情从口渴转为满足。霍齐站在右侧，身穿仆从服饰，拿木盆倒入热水，表情愤怒地说着话。静止中景镜头，持续5秒，营造压抑氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "灶房内，辛月影舀水痛饮，霍齐倒热水，两人互动，压抑氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_006",
+      "duration": 8.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/霍齐/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败灶房内，夜晚，昏暗烛火。霍齐中近景特写，仆从服饰，表情愤怒，眼神犀利，手指指向辛月影方向，紧张压抑的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "霍齐愤怒威胁的表情特写，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败灶房内，夜晚，昏暗烛火。霍齐中近景特写，身穿仆从服饰，表情愤怒，眼神犀利冰冷。他冷冷发怒，手指指向辛月影方向，威胁警告道：你以前如何打我骂我，我都忍了！你最好以后精心伺候着二爷，否则我一刀抹你脖子！静止中近景镜头，持续8秒，营造紧张压抑的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 8.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "灶房内，霍齐愤怒威胁的表情特写，手指指向，紧张压抑氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 8.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_007",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败灶房内，夜晚，昏暗烛火。辛月影接过木盆，24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情坚定，微笑点头，轻松转机的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影微笑点头，接受任务，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败灶房内，夜晚，昏暗烛火。辛月影从霍齐手中接过木盆，24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情坚定，微笑点头说道：好的，你放心，我不添堵了。她心里暗爽，想着等着让霍齐给爷跪。静止中景镜头，持续5秒，氛围从压抑转为轻松。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "灶房内，辛月影接过木盆，微笑点头，表情坚定，轻松转机氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_008",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国灶房外，夜晚，皎白月光。辛月影仰头对着月光照自己的脸，24岁女性，高挑修长，长发及腰乌黑如墨，鹅蛋脸五官精致，身穿粗布长衫，表情愉悦自嘲，轻松美好的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "月光下辛月影娇俏的脸庞，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国灶房外，夜晚，皎白月光洒落。辛月影仰头对着月光照自己的脸，24岁女性，鹅蛋脸五官精致，杏眼瞳孔漆黑明亮，长发及腰乌黑如墨，身穿粗布长衫。皎白的月光映照出她娇俏的脸庞，她自嘲地想还挺漂亮的。仰角静止镜头，持续5秒，营造轻松美好的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "灶房外，月光下，辛月影仰头照自己的脸，表情愉悦，轻松美好氛围，仰角静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_009",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/沈清起/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败小厅，夜晚，昏暗烛光。沈清起坐在残破轮椅上，23岁男性，肤色苍白如白瓷，狭长凤眼，身穿黑色破败长袍，表情悲伤，怔怔出神，沉浸往事，悲凉沉寂的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "沈清起出神的表情，悲凉氛围，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败小厅，夜晚，昏暗烛光。沈清起被禁锢在那辆不能动的轮椅之上，23岁男性，肤色苍白如白瓷，狭长凤眼眼神深邃，身穿黑色破败长袍，表情悲伤，怔怔出神，沉浸在往事的回忆中。静止中景镜头，持续5秒，营造悲凉沉寂的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "破败小厅，沈清起坐在轮椅上出神，表情悲伤，悲凉沉寂氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_010",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。辛月影推轮椅到床前，24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情关切，温暖氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影推轮椅到床前场景，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。辛月影把沈清起推到了床前。辛月影24岁女性，高挑修长，长发及腰乌黑如墨，身穿粗布长衫，表情关切。她推着轮椅慢慢靠近床边。静止侧面镜头，持续6秒，营造温暖的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，辛月影推轮椅到床前，表情关切，温暖氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_011",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png",
+          "assets/characters/沈清起/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。辛月影试图将沈清起抱上炕，24岁女性，高挑修长，身穿粗布长衫，表情关切。沈清起一把推开辛月影，23岁男性，肤色苍白，狭长凤眼，身穿黑色破败长袍，表情愤怒。冷漠的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "沈清起推开辛月影，冷漠拒绝，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。辛月影弯腰试图将沈清起抱上炕，24岁女性，表情关切。沈清起一把推开辛月影，冷冷地说：走开。沈清起23岁男性，肤色苍白如白瓷，狭长凤眼眼神冰冷，身穿黑色破败长袍，表情愤怒拒绝。静止中景镜头，持续5秒，营造冷漠的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，辛月影试图抱沈清起上炕，沈清起愤怒推开，冷漠拒绝氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_012",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/沈清起/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。沈清起艰难撑上炕，23岁男性，肤色苍白，狭长凤眼，身穿黑色破败长袍，表情坚定隐忍，双手撑着身体，悲壮的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "沈清起艰难上炕的过程，悲壮氛围，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。沈清起艰难地撑着身体上炕。23岁男性，肤色苍白如白瓷，狭长凤眼，身穿黑色破败长袍，表情坚定隐忍，额头渗出细汗。普通人上炕下炕不过瞬息之间的小事，在他这里却需要付出一段漫长而艰辛的时光。静止侧面镜头，持续6秒，营造悲壮的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，沈清起艰难撑上炕，表情坚定隐忍，悲壮氛围，静止侧面镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_013",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。辛月影弯腰在墙上钉扶手，24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情专注坚定，手持木板和钉子，温暖的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影钉扶手的工作场景，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。辛月影弯腰在墙上钉扶手。辛月影24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情专注坚定，手持木板和钉子，动手能力极强。她从前是个手工博主，技术娴熟。静止中景镜头，持续6秒，营造温暖的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，辛月影在墙上钉扶手，表情专注，温暖氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_014",
+      "duration": 6.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。辛月影背对沈清起说道，24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情自信，温暖的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影背对镜头说话，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。辛月影背对沈清起说道：我给你做个扶手，这样你上下炕时更方便一些。明天我给你打一副轮椅。辛月影24岁女性，高挑修长，长发及腰乌黑如墨，身穿粗布长衫，表情自信关心。静止中景镜头，持续6秒，营造温暖的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，辛月影背对沈清起说话，表情自信，温暖氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 6.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_015",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png",
+          "assets/characters/沈清起/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败卧房，夜晚，昏暗烛光。辛月影回头对上沈清起的目光，24岁女性，高挑修长，鹅蛋脸，表情惊讶。沈清起坐在炕上，23岁男性，肤色苍白，狭长凤眼，表情怀疑打量。悬疑紧张的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "两人眼神对视，悬疑氛围，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败卧房，夜晚，昏暗烛光。辛月影一回头猝不及防对视上了一双充满打量的目光。辛月影24岁女性，鹅蛋脸五官精致，杏眼瞳孔漆黑，表情惊讶。沈清起坐在炕上，23岁男性，肤色苍白如白瓷，狭长凤眼眼神充满怀疑和打量。静止中近景镜头，持续5秒，营造悬疑紧张的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "卧房内，辛月影回头与沈清起眼神对视，沈清起表情怀疑打量，悬疑紧张氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_016",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/霍齐/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败小厅，夜晚，昏暗烛光。霍齐站立冷声命令，仆从服饰，表情愤怒冷漠，手指指向，冷漠的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "霍齐冷漠命令的表情，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败小厅，夜晚，昏暗烛光。霍齐站立冷声命令道：今夜，你别睡在爷的房间里。你就在厅里打地铺。霍齐身穿仆从服饰，表情愤怒冷漠，眼神犀利。静止中景镜头，持续5秒，营造冷漠的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "小厅内，霍齐冷声命令辛月影打地铺，冷漠氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_017",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国破败小厅，夜晚，昏暗烛光。辛月影把洗脚水倒入霍齐茶壶，24岁女性，高挑修长，身穿粗布长衫，表情坚定狡黠，茶壶在桌上，轻松暗爽的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "辛月影往茶壶倒洗脚水的恶作剧，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国破败小厅，夜晚，昏暗烛光。值此当口，辛月影迅速将霍齐的茶壶盖打开，顺着里头注入洗脚水。辛月影24岁女性，高挑修长，长发及腰，身穿粗布长衫，表情坚定狡黠，嘴角微扬。静止中景镜头，持续5秒，营造轻松暗爽的氛围。动漫风格，电影级画面质感。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "小厅内，辛月影把洗脚水倒入霍齐茶壶，恶作剧，轻松暗爽氛围，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    },
+    {
+      "shot_id": "shot_018",
+      "duration": 5.0,
+      "input_assets": {
+        "start_frame_image": "",
+        "end_frame_image": "",
+        "character_references": [
+          "assets/characters/霍齐/front.png",
+          "assets/characters/辛月影/front.png"
+        ],
+        "scene_reference": "",
+        "style_reference": ""
+      },
+      "prompts": {
+        "image_prompts": {
+          "start_frame": "古代中国茅屋外，夜晚，月光。霍齐对嘴灌茶壶，仆从服饰，表情平淡。辛月影在右侧泼洗脚水，24岁女性，身穿粗布长衫，表情愉悦狡黠。轻松喜剧的氛围，动漫风格，高细节，电影级光影",
+          "end_frame": "霍齐喝茶，辛月影泼水，喜剧结尾，动漫风格"
+        },
+        "video_prompt": {
+          "Sora2": {
+            "prompt": "古代中国茅屋外，夜晚，月光洒落。霍齐大手捞起桌上的茶壶，对嘴又灌了两口（不知里面有洗脚水）。推开门，辛月影在右侧将洗脚水就地一泼，完美。霍齐身穿仆从服饰，表情平淡。辛月影24岁女性，高挑修长，身穿粗布长衫，表情愉悦狡黠。静止中景镜头，持续5秒，营造轻松喜剧的氛围。动漫风格，电影级画面质感，完美报复的喜剧结尾。",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9",
+              "style": "cinematic"
+            }
+          },
+          "Kling": {
+            "prompt": "茅屋外，霍齐对嘴灌茶壶，辛月影泼洗脚水，轻松喜剧氛围，完美报复，静止镜头，动漫风格",
+            "parameters": {
+              "duration": 5.0,
+              "aspect_ratio": "16:9"
+            }
+          }
+        }
+      }
+    }
+  ]
+}

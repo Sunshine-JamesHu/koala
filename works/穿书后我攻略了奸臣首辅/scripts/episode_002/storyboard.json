@@ -1,0 +1,559 @@
+{
+  "episode": 2,
+  "title": "第2集 拿命赌明天",
+  "duration": 100,
+  "sourceChapter": "chapter_002",
+
+  "characters": [
+    {
+      "name": "辛月影",
+      "description": "女主角，现代穿越者",
+      "reference": "assets/characters/辛月影/front.png"
+    },
+    {
+      "name": "沈清起",
+      "description": "男主角，病弱奸臣",
+      "reference": "assets/characters/沈清起/front.png"
+    },
+    {
+      "name": "霍齐",
+      "description": "沈清起的忠仆",
+      "reference": "assets/characters/霍齐/front.png"
+    },
+    {
+      "name": "老王",
+      "description": "屠户，辛四娘的奸夫",
+      "reference": ""
+    }
+  ],
+
+  "shots": [
+    {
+      "id": "shot_001",
+      "type": "dialogue",
+      "duration": 8.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "desperate",
+          "action": "竭力自证，情真意切"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "死我一人对你而言虽不足惜，但害你之人便就逍遥法外了！此人意在羞辱你！杀人诛心！",
+        "voiceFile": ""
+      },
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_002",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "contemplative",
+          "action": "眼眸微颤，紧握碎瓷"
+        }
+      ],
+      "narration": {
+        "text": "沈清起的眼眸微不可察地颤了一颤，指尖轻轻捏着的碎瓷被他紧握于掌中。",
+        "voiceFile": ""
+      },
+      "bgm": "悬疑"
+    },
+    {
+      "id": "shot_003",
+      "type": "action",
+      "duration": 4.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "left",
+          "expression": "cold",
+          "action": "侧过脸去"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "霍齐。",
+        "voiceFile": ""
+      },
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_004",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋外",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "track"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "position": "center",
+          "expression": "determined",
+          "action": "夺了壁上弓箭，冲出门去"
+        }
+      ],
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_005",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "determined",
+          "action": "蹲下身，捡起地上的碎瓷，开始收拾"
+        }
+      ],
+      "narration": {
+        "text": "辛月影跑是没得跑了，只能站在原地镇静思忖下一步的打算。",
+        "voiceFile": ""
+      },
+      "bgm": "压抑"
+    },
+    {
+      "id": "shot_006",
+      "type": "scene",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "dolly_in"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "sad",
+          "action": "坐在轮椅上发愣"
+        }
+      ],
+      "narration": {
+        "text": "那张苍白到几乎毫无血色的脸，使得他看上去像是一件精美易碎的瓷器。",
+        "voiceFile": ""
+      },
+      "bgm": "悲凉"
+    },
+    {
+      "id": "shot_007",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "angry",
+          "action": "手心滴落下猩红的血"
+        }
+      ],
+      "narration": {
+        "text": "鲜血自他的指缝之间涔涔流出，坠在地面，宛若荼蘼。",
+        "voiceFile": ""
+      },
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_008",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "concerned",
+          "action": "掰开沈清起的手"
+        },
+        {
+          "name": "沈清起",
+          "position": "left",
+          "expression": "surprised",
+          "action": "手被掰开"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "你干什么呀？割伤自己了！",
+        "voiceFile": ""
+      },
+      "bgm": "紧张转温暖"
+    },
+    {
+      "id": "shot_009",
+      "type": "dialogue",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "sad",
+          "action": "眼中含泪，声音凄楚"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "相公，你若是心头实在难过，便就骂我两声，切莫伤损自己的身体！",
+        "voiceFile": ""
+      },
+      "bgm": "温暖"
+    },
+    {
+      "id": "shot_010",
+      "type": "dialogue",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "sad",
+          "action": "眼中凝着血丝，唇角衔着诡异笑意"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "我还有什么亲人，谁会痛？",
+        "voiceFile": ""
+      },
+      "bgm": "悲凉"
+    },
+    {
+      "id": "shot_011",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "concerned",
+          "action": "小心翼翼掰开他的手，取出碎瓷"
+        }
+      ],
+      "narration": {
+        "text": "他的手心皮肉外卷着，一片刺目的猩红。",
+        "voiceFile": ""
+      },
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_012",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "position": "center",
+          "expression": "shocked",
+          "action": "奔回来，见沈清起掌心伤痕"
+        },
+        {
+          "name": "沈清起",
+          "position": "left",
+          "expression": "neutral",
+          "action": "坐在轮椅上"
+        }
+      ],
+      "dialogue": {
+        "speaker": "霍齐",
+        "text": "什么？！二爷！",
+        "voiceFile": ""
+      },
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_013",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "position": "center",
+          "expression": "sad",
+          "action": "跪下为沈清起包扎，面目哀痛"
+        },
+        {
+          "name": "沈清起",
+          "position": "left",
+          "expression": "sad",
+          "action": "闷咳两声"
+        }
+      ],
+      "dialogue": {
+        "speaker": "霍齐",
+        "text": "二爷就算不为自己想，也要为九泉之下的老爷夫人想想！",
+        "voiceFile": ""
+      },
+      "bgm": "悲壮"
+    },
+    {
+      "id": "shot_014",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "concerned",
+          "action": "将粗布长衫褪下，盖在沈清起双膝上"
+        }
+      ],
+      "bgm": "温暖"
+    },
+    {
+      "id": "shot_015",
+      "type": "dialogue",
+      "duration": 3.0,
+      "scene": {
+        "location": "破败茅屋内",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "close-up",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "position": "center",
+          "expression": "cold",
+          "action": "抬眼看向辛月影，目泛寒光"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "滚。",
+        "voiceFile": ""
+      },
+      "bgm": "冷漠"
+    },
+    {
+      "id": "shot_016",
+      "type": "action",
+      "duration": 4.0,
+      "scene": {
+        "location": "破败茅屋外",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "track"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "relieved",
+          "action": "转头出去，加快脚步跑起来"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "可以。",
+        "voiceFile": ""
+      },
+      "narration": {
+        "text": "滚可太好了，她巴不得赶紧滚。",
+        "voiceFile": ""
+      },
+      "bgm": "轻松"
+    },
+    {
+      "id": "shot_017",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋外",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "static"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "center",
+          "expression": "shocked",
+          "action": "迎面撞见老王"
+        },
+        {
+          "name": "老王",
+          "position": "left",
+          "expression": "neutral",
+          "action": "自黑暗中走来，手持铁锨"
+        }
+      ],
+      "narration": {
+        "text": "暗夜里，迎面走来了一个男人。他脸窄身薄，太阳穴上贴着一记狗皮膏药。",
+        "voiceFile": ""
+      },
+      "bgm": "悬疑"
+    },
+    {
+      "id": "shot_018",
+      "type": "scene",
+      "duration": 5.0,
+      "scene": {
+        "location": "破败茅屋外",
+        "timeOfDay": "night",
+        "weather": "cloudy"
+      },
+      "camera": {
+        "angle": "medium",
+        "movement": "zoom_out"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "position": "right",
+          "expression": "fearful",
+          "action": "不动声色回头看"
+        },
+        {
+          "name": "老王",
+          "position": "left",
+          "expression": "neutral",
+          "action": "手持铁锨"
+        }
+      ],
+      "narration": {
+        "text": "辛月影就算不回头去看，也该知道自己此刻背后有两双眼睛正在盯着她和老王。",
+        "voiceFile": ""
+      },
+      "bgm": "悬念"
+    }
+  ],
+
+  "metadata": {
+    "createdAt": "2025-02-25T10:00:00",
+    "updatedAt": "2025-02-25T10:00:00",
+    "status": "draft"
+  }
+}

@@ -264,18 +264,15 @@
 | 武将 | 深色、实用剪裁 |
 | 平民 | 素色、简单款式 |
 
-## 使用示例
+## 触发方式
 
-```bash
-# 创建新角色设计
-/character-designer --project "穿书后我攻略了奸臣首辅" --character "辛月影" --create
+当用户要求"设计角色"或"创建角色设计"时触发。
 
-# 添加服装变体
-/character-designer --project "穿书后我攻略了奸臣首辅" --character "辛月影" --add-costume
-
-# 生成角色 Prompt
-/character-designer --project "穿书后我攻略了奸臣首辅" --character "辛月影" --generate-prompt
-```
+Agent应该：
+1. 读取角色基础信息（来自小说或项目配置）
+2. 分析角色性格、身份、时代背景
+3. 设计角色的基础外貌、服装、表情库
+4. 输出到 `assets/characters/{角色名}/design.json`
 
 ## 质量检查清单
 

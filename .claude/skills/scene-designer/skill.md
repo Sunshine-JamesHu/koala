@@ -256,18 +256,15 @@
 | 自然 | 山林、河流、田野 | 开阔、自然 |
 | 建筑 | 城门、桥、塔 | 宏大、标志 |
 
-## 使用示例
+## 触发方式
 
-```bash
-# 创建场景设计
-/scene-designer --project "穿书后我攻略了奸臣首辅" --scene "辛府书房" --create
+当用户要求"设计场景"或"创建场景背景"时触发。
 
-# 添加时间变体
-/scene-designer --project "穿书后我攻略了奸臣首辅" --scene "辛府书房" --add-variation --time night
-
-# 生成场景 Prompt
-/scene-designer --project "穿书后我攻略了奸臣首辅" --scene "辛府书房" --generate-prompt --time night --weather rain
-```
+Agent应该：
+1. 读取故事分析结果，识别场景需求
+2. 分析场景的时代背景、建筑风格和布局需求
+3. 设计场景的关键元素、光线来源、时间/天气变体
+4. 输出到 `assets/scenes/{场景类型}/{场景名}/design.json`
 
 ## 质量检查清单
 

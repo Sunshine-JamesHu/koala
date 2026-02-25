@@ -110,11 +110,15 @@
 5. **冲突识别**: 识别并分类冲突
 6. **视觉评估**: 标记视觉化潜力
 
-## 使用示例
+## 触发方式
 
-```bash
-/story-analyzer --project "穿书后我攻略了奸臣首辅" --chapter chapter_001
-```
+当用户要求"分析故事"或"分析章节内容"时触发。
+
+Agent应该：
+1. 读取章节文本 `novel/chapters/chapter_XXX.txt`
+2. 提取关键事件、角色状态变化、场景切换点
+3. 绘制情绪曲线，识别冲突与解决方案
+4. 输出到 `cache/analysis/chapter_XXX_analysis.json`
 
 ## 注意事项
 

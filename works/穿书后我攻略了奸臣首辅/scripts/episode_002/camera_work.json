@@ -1,0 +1,852 @@
+{
+  "episode": 2,
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影竭力自证"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 8.0,
+        "description": "静止镜头，突出辛月影情真意切的表演"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_002",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.2
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "特写，沈清起眼眸微颤"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.2
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "保持特写"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止特写，展示沈清起内心动摇"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_003",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，沈清起侧过脸"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 4.0,
+        "description": "静止镜头，冷声呼唤霍齐"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_004",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "low_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 1.2,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，霍齐冲出门"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "low_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 1.2,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": -2.0
+          },
+          "fov": 50,
+          "description": "跟随霍齐移动"
+        }
+      },
+      "movement": {
+        "type": "track",
+        "path_type": "linear",
+        "speed_profile": "constant",
+        "duration": 5.0,
+        "description": "跟拍，霍齐夺弓冲出门去"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_005",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "high_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 2.0,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 0.8,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "俯视中景，辛月影蹲下"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "high_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 2.0,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 0.8,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止俯拍，辛月影收拾碎瓷思忖"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_006",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，沈清起发愣"
+        },
+        "end_frame": {
+          "shot_size": "medium_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "推进到中近景"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 5.0,
+        "description": "缓慢推进，展示沈清起如易碎瓷器"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_007",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.3,
+            "y": 1.2,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "手部特写，血滴落"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.3,
+            "y": 1.2,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 0.8,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "跟随血滴下移"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "特写血滴落地，悲壮氛围"
+      },
+      "focus_rack": {
+        "enabled": true,
+        "description": "焦点从手心移到地面血滴"
+      }
+    },
+    {
+      "shot_id": "shot_008",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景双人，辛月影掰开沈清起的手"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止镜头，辛月影关心沈清起"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_009",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "辛月影面部特写"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "保持特写"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止特写，辛月影眼中含泪"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_010",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "沈清起面部特写"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "保持特写"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止特写，沈清起悲凉自嘲"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_011",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "high_angle",
+          "position_3d": {
+            "x": 0.3,
+            "y": 1.8,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "俯视手部中景"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "high_angle",
+          "position_3d": {
+            "x": 0.3,
+            "y": 1.8,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止俯拍，取出碎瓷展示伤痕"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_012",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，霍齐奔回"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止镜头，霍齐震惊发现沈清起受伤"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_013",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，霍齐跪下包扎"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止镜头，霍齐哀痛劝说"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_014",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影盖长衫"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止镜头，温暖关怀"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_015",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "沈清起面部特写"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.4,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 85,
+          "description": "保持特写"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 3.0,
+        "description": "静止特写，沈清起冷漠赶人"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_016",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影跑出"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": -2.0
+          },
+          "fov": 50,
+          "description": "跟拍跑远"
+        }
+      },
+      "movement": {
+        "type": "track",
+        "path_type": "linear",
+        "speed_profile": "constant",
+        "duration": 4.0,
+        "description": "跟拍，辛月影高兴地跑出去"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_017",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影撞见老王"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止镜头，悬疑氛围"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_018",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 4.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 35,
+          "description": "中景，辛月影和老王"
+        },
+        "end_frame": {
+          "shot_size": "long_shot",
+          "angle": "high_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 3.0,
+            "z": 6.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 35,
+          "description": "拉远俯视，展示全景"
+        }
+      },
+      "movement": {
+        "type": "zoom_out",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 5.0,
+        "description": "拉远镜头，悬念结尾"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    }
+  ]
+}

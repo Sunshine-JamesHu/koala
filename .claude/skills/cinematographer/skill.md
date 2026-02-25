@@ -210,11 +210,15 @@ Duration: 5 seconds
 Style: Smooth steadicam movement, shallow depth of field, focus stays locked on subject, dramatic chiaroscuro lighting
 ```
 
-## 使用示例
+## 触发方式
 
-```bash
-/cinematographer --project "穿书后我攻略了奸臣首辅" --episode episode_001
-```
+当用户要求"设计运镜"或"规划镜头运动"时触发。
+
+Agent应该：
+1. 读取分镜脚本 `scripts/episode_XXX/storyboard.json`
+2. 读取情绪映射 `cache/analysis/chapter_XXX_emotion.json`
+3. 为每个镜头设计专业的运镜方案，包括首尾帧、运动类型、速度等
+4. 输出到 `scripts/episode_XXX/camera_work.json`
 
 ## 质量检查清单
 

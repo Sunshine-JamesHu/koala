@@ -16,17 +16,20 @@ koala/
 │       │   ├── outline.md           # 大纲
 │       │   └── metadata.json        # 元数据
 │       │
-│       ├── scripts/                 # 分镜剧本
+│       ├── scripts/                 # 分镜剧本（JSON数据）
 │       │   └── episode_XXX/         # 按集组织
-│       │       ├── storyboard.json  # 分镜配置
-│       │       ├── shots/           # 分镜图
-│       │       └── dialogue.json    # 对话文本
+│       │       ├── storyboard.json      # 分镜配置（镜头、台词、时长等）
+│       │       ├── keyframes.json       # 关键帧定义（场景、角色、构图）
+│       │       ├── camera_work.json     # 运镜设置（起止帧、运动类型）
+│       │       └── video_prompts.json   # 视频生成提示词
 │       │
 │       ├── assets/                  # 资源文件夹
 │       │   ├── characters/          # 角色资源
 │       │   │   └── {角色名}/
 │       │   │       ├── front.png        # 主视图（正面）
 │       │   │       ├── views.png        # 四视图设计图
+│       │   │       ├── character.json   # 角色设定（外貌、服装等）
+│       │   │       ├── prompts.md       # 角色提示词模板
 │       │   │       ├── expressions/     # 表情
 │       │   │       └── poses/           # 姿态
 │       │   │
@@ -46,14 +49,24 @@ koala/
 │       │   └── styles/              # 风格参考
 │       │       └── color_palette.json
 │       │
-│       ├── output/                  # 视频输出
-│       │   ├── episodes/            # 完整剧集
+│       ├── output/                  # 输出目录
+│       │   ├── episode_XXX/         # 每集输出（可执行的提示词）
+│       │   │   ├── README.md            # 该集说明
+│       │   │   └── shot_sheet.md        # 分镜提示词表（中文）
+│       │   ├── episodes/            # 完整剧集视频
 │       │   ├── clips/               # 片段
 │       │   └── previews/            # 预览
 │       │
 │       ├── cache/                   # 缓存/中间文件
 │       │
 │       └── project.json             # 项目配置
+│
+├── .claude/                         # Claude Code 配置和技能
+│   └── skills/                      # 技能脚本
+│       ├── shot-sheet/              # 分镜表生成
+│       │   └── shot_sheet.py
+│       ├── text-to-image/           # 文生图
+│       └── image-to-image/          # 图生图
 │
 ├── templates/                       # 模板文件夹
 │   ├── project.json                 # 项目配置模板
@@ -96,19 +109,24 @@ koala/
    - 将小说按章节拆分到 `novel/chapters/`
 
 2. **资源准备**
-   - 设计角色三视图存入 `assets/characters/`
+   - 设计角色并存入 `assets/characters/`（包含 character.json）
    - 准备道具图存入 `assets/props/`
    - 收集/生成场景背景到 `assets/scenes/`
 
 3. **剧本制作**
-   - 根据章节创建分镜脚本 `scripts/episode_XXX/storyboard.json`
-   - 生成分镜图到 `scripts/episode_XXX/shots/`
+   - 根据章节生成分镜脚本 `scripts/episode_XXX/`
+   - 包含四个文件：storyboard.json, keyframes.json, camera_work.json, video_prompts.json
 
-4. **视频生成**
-   - AI 根据分镜生成片段到 `output/clips/`
+4. **提示词生成**
+   - 运行 `shot_sheet.py` 生成 `output/episode_XXX/shot_sheet.md`
+   - shot_sheet.md 包含可直接使用的中文提示词
+
+5. **视频生成**
+   - 使用 shot_sheet.md 中的提示词生成关键帧图片
+   - 生成视频片段到 `output/clips/`
    - 合成完整剧集到 `output/episodes/`
 
-5. **预览与发布**
+6. **预览与发布**
    - 预览版本放 `output/previews/`
    - 最终版本放 `output/episodes/`
 

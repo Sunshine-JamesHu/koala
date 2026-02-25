@@ -1,0 +1,763 @@
+{
+  "episode": 2,
+  "style_settings": {
+    "art_style": "anime",
+    "era_style": "ancient_chinese",
+    "quality_tags": [
+      "杰作",
+      "最佳画质",
+      "高细节",
+      "8K分辨率",
+      "电影级构图"
+    ]
+  },
+  "keyframes": [
+    {
+      "keyframe_id": "shot_001_kf_001",
+      "shot_id": "shot_001",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "女主角竭力自证，情真意切",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯摇曳",
+        "atmosphere": "紧张、压抑",
+        "environmental_details": [
+          "破旧的木质墙壁",
+          "蜘蛛网",
+          "残破的家具",
+          "摇曳的油灯"
+        ]
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "站立，身体前倾",
+          "pose": "情真意切地诉说",
+          "expression": {
+            "type": "desperate",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "粗布长衫，简朴发髻"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": ["前景油灯", "中景人物", "背景破败墙壁"]
+      }
+    },
+    {
+      "keyframe_id": "shot_002_kf_001",
+      "shot_id": "shot_002",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起内心动摇，紧握碎瓷",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "悬疑、紧张"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "center",
+          "body_position": "坐在轮椅上",
+          "pose": "眼眸微颤，紧握碎瓷",
+          "expression": {
+            "type": "contemplative",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍，面色苍白"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "center_face",
+        "depth_layers": ["手部特写", "面部", "背景模糊"]
+      }
+    },
+    {
+      "keyframe_id": "shot_003_kf_001",
+      "shot_id": "shot_003",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起侧过脸去，冷声呼唤",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "紧张"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "left",
+          "body_position": "坐在轮椅上",
+          "pose": "侧过脸去",
+          "expression": {
+            "type": "cold",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "off_center",
+        "depth_layers": ["人物", "昏暗背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_004_kf_001",
+      "shot_id": "shot_004",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "霍齐夺弓冲出门去",
+      "scene_description": {
+        "location": "破败茅屋外",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗月光",
+        "atmosphere": "紧张、行动"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "reference_image": "assets/characters/霍齐/front.png",
+          "position_in_frame": "center",
+          "body_position": "奔跑姿态",
+          "pose": "手持弓箭，冲出门去",
+          "expression": {
+            "type": "determined",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "侍从装束"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "low_angle",
+        "framing": "tracking_shot",
+        "depth_layers": ["人物", "茅屋门口", "夜色背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_005_kf_001",
+      "shot_id": "shot_005",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影蹲下收拾碎瓷，思忖下一步",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "压抑"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "蹲下身",
+          "pose": "捡起地上的碎瓷，收拾",
+          "expression": {
+            "type": "determined",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "粗布长衫"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "high_angle",
+        "framing": "center_frame",
+        "depth_layers": ["人物", "地面碎瓷", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_006_kf_001",
+      "shot_id": "shot_006",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起如精美易碎的瓷器",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "悲凉"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "center",
+          "body_position": "坐在轮椅上发愣",
+          "pose": "面无血色，发呆",
+          "expression": {
+            "type": "sad",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍，面色苍白如白瓷"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": ["人物", "轮椅", "昏暗背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_007_kf_001",
+      "shot_id": "shot_007",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起手心流血，血滴落地",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "紧张、悲壮"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "center",
+          "body_position": "坐在轮椅上",
+          "pose": "手掌张开，鲜血滴落",
+          "expression": {
+            "type": "angry",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "hand_detail",
+        "depth_layers": ["手心", "血滴", "地面"]
+      }
+    },
+    {
+      "keyframe_id": "shot_008_kf_001",
+      "shot_id": "shot_008",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影掰开沈清起的手，关心受伤",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "紧张转温暖"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "蹲下，伸手",
+          "pose": "掰开沈清起的手",
+          "expression": {
+            "type": "concerned",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "粗布长衫"
+          }
+        },
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "left",
+          "body_position": "坐在轮椅上",
+          "pose": "手被掰开",
+          "expression": {
+            "type": "surprised",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "two_shot",
+        "depth_layers": ["辛月影", "沈清起", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_009_kf_001",
+      "shot_id": "shot_009",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影眼中含泪，关心沈清起",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "温暖"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "正面",
+          "pose": "眼中含泪，声音凄楚",
+          "expression": {
+            "type": "sad",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "粗布长衫"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "center_face",
+        "depth_layers": ["面部", "背景模糊"]
+      }
+    },
+    {
+      "keyframe_id": "shot_010_kf_001",
+      "shot_id": "shot_010",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起悲凉自嘲，没有亲人",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "悲凉"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "center",
+          "body_position": "坐在轮椅上",
+          "pose": "眼中凝着血丝，唇角衔着诡异笑意",
+          "expression": {
+            "type": "sad",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍，面色苍白"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "center_face",
+        "depth_layers": ["面部", "背景模糊"]
+      }
+    },
+    {
+      "keyframe_id": "shot_011_kf_001",
+      "shot_id": "shot_011",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影小心翼翼取出碎瓷，手心伤痕刺目",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "紧张"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "蹲下",
+          "pose": "小心翼翼掰开沈清起的手，取出碎瓷",
+          "expression": {
+            "type": "concerned",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "粗布长衫"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "high_angle",
+        "framing": "hand_detail",
+        "depth_layers": ["手心伤痕", "碎瓷", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_012_kf_001",
+      "shot_id": "shot_012",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "霍齐奔回见沈清起受伤，震惊",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "紧张"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "reference_image": "assets/characters/霍齐/front.png",
+          "position_in_frame": "center",
+          "body_position": "奔跑进来",
+          "pose": "见沈清起掌心伤痕，震惊",
+          "expression": {
+            "type": "shocked",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "侍从装束"
+          }
+        },
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "left",
+          "body_position": "坐在轮椅上",
+          "pose": "中性表情",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "two_shot",
+        "depth_layers": ["霍齐", "沈清起", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_013_kf_001",
+      "shot_id": "shot_013",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "霍齐跪下为沈清起包扎，哀痛劝说",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "悲壮"
+      },
+      "characters": [
+        {
+          "name": "霍齐",
+          "reference_image": "assets/characters/霍齐/front.png",
+          "position_in_frame": "center",
+          "body_position": "跪下",
+          "pose": "为沈清起包扎，面目哀痛",
+          "expression": {
+            "type": "sad",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "侍从装束"
+          }
+        },
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "left",
+          "body_position": "坐在轮椅上",
+          "pose": "闷咳两声",
+          "expression": {
+            "type": "sad",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "two_shot",
+        "depth_layers": ["霍齐", "沈清起", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_014_kf_001",
+      "shot_id": "shot_014",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影将长衫盖在沈清起膝上",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "温暖"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "站立，弯腰",
+          "pose": "将粗布长衫褪下，盖在沈清起双膝上",
+          "expression": {
+            "type": "concerned",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "undergarment",
+            "description": "褪去外衫后的内衣"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "center_frame",
+        "depth_layers": ["辛月影", "沈清起膝盖", "背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_015_kf_001",
+      "shot_id": "shot_015",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起冷漠让辛月影滚",
+      "scene_description": {
+        "location": "破败茅屋内",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗油灯",
+        "atmosphere": "冷漠"
+      },
+      "characters": [
+        {
+          "name": "沈清起",
+          "reference_image": "assets/characters/沈清起/front.png",
+          "position_in_frame": "center",
+          "body_position": "坐在轮椅上",
+          "pose": "抬眼看向辛月影，目泛寒光",
+          "expression": {
+            "type": "cold",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "default",
+            "description": "黑色破败长袍，膝上盖着辛月影的长衫"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "center_face",
+        "depth_layers": ["面部", "背景模糊"]
+      }
+    },
+    {
+      "keyframe_id": "shot_016_kf_001",
+      "shot_id": "shot_016",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影高兴地跑出去",
+      "scene_description": {
+        "location": "破败茅屋外",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗月光",
+        "atmosphere": "轻松"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "奔跑",
+          "pose": "转头出去，加快脚步跑起来",
+          "expression": {
+            "type": "relieved",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "undergarment",
+            "description": "褪去外衫后的内衣"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "tracking_shot",
+        "depth_layers": ["辛月影", "茅屋门口", "夜色背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_017_kf_001",
+      "shot_id": "shot_017",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影迎面撞见老王，悬疑",
+      "scene_description": {
+        "location": "破败茅屋外",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗月光",
+        "atmosphere": "悬疑"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "center",
+          "body_position": "停下脚步",
+          "pose": "迎面撞见老王，震惊",
+          "expression": {
+            "type": "shocked",
+            "intensity": "intense"
+          },
+          "costume": {
+            "id": "undergarment",
+            "description": "褪去外衫后的内衣"
+          }
+        },
+        {
+          "name": "老王",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "自黑暗中走来",
+          "pose": "手持铁锨",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "脸窄身薄，太阳穴贴着狗皮膏药"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "two_shot",
+        "depth_layers": ["辛月影", "老王", "夜色背景"]
+      }
+    },
+    {
+      "keyframe_id": "shot_018_kf_001",
+      "shot_id": "shot_018",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "辛月影意识到背后有眼睛盯着，悬念",
+      "scene_description": {
+        "location": "破败茅屋外",
+        "time_of_day": "night",
+        "weather": "cloudy",
+        "lighting": "昏暗月光",
+        "atmosphere": "悬念"
+      },
+      "characters": [
+        {
+          "name": "辛月影",
+          "reference_image": "assets/characters/辛月影/front.png",
+          "position_in_frame": "right",
+          "body_position": "站立",
+          "pose": "不动声色回头看",
+          "expression": {
+            "type": "fearful",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "undergarment",
+            "description": "褪去外衫后的内衣"
+          }
+        },
+        {
+          "name": "老王",
+          "reference_image": "",
+          "position_in_frame": "left",
+          "body_position": "站立",
+          "pose": "手持铁锨",
+          "expression": {
+            "type": "neutral",
+            "intensity": "moderate"
+          },
+          "costume": {
+            "id": "default",
+            "description": "脸窄身薄，太阳穴贴着狗皮膏药"
+          }
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_shot",
+        "camera_angle": "eye_level",
+        "framing": "wide_shot",
+        "depth_layers": ["辛月影", "老王", "茅屋", "黑暗中隐藏的眼睛"]
+      }
+    }
+  ]
+}

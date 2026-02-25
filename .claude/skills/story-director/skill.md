@@ -264,11 +264,15 @@ Resolution (10-15%): 情节收尾，悬念设置
 - 情感场景：6-10秒/镜头
 - 史诗/氛围：10秒以上/镜头
 
-## 使用示例
+## 触发方式
 
-```bash
-/story-director --project "穿书后我攻略了奸臣首辅" --chapter chapter_001 --episode episode_001
-```
+当用户要求"生成分镜"或"创建分镜脚本"时触发。
+
+Agent应该：
+1. 读取故事分析 `cache/analysis/chapter_XXX_analysis.json`
+2. 读取情绪映射 `cache/analysis/chapter_XXX_emotion.json`
+3. 将故事事件转化为镜头序列，设计场景和角色的视觉呈现
+4. 输出到 `scripts/episode_XXX/storyboard.json`
 
 ## 质量检查清单
 

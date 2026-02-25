@@ -73,42 +73,17 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-## 使用方式
+## 触发方式
 
-### 完整流水线
+当用户要求"生成视频"或"执行漫剧生成流程"时触发。
 
-```bash
-/video-generator --project "穿书后我攻略了奸臣首辅" --chapter chapter_001 --episode episode_001 --full-pipeline
-```
-
-这将执行完整的生成流程：
-1. 分析 chapter_001
-2. 为 episode_001 生成分镜
-3. 设计所有资源
-4. 生成关键帧和 Prompt
-
-### 分步执行
-
-```bash
-# 仅分析
-/video-generator --project "穿书后我攻略了奸臣首辅" --chapter chapter_001 --step analyze
-
-# 仅设计分镜
-/video-generator --project "穿书后我攻略了奸臣首辅" --chapter chapter_001 --episode episode_001 --step storyboard
-
-# 仅生成 Prompt
-/video-generator --project "穿书后我攻略了奸臣首辅" --episode episode_001 --step prompt
-```
-
-### 指定阶段范围
-
-```bash
-# 从分析到分镜
-/video-generator --project "穿书后我攻略了奸臣首辅" --chapter chapter_001 --from analyze --to storyboard
-
-# 从分镜到 Prompt
-/video-generator --project "穿书后我攻略了奸臣首辅" --episode episode_001 --from storyboard --to prompt
-```
+Agent应该：
+1. 验证项目结构和必要资源
+2. 按顺序协调各专业 Agent 完成工作：
+   - **分析阶段**: StoryAnalyzer 分析章节内容，EmotionAnalyzer 生成情绪曲线
+   - **设计阶段**: StoryDirector 生成分镜脚本，CharacterDesigner/SceneDesigner/PropDesigner 设计资源
+   - **制作阶段**: Cinematographer 设计运镜方案，KeyframeExtractor 提取关键帧，PromptEngineer 生成最终 Prompt
+3. 输出到 `scripts/episode_XXX/` 目录下的相关文件，并生成执行报告到 `output/episode_001/generation_report.json`
 
 ## 输出结构
 

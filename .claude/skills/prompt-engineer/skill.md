@@ -276,18 +276,16 @@ Prompt: [主体描述], (reference_image:1.2), same character, consistent appear
 | 氛围场景 | 0.8 |
 | 表情特写 | 0.75 |
 
-## 使用示例
+## 触发方式
 
-```bash
-# 为所有镜头生成 Prompt
-/prompt-engineer --project "穿书后我攻略了奸臣首辅" --episode episode_001
+当用户要求"生成视频Prompt"或"生成AI视频提示词"时触发。
 
-# 指定目标模型
-/prompt-engineer --project "穿书后我攻略了奸臣首辅" --episode episode_001 --model Sora2
-
-# 仅生成图像 Prompt
-/prompt-engineer --project "穿书后我攻略了奸臣首辅" --episode episode_001 --image-only
-```
+Agent应该：
+1. 读取关键帧数据 `scripts/episode_XXX/keyframes.json`
+2. 读取运镜方案 `scripts/episode_XXX/camera_work.json`
+3. 读取角色资源 `assets/characters/` 和场景资源 `assets/scenes/`
+4. 整合所有元素，为不同 AI 模型生成优化的视频 Prompt
+5. 输出到 `scripts/episode_XXX/video_prompts.json`
 
 ## 质量检查清单
 

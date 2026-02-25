@@ -155,11 +155,15 @@
 | 紧张感 | 冷色硬光 | 高 | 侧光 |
 | 梦幻感 | 柔和散射 | 低 | 无明确方向 |
 
-## 使用示例
+## 触发方式
 
-```bash
-/emotion-analyzer --project "穿书后我攻略了奸臣首辅" --chapter chapter_001
-```
+当用户要求"分析情绪"或"分析情感走向"时触发。
+
+Agent应该：
+1. 读取章节文本 `novel/chapters/chapter_XXX.txt`
+2. 分析故事的情绪曲线、情绪高峰和转折点
+3. 为每个镜头/场景提供情绪建议，映射到视觉/听觉元素
+4. 输出到 `cache/analysis/chapter_XXX_emotion.json`
 
 ## 质量检查清单
 

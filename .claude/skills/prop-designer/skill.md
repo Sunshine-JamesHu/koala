@@ -162,18 +162,15 @@
 | 丝 | 轻盈、光泽 | silk, silky, flowing |
 | 瓷 | 细腻、脆硬 | porcelain, ceramic, glazed |
 
-## 使用示例
+## 触发方式
 
-```bash
-# 创建道具设计
-/prop-designer --project "穿书后我攻略了奸臣首辅" --prop "传世玉佩" --create
+当用户要求"设计道具"或"创建道具设计"时触发。
 
-# 添加视图
-/prop-designer --project "穿书后我攻略了奸臣首辅" --prop "传世玉佩" --add-view detail
-
-# 生成道具 Prompt
-/prop-designer --project "穿书后我攻略了奸臣首辅" --prop "传世玉佩" --generate-prompt --view front
-```
+Agent应该：
+1. 读取故事分析结果，识别关键道具需求
+2. 分析道具的叙事意义、时代背景和材质特征
+3. 设计道具的外观、多角度视图和使用场景
+4. 输出到 `assets/props/{道具名}/design.json`
 
 ## 质量检查清单
 

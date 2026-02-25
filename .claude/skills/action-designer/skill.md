@@ -256,15 +256,15 @@
 Sword fight action shot, young woman in pale green hanfu performing upward sword strike, flexible sword parrying attack, bamboo forest background, low angle dynamic shot, sparks flying, falling leaves, anime style, dynamic composition, motion blur on fast movements, wuxia martial arts
 ```
 
-## 使用示例
+## 触发方式
 
-```bash
-# 设计动作场面
-/action-designer --project "穿书后我攻略了奸臣首辅" --episode episode_001 --shot shot_005
+当用户要求"设计动作场面"或"设计打斗动作"时触发。
 
-# 生成动作 Prompt
-/action-designer --project "穿书后我攻略了奸臣首辅" --action action_001 --generate-prompt
-```
+Agent应该：
+1. 读取分镜脚本 `scripts/episode_XXX/storyboard.json` 中的动作镜头
+2. 分析角色能力、场景环境和叙事目的
+3. 设计详细的动作序列，包括动作节拍、关键姿态、运镜建议
+4. 输出到 `scripts/episode_XXX/action_design.json`
 
 ## 质量检查清单
 

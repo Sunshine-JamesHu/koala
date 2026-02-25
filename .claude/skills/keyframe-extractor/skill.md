@@ -259,11 +259,16 @@ text, watermark       - 文字、水印
 }
 ```
 
-## 使用示例
+## 触发方式
 
-```bash
-/keyframe-extractor --project "穿书后我攻略了奸臣首辅" --episode episode_001
-```
+当用户要求"提取关键帧"、"生成关键帧提示词"、"为分镜生成图片Prompt"时触发。
+
+Agent应该：
+1. 读取 `scripts/episode_XXX/storyboard.json` 了解分镜结构
+2. 读取 `assets/characters/` 获取角色设定
+3. 为每个分镜分析关键帧时刻
+4. 生成详细的图像生成Prompt
+5. 输出到 `scripts/episode_XXX/keyframes.json`
 
 ## 质量检查清单
 

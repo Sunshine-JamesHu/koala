@@ -11,7 +11,21 @@
       "Bash(sudo apt-get:*)",
       "Skill(storyboard-to-video)",
       "Bash([:*)",
-      "Bash(env:*)"
+      "Bash(env:*)",
+      "Bash(python:*)",
+      "Bash(test:*)",
+      "Bash(for:*)",
+      "Bash(do echo:*)",
+      "Bash(if [ -f \"$dir/keyframes.json\" ])",
+      "Bash(then python3 -c \"\nimport json\nwith open\\(''$dir/keyframes.json'', ''r''\\) as f:\n    data = json.load\\(f\\)\nscenes = set\\(\\)\nfor kf in data.get\\(''keyframes'', []\\):\n    loc = kf.get\\(''scene_description'', {}\\).get\\(''location'', ''''\\)\n    if loc:\n        scenes.add\\(loc\\)\nprint\\(''场景列表:'', list\\(scenes\\)[:10]\\)\n\")",
+      "Bash(fi:*)",
+      "Bash(done:*)",
+      "Bash(jq:*)",
+      "Bash(python3:*)",
+      "Bash(find:*)",
+      "Bash(do:*)",
+      "Bash(if:*)",
+      "Bash(grep:*)"
     ]
   }
 }

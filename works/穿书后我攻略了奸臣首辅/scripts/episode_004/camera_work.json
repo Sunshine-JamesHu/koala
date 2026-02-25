@@ -1,0 +1,851 @@
+{
+  "episode": 4,
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "long_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 6.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 35,
+          "description": "远景，展现树林全貌和残月"
+        },
+        "end_frame": {
+          "shot_size": "long_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 6.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 35,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止镜头，营造凄凉氛围"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_002",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，展示挖坑场景"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止中景，展示两人挖坑埋尸"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_003",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": -2.0
+          },
+          "fov": 50,
+          "description": "中景跟拍"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 1.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": -4.0
+          },
+          "fov": 50,
+          "description": "跟拍至茅屋"
+        }
+      },
+      "movement": {
+        "type": "track",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 5.0,
+        "description": "跟拍辛月影拖铁锨回房"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_004",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，展示灶房环境"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止镜头，展示简陋灶房"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_005",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景双人镜头"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，展示灶房互动"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_006",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.6,
+            "z": 0
+          },
+          "fov": 65,
+          "description": "中近景，霍齐愤怒特写"
+        },
+        "end_frame": {
+          "shot_size": "medium_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.6,
+            "z": 0
+          },
+          "fov": 65,
+          "description": "保持"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 8.0,
+        "description": "静止中近景，突出霍齐威胁"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_007",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影接木盆"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，辛月影接受任务"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_008",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "low_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 1.2,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.8,
+            "z": 0
+          },
+          "fov": 45,
+          "description": "仰角中景，月光下辛月影"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "low_angle",
+          "position_3d": {
+            "x": 0,
+            "y": 1.2,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.8,
+            "z": 0
+          },
+          "fov": 45,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "仰角静止镜头，月光美感"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_009",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，沈清起出神"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，展示沈清起悲伤"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_010",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景侧面，推轮椅"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.5,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止中景，辛月影推轮椅到床前"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_011",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景双人镜头"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，展示沈清起拒绝"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_012",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.5,
+            "y": 1.4,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景侧面，沈清起上炕"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.5,
+            "y": 1.4,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.0,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止侧面镜头，展示艰难上炕"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_013",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影钉扶手"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.3,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止中景，展示制作扶手"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_014",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": -1.0
+          },
+          "fov": 50,
+          "description": "中景，辛月影背影"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": -1.0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 6.0,
+        "description": "静止中景，辛月影表达关心"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_015",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 65,
+          "description": "中近景，眼神对视"
+        },
+        "end_frame": {
+          "shot_size": "medium_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.6,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.5,
+            "z": 0
+          },
+          "fov": 65,
+          "description": "保持"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中近景，突出眼神交流"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_016",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，霍齐命令"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，霍齐冷漠命令"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_017",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，辛月影恶作剧"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.2,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，展示恶作剧"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    },
+    {
+      "shot_id": "shot_018",
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "中景，结尾场景"
+        },
+        "end_frame": {
+          "shot_size": "medium_shot",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0,
+            "y": 1.5,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0,
+            "y": 1.4,
+            "z": 0
+          },
+          "fov": 50,
+          "description": "静止"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "none",
+        "speed_profile": "none",
+        "duration": 5.0,
+        "description": "静止中景，完美报复喜剧结尾"
+      },
+      "focus_rack": {
+        "enabled": false
+      }
+    }
+  ]
+}

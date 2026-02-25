@@ -1,0 +1,339 @@
+{
+  "episode": 5,
+  "title": "第5集 她有用处",
+  "duration": 130,
+  "sourceChapter": "chapter_005",
+
+  "characters": [
+    {"name": "辛月影", "description": "女主角", "reference": "assets/characters/辛月影/front.png"},
+    {"name": "沈清起", "description": "男主角", "reference": "assets/characters/沈清起/front.png"},
+    {"name": "霍齐", "description": "忠仆", "reference": "assets/characters/霍齐/front.png"}
+  ],
+
+  "shots": [
+    {
+      "id": "shot_001",
+      "type": "dialogue",
+      "duration": 6.0,
+      "scene": {"location": "小厅", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "霍齐", "position": "center", "expression": "threatening", "action": "站在辛月影身后冷眼威胁，似笑非笑"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "今夜你若敢跑，明日一早我便去官府，将你今夜杀人的恶事全都挑明了去。", "voiceFile": ""},
+      "bgm": "压抑"
+    },
+    {
+      "id": "shot_002",
+      "type": "action",
+      "duration": 4.0,
+      "scene": {"location": "卧房门口", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "霍齐", "position": "center", "expression": "cold", "action": "挑帘入房间，不给辛月影还嘴的机会"}
+      ],
+      "narration": {"text": "他说完了话也不给辛月影还嘴的机会，挑帘入了房间。", "voiceFile": ""},
+      "bgm": "压抑"
+    },
+    {
+      "id": "shot_003",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "小厅", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "thinking", "action": "内心独白，分析霍齐的威胁是恐吓"}
+      ],
+      "narration": {"text": "辛月影知道霍齐是在恐吓她。他们不可能报官。在辛月影的记忆中，这个霍齐平日里谨慎得很，狗从这路过，霍齐都得贼头贼脑的扒在门缝前头瞧瞧。", "voiceFile": ""},
+      "bgm": "沉思"
+    },
+    {
+      "id": "shot_004",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "小厅", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "scared", "action": "抱起薄褥子铺在通往卧房的墙边"}
+      ],
+      "narration": {"text": "她把樟木箱子上的一床薄褥子抱起，这小厅里才死过人，还是有一股子血腥味。她胆子并不算大，把褥子铺在了通往卧房的墙边。", "voiceFile": ""},
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_005",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "小厅", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "pan"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "curious", "action": "躺在地铺上，借着油灯打量小厅"}
+      ],
+      "narration": {"text": "辛月影躺在地铺和衣而眠，借着那盏即将熬尽灯油的油灯，好奇的打量着小厅。一把少了条腿的木凳，一方掉了皮的方桌，角落里码放着三个落了灰的樟木箱子。", "voiceFile": ""},
+      "bgm": "凄凉"
+    },
+    {
+      "id": "shot_006",
+      "type": "narration",
+      "duration": 5.0,
+      "scene": {"location": "小厅", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "close", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "thoughtful", "action": "思考沈家的处境，得出结论"}
+      ],
+      "narration": {"text": "沈清起的身体并不好，每天都需要喝药。他们留着她还是有用的，所以应该不会冒然把她杀了。想到这里，辛月影暂时安心了些许。", "voiceFile": ""},
+      "bgm": "沉思"
+    },
+    {
+      "id": "shot_007",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "灶房", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "hungry", "action": "夜里饿了起身去灶房找吃食"}
+      ],
+      "narration": {"text": "夜里闹了一场，辛月影本就没吃晚饭，此刻饿得饥肠辘辘。她索性起身去了灶房想找点吃食。", "voiceFile": ""},
+      "bgm": "凄凉"
+    },
+    {
+      "id": "shot_008",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "灶房", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "confused", "action": "揭开发霉的锅盖查看锅里的东西"}
+      ],
+      "narration": {"text": "凌乱的灶台码放着破了口的碗和筷子，一口大锅上盖着早已发霉的木头锅盖。辛月影掀开了锅盖，一时之间没有认出这是刷锅水，还是可以入口的菜粥。", "voiceFile": ""},
+      "bgm": "压抑"
+    },
+    {
+      "id": "shot_009",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "灶房", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "close-up", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "disgusted", "action": "舀一勺粥仔细看，喝一口后本能作呕"}
+      ],
+      "narration": {"text": "勺子里飘着几乎能数出得清楚的几粒糙米，还有一片黏答答的野菜。她喝了一口，一股子土腥的味道激得她本能作呕，根本尚不及嚼，硬逼着自己囫囵咽下去。", "voiceFile": ""},
+      "bgm": "压抑"
+    },
+    {
+      "id": "shot_010",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "灶房", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "realization", "action": "恍然大悟辛四娘为何爱上老王"}
+      ],
+      "narration": {"text": "怪不得辛四娘会爱上屠户老王。老王那摊子上有的是肉。辛月影觉得，拯救沈清起的事情或许可以先放一放，拯救自己的温饱才是最主要的事。", "voiceFile": ""},
+      "bgm": "坚定"
+    },
+    {
+      "id": "shot_011",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "灶房", "timeOfDay": "night", "weather": "cloudy"},
+      "camera": {"angle": "medium", "movement": "dolly_in"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "confident", "action": "下决心明天打轮椅"}
+      ],
+      "narration": {"text": "木匠她倒是能行。明天她先打把轮椅试试，做成了先拿去木匠铺子问问能不能卖得上价，若是木匠铺子肯收，她便拿去卖了。若是不肯收，直接给沈清起用，也不算浪费了。", "voiceFile": ""},
+      "bgm": "希望"
+    },
+    {
+      "id": "shot_012",
+      "type": "scene",
+      "duration": 5.0,
+      "scene": {"location": "小厅", "timeOfDay": "dawn", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [],
+      "narration": {"text": "清晨的曙光透过窗缝洒入丝丝缕缕的光芒，辛月影朦胧间依稀能听见鸟儿栖在屋檐清脆的鸣叫声。", "voiceFile": ""},
+      "bgm": "清新"
+    },
+    {
+      "id": "shot_013",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "小厅", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "right", "expression": "sleepy", "action": "迷蒙醒来睁开眼睛"},
+        {"name": "霍齐", "position": "center", "expression": "neutral", "action": "推门进来，擒着两只野兔"}
+      ],
+      "narration": {"text": "粗重的脚步声在门外传来。辛月影意识回笼，睁开眼睛迷蒙看去，见得门板推开，高大的霍齐手中擒着两只已经咽气的野兔。", "voiceFile": ""},
+      "bgm": "日常"
+    },
+    {
+      "id": "shot_014",
+      "type": "action",
+      "duration": 4.0,
+      "scene": {"location": "小厅", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "霍齐", "position": "center", "expression": "cold", "action": "将野兔丢在辛月影面前"},
+        {"name": "辛月影", "position": "right", "expression": "surprised", "action": "看着野兔被丢到面前"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "卖了去。", "voiceFile": ""},
+      "bgm": "冷漠"
+    },
+    {
+      "id": "shot_015",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "灶房", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "calm", "action": "理蓬乱发丝去水缸洗漱"},
+        {"name": "霍齐", "position": "right", "expression": "threatening", "action": "跟过来冷笑威胁"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "如果一个时辰之内不见你回来，我就去报官。你别以为我们报不了官，也别以为我们有什么仇家，告诉你，你想的都是错的。", "voiceFile": ""},
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_016",
+      "type": "dialogue",
+      "duration": 5.0,
+      "scene": {"location": "灶房", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "calm", "action": "试图跟霍齐讲道理"},
+        {"name": "霍齐", "position": "right", "expression": "angry", "action": "打断并唾弃"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "你别恶心我了，相公？你也配！？", "voiceFile": ""},
+      "bgm": "紧张"
+    },
+    {
+      "id": "shot_017",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "灶房到卧房", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "track"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "angry", "action": "气得浑身发抖，擦脸后直奔沈清起房间"}
+      ],
+      "narration": {"text": "气得辛月影浑身发抖。她拿着毛巾擦了把脸，错身出了房间，一路长驱直入直奔沈清起的房间。她不论如何要今天给他打一副轮椅。", "voiceFile": ""},
+      "bgm": "愤怒"
+    },
+    {
+      "id": "shot_018",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "卧房", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "determined", "action": "挑帘进去"},
+        {"name": "沈清起", "position": "left", "expression": "indifferent", "action": "背靠发霉墙面出神"}
+      ],
+      "narration": {"text": "她挑帘进去，沈清起此刻正背靠着发了霉的墙面出神。见她进来，沈清起视若无睹。", "voiceFile": ""},
+      "bgm": "冷漠"
+    },
+    {
+      "id": "shot_019",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "卧房", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "focused", "action": "翻找长尺，丈量沈清起腿长"},
+        {"name": "沈清起", "position": "left", "expression": "indifferent", "action": "凝视破洞窗纸出神，不理会"}
+      ],
+      "narration": {"text": "辛月影去了柜子里翻找了一阵，找出了一把长尺，用尺丈量了一下沈清起的腿长，记在了脑子里。沈清起凝视着那破了洞的窗纸怔怔出神，并没有理会辛月影。", "voiceFile": ""},
+      "bgm": "专注"
+    },
+    {
+      "id": "shot_020",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "西街", "timeOfDay": "morning", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "track"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "determined", "action": "提着两只兔子去西街卖，避开东街"}
+      ],
+      "narration": {"text": "屠户老王的铺子在东街，辛月影觉得自己最好不要在东街露面，所以她提着两只兔子朝着西街去了。辛月影找到了屠户卖了兔肉，换了三十文铜板。", "voiceFile": ""},
+      "bgm": "轻松"
+    },
+    {
+      "id": "shot_021",
+      "type": "action",
+      "duration": 4.0,
+      "scene": {"location": "小厅", "timeOfDay": "noon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "calm", "action": "把铜板搁在桌上"},
+        {"name": "沈清起", "position": "left", "expression": "indifferent", "action": "独自坐在小厅里"}
+      ],
+      "narration": {"text": "辛月影回到了沈家时，霍齐不知道去做什么了，只有沈清起一个人坐在小厅里。辛月影把铜板搁在了桌上。", "voiceFile": ""},
+      "bgm": "平静"
+    },
+    {
+      "id": "shot_022",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "树林边", "timeOfDay": "noon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "focused", "action": "用镰刀劈细竹"}
+      ],
+      "narration": {"text": "她得让沈清起明白，她有用处。她去了灶房，取了镰刀，去往树林里劈了几根细竹。", "voiceFile": ""},
+      "bgm": "专注"
+    },
+    {
+      "id": "shot_023",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "灶房", "timeOfDay": "noon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "focused", "action": "烧一锅热水蒸煮细竹"}
+      ],
+      "narration": {"text": "她拖着竹子去了灶房烧了一锅热水，把细竹丢进去蒸煮，蒸煮过后的细竹渐渐变软。", "voiceFile": ""},
+      "bgm": "专注"
+    },
+    {
+      "id": "shot_024",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "树下", "timeOfDay": "afternoon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "focused", "action": "用布垫着拖细竹，借树干给细竹定型"}
+      ],
+      "narration": {"text": "辛月影没有手套，只把外衫褪下用布垫着，将蒸煮好的细竹拖到了树下。树干抵着细竹，她手执细竹两端，稍稍往后一用劲儿，细竹便就弯曲了。她借着树干逐一将细竹定好形状。", "voiceFile": ""},
+      "bgm": "专注"
+    },
+    {
+      "id": "shot_025",
+      "type": "action",
+      "duration": 6.0,
+      "scene": {"location": "树下", "timeOfDay": "afternoon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "static"},
+      "characters": [
+        {"name": "辛月影", "position": "center", "expression": "tired_but_determined", "action": "盘腿编织竹藤轮椅，指尖红肿"}
+      ],
+      "narration": {"text": "细竹各个部位定型之后，她开始组装，只消一个晌午，一把竹藤轮椅的轮廓便就做好了。她盘着腿坐在地上编，指尖都有些泛着红肿，她累了也不敢歇息。", "voiceFile": ""},
+      "bgm": "温暖"
+    },
+    {
+      "id": "shot_026",
+      "type": "action",
+      "duration": 5.0,
+      "scene": {"location": "树下", "timeOfDay": "afternoon", "weather": "clear"},
+      "camera": {"angle": "medium", "movement": "zoom_out"},
+      "characters": [
+        {"name": "霍齐", "position": "center", "expression": "angry", "action": "气势汹汹地回来"},
+        {"name": "辛月影", "position": "right", "expression": "fearful", "action": "抬头看向霍齐"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "你果然是在骗我们，那昨夜的男人就是那姓王的屠户！你死定了。", "voiceFile": ""},
+      "bgm": "紧张"
+    }
+  ],
+
+  "metadata": {
+    "createdAt": "2025-02-25T10:00:00",
+    "updatedAt": "2025-02-25T10:00:00",
+    "status": "draft"
+  }
+}

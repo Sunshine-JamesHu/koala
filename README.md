@@ -66,14 +66,14 @@ assets/
 
 ### 5. 制作分镜剧本
 
-在 `scripts/` 目录按剧集组织：
+在 `scripts/` 目录按剧集组织，每集包含四个 JSON 文件：
 
 ```
 scripts/episode_001/
-├── storyboard.json    # 分镜配置（镜头、台词、时长等）
-└── shots/             # 分镜图（可 AI 生成）
-    ├── shot_001.png
-    └── shot_002.png
+├── storyboard.json      # 分镜配置（镜头、台词、时长等）
+├── keyframes.json       # 关键帧定义（场景、角色、构图）
+├── camera_work.json     # 运镜设置（起止帧、运动类型、速度）
+└── video_prompts.json   # 视频生成提示词
 ```
 
 `storyboard.json` 定义每个镜头的详细信息：
@@ -117,6 +117,9 @@ assets/audio/
 
 ```
 output/
+├── episode_XXX/            # 每集输出（可执行的提示词）
+│   ├── README.md               # 该集说明
+│   └── shot_sheet.md           # 分镜提示词表（中文）
 ├── episodes/               # 完整剧集（最终发布）
 │   ├── episode_001.mp4
 │   └── episode_002.mp4
@@ -128,18 +131,22 @@ output/
     └── episode_001_preview.mp4
 ```
 
+`shot_sheet.md` 包含每个镜头的中文提示词，可直接复制到 AI 图片/视频生成工具（如即梦）中使用。
+
 ## 目录说明
 
 | 目录 | 用途 | 是否必需 |
 |------|------|----------|
 | `novel/chapters/` | 存放拆分好的章节原文 | 是 |
 | `novel/outline.md` | 故事大纲、角色设定 | 建议 |
-| `scripts/` | 分镜剧本，按剧集组织 | 是 |
-| `assets/characters/` | 角色设计图、表情、姿态 | 是 |
+| `scripts/` | 分镜剧本（四个JSON文件），按剧集组织 | 是 |
+| `assets/characters/` | 角色设计图、设定、表情、姿态 | 是 |
 | `assets/props/` | 重要道具图 | 按需 |
 | `assets/scenes/` | 场景背景图 | 是 |
 | `assets/audio/` | BGM、音效、配音 | 是 |
-| `output/` | 生成的视频 | 自动生成 |
+| `output/episode_XXX/` | 每集的分镜提示词表（中文） | 自动生成 |
+| `output/episodes/` | 生成的完整剧集视频 | 自动生成 |
+| `output/clips/` | 生成的镜头片段 | 自动生成 |
 | `cache/` | AI 中间文件，可清理 | 自动生成 |
 
 ## 模板文件
@@ -153,15 +160,15 @@ output/
 ## 工作流程
 
 ```
-小说原文 → 章节拆分 → 分镜剧本 → 资源准备 → AI生成 → 视频合成
+小说原文 → 章节拆分 → 分镜剧本 → 提示词表 → AI生成 → 视频合成
     ↓          ↓          ↓          ↓          ↓         ↓
- novel/   chapters/  scripts/   assets/    cache/   output/
+ novel/   chapters/  scripts/   output/    cache/   output/
 ```
 
 1. **原文处理**：将小说拆分为章节文件
-2. **剧本改编**：根据章节编写分镜脚本
-3. **资源准备**：角色/道具/场景/音频
-4. **AI 生成**：根据分镜生成画面和片段
+2. **剧本改编**：根据章节生成分镜脚本（四个 JSON 文件）
+3. **提示词生成**：将 JSON 转换为可执行的中文提示词（shot_sheet.md）
+4. **AI 生成**：使用提示词生成关键帧图片和视频片段
 5. **视频合成**：组合片段、添加音频，输出成片
 
 ## 多项目管理
