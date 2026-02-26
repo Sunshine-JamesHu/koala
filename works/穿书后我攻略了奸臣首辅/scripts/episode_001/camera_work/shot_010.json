@@ -1,0 +1,70 @@
+{
+  "shot_id": "shot_010",
+  "episode": 1,
+  "duration": 8.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 1.0,
+        "y": 1.5,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.5,
+        "y": 1.5,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "近景辛月影，急切解释的表情"
+    },
+    "end_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": -1.0,
+        "y": 1.5,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": -0.5,
+        "y": 1.5,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "近景沈清起，若有所思的反应"
+    }
+  },
+  "movement": {
+    "type": "pan",
+    "path_type": "arc",
+    "speed_profile": "ease_in_out",
+    "duration": 8.0,
+    "description": "从辛月影的脸缓缓摇向沈清起的反应，展现言语博弈"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.0",
+      "focus_point": "动态跟随",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "medium"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "lens_flare": {
+      "enabled": false
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Camera pans from a young woman speaking urgently to a pale young man in a wheelchair. He listens with narrowed eyes, processing her words with suspicion. His sword lowers slightly as he considers her explanation.",
+    "camera_motion_en": "Slow pan right to left, ease-in-out, arc path, 8 seconds, reaction shot",
+    "technical_specs": "85mm, f/2.0, pan transition, character reaction focus, subtle light shift"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "suspicious",
+    "intensity": 0.8,
+    "camera_rationale": "横摇镜头连接两个角色，展现言语博弈和试探"
+  }
+}

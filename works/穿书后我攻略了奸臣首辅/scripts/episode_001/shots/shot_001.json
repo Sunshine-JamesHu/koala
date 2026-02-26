@@ -1,0 +1,64 @@
+{
+  "shot_id": "shot_001",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "opening",
+  "duration": 8.0,
+  "narrative_beat": "辛月影在阴冷昏暗中醒来，听到神秘声音让她自尽",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "昏暗烛光",
+    "atmosphere": "压抑迷茫，生死未卜"
+  },
+  "camera": {
+    "shot_size": "extreme_close_up",
+    "angle": "eye_level",
+    "movement": "static",
+    "movement_speed": "slow",
+    "framing_note": "主观视角，模糊失焦，缓慢推近辛月影的眼睛"
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "position": "frame_center",
+      "blocking": "躺在地上，缓缓睁开眼睛",
+      "expression": "迷茫困惑",
+      "action": "艰难地睁开双眼，视线模糊",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": "沈清起（画外音）",
+    "text": "你自尽吧。",
+    "delivery_style": "冰冷低沉，不带感情"
+  },
+  "sfx": [
+    {"type": "滴水声", "intensity": "low"},
+    {"type": "风声", "intensity": "low"}
+  ],
+  "bgm": {
+    "track": "悬疑氛围_低沉弦乐",
+    "volume": 0.25
+  },
+  "transition": {
+    "type": "fade",
+    "duration": 1.0
+  },
+  "keyframe_description": "昏暗的室内，青灯微弱的光芒中，辛月影的眼睛缓缓睁开，瞳孔中映着模糊的烛光",
+  "notes": "开场定调，营造悬疑压抑氛围，让观众与主角一同陷入迷茫"
+}

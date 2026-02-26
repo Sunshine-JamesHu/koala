@@ -1,0 +1,197 @@
+{
+  "episode": 2,
+  "title": "拿命赌明天",
+  "chapter": "chapter_002",
+  "total_duration": 140,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574",
+      "blood_red": "#8B0000"
+    }
+  },
+  "characters": [
+    {"id": "char_001", "name": "辛月影", "role": "protagonist"},
+    {"id": "char_002", "name": "沈清起", "role": "male_lead"},
+    {"id": "char_003", "name": "霍齐", "role": "supporting"},
+    {"id": "char_004", "name": "老王", "role": "antagonist"}
+  ],
+  "scenes": [
+    {"id": "loc_001", "name": "破旧房屋", "type": "indoor"},
+    {"id": "loc_002", "name": "门外门廊", "type": "outdoor"}
+  ],
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "duration": 10.0,
+      "narrative_beat": "辛月影继续自证清白，编造被神秘人威胁的谎言",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "生死博弈"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_right", "expression": "情真意切", "action": "急切地编造谎言"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "死我一人对你而言虽不足惜，但害你之人便就逍遥法外了！"},
+      "keyframe_description": "辛月影情真意切地说服沈清起，眼神中带着急切和委屈"
+    },
+    {
+      "shot_id": "shot_002",
+      "duration": 8.0,
+      "narrative_beat": "沈清起眼眸微颤，内心开始动摇",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "内心挣扎"},
+      "camera": {"shot_size": "close_up", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_center", "expression": "若有所思", "action": "眼眸微颤，指尖捏着碎瓷"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "沈清起特写，眼眸微不可察地颤动，指尖紧捏碎瓷"
+    },
+    {
+      "shot_id": "shot_003",
+      "duration": 6.0,
+      "narrative_beat": "沈清起命令霍齐去查看",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "命令下达"},
+      "camera": {"shot_size": "medium", "angle": "low", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_left", "expression": "冷酷", "action": "侧过脸发出命令"},
+        {"character_id": "char_003", "position": "frame_right", "expression": "警觉", "action": "奔入室内"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "霍齐。"},
+      "keyframe_description": "沈清起侧过脸叫霍齐，霍齐两步奔入室内夺了弓箭冲出"
+    },
+    {
+      "shot_id": "shot_004",
+      "duration": 8.0,
+      "narrative_beat": "辛月影蹲下收拾碎瓷，内心吐槽穿越成恶毒女配",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "内心独白"},
+      "camera": {"shot_size": "medium", "angle": "high", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "楚楚可怜", "action": "蹲下身捡碎瓷"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "俯视镜头，辛月影蹲下收拾碎瓷，外表楚楚可怜，内心疯狂吐槽"
+    },
+    {
+      "shot_id": "shot_005",
+      "duration": 6.0,
+      "narrative_beat": "辛月影发现沈清起手滴血",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "惊恐发现"},
+      "camera": {"shot_size": "close_up", "angle": "eye_level", "movement": "tilt_down"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_right", "expression": "惊恐", "action": "循声看去，发现鲜血"},
+        {"character_id": "char_002", "position": "frame_left", "expression": "阴鸷", "action": "握紧碎瓷，血从指缝流出"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "特写鲜血从沈清起指缝涔涔流出，坠在地面，宛若荼蘼"
+    },
+    {
+      "shot_id": "shot_006",
+      "duration": 10.0,
+      "narrative_beat": "辛月影假装关心，掰开沈清起的手",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "假装关心"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_right", "expression": "假装心疼", "action": "掰开沈清起的手，眼中含泪"},
+        {"character_id": "char_002", "position": "frame_left", "expression": "阴鸷审视", "action": "手冷如冰，青筋暴起"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "相公，你若是心头实在难过，便就骂我两声，切莫伤损自己的身体！"},
+      "keyframe_description": "辛月影掰开沈清起紧握碎瓷的手，泪光闪烁，假装心疼"
+    },
+    {
+      "shot_id": "shot_007",
+      "duration": 8.0,
+      "narrative_beat": "沈清起悲凉质问，眼中带血丝",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "悲凉质问"},
+      "camera": {"shot_size": "close_up", "angle": "low", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_center", "expression": "悲凉冷笑", "action": "阴鸷目光望着辛月影，嘴角诡异笑意"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "亲者痛......我还有什么亲人，谁会痛？"},
+      "keyframe_description": "沈清起特写，眼中凝着血丝，悲凉质问，嘴角衔着诡异笑意"
+    },
+    {
+      "shot_id": "shot_008",
+      "duration": 8.0,
+      "narrative_beat": "霍齐回来报告没发现人，辛月影打断他",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "危机化解"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_003", "position": "frame_left", "expression": "愤怒", "action": "拎着弓箭奔回"},
+        {"character_id": "char_001", "position": "frame_center", "expression": "镇定", "action": "抢先打断霍齐"},
+        {"character_id": "char_002", "position": "frame_right", "expression": "冷漠", "action": "手掌血迹"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "二爷，没发现什么人，这贱妇......"},
+      "keyframe_description": "霍齐奔回报告，辛月影抢先打断，说相公手割伤了"
+    },
+    {
+      "shot_id": "shot_009",
+      "duration": 8.0,
+      "narrative_beat": "霍齐为沈清起包扎，跪地哀痛",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "忠仆哀痛"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_003", "position": "frame_left", "expression": "哀痛", "action": "跪地为沈清起包扎"},
+        {"character_id": "char_002", "position": "frame_right", "expression": "闷咳", "action": "抿唇，调稳呼吸"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "二爷就算不为自己想，也要为九泉之下的老爷夫人想想！"},
+      "keyframe_description": "霍齐跪地为沈清起包扎伤口，面目哀痛"
+    },
+    {
+      "shot_id": "shot_010",
+      "duration": 6.0,
+      "narrative_beat": "辛月影将外衣披在沈清起膝上，被赶出房间",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "被逐"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_right", "expression": "顺从", "action": "将外衣披在沈清起膝上"},
+        {"character_id": "char_002", "position": "frame_left", "expression": "冷漠", "action": "目泛寒光"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "滚。"},
+      "keyframe_description": "辛月影将外衣披在沈清起膝上，沈清起目泛寒光说滚"
+    },
+    {
+      "shot_id": "shot_011",
+      "duration": 8.0,
+      "narrative_beat": "辛月影出去后听到霍齐要杀她，赶紧跑",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "惊慌逃命"},
+      "camera": {"shot_size": "full", "angle": "eye_level", "movement": "tracking"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "惊慌", "action": "听到霍齐的话，加快脚步跑起来"}
+      ],
+      "dialogue": null,
+      "sfx": [{"type": "脚步声", "intensity": "high"}, {"type": "心跳声", "intensity": "high"}],
+      "keyframe_description": "辛月影在夜色中奔跑，听到霍齐说要宰了她，脚下抹油"
+    },
+    {
+      "shot_id": "shot_012",
+      "duration": 8.0,
+      "narrative_beat": "辛月影迎面撞上拿铁锨的老王",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "意外相遇"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_left", "expression": "惊愕", "action": "停下脚步"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "色眯眯", "action": "自黑暗中走来，手持铁锨"}
+      ],
+      "dialogue": {"speaker": "老王", "text": "四娘。"},
+      "keyframe_description": "月光下老王自黑暗中走来，脸窄身薄，手持铁锨，是来埋人的"
+    },
+    {
+      "shot_id": "shot_013",
+      "duration": 6.0,
+      "narrative_beat": "辛月影回头看破旧房间，窗纸黑洞洞",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "悬念结尾"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "pan"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "警觉", "action": "回头看破旧房间"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "辛月影回头看向破旧房间，窗纸黑洞洞，屋内烛灯灭了，悬念留存"
+    }
+  ]
+}

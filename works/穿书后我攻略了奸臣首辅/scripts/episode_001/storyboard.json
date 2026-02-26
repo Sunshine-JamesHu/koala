@@ -1,0 +1,720 @@
+{
+  "episode": 1,
+  "title": "第1集 你自尽吧",
+  "total_shots": 12,
+  "total_duration": 150.0,
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "beat_type": "opening",
+      "duration": 8.0,
+      "narrative_beat": "辛月影在阴冷昏暗中醒来，听到神秘声音让她自尽",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "昏暗烛光",
+        "atmosphere": "压抑迷茫，生死未卜"
+      },
+      "camera": {
+        "shot_size": "extreme_close_up",
+        "angle": "eye_level",
+        "movement": "static",
+        "movement_speed": "slow",
+        "framing_note": "主观视角，模糊失焦，缓慢推近辛月影的眼睛"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "躺在地上，缓缓睁开眼睛",
+          "expression": "迷茫困惑",
+          "action": "艰难地睁开双眼，视线模糊",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起（画外音）",
+        "text": "你自尽吧。",
+        "delivery_style": "冰冷低沉，不带感情"
+      },
+      "sfx": [
+        {"type": "滴水声", "intensity": "low"},
+        {"type": "风声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "悬疑氛围_低沉弦乐",
+        "volume": 0.25
+      },
+      "transition": {
+        "type": "fade",
+        "duration": 1.0
+      },
+      "keyframe_description": "昏暗的室内，青灯微弱的光芒中，辛月影的眼睛缓缓睁开，瞳孔中映着模糊的烛光",
+      "notes": "开场定调，营造悬疑压抑氛围，让观众与主角一同陷入迷茫"
+    },
+    {
+      "shot_id": "shot_002",
+      "beat_type": "opening",
+      "duration": 6.0,
+      "narrative_beat": "沈清起露出面容，坐在破败轮椅上，展现病娇气质",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "青灰色冷光剪影",
+        "atmosphere": "阴鸷压迫，危机感"
+      },
+      "camera": {
+        "shot_size": "long",
+        "angle": "low",
+        "movement": "tilt",
+        "movement_speed": "slow",
+        "framing_note": "仰角拍摄，从轮椅底部缓缓上移，展现沈清起的剪影轮廓"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "blocking": "坐在破旧轮椅上，阴影中露出面容",
+          "expression": "阴鸷冷漠",
+          "action": "缓缓从阴影中现身，目光如刀",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": null,
+        "text": null,
+        "delivery_style": null
+      },
+      "sfx": [
+        {"type": "轮椅转动声", "intensity": "medium"}
+      ],
+      "bgm": {
+        "track": "悬疑氛围_低频弦乐",
+        "volume": 0.3
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.5
+      },
+      "keyframe_description": "青灰色冷光中，沈清起的轮椅剪影缓缓从阴影中显现，他苍白的面容上带着病态的阴鸷",
+      "notes": "反派男主首次亮相，用仰角强调压迫感和神秘感"
+    },
+    {
+      "shot_id": "shot_003",
+      "beat_type": "rising",
+      "duration": 10.0,
+      "narrative_beat": "辛月影听到辛四娘这个名字，意识到自己穿越成恶毒女配",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "突兀的冷暖对比",
+        "atmosphere": "震惊与难以置信"
+      },
+      "camera": {
+        "shot_size": "extreme_close_up",
+        "angle": "eye_level",
+        "movement": "zoom",
+        "movement_speed": "fast",
+        "framing_note": "急推特写辛月影瞳孔放大的眼睛，背景虚化"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "震惊地僵住",
+          "expression": "极度震惊，瞳孔放大",
+          "action": "瞳孔急剧收缩又放大，呼吸急促",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "辛四娘，你还要装到什么时候？",
+        "delivery_style": "嘲讽冷笑"
+      },
+      "sfx": [
+        {"type": "心跳声", "intensity": "high"},
+        {"type": "耳鸣音效", "intensity": "medium"}
+      ],
+      "bgm": {
+        "track": "穿越震撼_音符停顿",
+        "volume": 0.15
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.3
+      },
+      "keyframe_description": "辛月影的眼睛极度特写，瞳孔放大的瞬间，背景中隐约闪现现代车祸的碎片画面",
+      "notes": "情绪高潮点1：穿越身份揭露的震撼，需要强调时间停滞的感觉"
+    },
+    {
+      "shot_id": "shot_004",
+      "beat_type": "rising",
+      "duration": 12.0,
+      "narrative_beat": "沈清起揭示下毒事实，持剑逼迫辛月影选择死法",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "剑光闪烁的青白色",
+        "atmosphere": "生死威胁，极度恐惧"
+      },
+      "camera": {
+        "shot_size": "medium",
+        "angle": "dutch",
+        "movement": "handheld",
+        "movement_speed": "medium",
+        "framing_note": "荷兰角构图，手持晃动，剑锋占据前景"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "手中长剑直指辛月影",
+          "expression": "冷酷决绝",
+          "action": "缓缓举起长剑，剑尖指向辛月影咽喉",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "blocking": "瑟缩后退",
+          "expression": "恐惧绝望",
+          "action": "本能地向后退，背靠墙壁",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "在茶里下毒谋害亲夫，你选个死法吧。",
+        "delivery_style": "冰冷陈述事实，不带任何情感"
+      },
+      "sfx": [
+        {"type": "剑出鞘声", "intensity": "high"},
+        {"type": "金属碰撞声", "intensity": "medium"}
+      ],
+      "bgm": {
+        "track": "紧张弦乐_快弓",
+        "volume": 0.4
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.3
+      },
+      "keyframe_description": "荷兰角构图中，沈清起手中的长剑在微弱烛光下闪烁着寒芒，直指瑟缩在墙角的辛月影",
+      "notes": "核心冲突镜头，展现沈清起的冷酷和辛月影的恐惧"
+    },
+    {
+      "shot_id": "shot_005",
+      "beat_type": "climax",
+      "duration": 8.0,
+      "narrative_beat": "辛月影试图逃跑，被沈清起一剑逼退",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "剑光与阴影交替",
+        "atmosphere": "慌乱恐惧，生死一线"
+      },
+      "camera": {
+        "shot_size": "full",
+        "angle": "eye_level",
+        "movement": "dolly",
+        "movement_speed": "fast",
+        "framing_note": "快速跟拍辛月影的奔跑，然后急停转手持"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "猛然转身冲向门口",
+          "expression": "惊恐慌乱",
+          "action": "快速奔跑，撞上门框",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "长剑一挥，封住去路",
+          "expression": "冷笑嘲讽",
+          "action": "剑锋划过空气，剑气逼人",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": null,
+        "text": null,
+        "delivery_style": null
+      },
+      "sfx": [
+        {"type": "剑破空声", "intensity": "high"},
+        {"type": "脚步声", "intensity": "high"},
+        {"type": "心跳声", "intensity": "high"}
+      ],
+      "bgm": {
+        "track": "紧张追逐_急促节奏",
+        "volume": 0.5
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.2
+      },
+      "keyframe_description": "辛月影慌乱奔跑的身影，沈清起的长剑在空中划出一道寒光，将她的退路完全封死",
+      "notes": "情绪高潮点2：逃跑失败的绝望，手持晃动增加紧张感"
+    },
+    {
+      "shot_id": "shot_006",
+      "beat_type": "climax",
+      "duration": 6.0,
+      "narrative_beat": "辛月影撞上门外的霍齐，被推回房间",
+      "scene": {
+        "location_id": "loc_002",
+        "location_name": "门外门廊",
+        "time_of_day": "night",
+        "lighting": "火把的暖黄与阴影的冷蓝对比",
+        "atmosphere": "愤怒指责，无路可逃"
+      },
+      "camera": {
+        "shot_size": "medium",
+        "angle": "eye_level",
+        "movement": "static",
+        "movement_speed": "medium",
+        "framing_note": "门框构图，将辛月影困在中间"
+      },
+      "characters": [
+        {
+          "character_id": "char_003",
+          "name": "霍齐",
+          "position": "frame_right",
+          "blocking": "堵在门口，面露怒容",
+          "expression": "愤怒厌恶",
+          "action": "一把将辛月影推回房间",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "被推搡后退",
+          "expression": "惊恐无助",
+          "action": "踉跄后退，跌回屋内",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "霍齐",
+        "text": "你与王屠户私通，还敢毒害主公！给我回去！",
+        "delivery_style": "愤怒咆哮"
+      },
+      "sfx": [
+        {"type": "推搡声", "intensity": "medium"},
+        {"type": "火把燃烧声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "愤怒铜管_低沉压抑",
+        "volume": 0.35
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.3
+      },
+      "keyframe_description": "门框形成天然牢笼，霍齐愤怒的脸在火把光芒中显得格外凶狠，辛月影被困其中",
+      "notes": "强调无路可逃的困境，门框构图象征禁锢"
+    },
+    {
+      "shot_id": "shot_007",
+      "beat_type": "falling",
+      "duration": 5.0,
+      "narrative_beat": "霍齐将辛月影推回，重新关上门",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "昏暗烛光",
+        "atmosphere": "绝望封闭，命运悬而未决"
+      },
+      "camera": {
+        "shot_size": "medium_close",
+        "angle": "eye_level",
+        "movement": "static",
+        "movement_speed": "slow",
+        "framing_note": "辛月影跌坐在地的背影，门被关上的特写"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "跌坐在地，门被关上",
+          "expression": "绝望无助",
+          "action": "跪坐在地，双肩颤抖",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": null,
+        "text": null,
+        "delivery_style": null
+      },
+      "sfx": [
+        {"type": "关门声", "intensity": "high"},
+        {"type": "锁链声", "intensity": "medium"}
+      ],
+      "bgm": {
+        "track": "绝望低沉_大提琴独奏",
+        "volume": 0.3
+      },
+      "transition": {
+        "type": "dissolve",
+        "duration": 0.8
+      },
+      "keyframe_description": "沉重的木门缓缓关闭，辛月影跪坐在地上的背影，被阴影逐渐吞没",
+      "notes": "短暂的呼吸点，让观众和角色一同消化困境"
+    },
+    {
+      "shot_id": "shot_008",
+      "beat_type": "falling",
+      "duration": 10.0,
+      "narrative_beat": "沈清起再次逼迫辛月影选择死法，辛月影开始思考对策",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "冷光中略带暖意",
+        "atmosphere": "生死抉择，智谋觉醒"
+      },
+      "camera": {
+        "shot_size": "close_up",
+        "angle": "eye_level",
+        "movement": "static",
+        "movement_speed": "slow",
+        "framing_note": "辛月影眼睛特写，从恐惧逐渐转为思考的神情"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "blocking": "跪坐在地，缓缓抬起头",
+          "expression": "从恐惧转为冷静思考",
+          "action": "眼神逐渐坚定，脑中快速思索",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "轮椅缓缓逼近",
+          "expression": "冷酷等待",
+          "action": "长剑始终指向辛月影",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "怎么，还不想死？那就别怪我了。",
+        "delivery_style": "冰冷威胁"
+      },
+      "sfx": [
+        {"type": "心跳声", "intensity": "medium"},
+        {"type": "轮椅移动声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "转机_弦乐颤音渐弱",
+        "volume": 0.25
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.5
+      },
+      "keyframe_description": "辛月影的近景特写，眼神中从恐惧逐渐浮现出一丝冷静和算计，烛光在她脸上跳动",
+      "notes": "情绪转折点：主角开始从被动转为主动，展现聪明才智"
+    },
+    {
+      "shot_id": "shot_009",
+      "beat_type": "resolution",
+      "duration": 12.0,
+      "narrative_beat": "辛月影灵机一动，编造被神秘人威胁才下毒的谎言",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "冷暖交织",
+        "atmosphere": "智谋博弈，转机初现"
+      },
+      "camera": {
+        "shot_size": "medium_close",
+        "angle": "eye_level",
+        "movement": "static",
+        "movement_speed": "slow",
+        "framing_note": "双人镜头，辛月影和沈清起的对峙"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "blocking": "缓缓站起，直视沈清起",
+          "expression": "镇定自若，带一丝委屈",
+          "action": "抬起头，眼神坚定地说出谎言",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "坐在轮椅上，剑势未收",
+          "expression": "阴鸷多疑",
+          "action": "微微眯起眼睛，审视辛月影",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "我下毒，是因为有人拿刀架在我脖子上逼我的。那个人说，不杀你，我全家都得死。",
+        "delivery_style": "镇定中带着一丝颤抖，表演逼真"
+      },
+      "sfx": [
+        {"type": "心跳声", "intensity": "medium"}
+      ],
+      "bgm": {
+        "track": "博弈_紧张钢琴分解",
+        "volume": 0.3
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.5
+      },
+      "keyframe_description": "辛月影缓缓站起，直视沈清起的眼睛，烛光在她脸上投射出明暗交替的光影，眼神坚定",
+      "notes": "情绪高潮点3：主角展现智谋，开始反击，这是故事的重要转折"
+    },
+    {
+      "shot_id": "shot_010",
+      "beat_type": "resolution",
+      "duration": 8.0,
+      "narrative_beat": "辛月影继续编造，暗示有仇家找上门来",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "阴影加深",
+        "atmosphere": "言语博弈，试探对方"
+      },
+      "camera": {
+        "shot_size": "close_up",
+        "angle": "eye_level",
+        "movement": "pan",
+        "movement_speed": "slow",
+        "framing_note": "从辛月影的脸缓缓移向沈清起的反应"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "blocking": "身体微微前倾",
+          "expression": "急切真诚",
+          "action": "继续说服沈清起",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "轮椅静止不动",
+          "expression": "若有所思，依旧多疑",
+          "action": "剑势略微放低",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "辛月影",
+        "text": "你以为我愿意吗？你被抓进大牢的时候，我已经嫁给王屠户了。为什么又会被送回来？是因为有人要借我的手杀你。",
+        "delivery_style": "急切解释，逻辑清晰"
+      },
+      "sfx": [
+        {"type": "风声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "博弈_低音持续",
+        "volume": 0.25
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.5
+      },
+      "keyframe_description": "辛月影急切地解释，镜头缓缓移向沈清起，他微微眯起的眼睛中闪过一丝思索",
+      "notes": "展现沈清起的怀疑和思考，为后续博弈埋下伏笔"
+    },
+    {
+      "shot_id": "shot_011",
+      "beat_type": "resolution",
+      "duration": 8.0,
+      "narrative_beat": "沈清起冷笑回应，威胁要让来人下黄泉陪她",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "冷青色主导",
+        "atmosphere": "剑拔弩张，危机未解"
+      },
+      "camera": {
+        "shot_size": "close_up",
+        "angle": "low",
+        "movement": "static",
+        "movement_speed": "slow",
+        "framing_note": "仰角拍摄沈清起，强调压迫感"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "blocking": "手中长剑未放下",
+          "expression": "冷笑阴鸷",
+          "action": "嘴角微微上扬，眼中却无笑意",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": "沈清起",
+        "text": "呵，有意思。那就让他们来吧，我会让他们去黄泉路上陪你。",
+        "delivery_style": "阴冷嘲讽，不怒自威"
+      },
+      "sfx": [
+        {"type": "剑身震动声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "不协和弦_悬而未决",
+        "volume": 0.35
+      },
+      "transition": {
+        "type": "cut",
+        "duration": 0.5
+      },
+      "keyframe_description": "沈清起的近景特写，冷笑的嘴角，眼中却是一片冰冷，长剑在烛光下闪烁着寒芒",
+      "notes": "反派男主展现多疑冷酷的性格，危机仍未解除"
+    },
+    {
+      "shot_id": "shot_012",
+      "beat_type": "resolution",
+      "duration": 7.0,
+      "narrative_beat": "双人正反打，眼神对峙，危机悬而未决",
+      "scene": {
+        "location_id": "loc_001",
+        "location_name": "破旧房屋",
+        "time_of_day": "night",
+        "lighting": "冷青色与暗金色交织",
+        "atmosphere": "紧张对峙，命运未卜"
+      },
+      "camera": {
+        "shot_size": "medium",
+        "angle": "eye_level",
+        "movement": "dolly",
+        "movement_speed": "slow",
+        "framing_note": "双人镜头，缓慢拉远，留白构图"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "blocking": "站立不动，直视沈清起",
+          "expression": "坚定中带着紧张",
+          "action": "微微握紧拳头，等待回应",
+          "costume_version": "costume_001"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "blocking": "坐在轮椅上，剑势依旧",
+          "expression": "审视与怀疑",
+          "action": "目光如刀，在辛月影身上游移",
+          "costume_version": "costume_001"
+        }
+      ],
+      "dialogue": {
+        "speaker": null,
+        "text": null,
+        "delivery_style": null
+      },
+      "sfx": [
+        {"type": "心跳声", "intensity": "medium"},
+        {"type": "烛火摇曳声", "intensity": "low"}
+      ],
+      "bgm": {
+        "track": "悬而未决_低音持续",
+        "volume": 0.3
+      },
+      "transition": {
+        "type": "fade",
+        "duration": 1.5
+      },
+      "keyframe_description": "两人对峙的全景，青灯摇曳，光影交错，辛月影和沈清起形成对角线构图，空气中弥漫着紧张的火药味",
+      "notes": "结尾留白，危机悬而未决，为下一集埋下悬念"
+    }
+  ],
+  "location_reference": {
+    "loc_001": {
+      "name": "破旧房屋",
+      "description": "边陲小镇的破旧房屋，仅有的一盏青灯投射出昏暗的光芒，墙壁斑驳，角落堆放着杂物",
+      "time_of_day": "night",
+      "atmosphere": "压抑、阴冷、紧张"
+    },
+    "loc_002": {
+      "name": "门外门廊",
+      "description": "房屋外的短走廊，火把照明的暖光与室内的冷光形成对比",
+      "time_of_day": "night",
+      "atmosphere": "愤怒、禁锢"
+    }
+  },
+  "character_reference": {
+    "char_001": {
+      "name": "辛月影",
+      "description": "穿越者，原为现代女性，现穿越成小说中的恶毒女配辛四娘",
+      "appearance": "美丽但憔悴，穿着朴素的古装",
+      "personality": "聪明机智，遇事冷静，善于应变"
+    },
+    "char_002": {
+      "name": "沈清起",
+      "description": "反派男配，名将之后，全家蒙冤入狱后被救出，腿有残疾",
+      "appearance": "苍白病态，坐轮椅，气质阴鸷",
+      "personality": "多疑冷酷，城府极深，有病娇偏执的特质"
+    },
+    "char_003": {
+      "name": "霍齐",
+      "description": "沈清起的忠仆",
+      "appearance": "粗犷强壮，面露愤怒",
+      "personality": "忠诚，嫉恶如仇"
+    }
+  },
+  "production_notes": {
+    "total_duration_seconds": 150,
+    "pacing_notes": "开场缓慢建立氛围，中段节奏加快达到高潮，结尾略微放缓制造悬念",
+    "key_emotional_moments": [
+      {"shot_id": "shot_003", "description": "穿越身份揭露的震撼"},
+      {"shot_id": "shot_004", "description": "剑逼咽喉的生死威胁"},
+      {"shot_id": "shot_009", "description": "辛月影开始反击的转折"}
+    ],
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    },
+    "bgm_style": "古风悬疑，以古筝、二胡、笛子、低音大提琴为主",
+    "tempo": "60-120 BPM，根据情绪起伏动态调整"
+  }
+}

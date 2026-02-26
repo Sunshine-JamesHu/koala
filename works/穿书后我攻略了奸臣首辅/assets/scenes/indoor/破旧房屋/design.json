@@ -1,0 +1,113 @@
+{
+  "location_id": "loc_001",
+  "name": "边陲小镇破旧房屋",
+  "type": "indoor",
+  "era": "古代",
+  "description": "边陲小镇中一处破旧的房屋，室内昏暗压抑，仅燃一盏青灯，是沈清起蛰伏隐居之处。破败的轮椅承载着这位落难名将之后的故事。",
+  "time_periods": {
+    "day": {
+      "lighting": "微弱日光透过破损窗纸和门缝洒入，形成斑驳光影，尘埃在光线中飘浮",
+      "atmosphere": "沉闷压抑，破败萧索，但有一丝生机",
+      "color_temperature": "暖灰色调，带淡黄色日光"
+    },
+    "night": {
+      "lighting": "仅一盏青灯摇曳，昏黄光线在墙上投下摇曳阴影，角落陷入黑暗",
+      "atmosphere": "阴冷压抑，危机四伏，充满紧张感",
+      "color_temperature": "冷青色调，昏黄灯火作为暖色点缀"
+    }
+  },
+  "architecture": {
+    "style": "古代边陲民居，年久失修",
+    "materials": ["腐朽木梁", "残破瓦片", "斑驳土墙", "破损窗纸"],
+    "key_elements": [
+      {
+        "name": "破败木门",
+        "description": "老旧木门，门框松动，门闩残破，无法完全关闭",
+        "position": "房间正前方，通向门廊"
+      },
+      {
+        "name": "残破窗棂",
+        "description": "窗纸破损，露出窗外的黑暗，寒风可透入",
+        "position": "房间左右两侧墙壁上方"
+      },
+      {
+        "name": "腐朽木梁",
+        "description": "屋顶横梁，有些已开裂，蛛网悬挂",
+        "position": "天花板横跨"
+      },
+      {
+        "name": "斑驳土墙",
+        "description": "墙皮脱落，露出内部土坯，有水渍痕迹",
+        "position": "四面墙壁"
+      },
+      {
+        "name": "青灯",
+        "description": "唯一的照明，青铜灯盏，灯油将尽，火苗摇曳不定",
+        "position": "房间角落的小木桌上"
+      },
+      {
+        "name": "破旧木床",
+        "description": "简陋的木板床，铺着粗布被褥",
+        "position": "房间一侧靠墙"
+      },
+      {
+        "name": "小木桌",
+        "description": "矮小的木桌，桌腿不平，表面有划痕",
+        "position": "房间中央偏角落"
+      }
+    ]
+  },
+  "props_placement": [
+    {
+      "prop_id": "prop_001",
+      "name": "破败轮椅",
+      "description": "木制轮椅，轮轴生锈，坐垫破旧，靠背有些损坏，是沈清起行动的倚仗",
+      "position": "房间中央，可移动至各处"
+    },
+    {
+      "prop_id": "prop_002",
+      "name": "青铜剑",
+      "description": "沈清起手中的利剑，剑身寒光闪烁",
+      "position": "沈清起手中或身旁"
+    },
+    {
+      "prop_id": "prop_003",
+      "name": "粗瓷茶碗",
+      "description": "残破的陶碗，边缘有缺口",
+      "position": "小木桌上"
+    },
+    {
+      "prop_id": "prop_004",
+      "name": "毒药残渣",
+      "description": "洒落在桌上的白色粉末痕迹",
+      "position": "小木桌角落，暗处不易察觉"
+    }
+  ],
+  "color_palette": {
+    "primary": "#2C2C2C",
+    "secondary": "#4A4A4A",
+    "accent": "#8B7355",
+    "warm_light": "#D4A574",
+    "cold_shadow": "#1A1A2E",
+    "wood": "#5C4033",
+    "earth": "#6B5344"
+  },
+  "atmosphere_elements": {
+    "dust_particles": "空气中飘浮的尘埃，在灯光下可见",
+    "cobwebs": "角落和梁上的蛛网",
+    "drafts": "透过门窗缝隙的寒风",
+    "shadows": "摇曳灯光投下的动态阴影"
+  },
+  "camera_angles": {
+    "wide_shot": "展示整个房间的破败感和压抑氛围",
+    "medium_shot": "聚焦人物互动和对话",
+    "close_up": "青灯火苗、轮椅细节、人物表情",
+    "low_angle": "从低角度仰拍，强调沈清起的压迫感",
+    "high_angle": "俯拍辛月影，展现她的无助处境"
+  },
+  "prompt_template": "Ancient Chinese dilapidated house interior, border town setting, dimly lit by a single flickering bronze oil lamp, worn wooden beams with cobwebs, cracked earthen walls with peeling plaster, broken window lattice with torn paper, worn wooden floor boards, dusty atmosphere, gloomy and oppressive mood, traditional Chinese architecture in disrepair, anime art style, cinematic lighting, dramatic shadows, muted earth tones with warm amber lamplight accent",
+  "variants": {
+    "tension_high": "Same scene with stronger contrast, deeper shadows, more threatening atmosphere, lamplight casting long ominous shadows",
+    "tension_low": "Same scene with slightly more ambient light, shadows less harsh, still melancholic but less threatening"
+  }
+}

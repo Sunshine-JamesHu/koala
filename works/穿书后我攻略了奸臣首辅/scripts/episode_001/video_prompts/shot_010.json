@@ -1,0 +1,146 @@
+{
+  "shot_id": "shot_010",
+  "episode": 1,
+  "duration": 8.0,
+  "target_model": "Sora2",
+  "prompts": {
+    "Sora2": {
+      "prompt": "Cinematic slow pan shot in ancient Chinese anime style. Night scene inside a dilapidated wooden house, candlelight casting dancing shadows across faces. Close-up begins on a young Chinese woman, 18 years old, in pale green ruqun dress, leaning forward with earnest urgency, her almond eyes wide with desperate pleading, lips parted in rapid explanation, trying to convince someone of a dangerous truth. Camera slowly pans right to left across the dimly lit room, transitioning smoothly to reveal a pale sickly young man, 22 years old, sitting motionless in a worn wooden wheelchair, wearing a dark black traditional robe. His narrow phoenix eyes are narrowed in contemplation, thin pale lips slightly pressed together, expression shifting from cold suspicion to thoughtful consideration. A three-foot green sword is visible at the edge of frame, now noticeably lowered from its previous threatening position. Cold blue-grey lighting dominates with warm candlelight accents, shadows deepening the psychological tension. The pan movement is smooth and deliberate, ease-in-out speed profile, creating a visual connection between speaker and listener in this battle of words. Psychological drama atmosphere, strategic manipulation meets cautious evaluation.",
+      "parameters": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "style": "anime",
+        "motion_intensity": "low",
+        "camera_movement": "slow_pan_right_to_left",
+        "lighting": "dramatic_candlelit_with_cold_blue_dominant",
+        "color_temperature": "cool"
+      }
+    },
+    "SeeDance": {
+      "prompt": "古风动漫风格，电影感慢速横摇镜头。夜晚破旧木屋内，烛火摇曳，光影在人物脸上跳动。镜头起始于辛月影近景，18岁少女身穿淡青色交领襦裙，身体微微前倾，杏眼中满是急切恳求，双唇微张急促解释，试图说服对方相信危险的真相。镜头缓缓从右向左横摇，穿过昏暗的空间，过渡到沈清起的近景，22岁病弱青年坐在破旧木制轮椅上，身穿玄色交领长袍，一动不动。他狭长的凤眼微微眯起陷入沉思，薄唇轻抿，表情从冰冷怀疑转为若有所思。三尺青锋剑在画面边缘可见，剑势明显放低。冷青色光线主导，烛火暖光点缀，阴影加深心理张力。横摇动作平稳缓慢，缓入缓出速度，在言语博弈中连接说话者与倾听者。心理剧氛围，言语试探与谨慎评估的交锋。",
+      "parameters": {
+        "画面比例": "16:9",
+        "帧率": 24,
+        "风格": "古风动漫",
+        "运动强度": "低强度",
+        "运镜方式": "慢速横摇从右向左",
+        "光影": "烛光与冷色调主导",
+        "色调": "冷色"
+      }
+    },
+    "Kling": {
+      "prompt": "ancient Chinese anime, slow pan shot, night scene, dilapidated house, candlelight shadows, woman in green dress speaking urgently, earnest pleading expression, transition to pale man in wheelchair, contemplation expression, lowered sword, cold blue lighting, psychological drama, strategic conversation, smooth camera movement, ease-in-out speed, emotional intensity, 8k, masterpiece, high quality",
+      "parameters": {
+        "mode": "pro",
+        "duration": "8s",
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "cfg_scale": 0.5,
+        "movement_amplitude": "low",
+        "camera_motion": "slow_pan_right_to_left",
+        "speed_effect": "ease_in_out"
+      }
+    }
+  },
+  "motion_guidance": {
+    "camera_movement": {
+      "type": "pan",
+      "path": "arc_right_to_left",
+      "start_position": {
+        "x": 1.0,
+        "y": 1.5,
+        "z": 1.5,
+        "fov": 85
+      },
+      "end_position": {
+        "x": -1.0,
+        "y": 1.5,
+        "z": 1.5,
+        "fov": 85
+      },
+      "speed_profile": "ease_in_out",
+      "special_effect": "smooth_transition",
+      "description": "慢速弧形横摇，从辛月影摇向沈清起，展现言语博弈"
+    },
+    "character_motion": {
+      "char_001_xin_yue_ying": {
+        "phase_1": {
+          "time_range": "0-4s",
+          "action": "earnest_explanation",
+          "description": "急切解释，身体前倾，表情诚恳，逻辑清晰地说服"
+        },
+        "phase_2": {
+          "time_range": "4-8s",
+          "action": "gradual_exit_frame",
+          "description": "随着镜头移动逐渐离开画面右侧"
+        }
+      },
+      "char_002_shen_qing_qi": {
+        "phase_1": {
+          "time_range": "0-4s",
+          "action": "listening_with_suspicion",
+          "description": "静止不动，冷眼倾听，保持戒备"
+        },
+        "phase_2": {
+          "time_range": "4-8s",
+          "action": "contemplation_reaction",
+          "description": "进入画面，表情转为若有所思，剑势略微放低"
+        }
+      }
+    }
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.0",
+      "focus_point": "dynamic_follow",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "medium",
+      "description": "焦点动态跟随横摇，保持说话者/倾听者清晰"
+    },
+    "motion_blur": {
+      "enabled": false,
+      "description": "慢速横摇不需要运动模糊"
+    },
+    "candle_flicker": {
+      "enabled": true,
+      "description": "摇曳的烛火在镜头移动中变化"
+    },
+    "shadow_shift": {
+      "enabled": true,
+      "description": "镜头移动时光影在脸上重新分布"
+    }
+  },
+  "audio_sync": {
+    "sfx_timing": [
+      {
+        "type": "风声",
+        "intensity": "low",
+        "time_range": "0-8s",
+        "description": "背景中的低沉风声，增添不安氛围"
+      },
+      {
+        "type": "烛火噼啪声",
+        "intensity": "low",
+        "time_range": "0-8s",
+        "description": "微弱的烛火燃烧声"
+      }
+    ],
+    "bgm": {
+      "track": "博弈_低音持续",
+      "volume": 0.25,
+      "description": "低沉持续的低音，营造言语博弈的紧张感"
+    }
+  },
+  "scene_reference": {
+    "location": "破旧房屋内部",
+    "lighting": "烛光与冷青色光交织，阴影加深",
+    "atmosphere": "言语博弈，试探与思考并存",
+    "color_palette": ["#3A4A5C", "#8B7355", "#E8E8E8", "#1A1A2E", "#D4A574"]
+  },
+  "narrative_context": {
+    "beat_type": "resolution",
+    "narrative_beat": "辛月影继续编造，暗示有仇家找上门来",
+    "emotional_arc": "急切解释 -> 谨慎思考",
+    "key_message": "展现沈清起的怀疑和思考，为后续博弈埋下伏笔"
+  }
+}

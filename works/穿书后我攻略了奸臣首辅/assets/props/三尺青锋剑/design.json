@@ -1,0 +1,34 @@
+{
+  "prop_id": "prop_001",
+  "name": "三尺青锋剑",
+  "category": "武器",
+  "importance": "key",
+  "description": "沈清起随身携带的长剑，剑身寒光凛冽，是他落难后唯一保留的武将世家遗物。剑身长约三尺，剑刃锋利，在昏暗的青灯下映出一束虹光，是故事中死亡威胁的核心象征。剑被沈清起用来逼迫辛月影自尽，也一剑刺入木柱展现其凌厉气势。",
+  "dimensions": {
+    "length": "约90cm（三尺）",
+    "blade_width": "约3cm",
+    "weight": "约1.5kg"
+  },
+  "color": ["#C0C0C0", "#E8E8E8", "#4A4A4A", "#2F4F4F"],
+  "material": "精铁锻造，剑身经过反复锻打",
+  "visual_features": {
+    "blade": "剑身修长笔直，寒光闪闪，剑刃锋利无比，表面有细腻的锻纹",
+    "hilt": "剑柄缠有黑色布条，部分磨损露出原有材质，显出岁月痕迹",
+    "guard": "剑格简约古朴，铜质镀层已有些许氧化",
+    "scabbard": "可能有破旧剑鞘，但不常用"
+  },
+  "views": {
+    "front": "剑身正面呈现银白色金属光泽，剑脊微微隆起，寒光四射",
+    "side": "侧面可见剑身极薄而坚韧，剑刃一线锋芒毕露",
+    "detail": "剑柄缠绕的布条纹理清晰，有磨损和汗渍痕迹，剑格处有细微铜锈"
+  },
+  "lighting_effect": "在昏暗青灯下，剑身反射出冷冽的寒光，剑尖指向时可见一束虹光闪过",
+  "prompt_template": "ancient Chinese sword, three-foot blade, sanjian qingfeng, cold steel blade with gleaming edge, worn black cloth-wrapped hilt, bronze guard with patina, sharp and deadly appearance, silver metallic sheen, reflecting dim candlelight, casting cold gleam, historical weapon, wuxia style, weathered but well-maintained, dramatic lighting",
+  "variants": {
+    "on_ground": "剑身斜靠在地上，剑尖指向观者，寒光闪烁",
+    "in_hand": "被苍白修长的手指握住，剑尖微微下垂",
+    "in_pillar": "剑身大半刺入木柱，剑柄露在外面，剑身微微颤动发出嗡鸣"
+  },
+  "narrative_significance": "象征沈清起落魄将门之后的身份，也是他威胁与保护自己的唯一武器，代表着死亡与权力的双重意象",
+  "tags": ["武器", "冷兵器", "剑", "古风", "威胁", "死亡象征"]
+}

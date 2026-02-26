@@ -1,0 +1,185 @@
+{
+  "shot_id": "shot_011",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_011_001",
+      "shot_id": "shot_011",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "沈清起冷笑开始 - 威胁并未解除",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色主导，剑身反射寒光",
+        "atmosphere": "剑拔弩张，危机未解",
+        "environmental_details": "长剑在烛光下闪烁着寒芒"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "pose": "坐在轮椅上，手中长剑未放下",
+          "expression": "冷笑开始浮现，嘴角微微上扬",
+          "action": "嘴角开始上扬，眼中却是一片冰冷",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "近景面部，冷笑的表情"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "low",
+        "framing": "仰角近景沈清起，强调压迫感",
+        "rule_of_thirds": "面部位于画面中心偏上",
+        "depth_layers": "前景面部清晰，背景黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "冷青色光从下方照射，形成诡异的光影",
+        "fill_light": "剑身反射的冷光",
+        "shadow": "眼窝深陷的阴影增强阴郁感",
+        "color_temperature": "冷色调为主",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#E8E8E8", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Low angle close-up of pale young Chinese man, cold smile beginning to form on his thin lips, narrow phoenix eyes remaining icy and menacing, long sword visible at edge of frame gleaming with cold light, cold blue lighting from below creating dramatic shadows, ancient Chinese anime style, villain's menacing reaction, psychological tension",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "villain smirk",
+          "low angle portrait",
+          "menacing atmosphere"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "character expression"
+        ],
+        "negative_prompt": "friendly smile, bright lighting, level camera, modern elements, western style, low quality",
+        "full_prompt": "Low angle close-up of pale young Chinese man, cold smile beginning to form on his thin lips, narrow phoenix eyes remaining icy and menacing, long sword visible at edge of frame gleaming with cold light, cold blue lighting from below creating dramatic shadows, ancient Chinese anime style, villain's menacing reaction, psychological tension, anime style, ancient Chinese, villain smirk, low angle portrait, menacing atmosphere, masterpiece, best quality, highly detailed, 8k resolution, character expression"
+      }
+    },
+    {
+      "keyframe_id": "kf_011_002",
+      "shot_id": "shot_011",
+      "position_in_shot": 0.5,
+      "type": "mid",
+      "narrative_purpose": "冷笑进行中 - 威胁来人的话语",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色主导，剑光闪烁",
+        "atmosphere": "冷酷嘲讽，不怒自威",
+        "environmental_details": "烛火在沈清起脸上投下跳动的光影"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "pose": "坐在轮椅上，长剑稳定",
+          "expression": "冷笑完成，嘴角上扬但眼中冰冷",
+          "action": "说出威胁的话语",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "近景面部，冷笑的细节"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "low",
+        "framing": "仰角近景，冷笑的表情占据画面中心",
+        "rule_of_thirds": "面部位于画面中心",
+        "depth_layers": "前景面部，背景虚化的剑身反光"
+      },
+      "lighting_and_color": {
+        "key_light": "冷青色主光从侧面照射",
+        "fill_light": "剑身反射的微弱暖光",
+        "shadow": "面部阴影强调病态的阴鸷",
+        "color_temperature": "以冷色为主",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#E8E8E8", "#D4A574"]
+      },
+      "image_prompt": {
+        "main_prompt": "Low angle close-up of pale young man's face with completed cold sneer, thin pale lips curved upward in unsettling smile, narrow phoenix eyes completely devoid of warmth, long black hair framing his angular face, sword gleaming in peripheral vision, cold blue-grey dramatic lighting, ancient Chinese anime style, yandere villain aesthetic, menacing presence",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "yandere smile",
+          "villain portrait",
+          "dramatic lighting"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "character design quality"
+        ],
+        "negative_prompt": "friendly expression, bright lighting, healthy complexion, modern elements, western style, low quality",
+        "full_prompt": "Low angle close-up of pale young man's face with completed cold sneer, thin pale lips curved upward in unsettling smile, narrow phoenix eyes completely devoid of warmth, long black hair framing his angular face, sword gleaming in peripheral vision, cold blue-grey dramatic lighting, ancient Chinese anime style, yandere villain aesthetic, menacing presence, anime style, ancient Chinese, yandere smile, villain portrait, dramatic lighting, masterpiece, best quality, highly detailed, 8k resolution, character design quality"
+      }
+    },
+    {
+      "keyframe_id": "kf_011_003",
+      "shot_id": "shot_011",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "定格 - 危机仍未解除，悬念留存",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色与剑光交织",
+        "atmosphere": "剑拔弩张，危机四伏",
+        "environmental_details": "长剑在烛光下闪烁着不祥的寒芒"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "pose": "坐在轮椅上，长剑始终未放下",
+          "expression": "冷笑定格，眼中带着威胁和审视",
+          "action": "目光如刀，威胁的话语已说完",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "近景面部，长剑的部分"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "low",
+        "framing": "仰角近景，压迫感达到顶点",
+        "rule_of_thirds": "面部位于画面上方，形成俯视观众的错觉",
+        "depth_layers": "前景面部和剑身，背景黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "冷青色主光从下方照射，形成诡异的光影",
+        "fill_light": "剑身反射的冷光点缀",
+        "shadow": "深邃的阴影增加神秘和威胁感",
+        "color_temperature": "以冷色为主",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#E8E8E8", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Low angle close-up freeze frame of pale young Chinese man with cold mocking smile, his narrow phoenix eyes staring down with threatening intensity, thin lips curved in unsettling sneer, long sword gleaming with cold light visible in foreground, dramatic cold blue lighting from below, ancient Chinese anime style, villain at peak menace, unresolved tension, cliffhanger moment",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "villain freeze frame",
+          "cliffhanger moment",
+          "menacing portrait"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "dramatic composition"
+        ],
+        "negative_prompt": "friendly expression, bright lighting, resolved tension, modern elements, western style, low quality",
+        "full_prompt": "Low angle close-up freeze frame of pale young Chinese man with cold mocking smile, his narrow phoenix eyes staring down with threatening intensity, thin lips curved in unsettling sneer, long sword gleaming with cold light visible in foreground, dramatic cold blue lighting from below, ancient Chinese anime style, villain at peak menace, unresolved tension, cliffhanger moment, anime style, ancient Chinese, villain freeze frame, cliffhanger moment, menacing portrait, masterpiece, best quality, highly detailed, 8k resolution, dramatic composition"
+      }
+    }
+  ]
+}

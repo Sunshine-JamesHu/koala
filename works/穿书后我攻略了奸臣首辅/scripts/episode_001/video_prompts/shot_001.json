@@ -1,0 +1,136 @@
+{
+  "shot_id": "shot_001",
+  "episode": 1,
+  "duration": 8.0,
+  "target_model": "Sora2",
+  "prompts": {
+    "Sora2": {
+      "prompt": "Extreme close-up of a young Chinese woman's eyes slowly opening in a dimly lit ancient room. The shot begins with a soft, out-of-focus blur and gradually pushes in while the focus sharpens, revealing her confused expression. Soft candlelight flickers in her pupils, creating warm highlights against the cold blue-gray atmosphere. Her hazel iris catches the dim light as her eyes transition from disoriented blur to clear focus. A faint silhouette reflection becomes visible in her dilated pupils, suggesting a mysterious figure nearby. The camera slowly dollies in from blurry to sharp focus over 8 seconds, simulating the process of consciousness awakening. Ancient Chinese anime style, cinematic suspense, dramatic lighting with shallow depth of field.",
+      "parameters": {
+        "duration": 8,
+        "aspect_ratio": "16:9",
+        "style": "anime",
+        "quality": "high"
+      }
+    },
+    "SeeDance": {
+      "prompt": "古风动漫风格，极度特写镜头。昏暗的破旧房间内，一位年轻中国女子的眼睛缓缓睁开。画面从模糊失焦开始，镜头缓慢推近，焦点逐渐清晰。青灯微弱的烛光在她的瞳孔中摇曳，形成温暖的光点。她的眼神从迷茫涣散逐渐变得清晰，瞳孔微微放大，隐约映照出对面模糊的人影轮廓。冷色调青灰色氛围，营造悬疑压抑的情绪。8秒缓慢推镜，模拟意识苏醒的过程。电影质感，浅景深，焦外烛光形成柔和光斑。",
+      "parameters": {
+        "duration": 8,
+        "resolution": "1080p",
+        "style": "古风动漫",
+        "fps": 24
+      }
+    },
+    "Kling": {
+      "prompt": "古风动漫，极度特写，眼睛特写，女子睁眼，烛光瞳孔倒影，推镜运动，失焦到聚焦，昏暗室内，悬疑氛围，青灰色调，电影质感，浅景深，8秒",
+      "parameters": {
+        "duration": 8,
+        "motion_type": "dolly_in",
+        "speed": "slow",
+        "aspect_ratio": "16:9"
+      }
+    }
+  },
+  "motion_guidance": {
+    "camera_movement": {
+      "type": "dolly_in",
+      "start_frame": {
+        "shot_size": "extreme_close_up",
+        "focus": "blurry",
+        "position_description": "极度特写辛月影的眼睛，从模糊状态开始"
+      },
+      "end_frame": {
+        "shot_size": "extreme_close_up",
+        "focus": "sharp",
+        "position_description": "极度特写辛月影的眼睛，清晰聚焦，瞳孔微张"
+      },
+      "speed_profile": "ease_in_out",
+      "path_type": "linear",
+      "duration_seconds": 8.0
+    },
+    "character_motion": {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "motion_description": "眼睛从闭合到缓缓睁开，瞳孔从涣散到聚焦，眼睑轻微颤动",
+      "expression_transition": {
+        "start": "迷茫困惑，眼神涣散",
+        "mid": "困惑中带着一丝警觉",
+        "end": "迷茫中带着一丝恐惧，瞳孔微张"
+      },
+      "subtle_movements": [
+        "眼睑缓慢抬起",
+        "瞳孔轻微收缩后放大",
+        "眼球微动适应光线"
+      ]
+    },
+    "lighting_changes": {
+      "primary_light": "烛光摇曳，亮度微弱波动",
+      "shadow_movement": "随烛光摇曳产生细微变化",
+      "color_temperature": "保持冷色调，烛光暖色作为点缀"
+    }
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/1.4",
+      "focus_transition": "blurry_to_sharp",
+      "bokeh_intensity": "high"
+    },
+    "motion_blur": {
+      "enabled": true,
+      "intensity": 0.3,
+      "description": "轻微运动模糊，营造迷茫感"
+    },
+    "atmospheric_effects": [
+      {
+        "type": "dust_particles",
+        "intensity": "subtle",
+        "description": "空气中飘浮的尘埃在烛光中若隐若现"
+      },
+      {
+        "type": "candlelight_flicker",
+        "intensity": "natural",
+        "description": "烛光自然摇曳，在瞳孔中形成动态光点"
+      }
+    ]
+  },
+  "narrative_context": {
+    "beat_type": "opening",
+    "narrative_beat": "辛月影在阴冷昏暗中醒来，听到神秘声音让她自尽",
+    "emotional_target": "悬疑、压抑、迷茫",
+    "audio_sync": {
+      "dialogue": {
+        "speaker": "沈清起（画外音）",
+        "text": "你自尽吧。",
+        "timing": "画面后半段",
+        "delivery_style": "冰冷低沉，不带感情"
+      },
+      "sfx": [
+        {"type": "滴水声", "intensity": "low", "timing": "throughout"},
+        {"type": "风声", "intensity": "low", "timing": "throughout"}
+      ],
+      "bgm": {
+        "track": "悬疑氛围_低沉弦乐",
+        "volume": 0.25,
+        "timing": "throughout"
+      }
+    }
+  },
+  "color_grading": {
+    "primary": "#3A4A5C",
+    "secondary": "#8B7355",
+    "accent": "#E8E8E8",
+    "shadow": "#1A1A2E",
+    "warm_highlight": "#D4A574",
+    "color_temperature": "cool",
+    "description": "冷色调为主，青灰色氛围，烛光暖色作为点睛"
+  },
+  "quality_requirements": {
+    "resolution": "1920x1080",
+    "fps": 24,
+    "render_quality": "high",
+    "anti_aliasing": true,
+    "temporal_consistency": "high"
+  },
+  "notes": "开场定调镜头，需要精确控制从模糊到清晰的过程，让观众与主角一同体验迷茫和困惑。瞳孔中的倒影是重要的叙事元素，暗示神秘人物的存在。"
+}

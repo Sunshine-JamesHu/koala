@@ -1,0 +1,72 @@
+{
+  "shot_id": "shot_002",
+  "episode": 1,
+  "duration": 6.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "full",
+      "angle": "low",
+      "position_3d": {
+        "x": -1.5,
+        "y": 0.3,
+        "z": 2.0
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 0.5,
+        "z": 0.0
+      },
+      "fov": 35,
+      "description": "仰角全景，从轮椅底部开始，展现轮廓剪影"
+    },
+    "end_frame": {
+      "shot_size": "medium_close",
+      "angle": "low",
+      "position_3d": {
+        "x": -1.0,
+        "y": 0.8,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "fov": 50,
+      "description": "仰角中近景，沈清起的面容在阴影中显现"
+    }
+  },
+  "movement": {
+    "type": "tilt_up",
+    "path_type": "arc",
+    "speed_profile": "ease_in_out",
+    "duration": 6.0,
+    "description": "仰角拍摄，从轮椅底部缓缓上移，配合轻微推近，展现沈清起的压迫感"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.8",
+      "focus_point": "沈清起的面部",
+      "bokeh_type": "hexagonal",
+      "bokeh_intensity": "medium"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "lens_flare": {
+      "enabled": true,
+      "intensity": 0.2,
+      "description": "微弱的青灰色镜头光晕，增强阴冷氛围"
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Low angle shot starting from the base of an old wooden wheelchair, slowly tilting upward to reveal a pale young man with a cold, menacing expression sitting in the wheelchair. Silhouette against cold blue-grey lighting.",
+    "camera_motion_en": "Slow tilt up with subtle dolly in, low angle emphasizing power, arc path, ease-in-out, 6 seconds",
+    "technical_specs": "35mm to 50mm zoom, low angle composition, cold blue-grey color grading, silhouette lighting"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "cold",
+    "intensity": 0.4,
+    "camera_rationale": "仰角拍摄配合缓慢上移，强调沈清起的压迫感和神秘感"
+  }
+}

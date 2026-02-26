@@ -1,0 +1,33 @@
+{
+  "prop_id": "prop_004",
+  "name": "碎瓷片",
+  "category": "器物",
+  "importance": "secondary",
+  "description": "散落在地上的破碎瓷器，是沈清起发现下毒后愤怒打翻餐具的痕迹。碎瓷片铺在轮椅脚边，有些沾染了残羹。沈清起手中摩挲着一片碎瓷，展现出其危险而优雅的气质。碎瓷片既是场景细节，也是沈清起内心破碎与危险的隐喻。",
+  "dimensions": {
+    "fragment_sizes": "1cm-5cm不等",
+    "original_vessel": "约15cm口径的碗或盘"
+  },
+  "color": ["#F5F5DC", "#E8E4D9", "#8B7355", "#8B0000"],
+  "material": "粗陶或青瓷，质地较为粗糙，符合边陲小镇的生活水平",
+  "visual_features": {
+    "fragments": "大小不一的碎片，边缘锋利，部分带有原本的釉面",
+    "glaze": "釉面部分剥落，有细微裂纹（冰裂纹），呈现出古朴质感",
+    "stains": "部分碎片沾染食物残渣和汤渍，呈现深色污痕",
+    "edges": "断裂面粗糙，有尖锐的棱角"
+  },
+  "views": {
+    "front": "散落在地面上的碎瓷片，参差不齐，反射着青灯的微光",
+    "side": "可见碎片的厚度和分层结构",
+    "detail": "单片碎瓷的釉面纹理、裂纹和边缘的锋利感"
+  },
+  "arrangement": {
+    "spread": "散落在轮椅周围约1米范围",
+    "density": "中等密度，可见原器物的大致轮廓",
+    "with_residue": "部分碎片与食物残渣混合"
+  },
+  "prompt_template": "broken ceramic shards on floor, scattered porcelain fragments, rough pottery pieces with cracked glaze, food stains and residue, sharp edges, dimly lit, traditional Chinese ceramics, weathered appearance, scattered on wooden floor, debris from broken bowl, subtle reflections, ancient rustic setting",
+  "character_interaction": "沈清起用手指轻摩一片碎瓷，展示其危险而优雅的特质",
+  "narrative_significance": "象征被打破的平静、暴露的秘密，以及沈清起危险而不可捉摸的性格",
+  "tags": ["器物", "碎片", "瓷器", "场景细节", "危险隐喻"]
+}

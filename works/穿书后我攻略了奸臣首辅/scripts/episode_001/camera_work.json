@@ -1,0 +1,922 @@
+{
+  "episode": 1,
+  "title": "第1集 你自尽吧",
+  "total_shots": 12,
+  "total_duration": 150.0,
+  "camera_work": [
+    {
+      "shot_id": "shot_001",
+      "beat_type": "opening",
+      "duration": 8.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "extreme_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.6,
+            "z": 0.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.65,
+            "z": -0.5
+          },
+          "fov": 85,
+          "description": "极度特写辛月影的眼睛，从模糊状态开始"
+        },
+        "end_frame": {
+          "shot_size": "extreme_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.6,
+            "z": 0.2
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.65,
+            "z": -0.5
+          },
+          "fov": 85,
+          "description": "极度特写辛月影的眼睛，清晰聚焦，瞳孔微张"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 8.0,
+        "description": "主观视角，从模糊失焦缓慢推近至清晰，模拟意识逐渐苏醒的过程"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/1.4",
+          "focus_point": "辛月影的眼睛",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "high"
+        },
+        "motion_blur": {
+          "enabled": true,
+          "intensity": 0.3,
+          "description": "轻微运动模糊，营造迷茫感"
+        },
+        "lens_flare": {
+          "enabled": false
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Extreme close-up of a young woman's eyes slowly opening in a dimly lit room. The camera begins with a soft, out-of-focus blur and gradually pushes in while the focus sharpens, revealing her confused expression. Candlelight flickers in her pupils.",
+        "camera_motion_en": "Slow dolly in, starting from blurry out-of-focus to sharp focus, ease-in-out movement, 8 seconds duration",
+        "technical_specs": "85mm lens, f/1.4 aperture, shallow depth of field, warm candlelight color grading, subtle motion blur"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "confused",
+        "intensity": 0.3,
+        "camera_rationale": "极度特写配合缓慢推近，让观众与主角一同体验迷茫和困惑"
+      }
+    },
+    {
+      "shot_id": "shot_002",
+      "beat_type": "opening",
+      "duration": 6.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "full",
+          "angle": "low",
+          "position_3d": {
+            "x": -1.5,
+            "y": 0.3,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 0.5,
+            "z": 0.0
+          },
+          "fov": 35,
+          "description": "仰角全景，从轮椅底部开始，展现轮廓剪影"
+        },
+        "end_frame": {
+          "shot_size": "medium_close",
+          "angle": "low",
+          "position_3d": {
+            "x": -1.0,
+            "y": 0.8,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "仰角中近景，沈清起的面容在阴影中显现"
+        }
+      },
+      "movement": {
+        "type": "tilt_up",
+        "path_type": "arc",
+        "speed_profile": "ease_in_out",
+        "duration": 6.0,
+        "description": "仰角拍摄，从轮椅底部缓缓上移，配合轻微推近，展现沈清起的压迫感"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.8",
+          "focus_point": "沈清起的面部",
+          "bokeh_type": "hexagonal",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.2,
+          "description": "微弱的青灰色镜头光晕，增强阴冷氛围"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Low angle shot starting from the base of an old wooden wheelchair, slowly tilting upward to reveal a pale young man with a cold, menacing expression sitting in the wheelchair. Silhouette against cold blue-grey lighting.",
+        "camera_motion_en": "Slow tilt up with subtle dolly in, low angle emphasizing power, arc path, ease-in-out, 6 seconds",
+        "technical_specs": "35mm to 50mm zoom, low angle composition, cold blue-grey color grading, silhouette lighting"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "cold",
+        "intensity": 0.4,
+        "camera_rationale": "仰角拍摄配合缓慢上移，强调沈清起的压迫感和神秘感"
+      }
+    },
+    {
+      "shot_id": "shot_003",
+      "beat_type": "rising",
+      "duration": 10.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.6,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.65,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "近景辛月影面部，准备急推"
+        },
+        "end_frame": {
+          "shot_size": "extreme_close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.65,
+            "z": 0.3
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.65,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "极度特写瞳孔放大的瞬间"
+        }
+      },
+      "movement": {
+        "type": "crash_zoom",
+        "path_type": "linear",
+        "speed_profile": "ease_out",
+        "duration": 10.0,
+        "description": "急推特写辛月影瞳孔放大的眼睛，配合时间停滞的视觉效果"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/1.2",
+          "focus_point": "辛月影的瞳孔",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "very_high"
+        },
+        "motion_blur": {
+          "enabled": true,
+          "intensity": 0.5,
+          "description": "急推过程中的运动模糊，增强震撼感"
+        },
+        "lens_flare": {
+          "enabled": false
+        },
+        "special_effect": {
+          "type": "flash_overlay",
+          "description": "瞳孔放大瞬间添加微弱的白色闪光，暗示穿越记忆闪回"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Crash zoom from close-up to extreme close-up of a young woman's eyes widening in shock. Her pupils dilate dramatically as she realizes her identity. Brief flash of fragmented memories overlay. Time seems to freeze.",
+        "camera_motion_en": "Fast crash zoom, ease-out deceleration, linear path, 10 seconds with speed ramp",
+        "technical_specs": "50mm to 85mm snap zoom, f/1.2 extreme shallow DOF, high contrast lighting, subtle memory flash overlay"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "shocked",
+        "intensity": 0.7,
+        "camera_rationale": "急推特写配合瞳孔放大的视觉冲击，营造穿越身份揭露的震撼时刻"
+      }
+    },
+    {
+      "shot_id": "shot_004",
+      "beat_type": "rising",
+      "duration": 12.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium",
+          "angle": "dutch_left",
+          "angle_degree": 15,
+          "position_3d": {
+            "x": -2.0,
+            "y": 1.4,
+            "z": 3.0
+          },
+          "look_at": {
+            "x": 0.5,
+            "y": 1.3,
+            "z": 0.0
+          },
+          "fov": 35,
+          "description": "荷兰角中景，剑锋占据前景，沈清起在左"
+        },
+        "end_frame": {
+          "shot_size": "medium_close",
+          "angle": "dutch_left",
+          "angle_degree": 20,
+          "position_3d": {
+            "x": -1.5,
+            "y": 1.4,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 1.0,
+            "y": 1.2,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "荷兰角加剧，焦点转向瑟缩的辛月影"
+        }
+      },
+      "movement": {
+        "type": "handheld",
+        "path_type": "irregular",
+        "speed_profile": "variable",
+        "duration": 12.0,
+        "description": "手持晃动拍摄，荷兰角构图加剧不安感，剑锋始终占据前景"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.0",
+          "focus_point": "长剑剑尖",
+          "bokeh_type": "hexagonal",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": true,
+          "intensity": 0.4,
+          "description": "手持晃动的自然运动模糊"
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.3,
+          "description": "剑锋反射烛光产生的镜头光晕"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Dutch angle handheld shot with slight shake. A sharp sword blade dominates the foreground, pointing toward a terrified young woman pressed against a wall. Cold blue candlelight casts harsh shadows. The camera wobbles nervously.",
+        "camera_motion_en": "Handheld with organic shake, dutch angle 15-20 degrees, subtle push in, irregular micro-movements, 12 seconds",
+        "technical_specs": "35mm handheld style, f/2.0, dutch angle composition, sword blade foreground element, cold candlelight"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "fear",
+        "intensity": 0.9,
+        "camera_rationale": "荷兰角配合手持晃动，最大程度营造不安和恐惧感，剑锋前景强调威胁"
+      }
+    },
+    {
+      "shot_id": "shot_005",
+      "beat_type": "climax",
+      "duration": 8.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "full",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 4.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 0.0
+          },
+          "fov": 24,
+          "description": "全景，辛月影开始奔跑"
+        },
+        "end_frame": {
+          "shot_size": "medium",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 0.0
+          },
+          "fov": 35,
+          "description": "中景，辛月影被剑气逼退"
+        }
+      },
+      "movement": {
+        "type": "tracking",
+        "path_type": "linear",
+        "speed_profile": "constant",
+        "duration": 8.0,
+        "description": "快速跟拍辛月影的奔跑，然后急停转手持晃动"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.8",
+          "focus_point": "辛月影",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": true,
+          "intensity": 0.6,
+          "description": "快速跟拍产生的运动模糊"
+        },
+        "lens_flare": {
+          "enabled": false
+        },
+        "special_effect": {
+          "type": "speed_ramp",
+          "description": "后半段速度骤减，配合剑气逼退"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Fast tracking shot following a young woman in ancient Chinese dress running desperately toward a door. A sword sweeps through the air, creating a cold glint of light that blocks her path. She stumbles back in terror.",
+        "camera_motion_en": "Fast dolly forward tracking, constant speed then sudden stop with handheld shake, speed ramp effect, 8 seconds",
+        "technical_specs": "24mm wide angle, fast tracking movement, speed ramp deceleration, motion blur, sword glint effect"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "fear",
+        "intensity": 0.9,
+        "camera_rationale": "快速跟拍配合急停，营造逃跑失败的绝望感"
+      }
+    },
+    {
+      "shot_id": "shot_006",
+      "beat_type": "climax",
+      "duration": 6.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "中景，门框构图，霍齐堵在门口"
+        },
+        "end_frame": {
+          "shot_size": "medium",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "同一构图，辛月影被推回房间"
+        }
+      },
+      "movement": {
+        "type": "static",
+        "path_type": "static",
+        "speed_profile": "constant",
+        "duration": 6.0,
+        "description": "固定镜头，门框构图形成天然牢笼，强调无路可逃"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.8",
+          "focus_point": "辛月影",
+          "bokeh_type": "hexagonal",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.2,
+          "description": "火把光产生的暖色调光晕"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Static shot through a wooden door frame. A burly man blocks the doorway with an angry expression, torchlight illuminating his face. He shoves the desperate young woman back into the dark room. The frame creates a prison-like composition.",
+        "camera_motion_en": "Static locked-off shot, no camera movement, door frame composition, 6 seconds",
+        "technical_specs": "50mm, f/2.8, door frame foreground element, warm torchlight vs cold room lighting contrast"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "angry",
+        "intensity": 0.85,
+        "camera_rationale": "门框构图象征禁锢，固定镜头让观众感受无路可逃的绝望"
+      }
+    },
+    {
+      "shot_id": "shot_007",
+      "beat_type": "falling",
+      "duration": 5.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_close",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": -1.5,
+            "y": 1.2,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "中近景，辛月影跌坐在地的背影"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": -1.0,
+            "y": 1.0,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 0.8,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "近景，门被关上，阴影吞没辛月影"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in",
+        "duration": 5.0,
+        "description": "缓慢推近，配合门关闭，阴影逐渐吞没辛月影"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.0",
+          "focus_point": "辛月影的背影",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": false
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Slow dolly in on a young woman's back as she kneels on the ground in despair. A heavy wooden door closes behind her, and shadows gradually swallow her figure. The candlelight dims.",
+        "camera_motion_en": "Slow dolly in, ease-in acceleration, linear path, 5 seconds, dissolving transition",
+        "technical_specs": "50mm to 85mm, f/2.0, fading light effect, shadow enveloping, melancholic atmosphere"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "desperate",
+        "intensity": 0.75,
+        "camera_rationale": "缓慢推近配合阴影吞没，让观众感受绝望和封闭"
+      }
+    },
+    {
+      "shot_id": "shot_008",
+      "beat_type": "falling",
+      "duration": 10.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.4,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "近景辛月影眼睛，恐惧表情"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 1.2
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "近景辛月影眼睛，眼神转为坚定思考"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 10.0,
+        "description": "极缓慢推近眼睛特写，捕捉情绪从恐惧转为冷静思考的过程"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/1.4",
+          "focus_point": "辛月影的眼睛",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "high"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.15,
+          "description": "烛光在眼中的微弱反光"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Slow push-in on a young woman's face in close-up. Her expression transforms from fear to calculated thinking. Candlelight flickers across her features. Her eyes narrow slightly as she formulates a plan.",
+        "camera_motion_en": "Very slow dolly in, ease-in-out, linear path, 10 seconds, emotional transformation",
+        "technical_specs": "85mm portrait lens, f/1.4 shallow DOF, candlelight face lighting, subtle warmth in shadows"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "desperate",
+        "secondary_emotion": "calculated",
+        "intensity": 0.75,
+        "camera_rationale": "缓慢推近捕捉情绪转变，展现主角从被动到主动的心理转折"
+      }
+    },
+    {
+      "shot_id": "shot_009",
+      "beat_type": "resolution",
+      "duration": 12.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium_close",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.5,
+            "y": 1.3,
+            "z": 2.5
+          },
+          "look_at": {
+            "x": 0.5,
+            "y": 1.3,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "双人镜头，辛月影跪坐，沈清起在轮椅上"
+        },
+        "end_frame": {
+          "shot_size": "medium",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.2,
+            "y": 1.3,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.3,
+            "y": 1.4,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "双人镜头，辛月影站起，直视沈清起"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 12.0,
+        "description": "双人镜头缓慢推近，配合辛月影站起的动作，展现对峙的紧张感"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.8",
+          "focus_point": "辛月影",
+          "bokeh_type": "hexagonal",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": false
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Two-shot of a young woman slowly standing up to face a man in a wheelchair holding a sword. She speaks with calculated determination while he watches with suspicious eyes. Candlelight creates dramatic shadows between them.",
+        "camera_motion_en": "Slow dolly in, ease-in-out, linear path, 12 seconds, two-shot composition",
+        "technical_specs": "50mm, f/2.8, two-character blocking, power dynamic shift, warm and cold light interplay"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "suspicious",
+        "intensity": 0.8,
+        "camera_rationale": "双人镜头配合缓慢推近，展现言语博弈的紧张感"
+      }
+    },
+    {
+      "shot_id": "shot_010",
+      "beat_type": "resolution",
+      "duration": 8.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 1.0,
+            "y": 1.5,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.5,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "近景辛月影，急切解释的表情"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": -1.0,
+            "y": 1.5,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": -0.5,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "近景沈清起，若有所思的反应"
+        }
+      },
+      "movement": {
+        "type": "pan",
+        "path_type": "arc",
+        "speed_profile": "ease_in_out",
+        "duration": 8.0,
+        "description": "从辛月影的脸缓缓摇向沈清起的反应，展现言语博弈"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/2.0",
+          "focus_point": "动态跟随",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "medium"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": false
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Camera pans from a young woman speaking urgently to a pale young man in a wheelchair. He listens with narrowed eyes, processing her words with suspicion. His sword lowers slightly as he considers her explanation.",
+        "camera_motion_en": "Slow pan right to left, ease-in-out, arc path, 8 seconds, reaction shot",
+        "technical_specs": "85mm, f/2.0, pan transition, character reaction focus, subtle light shift"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "suspicious",
+        "intensity": 0.8,
+        "camera_rationale": "横摇镜头连接两个角色，展现言语博弈和试探"
+      }
+    },
+    {
+      "shot_id": "shot_011",
+      "beat_type": "resolution",
+      "duration": 8.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "close_up",
+          "angle": "low",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 1.5
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "仰角近景沈清起，冷笑开始"
+        },
+        "end_frame": {
+          "shot_size": "close_up",
+          "angle": "low",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.0,
+            "z": 1.2
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.5,
+            "z": 0.0
+          },
+          "fov": 85,
+          "description": "仰角近景沈清起，冷笑完成，眼中冰冷"
+        }
+      },
+      "movement": {
+        "type": "dolly_in",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 8.0,
+        "description": "仰角缓慢推近沈清起，强调压迫感和冷酷气质"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/1.8",
+          "focus_point": "沈清起的面部",
+          "bokeh_type": "hexagonal",
+          "bokeh_intensity": "high"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.2,
+          "description": "剑身反射的冷光光晕"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Low angle close-up of a pale young man with a cold smile. His lips curve upward but his eyes remain icy and menacing. He holds a sword that glints in the candlelight. The camera slowly pushes in, emphasizing his threatening presence.",
+        "camera_motion_en": "Slow dolly in, low angle, ease-in-out, linear path, 8 seconds, menacing presence",
+        "technical_specs": "85mm, f/1.8, low angle composition, cold blue color grading, sword reflection highlight"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "suspicious",
+        "intensity": 0.8,
+        "camera_rationale": "仰角推近强调沈清起的压迫感和多疑冷酷"
+      }
+    },
+    {
+      "shot_id": "shot_012",
+      "beat_type": "resolution",
+      "duration": 7.0,
+      "camera_setup": {
+        "start_frame": {
+          "shot_size": "medium",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 2.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.3,
+            "z": 0.0
+          },
+          "fov": 50,
+          "description": "中景双人，对角线构图"
+        },
+        "end_frame": {
+          "shot_size": "full",
+          "angle": "eye_level",
+          "position_3d": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 4.0
+          },
+          "look_at": {
+            "x": 0.0,
+            "y": 1.2,
+            "z": 0.0
+          },
+          "fov": 35,
+          "description": "全景双人，留白构图，烛光摇曳"
+        }
+      },
+      "movement": {
+        "type": "dolly_out",
+        "path_type": "linear",
+        "speed_profile": "ease_in_out",
+        "duration": 7.0,
+        "description": "双人镜头缓慢拉远，留白构图，营造悬而未决的悬念感"
+      },
+      "visual_effects": {
+        "depth_of_field": {
+          "aperture": "f/4.0",
+          "focus_point": "双人中点",
+          "bokeh_type": "circular",
+          "bokeh_intensity": "low"
+        },
+        "motion_blur": {
+          "enabled": false
+        },
+        "lens_flare": {
+          "enabled": true,
+          "intensity": 0.15,
+          "description": "烛光产生的柔和光晕"
+        }
+      },
+      "ai_video_prompt": {
+        "movement_description": "Two characters in tense standoff, slowly pulling back to reveal the full dimly lit room. A young woman stands determined while a man in a wheelchair watches her with suspicious eyes. Candlelight flickers, casting dancing shadows. The tension remains unresolved.",
+        "camera_motion_en": "Slow dolly out pull back, ease-in-out, linear path, 7 seconds, wide reveal, fade out",
+        "technical_specs": "50mm to 35mm pull back, f/4.0, two-shot to full scene, diagonal composition, candlelight atmosphere, cliffhanger ending"
+      },
+      "emotion_mapping": {
+        "primary_emotion": "suspicious",
+        "intensity": 0.8,
+        "camera_rationale": "缓慢拉远配合留白构图，营造悬而未决的悬念，为下集埋下伏笔"
+      }
+    }
+  ],
+  "camera_work_summary": {
+    "movement_types_used": {
+      "dolly_in": 5,
+      "dolly_out": 1,
+      "tilt_up": 1,
+      "crash_zoom": 1,
+      "handheld": 1,
+      "tracking": 1,
+      "pan": 1,
+      "static": 1
+    },
+    "shot_sizes_used": {
+      "extreme_close_up": 3,
+      "close_up": 4,
+      "medium_close": 2,
+      "medium": 2,
+      "full": 1
+    },
+    "angles_used": {
+      "eye_level": 8,
+      "low": 3,
+      "dutch": 1
+    },
+    "visual_style_notes": [
+      "以推镜头(dolly_in)为主，营造压迫感和紧张感",
+      "情绪高潮点使用手持晃动和急推特写",
+      "结尾使用拉远留白，制造悬念",
+      "荷兰角仅用于核心冲突镜头，避免滥用",
+      "整体色调以冷青灰为主，烛光提供暖色点缀"
+    ],
+    "continuity_notes": [
+      "镜头3-5为连续的动作段落，使用快节奏剪辑",
+      "镜头7-8为呼吸段落，节奏放缓",
+      "镜头9-12为博弈段落，正反打与双人镜头交替",
+      "全片保持180度轴线的连贯性"
+    ]
+  },
+  "ai_video_generation_notes": {
+    "recommended_models": ["Sora2", "SeeDance2.0", "Kling"],
+    "prompt_style": "Detailed cinematic descriptions with technical camera specifications",
+    "color_grading_reference": "Ancient Chinese suspense drama, cold blue-grey tones with warm candlelight accents",
+    "lighting_reference": "Chiaroscuro lighting, single candle source, dramatic shadows"
+  }
+}

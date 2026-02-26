@@ -1,0 +1,70 @@
+{
+  "shot_id": "shot_007",
+  "episode": 1,
+  "duration": 5.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "medium_close",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": -1.5,
+        "y": 1.2,
+        "z": 2.0
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 0.0
+      },
+      "fov": 50,
+      "description": "中近景，辛月影跌坐在地的背影"
+    },
+    "end_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": -1.0,
+        "y": 1.0,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 0.8,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "近景，门被关上，阴影吞没辛月影"
+    }
+  },
+  "movement": {
+    "type": "dolly_in",
+    "path_type": "linear",
+    "speed_profile": "ease_in",
+    "duration": 5.0,
+    "description": "缓慢推近，配合门关闭，阴影逐渐吞没辛月影"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.0",
+      "focus_point": "辛月影的背影",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "medium"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "lens_flare": {
+      "enabled": false
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Slow dolly in on a young woman's back as she kneels on the ground in despair. A heavy wooden door closes behind her, and shadows gradually swallow her figure. The candlelight dims.",
+    "camera_motion_en": "Slow dolly in, ease-in acceleration, linear path, 5 seconds, dissolving transition",
+    "technical_specs": "50mm to 85mm, f/2.0, fading light effect, shadow enveloping, melancholic atmosphere"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "desperate",
+    "intensity": 0.75,
+    "camera_rationale": "缓慢推近配合阴影吞没，让观众感受绝望和封闭"
+  }
+}

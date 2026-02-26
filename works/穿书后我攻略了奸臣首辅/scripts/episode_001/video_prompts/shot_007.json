@@ -1,0 +1,160 @@
+{
+  "shot_id": "shot_007",
+  "episode": 1,
+  "duration": 5.0,
+  "target_model": "Sora2",
+  "prompts": {
+    "Sora2": {
+      "prompt": "Cinematic slow dolly in shot in ancient Chinese anime style. Medium close-up from behind showing a young Chinese woman kneeling on the ground in a dilapidated wooden house at night. She wears a pale green ruqun dress, her shoulders trembling with silent despair. A heavy wooden door in the background begins to close slowly, cutting off the last warm torchlight streaming through the gap. As the door shuts, shadows expand across the frame, gradually swallowing her silhouette. The only remaining light is a dim, flickering candle casting cold blue-grey tones. Her trembling shoulders slowly still as despair transforms into contemplation. Slow dolly in with ease-in acceleration, linear path, depth of field at f/2.0 focusing on her back. The door closes completely, leaving her in near-darkness with only rim lighting from the candle outlining her form. Melancholic atmosphere, emotional turning point, isolation and hopelessness. 5 second duration with 0.8 second dissolve transition.",
+      "parameters": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "style": "anime",
+        "motion_intensity": "low",
+        "camera_movement": "slow_dolly_in_ease_in",
+        "lighting": "diminishing_candlelit_with_shadow_envelopment",
+        "color_temperature": "cool",
+        "transition": "dissolve_0.8s"
+      }
+    },
+    "SeeDance": {
+      "prompt": "古风动漫风格，电影感缓慢推近镜头。中近景背影，辛月影跪坐在破旧木屋的地面上，身穿淡青色交领襦裙，双肩颤抖，绝望无助。夜色中，沉重的木门缓缓关闭，门缝中最后一缕温暖的火把光芒逐渐消失。随着门关闭，阴影逐渐扩散，吞没她的身影。仅剩的烛光摇曳，冷青色光线笼罩整个空间。她颤抖的双肩逐渐平静，绝望中孕育着一丝思考。缓慢推近，渐入加速，线性轨迹，景深虚化聚焦背影。门完全关闭，她被阴影吞没，只有烛光的轮廓光勾勒出她的身形。忧郁氛围，情感转折点，隔绝与绝望。5秒时长，0.8秒溶解转场。",
+      "parameters": {
+        "画面比例": "16:9",
+        "帧率": 24,
+        "风格": "古风动漫",
+        "运动强度": "低强度",
+        "运镜方式": "缓慢推近渐入加速",
+        "光影": "烛光渐暗与阴影吞没",
+        "色调": "冷色",
+        "转场": "溶解0.8秒"
+      }
+    },
+    "Kling": {
+      "prompt": "ancient Chinese anime, slow dolly in, back view shot, woman kneeling in despair, trembling shoulders, heavy wooden door closing, shadows expanding, candlelight fading, isolation, hopelessness, emotional turning point, silhouette lighting, rim light, cold blue tones, melancholic atmosphere, dissolve transition, 8k, masterpiece, high quality, cinematic",
+      "parameters": {
+        "mode": "pro",
+        "duration": "5s",
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "cfg_scale": 0.5,
+        "movement_amplitude": "low",
+        "camera_motion": "dolly_in_ease_in",
+        "speed_effect": "ease_in_acceleration",
+        "transition": "dissolve"
+      }
+    }
+  },
+  "motion_guidance": {
+    "camera_movement": {
+      "type": "dolly_in",
+      "path": "linear_forward",
+      "start_position": {
+        "x": -1.5,
+        "y": 1.2,
+        "z": 2.0,
+        "fov": 50,
+        "shot_size": "medium_close"
+      },
+      "end_position": {
+        "x": -1.0,
+        "y": 1.0,
+        "z": 1.5,
+        "fov": 85,
+        "shot_size": "close_up"
+      },
+      "speed_profile": "ease_in",
+      "description": "缓慢推近，配合门关闭，阴影逐渐吞没辛月影"
+    },
+    "character_motion": {
+      "char_001_xin_yue_ying": {
+        "phase_1": {
+          "time_range": "0-2s",
+          "action": "kneeling_shoulders_trembling",
+          "description": "跪坐在地，双肩颤抖，绝望无助"
+        },
+        "phase_2": {
+          "time_range": "2-3.5s",
+          "action": "door_closing_shadow_expanding",
+          "description": "门关闭，阴影扩散，光线消失"
+        },
+        "phase_3": {
+          "time_range": "3.5-5s",
+          "action": "trembling_subduing_contemplation",
+          "description": "颤抖逐渐平息，开始思考，被阴影吞没"
+        }
+      }
+    },
+    "door_animation": {
+      "action": "closing",
+      "time_range": "1-3s",
+      "description": "沉重的木门从开启状态缓缓关闭，门缝中的光芒逐渐消失"
+    }
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.0",
+      "focus_point": "辛月影的背影",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "medium"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "shadow_envelopment": {
+      "enabled": true,
+      "description": "阴影从门边逐渐扩散，吞没画面"
+    },
+    "lighting_transition": {
+      "enabled": true,
+      "description": "暖色火把光渐变为冷色烛光"
+    },
+    "candle_flicker": {
+      "enabled": true,
+      "description": "微弱烛火摇曳，形成不稳定的光源"
+    },
+    "rim_lighting": {
+      "enabled": true,
+      "description": "烛光勾勒辛月影轮廓，形成剪影效果"
+    }
+  },
+  "audio_sync": {
+    "sfx_timing": [
+      {
+        "type": "关门声",
+        "intensity": "high",
+        "time_range": "2-3s",
+        "description": "沉重的木门关闭声"
+      },
+      {
+        "type": "锁链声",
+        "intensity": "medium",
+        "time_range": "3-3.5s",
+        "description": "门锁扣上的金属声"
+      },
+      {
+        "type": "心跳声",
+        "intensity": "medium",
+        "time_range": "3.5-5s",
+        "description": "绝望中缓慢的心跳"
+      }
+    ],
+    "bgm": {
+      "track": "绝望低沉_大提琴独奏",
+      "volume": 0.3,
+      "description": "配合孤立绝望场景的低沉音乐"
+    }
+  },
+  "scene_reference": {
+    "location": "破旧房屋内部",
+    "lighting": "昏暗烛光，门关闭后光线骤减",
+    "atmosphere": "绝望封闭，命运悬而未决",
+    "color_palette": ["#3A4A5C", "#8B7355", "#E8E8E8", "#1A1A2E", "#D4A574"]
+  },
+  "narrative_context": {
+    "beat_type": "falling",
+    "narrative_beat": "霍齐将辛月影推回，重新关上门",
+    "emotional_arc": "绝望无助 -> 隔绝封闭 -> 思考转机",
+    "key_message": "短暂的呼吸点，让观众和角色一同消化困境"
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "shot_id": "shot_012",
+  "episode": 1,
+  "duration": 7.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "medium",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.3,
+        "z": 2.0
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.3,
+        "z": 0.0
+      },
+      "fov": 50,
+      "description": "中景双人，对角线构图"
+    },
+    "end_frame": {
+      "shot_size": "full",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 4.0
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "fov": 35,
+      "description": "全景双人，留白构图，烛光摇曳"
+    }
+  },
+  "movement": {
+    "type": "dolly_out",
+    "path_type": "linear",
+    "speed_profile": "ease_in_out",
+    "duration": 7.0,
+    "description": "双人镜头缓慢拉远，留白构图，营造悬而未决的悬念感"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/4.0",
+      "focus_point": "双人中点",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "low"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "lens_flare": {
+      "enabled": true,
+      "intensity": 0.15,
+      "description": "烛光产生的柔和光晕"
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Two characters in tense standoff, slowly pulling back to reveal the full dimly lit room. A young woman stands determined while a man in a wheelchair watches her with suspicious eyes. Candlelight flickers, casting dancing shadows. The tension remains unresolved.",
+    "camera_motion_en": "Slow dolly out pull back, ease-in-out, linear path, 7 seconds, wide reveal, fade out",
+    "technical_specs": "50mm to 35mm pull back, f/4.0, two-shot to full scene, diagonal composition, candlelight atmosphere, cliffhanger ending"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "suspicious",
+    "intensity": 0.8,
+    "camera_rationale": "缓慢拉远配合留白构图，营造悬而未决的悬念，为下集埋下伏笔"
+  }
+}

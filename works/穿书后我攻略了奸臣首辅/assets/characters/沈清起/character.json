@@ -1,48 +1,68 @@
 {
+  "character_id": "char_002",
   "name": "沈清起",
-  "role": "男主角",
-  "gender": "男",
-
-  "appearance": {
-    "age": "22-24岁",
-    "height": "178cm（坐姿）",
-    "bodyType": "消瘦，久病之躯但骨架匀称",
-    "skin": "苍白无血色，如白瓷般冰冷",
-    "face": "轮廓分明，棱角清晰，英挺俊美",
-    "eyes": "狭长凤眼，深邃幽暗，眼神阴鸷冰冷，眼底藏着痛苦与恨意",
-    "eyebrows": "剑眉，微微上挑",
-    "nose": "高挺笔直的鼻梁",
-    "lips": "薄唇，常年紧抿，唇色淡白",
-    "hair": {
-      "length": "长发及背",
-      "color": "乌黑",
-      "style": "随意束在脑后，有些凌乱"
+  "base_info": {
+    "gender": "男",
+    "age": 22,
+    "body_type": "清瘦修长，因久病略显单薄",
+    "height": "178cm（坐姿）"
+  },
+  "face": {
+    "skin_tone": "苍白如纸，病态白皙",
+    "face_shape": "轮廓分明，棱角坚毅",
+    "eyes": "狭长凤眼，眼眶微陷，目光阴鸷深邃，眼底藏着偏执与疯狂",
+    "eyebrows": "剑眉斜飞入鬓，眉宇间带着几分阴郁",
+    "nose": "鼻梁高挺笔直",
+    "lips": "唇色淡薄苍白，嘴角常挂冷笑"
+  },
+  "hair": {
+    "style": "黑色长发，常披散或简单束起，略显凌乱",
+    "color": "乌黑如墨",
+    "arrangement": "偶尔用发带简单束起，整体呈现颓废颓唐之感"
+  },
+  "costumes": [
+    {
+      "costume_id": "costume_001",
+      "name": "落难便服",
+      "era": "古代",
+      "season": "四季",
+      "description": "玄色交领长袍，衣襟处有暗纹，因久居陋室衣衫略显陈旧，袖口和下摆有磨损痕迹，整体透出落魄贵族的气质",
+      "color_palette": ["#1A1A2E", "#2D2D44", "#4A4A6A"],
+      "accessories": [
+        {"type": "玉佩", "description": "残缺的白玉佩，是昔日身份的象征", "color": "灰白色"}
+      ],
+      "prompt_template": "ancient Chinese anime man, 22 years old, pale sickly complexion, sharp angular face, narrow phoenix eyes with dark intense gaze, sword eyebrows, thin pale lips with cold sneer, long disheveled black hair, sitting in worn wooden wheelchair, wearing dark black traditional robe with subtle patterns, clothes slightly worn at edges, fallen noble aura, gloomy atmosphere, anime style, dim lighting"
+    },
+    {
+      "costume_id": "costume_002",
+      "name": "病榻装束",
+      "era": "古代",
+      "season": "四季",
+      "description": "素灰色中衣，外搭深蓝色薄衫，衣襟松散，展现出长期养病的慵懒状态",
+      "color_palette": ["#6B6B7B", "#2B3A4A", "#8B8B9B"],
+      "accessories": [
+        {"type": "发带", "description": "深灰色布带，松散束发", "color": "深灰色"}
+      ],
+      "prompt_template": "ancient Chinese anime man, 22 years old, extremely pale skin, sickly appearance, loose gray inner robe with dark blue outer garment, disheveled hair loosely tied, sitting posture, frail but sharp features, brooding expression, anime style, low light indoor setting"
     }
+  ],
+  "special_features": {
+    "disability": "双腿残废，需要坐轮椅行动",
+    "mobility_aid": "破旧木制轮椅",
+    "physical_traits": "因狱中受刑，身体有暗伤，易疲惫"
   },
-
-  "clothing": {
-    "style": "古代",
-    "mainOutfit": "破败旧衣（初期），黑色或深色长袍",
-    "colors": ["玄黑", "墨青", "灰白"],
-    "accessories": ["残破轮椅", "手中碎瓷（紧张时摩挲）"],
-    "shoes": "黑色布靴（无法行走）"
+  "expressions": {
+    "neutral": "面无表情，目光阴冷，嘴角微抿，神情漠然",
+    "happy": "冷笑，眼角微弯但眼神依然锐利，透着几分诡异",
+    "sad": "眼帘低垂，神情阴郁，嘴角紧抿，隐藏着深沉的痛苦",
+    "angry": "凤眼微眯，眼中闪过狠厉之色，周身散发寒意",
+    "surprised": "眉梢微挑，眼底闪过一丝意外，但很快恢复冷峻",
+    "fearful": "瞳孔微缩，面容绷紧，但表面维持镇定"
   },
-
-  "personality": {
-    "keywords": ["病娇", "偏执", "阴鸷", "冷漠", "疯批"],
-    "vibe": "生人勿近的凛冽感，坐在阴翳中的绝望与疯狂",
-    "posture": "坐轮椅，身形消瘦但气场强大，偶尔闷咳"
-  },
-
-  "special": {
-    "features": ["双腿残废（狱中受酷刑）", "掌心伤痕（握碎瓷所致）"],
-    "props": ["轮椅", "长剑", "碎瓷片"],
-    "notes": "名将之后，家破人亡后黑化，表面平静内心汹涌"
-  },
-
-  "artStyle": {
-    "base": "anime",
-    "reference": "古风病娇美男，阴郁冷峻风格",
-    "colorTone": "冷色调，低饱和度，阴影较重"
-  }
+  "poses": [
+    "坐轮椅姿态：端正坐在轮椅上，双手扶于扶手或交叠于膝上，神情冷峻",
+    "持剑姿态：单手持剑，剑身泛着寒光，眼神凌厉逼人",
+    "沉思姿态：单手支颐，目光放空，神情阴郁深沉",
+    "病弱姿态：靠在轮椅背上，面带倦色，眼神半阖"
+  ]
 }

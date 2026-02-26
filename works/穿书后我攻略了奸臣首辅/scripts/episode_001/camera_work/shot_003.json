@@ -1,0 +1,76 @@
+{
+  "shot_id": "shot_003",
+  "episode": 1,
+  "duration": 10.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.6,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.65,
+        "z": 0.0
+      },
+      "fov": 50,
+      "description": "近景辛月影面部，准备急推"
+    },
+    "end_frame": {
+      "shot_size": "extreme_close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.65,
+        "z": 0.3
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.65,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "极度特写瞳孔放大的瞬间"
+    }
+  },
+  "movement": {
+    "type": "crash_zoom",
+    "path_type": "linear",
+    "speed_profile": "ease_out",
+    "duration": 10.0,
+    "description": "急推特写辛月影瞳孔放大的眼睛，配合时间停滞的视觉效果"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/1.2",
+      "focus_point": "辛月影的瞳孔",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "very_high"
+    },
+    "motion_blur": {
+      "enabled": true,
+      "intensity": 0.5,
+      "description": "急推过程中的运动模糊，增强震撼感"
+    },
+    "lens_flare": {
+      "enabled": false
+    },
+    "special_effect": {
+      "type": "flash_overlay",
+      "description": "瞳孔放大瞬间添加微弱的白色闪光，暗示穿越记忆闪回"
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Crash zoom from close-up to extreme close-up of a young woman's eyes widening in shock. Her pupils dilate dramatically as she realizes her identity. Brief flash of fragmented memories overlay. Time seems to freeze.",
+    "camera_motion_en": "Fast crash zoom, ease-out deceleration, linear path, 10 seconds with speed ramp",
+    "technical_specs": "50mm to 85mm snap zoom, f/1.2 extreme shallow DOF, high contrast lighting, subtle memory flash overlay"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "shocked",
+    "intensity": 0.7,
+    "camera_rationale": "急推特写配合瞳孔放大的视觉冲击，营造穿越身份揭露的震撼时刻"
+  }
+}

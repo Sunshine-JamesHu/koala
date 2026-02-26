@@ -14,15 +14,34 @@
 
 ## 输入
 
+### 批量模式（传统）
 - 分镜脚本: `scripts/episode_XXX/storyboard.json`
 - 运镜方案: `scripts/episode_XXX/camera_work.json`
 - 角色资源: `assets/characters/`
 - 场景资源: `assets/scenes/`
 - 风格参考: `assets/styles/`
 
+### 单分镜模式（并行处理）
+- 单个分镜数据: `scripts/episode_XXX/shots/shot_xxx.json`
+- 单个运镜方案: `scripts/episode_XXX/camera_work/shot_xxx.json`
+- 角色资源: `assets/characters/`
+- 场景资源: `assets/scenes/`
+- 风格参考: `assets/styles/`
+
 ## 输出
 
-保存到: `scripts/episode_XXX/keyframes.json`
+保存到: `scripts/episode_XXX/keyframes/shot_xxx.json`
+
+**命名规范**：统一使用 `shot_xxx.json` 格式（不带 `_keyframes` 后缀）
+
+输出目录结构：
+```
+scripts/episode_XXX/
+└── keyframes/
+    ├── shot_001.json
+    ├── shot_002.json
+    └── ...
+```
 
 ## 关键帧结构
 
@@ -263,12 +282,21 @@ text, watermark       - 文字、水印
 
 当用户要求"提取关键帧"、"生成关键帧提示词"、"为分镜生成图片Prompt"时触发。
 
+### 批量模式
 Agent应该：
 1. 读取 `scripts/episode_XXX/storyboard.json` 了解分镜结构
-2. 读取 `assets/characters/` 获取角色设定
-3. 为每个分镜分析关键帧时刻
-4. 生成详细的图像生成Prompt
-5. 输出到 `scripts/episode_XXX/keyframes.json`
+2. 读取 `scripts/episode_XXX/camera_work.json` 了解运镜方案
+3. 读取 `assets/characters/` 获取角色设定
+4. 为每个分镜分析关键帧时刻，生成图像生成Prompt
+5. 输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
+
+### 单分镜模式（并行处理）
+Agent应该：
+1. 读取单个分镜 `scripts/episode_XXX/shots/shot_xxx.json`
+2. 读取单个运镜 `scripts/episode_XXX/camera_work/shot_xxx.json`
+3. 读取 `assets/characters/` 获取角色设定
+4. 分析该分镜的关键帧时刻，生成图像生成Prompt
+5. 输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
 
 ## 质量检查清单
 

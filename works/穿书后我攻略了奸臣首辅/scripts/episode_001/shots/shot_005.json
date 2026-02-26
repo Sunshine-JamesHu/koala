@@ -1,0 +1,74 @@
+{
+  "shot_id": "shot_005",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "climax",
+  "duration": 8.0,
+  "narrative_beat": "辛月影试图逃跑，被沈清起一剑逼退",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "剑光与阴影交替",
+    "atmosphere": "慌乱恐惧，生死一线"
+  },
+  "camera": {
+    "shot_size": "full",
+    "angle": "eye_level",
+    "movement": "dolly",
+    "movement_speed": "fast",
+    "framing_note": "快速跟拍辛月影的奔跑，然后急停转手持"
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "position": "frame_center",
+      "blocking": "猛然转身冲向门口",
+      "expression": "惊恐慌乱",
+      "action": "快速奔跑，撞上门框",
+      "costume_version": "costume_001"
+    },
+    {
+      "character_id": "char_002",
+      "name": "沈清起",
+      "position": "frame_left",
+      "blocking": "长剑一挥，封住去路",
+      "expression": "冷笑嘲讽",
+      "action": "剑锋划过空气，剑气逼人",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": null,
+    "text": null,
+    "delivery_style": null
+  },
+  "sfx": [
+    {"type": "剑破空声", "intensity": "high"},
+    {"type": "脚步声", "intensity": "high"},
+    {"type": "心跳声", "intensity": "high"}
+  ],
+  "bgm": {
+    "track": "紧张追逐_急促节奏",
+    "volume": 0.5
+  },
+  "transition": {
+    "type": "cut",
+    "duration": 0.2
+  },
+  "keyframe_description": "辛月影慌乱奔跑的身影，沈清起的长剑在空中划出一道寒光，将她的退路完全封死",
+  "notes": "情绪高潮点2：逃跑失败的绝望，手持晃动增加紧张感"
+}

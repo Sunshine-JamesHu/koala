@@ -1,0 +1,63 @@
+{
+  "shot_id": "shot_011",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "resolution",
+  "duration": 8.0,
+  "narrative_beat": "沈清起冷笑回应，威胁要让来人下黄泉陪她",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "冷青色主导",
+    "atmosphere": "剑拔弩张，危机未解"
+  },
+  "camera": {
+    "shot_size": "close_up",
+    "angle": "low",
+    "movement": "static",
+    "movement_speed": "slow",
+    "framing_note": "仰角拍摄沈清起，强调压迫感"
+  },
+  "characters": [
+    {
+      "character_id": "char_002",
+      "name": "沈清起",
+      "position": "frame_center",
+      "blocking": "手中长剑未放下",
+      "expression": "冷笑阴鸷",
+      "action": "嘴角微微上扬，眼中却无笑意",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": "沈清起",
+    "text": "呵，有意思。那就让他们来吧，我会让他们去黄泉路上陪你。",
+    "delivery_style": "阴冷嘲讽，不怒自威"
+  },
+  "sfx": [
+    {"type": "剑身震动声", "intensity": "low"}
+  ],
+  "bgm": {
+    "track": "不协和弦_悬而未决",
+    "volume": 0.35
+  },
+  "transition": {
+    "type": "cut",
+    "duration": 0.5
+  },
+  "keyframe_description": "沈清起的近景特写，冷笑的嘴角，眼中却是一片冰冷，长剑在烛光下闪烁着寒芒",
+  "notes": "反派男主展现多疑冷酷的性格，危机仍未解除"
+}

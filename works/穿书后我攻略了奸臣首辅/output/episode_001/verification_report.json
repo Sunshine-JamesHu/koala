@@ -1,0 +1,178 @@
+{
+  "episode": "episode_001",
+  "verified_at": "2025-02-25T23:30:00Z",
+  "source_chapter": "chapter_001",
+  "total_shots": 12,
+  "verification_results": {
+    "passed": 5,
+    "warnings": 7,
+    "failed": 0
+  },
+  "shot_reviews": [
+    {
+      "shot_id": "shot_001",
+      "status": "passed",
+      "issues": [],
+      "summary": "开场镜头准确还原原文场景：昏暗室内、青灯微光、辛月影苏醒、沈清起画外音'你自尽吧'，与原文第5-9行一致"
+    },
+    {
+      "shot_id": "shot_002",
+      "status": "passed",
+      "issues": [],
+      "summary": "沈清起形象准确：破败轮椅、苍白面容、阴鸷眼神，与原文第21-27行描述一致"
+    },
+    {
+      "shot_id": "shot_003",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "台词与原文略有差异",
+          "original_text": "辛四娘，你在等什么？(第29行)",
+          "generated_content": "辛四娘，你还要装到什么时候？",
+          "suggestion": "建议使用原文台词以确保准确性"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_004",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "台词与原文不同，但情节准确",
+          "original_text": "下毒谋害我之时，你便该想到会是这个结果。(第99行)",
+          "generated_content": "在茶里下毒谋害亲夫，你选个死法吧。",
+          "suggestion": "建议调整台词以更接近原文"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_005",
+      "status": "passed",
+      "issues": [],
+      "summary": "逃跑与剑击动作与原文第109-113行一致：辛月影逃跑、长剑刺入木柱"
+    },
+    {
+      "shot_id": "shot_006",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "霍齐台词精简但保留核心意思",
+          "original_text": "你吃了熊心豹子胆！敢给二爷下毒？...贱妇！你不要脸！(第123行)",
+          "generated_content": "你与王屠户私通，还敢毒害主公！给我回去！",
+          "suggestion": "台词传达了指责和愤怒，但措辞不同"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_007",
+      "status": "passed",
+      "issues": [],
+      "summary": "被推回房间、门被关上的情节与原文第127-129行一致"
+    },
+    {
+      "shot_id": "shot_008",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "台词意译而非直译",
+          "original_text": "要么你自绝于此，要么我给你一痛快，你自己选。(第135行)",
+          "generated_content": "怎么，还不想死？那就别怪我了。",
+          "suggestion": "建议使用原文更精准的威胁措辞"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_009",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "关键台词意译，核心剧情保留",
+          "original_text": "什么？怎会是一包毒药？！...有人逼我的。他给了我一包粉末...(第141-145行)",
+          "generated_content": "我下毒，是因为有人拿刀架在我脖子上逼我的...",
+          "suggestion": "核心情节（声称被迫下毒）准确，但台词经过改编"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_010",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "台词改编但保留关键信息",
+          "original_text": "那人威胁我...你莫不是得罪了什么仇家吧？(第151-153行)",
+          "generated_content": "你以为我愿意吗？...是因为有人要借我的手杀你。",
+          "suggestion": "保留了暗示仇家的关键信息"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_011",
+      "status": "warning",
+      "issues": [
+        {
+          "type": "dialogue",
+          "severity": "warning",
+          "description": "沈清起威胁台词略有改编",
+          "original_text": "不论是谁来都好，且让他下黄泉去陪你，好不好？(第157行)",
+          "generated_content": "呵，有意思。那就让他们来吧，我会让他们去黄泉路上陪你。",
+          "suggestion": "保留了'下黄泉'的核心威胁，但措辞不同"
+        }
+      ]
+    },
+    {
+      "shot_id": "shot_012",
+      "status": "passed",
+      "issues": [],
+      "summary": "结尾对峙、悬念未解的氛围与原文结尾一致，为下集埋下伏笔"
+    }
+  ],
+  "overall_assessment": {
+    "accuracy_score": 85,
+    "consistency_score": 95,
+    "completeness_score": 100,
+    "dialogue_accuracy_score": 75,
+    "summary": "整体分镜质量良好，场景设置、角色行为、情绪曲线均准确还原原文。主要问题是对白经过意译或改编，而非直接引用原文台词。核心剧情节点（苏醒、身份揭露、下毒指控、逃跑失败、编造谎言、威胁回应）全部准确呈现。"
+  },
+  "recommendations": [
+    "建议在后续生成中尽可能使用原文台词，以提高对白准确度",
+    "分镜的情绪节奏和镜头语言非常专业，符合悬疑古风漫剧的视觉风格",
+    "角色形象描述准确（沈清起的病娇阴鸷、辛月影的机智应变）",
+    "场景氛围营造到位（昏暗室内、青灯摇曳、破败房屋）"
+  ],
+  "character_consistency": {
+    "辛月影": {
+      "status": "accurate",
+      "description": "从迷茫苏醒到恐惧再到机智应对的转变准确呈现"
+    },
+    "沈清起": {
+      "status": "accurate",
+      "description": "阴鸷、多疑、病娇的反派形象刻画到位"
+    },
+    "霍齐": {
+      "status": "accurate",
+      "description": "忠诚愤怒的仆人形象准确"
+    }
+  },
+  "scene_consistency": {
+    "破旧房屋": {
+      "status": "accurate",
+      "description": "昏暗、破败、青灯摇曳的氛围与原文一致"
+    },
+    "门外门廊": {
+      "status": "accurate",
+      "description": "火把照明、门框构图的视觉效果准确"
+    }
+  }
+}

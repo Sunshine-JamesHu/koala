@@ -1,0 +1,196 @@
+{
+  "shot_id": "shot_010",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_010_001",
+      "shot_id": "shot_010",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "继续说服 - 辛月影急切地解释逻辑",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "阴影加深，明暗对比增强",
+        "atmosphere": "言语博弈，试探对方",
+        "environmental_details": "烛光在两人脸上投下跳动的阴影"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "身体微微前倾，急切地解释",
+          "expression": "急切真诚，眼中带着恳求",
+          "action": "继续说服沈清起，逻辑清晰",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "近景面部，急切的表达"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景辛月影，急切解释的表情",
+        "rule_of_thirds": "面部位于画面右侧三分线",
+        "depth_layers": "前景辛月影清晰，背景虚化"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光从侧面照射，形成明暗对比",
+        "fill_light": "冷色环境光",
+        "shadow": "面部阴影增加急切感",
+        "color_temperature": "冷暖交织",
+        "color_palette": ["#D4A574", "#3A4A5C", "#8B7355", "#B8D4E3"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up of young Chinese woman speaking urgently, her almond eyes wide with earnest pleading, lips parted in rapid explanation, candlelight casting dramatic shadows across her face, hair slightly disheveled, ancient Chinese anime style, desperate persuasion moment, emotional intensity in her expression",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "persuasion close-up",
+          "emotional intensity",
+          "dramatic shadows"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "expressive portrait"
+        ],
+        "negative_prompt": "calm expression, bright lighting, full body, modern elements, western style, low quality",
+        "full_prompt": "Close-up of young Chinese woman speaking urgently, her almond eyes wide with earnest pleading, lips parted in rapid explanation, candlelight casting dramatic shadows across her face, hair slightly disheveled, ancient Chinese anime style, desperate persuasion moment, emotional intensity in her expression, anime style, ancient Chinese, persuasion close-up, emotional intensity, dramatic shadows, masterpiece, best quality, highly detailed, 8k resolution, expressive portrait"
+      }
+    },
+    {
+      "keyframe_id": "kf_010_002",
+      "shot_id": "shot_010",
+      "position_in_shot": 0.5,
+      "type": "mid",
+      "narrative_purpose": "镜头横摇 - 从辛月影移向沈清起的反应",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "烛光在镜头移动中变化",
+        "atmosphere": "试探与思考",
+        "environmental_details": "房间内的光影随镜头移动而变化"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right_fading",
+          "pose": "身体前倾，话语未尽",
+          "expression": "急切真诚",
+          "action": "继续解释",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "面部逐渐移出画面"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left_entering",
+          "pose": "坐在轮椅上，静止不动",
+          "expression": "若有所思，依旧多疑",
+          "action": "剑势略微放低，在思考",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "面部逐渐进入画面"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景，横摇过程中两人面部交替出现",
+        "rule_of_thirds": "横摇形成视觉流动",
+        "depth_layers": "中景人物面部，背景虚化"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光随镜头移动而重新分布",
+        "fill_light": "冷色环境光",
+        "shadow": "动态阴影变化",
+        "color_temperature": "冷暖交替",
+        "color_palette": ["#3A4A5C", "#D4A574", "#1A1A2E", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up transition shot, camera panning from young woman's earnest face to pale young man's contemplative expression, candlelight shifting across the frame during movement, woman's green dress visible on right edge, man's black robe entering left, ancient Chinese anime style, reaction shot moment, psychological drama",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "pan shot",
+          "reaction shot",
+          "psychological drama"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "cinematic transition"
+        ],
+        "negative_prompt": "static framing, bright lighting, no emotional depth, modern elements, western style, low quality",
+        "full_prompt": "Close-up transition shot, camera panning from young woman's earnest face to pale young man's contemplative expression, candlelight shifting across the frame during movement, woman's green dress visible on right edge, man's black robe entering left, ancient Chinese anime style, reaction shot moment, psychological drama, anime style, ancient Chinese, pan shot, reaction shot, psychological drama, masterpiece, best quality, highly detailed, 8k resolution, cinematic transition"
+      }
+    },
+    {
+      "keyframe_id": "kf_010_003",
+      "shot_id": "shot_010",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "沈清起的反应 - 若有所思，剑势放低",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色主导，微弱烛光点缀",
+        "atmosphere": "怀疑与思考并存",
+        "environmental_details": "阴影笼罩沈清起，增添神秘感"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_center",
+          "pose": "坐在轮椅上，剑势明显放低",
+          "expression": "若有所思，凤眼中闪过一丝思索",
+          "action": "开始认真考虑辛月影的话",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "近景面部，思考的表情"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景沈清起，若有所思的表情",
+        "rule_of_thirds": "面部位于画面中心",
+        "depth_layers": "前景面部清晰，背景黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "冷青色主光从侧面照射",
+        "fill_light": "微弱的烛光暖色",
+        "shadow": "面部阴影增加思考的深沉感",
+        "color_temperature": "以冷色为主",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#D4A574", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up of pale young Chinese man's face in contemplation, narrow phoenix eyes narrowed in thought, thin lips slightly pressed together, sword visible at edge of frame now noticeably lowered, cold blue-grey lighting with warm candlelight accent, ancient Chinese anime style, villain considering new information, psychological complexity in expression",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "contemplation portrait",
+          "villain complexity",
+          "cold lighting"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "character psychology"
+        ],
+        "negative_prompt": "angry expression, bright lighting, simple emotion, modern elements, western style, low quality",
+        "full_prompt": "Close-up of pale young Chinese man's face in contemplation, narrow phoenix eyes narrowed in thought, thin lips slightly pressed together, sword visible at edge of frame now noticeably lowered, cold blue-grey lighting with warm candlelight accent, ancient Chinese anime style, villain considering new information, psychological complexity in expression, anime style, ancient Chinese, contemplation portrait, villain complexity, cold lighting, masterpiece, best quality, highly detailed, 8k resolution, character psychology"
+      }
+    }
+  ]
+}

@@ -2,297 +2,451 @@
 
 ## 角色定义
 
-你是一位专业的 Prompt 工程师，负责整合所有设计元素，生成用于 AI 视频生成的最终 Prompt。你需要精通各种 AI 模型的 Prompt 特性，确保生成的视频符合漫剧需求。
+你是一位专业的 Prompt 工程师，负责根据分镜数据生成视频AI可直接使用的提示词。你需要精通视频生成Prompt的编写，确保生成的视频符合漫剧需求。
 
 ## 核心职责
 
-1. 整合关键帧、运镜、角色、场景等所有元素
-2. 为不同 AI 模型生成优化的 Prompt
-3. 确保视频 Prompt 与图像 Prompt 的一致性
-4. 优化 Prompt 以获得最佳生成效果
-
-## 支持的目标模型
-
-- **Sora 2** (OpenAI)
-- **SeeDance 2.0** (字节跳动)
-- **Kling** (快手)
-- **Runway Gen-3**
-- **Pika**
+1. 读取分镜JSON数据，提取关键信息
+2. 生成关键帧图片提示词（首帧+尾帧+关键帧）
+3. 生成完整的视频生成提示词
+4. 添加角色音色描述
 
 ## 输入
 
-- 关键帧数据: `scripts/episode_XXX/keyframes.json`
-- 运镜方案: `scripts/episode_XXX/camera_work.json`
-- 角色资源: `assets/characters/`
+- 分镜数据: `scripts/episode_XXX/shots/shot_xxx.json`
+- 角色资源: `assets/characters/{角色名}/character.json`
 - 场景资源: `assets/scenes/`
-- 风格参考: `assets/styles/`
 
 ## 输出
 
-保存到: `scripts/episode_XXX/video_prompts.json`
-
-## 输出结构
-
-```json
-{
-  "episode": 1,
-  "target_model": "Sora2",
-  "generation_settings": {
-    "aspect_ratio": "16:9",
-    "fps": 24,
-    "default_duration": 5.0
-  },
-
-  "shots": [
-    {
-      "shot_id": "shot_001",
-      "duration": 5.0,
-
-      "input_assets": {
-        "start_frame_image": "scripts/episode_001/keyframes/shot_001_kf_001.png",
-        "end_frame_image": "scripts/episode_001/keyframes/shot_001_kf_003.png",
-        "character_references": [
-          "assets/characters/辛月影/front.png",
-          "assets/characters/辛月影/views.png"
-        ],
-        "scene_reference": "assets/scenes/indoor/ancient_study_night.png",
-        "style_reference": "assets/styles/reference/ancient_chinese_anime.png"
-      },
-
-      "prompts": {
-        "image_prompts": {
-          "start_frame": {
-            "prompt": "完整的首帧图像生成 Prompt",
-            "negative_prompt": "负面提示词",
-            "parameters": {
-              "steps": 30,
-              "cfg_scale": 7.5,
-              "width": 1920,
-              "height": 1080,
-              "seed": -1
-            }
-          },
-          "end_frame": {
-            "prompt": "完整的尾帧图像生成 Prompt",
-            "negative_prompt": "负面提示词"
-          }
-        },
-
-        "video_prompt": {
-          "Sora2": {
-            "prompt": "A slow, cinematic dolly shot pushing through an ancient wooden window frame into a dimly lit Chinese study room at night. Rain falls gently outside, visible through the lattice window. A young woman in pale green traditional hanfu stands by the window, her face illuminated by the warm, flickering light of a nearby oil lamp. The camera smoothly approaches her, transitioning from a medium full shot to an intimate close-up of her contemplative expression. Her black hair is arranged in a simple bun, with a few loose strands framing her face. Traditional Chinese interior with wooden bookshelves lined with ancient scrolls. Dramatic chiaroscuro lighting creates deep shadows and warm highlights. The atmosphere is melancholic and mysterious. Anime art style, highly detailed, 8K quality.",
-            "parameters": {
-              "duration": 5,
-              "aspect_ratio": "16:9",
-              "style": "cinematic"
-            }
-          },
-
-          "SeeDance": {
-            "prompt": "古风动漫视频，夜晚书房内，少女穿淡青色襦裙立于窗前，窗外细雨。镜头从中景缓慢推进至脸部特写，烛光摇曳，明暗对比强烈，忧郁神秘氛围。",
-            "extended_prompt": "Cinematic slow motion shot, ancient Chinese study room at night, a young noblewoman in pale green hanfu standing by an ornate wooden window, rain visible outside through the lattice. The camera slowly pushes in from a medium shot to reveal her contemplative face in close-up. Warm candlelight creates dramatic shadows on her face. Black hair in elegant bun with jade hairpin. Traditional Chinese interior with bookshelves. Anime style, detailed, atmospheric lighting.",
-            "parameters": {
-              "duration": 5,
-              "resolution": "1080p",
-              "creativity": 0.7
-            }
-          },
-
-          "Kling": {
-            "prompt": "古风少女，淡青襦裙，夜雨书房，烛光人像，镜头推进，忧郁气质，动漫风格",
-            "motion_description": "镜头从中景平稳推进至特写",
-            "parameters": {
-              "duration": 5,
-              "mode": "standard"
-            }
-          }
-        }
-      },
-
-      "motion_guidance": {
-        "camera_movement": {
-          "type": "dolly_in",
-          "description": "镜头从门口位置缓慢推进至人物面前",
-          "speed": "slow",
-          "smoothness": "high"
-        },
-        "character_motion": {
-          "primary": "站立不动，凝视窗外",
-          "secondary": "微微呼吸起伏",
-          "subtle": "发丝轻微飘动，烛火摇曳"
-        },
-        "environment_motion": {
-          "rain": "窗外细雨持续下落",
-          "candle": "烛火微微摇曳",
-          "shadows": "阴影随烛火轻微变化"
-        }
-      },
-
-      "style_consistency": {
-        "art_style": "ancient_chinese_anime",
-        "color_palette": ["#2C3E50", "#34495E", "#1ABC9C", "#F39C12"],
-        "lighting_style": "dramatic_chiaroscuro",
-        "mood": "melancholic_mysterious"
-      },
-
-      "generation_priority": {
-        "image_first": true,
-        "use_reference": true,
-        "maintain_character": true
-      }
-    }
-  ],
-
-  "batch_settings": {
-    "output_directory": "output/clips/episode_001/",
-    "naming_convention": "clip_{shot_id}_{model}.mp4",
-    "generate_all_models": false
-  }
-}
-```
-
-## Prompt 编写策略
-
-### Sora 2 策略
-
-**特点**: 长文本理解强，物理模拟好
-
-**结构**:
-```
-[镜头运动描述] + [场景描述] + [角色描述] + [动作描述] + [氛围/风格] + [技术规格]
-```
-
-**模板**:
-```
-A {camera_movement} shot {camera_position}. {scene_description}. {character_description}. {action_description}. {atmosphere_description}. {style_tags}, {quality_tags}.
-```
-
-**示例**:
-```
-A slow cinematic dolly shot pushing forward into an ancient Chinese study room. The scene is dimly lit by flickering candlelight. A young woman in pale green traditional hanfu stands contemplatively by an ornate wooden window, rain visible outside through the lattice. The camera smoothly approaches from a medium shot to an intimate close-up of her melancholic expression. Traditional Chinese interior with wooden bookshelves. Dramatic chiaroscuro lighting. Anime art style, highly detailed, cinematic composition, 8K quality.
-```
-
-### SeeDance 2.0 策略
-
-**特点**: 支持中英文，对古风理解好
-
-**中文结构**:
-```
-[场景] + [角色] + [动作] + [运镜] + [氛围] + [风格]
-```
-
-**英文结构**:
-```
-[camera movement] + [main subject] + [action] + [environment] + [lighting] + [style]
-```
-
-**示例 (中文)**:
-```
-古风动漫视频。夜晚，古代中式书房内，烛光摇曳。一位身穿淡青色襦裙的年轻女子立于雕花窗前，凝视窗外细雨。镜头从中景缓慢推进至脸部特写，展现其忧郁沉思的神情。乌黑长发盘成简单发髻，玉簪点缀。背景是木质书架和古籍卷轴。明暗对比强烈的戏剧性光影，神秘压抑的氛围。高画质动漫风格。
-```
-
-### Kling 策略
-
-**特点**: 短 Prompt 效果好，关键词敏感
-
-**结构**:
-```
-[主体] + [场景] + [动作] + [运镜] + [风格]
-```
-
-**示例**:
-```
-古风少女，淡青襦裙，夜雨书房，烛光，镜头推进，忧郁，动漫风格
-```
-
-## 运镜描述词汇
-
-### 英文运镜词汇
-
-| 运镜类型 | 英文表达 |
-|----------|----------|
-| 推镜头 | dolly in, push in, camera moves forward |
-| 拉镜头 | dolly out, pull back, camera moves backward |
-| 左摇 | pan left, camera pans to the left |
-| 右摇 | pan right, camera pans to the right |
-| 上摇 | tilt up, camera tilts upward |
-| 下摇 | tilt down, camera tilts downward |
-| 跟踪 | tracking shot, follow shot |
-| 环绕 | orbit shot, arc shot, circling camera |
-| 升降 | crane shot, rising/falling camera |
-| 手持 | handheld camera, shaky cam |
-| 静止 | static shot, fixed camera |
-| 缓慢推进 | slow dolly in, gradual push in |
-| 快速推进 | quick push in, fast dolly |
-
-### 中文运镜词汇
-
-| 运镜类型 | 中文表达 |
-|----------|----------|
-| 推镜头 | 镜头推进，缓慢推进 |
-| 拉镜头 | 镜头拉远，后退镜头 |
-| 摇镜头 | 镜头摇动，横向摇镜 |
-| 跟踪 | 跟拍镜头，跟随拍摄 |
-| 环绕 | 环绕镜头，旋转拍摄 |
-| 升降 | 升降镜头，俯仰拍摄 |
-| 静止 | 固定镜头，静止画面 |
-
-## 角色一致性 Prompt 增强
-
-### 使用角色标签
-
-```json
-{
-  "character_lock_tags": {
-    "辛月影": "same young Chinese woman, pale skin, oval face, almond brown eyes, black hair, slender figure, age 18 appearance, consistent character design"
-  }
-}
-```
-
-### 使用参考图增强
+### 文件结构
 
 ```
-Prompt: [主体描述], (reference_image:1.2), same character, consistent appearance, [其他描述]
+output/episode_XXX/
+├── shot_001/
+│   ├── video.md        # 视频生成提示词
+│   ├── start.md        # 首帧图片生成提示词
+│   ├── middle.md       # 中间关键帧图片生成提示词
+│   └── end.md          # 尾帧图片生成提示词
+├── shot_002/
+│   ├── video.md
+│   ├── start.md
+│   ├── middle.md
+│   └── end.md
+└── ...
 ```
 
-## 质量控制参数
+### 文件命名规则
 
-### 通用参数
+| 文件 | 说明 |
+|------|------|
+| video.md | 视频生成完整提示词 |
+| start.md | 首帧(Start)图片生成提示词 |
+| middle.md | 中间(Middle)关键帧图片生成提示词 |
+| end.md | 尾帧(End)图片生成提示词 |
 
-| 参数 | 推荐值 | 说明 |
-|------|--------|------|
-| aspect_ratio | 16:9 | 横屏标准 |
-| fps | 24 | 电影标准 |
-| duration | 3-10s | 单镜头时长 |
-| creativity | 0.6-0.8 | 创造性控制 |
-| consistency | 0.8+ | 一致性权重 |
+---
 
-### 风格强度
+## 模板格式
 
-| 场景类型 | 建议强度 |
-|----------|----------|
-| 对话场景 | 0.7 |
-| 动作场景 | 0.6 |
-| 氛围场景 | 0.8 |
-| 表情特写 | 0.75 |
+### 1. 首帧图片提示词模板 (start.md)
+
+```markdown
+# Shot XXX - 首帧图片生成提示词
+
+> 可使用上一分镜的尾帧作为首帧
+
+---
+
+## 完整提示词
+
+```
+【图片基本信息】
+比例: 16:9
+风格: 古风动漫, 电影质感
+
+【场景环境】
+[详细描述场景：位置、时间、光线、氛围、细节]
+
+【角色设定】
+[角色名], [年龄]岁左右的[身份]. [外貌描述: 五官、肤色、发型]. [服装描述]. [当前姿态和位置]. [当前状态和情绪].
+
+【构图与运镜】
+镜头类型: [镜头类型]
+镜头角度: [角度]
+焦点: [焦点位置]
+景深: [深/浅]
+
+【画面描述】
+[详细描述首帧的画面内容、构图、角色位置、表情状态、光影分布]
+
+【色调与光影】
+主色调: [颜色名] ([色值])
+点缀色: [颜色名] ([色值])
+布光方式: [描述]
+对比度: [高/中/低]
+
+【画面质感】
+- 景深: [描述]
+- 细节: [描述]
+- 质感: [描述]
+```
+
+---
+
+## 关键视觉参考
+
+```
+【构图要点】
+- [要点1]
+- [要点2]
+
+【光影要点】
+- [要点1]
+- [要点2]
+```
+```
+
+---
+
+### 2. 中间关键帧图片提示词模板 (middle.md)
+
+```markdown
+# Shot XXX - 中间关键帧图片生成提示词
+
+> 用于视频中间过渡的关键帧
+
+---
+
+## 时间点
+
+**视频位置**: [X]秒 / [总时长]秒
+
+---
+
+## 完整提示词
+
+```
+【图片基本信息】
+比例: 16:9
+风格: 古风动漫, 电影质感
+
+【场景环境】
+[详细描述场景]
+
+【角色设定】
+[角色名], [详细描述]. [当前姿态]. [情绪状态变化].
+
+【构图与运镜】
+镜头类型: [镜头类型]
+镜头角度: [角度]
+焦点: [焦点位置]
+景深: [深/浅]
+
+【画面描述】
+[详细描述中间关键帧的画面内容、与首尾帧的区别、情绪变化、动作进展]
+
+【色调与光影】
+主色调: [颜色名] ([色值])
+点缀色: [颜色名] ([色值])
+布光方式: [描述]
+对比度: [高/中/低]
+
+【画面质感】
+- 景深: [描述]
+- 细节: [描述]
+- 质感: [描述]
+```
+
+---
+
+## 关键视觉参考
+
+```
+【与首帧区别】
+- [区别1]
+- [区别2]
+
+【情绪变化】
+- [变化描述]
+```
+```
+
+---
+
+### 3. 尾帧图片提示词模板 (end.md)
+
+```markdown
+# Shot XXX - 尾帧图片生成提示词
+
+> 尾帧可作为下一分镜的首帧
+
+---
+
+## 完整提示词
+
+```
+【图片基本信息】
+比例: 16:9
+风格: 古风动漫, 电影质感
+
+【场景环境】
+[详细描述场景]
+
+【角色设定】
+[角色名], [详细描述]. [最终姿态]. [最终情绪状态].
+
+【构图与运镜】
+镜头类型: [镜头类型]
+镜头角度: [角度]
+焦点: [焦点位置]
+景深: [深/浅]
+
+【画面描述】
+[详细描述尾帧的画面内容、最终情绪状态、画面定格效果、与下一分镜的衔接]
+
+【色调与光影】
+主色调: [颜色名] ([色值])
+点缀色: [颜色名] ([色值])
+布光方式: [描述]
+对比度: [高/中/低]
+
+【画面质感】
+- 景深: [描述]
+- 细节: [描述]
+- 质感: [描述]
+```
+
+---
+
+## 关键视觉参考
+
+```
+【定格效果】
+- [效果1]
+- [效果2]
+
+【与下一镜衔接】
+- [衔接点]
+```
+```
+
+---
+
+### 4. 视频提示词模板 (video.md)
+
+```markdown
+# Shot XXX - 视频生成提示词
+
+> 直接复制以下内容给视频AI生成
+
+---
+
+## 完整提示词 ([X]秒视频)
+
+```
+【视频基本信息】
+时长: [X]秒
+风格: 古风动漫, 电影质感, [情绪类型]
+比例: 16:9
+帧率: 24fps
+
+【场景环境】
+[详细描述场景：位置、时间、光线、氛围、细节]
+
+【角色设定】
+[角色名], [年龄]岁左右的[身份]. [外貌描述: 五官、肤色、发型]. [服装描述]. [当前状态和情绪]. [与故事相关的背景].
+
+【运镜设计】
+镜头类型: [镜头类型英文] ([中文])
+镜头角度: [角度英文] ([中文])
+运镜方式: [运镜英文] ([中文])
+
+0-[X]秒【[阶段名]】:
+[详细描述这个阶段的镜头运动、画面变化、焦点转移]
+
+[X]-[X]秒【[阶段名]】:
+[详细描述]
+
+[X]-[X]秒【[阶段名]】:
+[详细描述]
+
+【情绪与表情变化】
+
+0-[X]秒【[情绪阶段]】:
+- 眼睛: [描述]
+- 眉毛: [描述]
+- 嘴唇: [描述]
+- 整体: [描述]
+
+[X]-[X]秒【[情绪阶段]】:
+- [同上格式]
+
+【色调与光影】
+
+主色调: [颜色名] ([色值]) 与 [颜色名] ([色值])
+点缀色: [颜色名] ([色值])
+布光方式: [描述]
+对比度: [高/中/低]
+
+【音效设计】
+
+环境音:
+- [音效1]
+- [音效2]
+
+特殊音效:
+- [时间点]: [音效描述]
+
+【台词】([出现时间])
+
+说话人: [角色名]
+音色: [音色描述 - 详见下方角色音色参考]
+台词: "[台词内容]"
+语气: [语气描述]
+声音位置: [画外/画内, 位置]
+
+【背景音乐】
+
+类型: [配乐类型]
+乐器: [主要乐器]
+节奏: [节奏描述]
+音量: [XX]%
+情绪: [情绪描述]
+
+【画面质感】
+
+- 景深: [描述]
+- [其他质感描述]
+```
+
+---
+
+## 情绪曲线图
+
+```
+情绪强度
+    ^
+    |                    ╭─────╮
+    |                   ╱       ╲
+    |                  ╱         ╲
+    |      ╭─────────╯           ╲
+    |     ╱                         ╲
+    |    ╱                           ╲
+    |───╯                             ╲────
+    +-------------------------------------> 时间
+      0    2    4    6    8秒
+      |    |    |    |
+    [阶段1] [阶段2] [阶段3] [阶段4]
+```
+
+---
+
+## 关键视觉参考
+
+```
+【[视觉元素1]】
+- [细节1]
+- [细节2]
+
+【[视觉元素2]】
+- [细节1]
+- [细节2]
+```
+
+---
+
+## 角色音色参考
+
+### 辛月影 (女主角)
+- **年龄**: 20岁
+- **声音类型**: 清亮温润的女声
+- **音色特征**: 柔和中带着坚韧，有书卷气
+- **语速**: 中等偏慢
+- **情绪范围**: 从迷茫困惑到冷静智慧
+- **参考音色**: 年轻知性女性，略带古装剧女主角的气质
+
+### 沈清起 (男主角)
+- **年龄**: 22岁
+- **声音类型**: 低沉清冷的男声
+- **音色特征**: 冰冷中带着病态的慵懒，阴鸷多疑
+- **语速**: 偏慢，一字一顿
+- **情绪范围**: 冷酷、嘲讽、阴鸷、威胁
+- **参考音色**: 病娇系反派男主，低沉有磁性
+
+### 霍齐 (配角)
+- **年龄**: 30岁左右
+- **声音类型**: 粗犷的男声
+- **音色特征**: 愤怒时洪亮，充满鄙夷
+- **语速**: 快，急躁
+- **情绪范围**: 愤怒、厌恶、鄙视
+- **参考音色**: 忠诚护卫类型，粗犷有力
+```
+
+---
 
 ## 触发方式
 
-当用户要求"生成视频Prompt"或"生成AI视频提示词"时触发。
+当用户要求"生成分镜视频提示词"或"生成视频Prompt"时触发。
 
-Agent应该：
-1. 读取关键帧数据 `scripts/episode_XXX/keyframes.json`
-2. 读取运镜方案 `scripts/episode_XXX/camera_work.json`
-3. 读取角色资源 `assets/characters/` 和场景资源 `assets/scenes/`
-4. 整合所有元素，为不同 AI 模型生成优化的视频 Prompt
-5. 输出到 `scripts/episode_XXX/video_prompts.json`
+### Agent应该：
+
+1. **读取分镜数据**
+   - 读取 `scripts/episode_XXX/shots/shot_xxx.json`
+   - 提取: 场景、角色、运镜、台词、情绪、时长等信息
+
+2. **读取角色资源**
+   - 读取 `assets/characters/{角色名}/character.json`
+   - 获取角色外貌、服装、特征等详细信息
+
+3. **为每个分镜创建目录并生成4个文件**
+   - 创建目录: `output/episode_XXX/shot_xxx/`
+   - 生成 `video.md` - 视频生成提示词
+   - 生成 `start.md` - 首帧图片生成提示词
+   - 生成 `middle.md` - 中间关键帧图片生成提示词
+   - 生成 `end.md` - 尾帧图片生成提示词
+
+4. **注意角色姿态**
+   - 根据分镜JSON中的角色blocking/action确定角色姿态
+   - 如角色是躺地、站立、坐着等状态需准确描述
+
+---
+
+## Prompt 编写要点
+
+### 运镜描述
+- 使用专业术语: dolly in/out, tilt up/down, pan, handheld, crash zoom等
+- 按时间分段描述运镜过程
+- 说明镜头速度: slow, medium, fast
+
+### 情绪描述
+- 按时间段分段描述表情变化
+- 包含: 眼睛、眉毛、嘴唇、整体状态
+- 描述要具体，便于AI理解
+
+### 音色描述
+- 必须包含在台词部分
+- 描述: 声音类型、音色特征、语速、情绪
+- 让AI能够生成正确的语音
+
+### 时长控制
+- 单个视频最长8秒
+- 如果原分镜超过8秒，需要压缩处理
+- 在【视频基本信息】中标注"原XX秒压缩"
+
+### 文字控制
+- 提示词最长不超过1024个字符
+
+---
 
 ## 质量检查清单
 
-- [ ] Prompt 描述准确反映分镜意图
-- [ ] 运镜描述清晰明确
-- [ ] 角色描述一致
-- [ ] 包含必要的风格标签
-- [ ] 负面提示词合理
-- [ ] 参数设置适当
-- [ ] 资源路径正确
+- [ ] 时长不超过8秒
+- [ ] 提示词最长不超过1024个字符
+- [ ] 运镜描述清晰，按时间分段
+- [ ] 情绪变化描述详细
+- [ ] 台词包含音色描述
+- [ ] 场景环境描述完整
+- [ ] 色调与光影符合氛围
+- [ ] 关键帧图片提示词与视频内容一致
+- [ ] 首帧可使用上一分镜尾帧（已标注）

@@ -1,0 +1,185 @@
+{
+  "shot_id": "shot_007",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_007_001",
+      "shot_id": "shot_007",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "呼吸点 - 辛月影跌坐在地，门即将关闭",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "昏暗烛光，门缝透入最后一缕火把光芒",
+        "atmosphere": "绝望封闭，命运悬而未决",
+        "environmental_details": "沉重的木门开始关闭，门缝中的光芒逐渐消失"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "跌坐在地，背对镜头",
+          "expression": "绝望无助（从背影可感知）",
+          "action": "双肩颤抖，跪坐在地上",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙，凌乱",
+          "visible_parts": "背影，肩膀颤抖的细节"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_close",
+        "camera_angle": "eye_level",
+        "framing": "辛月影跌坐在地的背影，门在画面边缘",
+        "rule_of_thirds": "辛月影位于画面中央，门框位于画面边缘",
+        "depth_layers": "前景辛月影背影，中景关闭的门，背景门外的光芒"
+      },
+      "lighting_and_color": {
+        "key_light": "门缝透入的最后一缕火把光芒",
+        "fill_light": "室内微弱的烛光",
+        "shadow": "门影逐渐扩大，吞没辛月影",
+        "color_temperature": "暖光渐变为冷色",
+        "color_palette": ["#D4A574", "#3A4A5C", "#1A1A2E", "#B8D4E3"]
+      },
+      "image_prompt": {
+        "main_prompt": "Medium close-up shot from behind, young Chinese woman kneeling on ground in green dress, shoulders trembling, heavy wooden door beginning to close in background, last sliver of warm torchlight visible through door gap, cold candlelit room, ancient Chinese anime style, despair and isolation moment, melancholic atmosphere",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "back view shot",
+          "despair moment",
+          "melancholic lighting"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "emotional atmosphere"
+        ],
+        "negative_prompt": "bright lighting, hopeful mood, face visible, modern elements, western style, low quality",
+        "full_prompt": "Medium close-up shot from behind, young Chinese woman kneeling on ground in green dress, shoulders trembling, heavy wooden door beginning to close in background, last sliver of warm torchlight visible through door gap, cold candlelit room, ancient Chinese anime style, despair and isolation moment, melancholic atmosphere, anime style, ancient Chinese, back view shot, despair moment, melancholic lighting, masterpiece, best quality, highly detailed, 8k resolution, emotional atmosphere"
+      }
+    },
+    {
+      "keyframe_id": "kf_007_002",
+      "shot_id": "shot_007",
+      "position_in_shot": 0.6,
+      "type": "mid",
+      "narrative_purpose": "隔绝 - 门关闭的瞬间，光线消失",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "门关闭，烛光成为唯一光源",
+        "atmosphere": "封闭隔绝，孤独绝望",
+        "environmental_details": "沉重的木门关闭，锁链声响，光线骤减"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "跪坐在地，头低垂",
+          "expression": "绝望无助，面容被阴影笼罩",
+          "action": "双肩持续颤抖，无声哭泣",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "背影特写，部分侧脸在烛光中可见"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_close",
+        "camera_angle": "eye_level",
+        "framing": "门关闭的特写与辛月影背影的组合",
+        "rule_of_thirds": "门位于画面一侧，辛月影位于另一侧",
+        "depth_layers": "前景门的边缘，中景辛月影，背景黑暗空间"
+      },
+      "lighting_and_color": {
+        "key_light": "仅剩的烛光微弱照射",
+        "fill_light": "无",
+        "shadow": "大面积阴影吞没画面",
+        "color_temperature": "冷色调主导",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#8B7355", "#D4A574"]
+      },
+      "image_prompt": {
+        "main_prompt": "Medium close-up of heavy wooden door closing, shadows expanding across frame, young woman's silhouette kneeling in despair visible in diminishing candlelight, door gap narrowing to nothing, cold blue-grey tones taking over, ancient Chinese anime style, isolation and hopelessness moment, dramatic lighting transition",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "door closing",
+          "isolation moment",
+          "lighting transition"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "atmospheric lighting"
+        ],
+        "negative_prompt": "bright lighting, hopeful mood, open door, modern elements, western style, low quality",
+        "full_prompt": "Medium close-up of heavy wooden door closing, shadows expanding across frame, young woman's silhouette kneeling in despair visible in diminishing candlelight, door gap narrowing to nothing, cold blue-grey tones taking over, ancient Chinese anime style, isolation and hopelessness moment, dramatic lighting transition, anime style, ancient Chinese, door closing, isolation moment, lighting transition, masterpiece, best quality, highly detailed, 8k resolution, atmospheric lighting"
+      }
+    },
+    {
+      "keyframe_id": "kf_007_003",
+      "shot_id": "shot_007",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "完全封闭 - 被阴影吞没，开始思考对策",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "仅剩微弱烛光，阴影笼罩大部分画面",
+        "atmosphere": "绝望中孕育转机",
+        "environmental_details": "门已完全关闭，房间回归死寂，只有烛火摇曳"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "跪坐在地，被阴影逐渐吞没",
+          "expression": "绝望中带着一丝思考",
+          "action": "双肩颤抖逐渐平息，开始冷静",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "背影，烛光勾勒的轮廓"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景背影，阴影吞没大部分画面",
+        "rule_of_thirds": "辛月影位于画面中央偏下",
+        "depth_layers": "前景辛月影轮廓，背景完全黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "微弱的烛光从一侧照射，勾勒辛月影轮廓",
+        "fill_light": "无",
+        "shadow": "大面积黑暗占据画面",
+        "color_temperature": "冷色调为主，微弱暖色点缀",
+        "color_palette": ["#1A1A2E", "#3A4A5C", "#D4A574", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up of young woman's silhouette kneeling in darkness, only rim lighting from single candle outlining her form, shadows gradually swallowing her figure, heavy wooden door completely closed in background, despair slowly transforming into contemplation, ancient Chinese anime style, dramatic low-key lighting, emotional turning point, fade to darkness effect",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "silhouette lighting",
+          "low-key lighting",
+          "emotional transition"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "atmospheric depth"
+        ],
+        "negative_prompt": "bright lighting, clear visibility, hopeful mood, modern elements, western style, low quality",
+        "full_prompt": "Close-up of young woman's silhouette kneeling in darkness, only rim lighting from single candle outlining her form, shadows gradually swallowing her figure, heavy wooden door completely closed in background, despair slowly transforming into contemplation, ancient Chinese anime style, dramatic low-key lighting, emotional turning point, fade to darkness effect, anime style, ancient Chinese, silhouette lighting, low-key lighting, emotional transition, masterpiece, best quality, highly detailed, 8k resolution, atmospheric depth"
+      }
+    }
+  ]
+}

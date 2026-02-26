@@ -1,0 +1,64 @@
+{
+  "shot_id": "shot_007",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "falling",
+  "duration": 5.0,
+  "narrative_beat": "霍齐将辛月影推回，重新关上门",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "昏暗烛光",
+    "atmosphere": "绝望封闭，命运悬而未决"
+  },
+  "camera": {
+    "shot_size": "medium_close",
+    "angle": "eye_level",
+    "movement": "static",
+    "movement_speed": "slow",
+    "framing_note": "辛月影跌坐在地的背影，门被关上的特写"
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "position": "frame_center",
+      "blocking": "跌坐在地，门被关上",
+      "expression": "绝望无助",
+      "action": "跪坐在地，双肩颤抖",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": null,
+    "text": null,
+    "delivery_style": null
+  },
+  "sfx": [
+    {"type": "关门声", "intensity": "high"},
+    {"type": "锁链声", "intensity": "medium"}
+  ],
+  "bgm": {
+    "track": "绝望低沉_大提琴独奏",
+    "volume": 0.3
+  },
+  "transition": {
+    "type": "dissolve",
+    "duration": 0.8
+  },
+  "keyframe_description": "沉重的木门缓缓关闭，辛月影跪坐在地上的背影，被阴影逐渐吞没",
+  "notes": "短暂的呼吸点，让观众和角色一同消化困境"
+}

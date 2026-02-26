@@ -31,7 +31,7 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    Video Generator Pipeline                      │
+│                    Video Generator Pipeline v2                   │
 ├─────────────────────────────────────────────────────────────────┤
 │                                                                 │
 │  1. PREPARE                                                     │
@@ -49,21 +49,35 @@
 │                           ↓                                     │
 │  3. DESIGN                                                      │
 │  ┌─────────────────────────────────────────────────────────┐   │
-│  │ • StoryDirector: 生成分镜脚本                            │   │
+│  │ • StoryDirector: 生成分镜脚本 + 拆分shots/               │   │
 │  │ • CharacterDesigner: 设计角色服化造                      │   │
 │  │ • SceneDesigner: 设计场景背景                            │   │
 │  │ • PropDesigner: 设计关键道具                             │   │
 │  │ • ActionDesigner: 设计打斗动作 (如需要)                   │   │
 │  └─────────────────────────────────────────────────────────┘   │
 │                           ↓                                     │
-│  4. PRODUCE                                                     │
+│  4. PRODUCE (并行处理，最多5个并发)                              │
 │  ┌─────────────────────────────────────────────────────────┐   │
-│  │ • Cinematographer: 设计运镜方案                          │   │
-│  │ • KeyframeExtractor: 提取关键帧                          │   │
-│  │ • PromptEngineer: 生成最终 Prompt                        │   │
+│  │ 对每个分镜并行执行：                                      │   │
+│  │ ┌─────────────────────────────────────────────────────┐ │   │
+│  │ │ shot_001: Cinematographer → KeyframeExtractor       │ │   │
+│  │ │           → PromptEngineer                          │ │   │
+│  │ ├─────────────────────────────────────────────────────┤ │   │
+│  │ │ shot_002: Cinematographer → KeyframeExtractor       │ │   │
+│  │ │           → PromptEngineer                          │ │   │
+│  │ ├─────────────────────────────────────────────────────┤ │   │
+│  │ │ ... (同时最多处理5个分镜)                             │ │   │
+│  │ └─────────────────────────────────────────────────────┘ │   │
 │  └─────────────────────────────────────────────────────────┘   │
 │                           ↓                                     │
-│  5. OUTPUT                                                      │
+│  5. VERIFY                                                      │
+│  ┌─────────────────────────────────────────────────────────┐   │
+│  │ • ShotReview: 验证输出是否符合原文故事情节                │   │
+│  │ • 检查角色行为、场景设置、对白准确性                      │   │
+│  │ • 生成验证报告                                          │   │
+│  └─────────────────────────────────────────────────────────┘   │
+│                           ↓                                     │
+│  6. OUTPUT                                                      │
 │  ┌─────────────────────────────────────────────────────────┐   │
 │  │ • 生成完整的视频生成包                                    │   │
 │  │ • 输出资源清单                                           │   │
@@ -73,17 +87,39 @@
 └─────────────────────────────────────────────────────────────────┘
 ```
 
+## 并发控制
+
+- **最大并发数**: 5个分镜同时处理
+- **处理策略**: 批次处理，每批最多5个分镜
+- **执行方式**: 使用Task工具并行启动多个Agent
+
+## 数据流
+
+```
+                    ┌→ camera_work/shot_001.json → keyframes/shot_001.json → video_prompts/shot_001.json
+                    │
+storyboard.json ─── ├→ camera_work/shot_002.json → keyframes/shot_002.json → video_prompts/shot_002.json
+    ↓               │
+shots/shot_*.json ─┴→ ... (并行处理，最多5个并发)
+                    │
+                    └→ camera_work/shot_N.json → keyframes/shot_N.json → video_prompts/shot_N.json
+```
+
 ## 触发方式
 
 当用户要求"生成视频"或"执行漫剧生成流程"时触发。
 
 Agent应该：
-1. 验证项目结构和必要资源
-2. 按顺序协调各专业 Agent 完成工作：
-   - **分析阶段**: StoryAnalyzer 分析章节内容，EmotionAnalyzer 生成情绪曲线
-   - **设计阶段**: StoryDirector 生成分镜脚本，CharacterDesigner/SceneDesigner/PropDesigner 设计资源
-   - **制作阶段**: Cinematographer 设计运镜方案，KeyframeExtractor 提取关键帧，PromptEngineer 生成最终 Prompt
-3. 输出到 `scripts/episode_XXX/` 目录下的相关文件，并生成执行报告到 `output/episode_001/generation_report.json`
+1. **PREPARE阶段**: 验证项目结构和必要资源
+2. **ANALYZE阶段**: StoryAnalyzer 分析章节，EmotionAnalyzer 生成情绪曲线
+3. **DESIGN阶段**:
+   - StoryDirector 生成分镜脚本，**同时拆分输出到 shots/shot_xxx.json**
+   - CharacterDesigner/SceneDesigner/PropDesigner 设计资源
+4. **PRODUCE阶段**: **并行处理每个分镜（最多5个并发）**
+   - 对每个shot_xxx，依次调用: Cinematographer → KeyframeExtractor → PromptEngineer
+   - 使用Task工具并行启动多个处理流程
+5. **VERIFY阶段**: 使用ShotReview验证输出是否符合原文故事情节
+6. **OUTPUT阶段**: 生成报告和资源清单
 
 ## 输出结构
 
@@ -98,30 +134,39 @@ works/{project}/
 │
 ├── scripts/
 │   └── episode_001/
-│       ├── storyboard.json          # 分镜脚本
-│       ├── camera_work.json         # 运镜方案
-│       ├── keyframes.json           # 关键帧数据
-│       ├── video_prompts.json       # 视频生成 Prompt
-│       └── shots/                   # 分镜图 (如有)
+│       ├── storyboard.json          # 分镜脚本（索引）
+│       ├── shots/                   # 分镜拆分文件
+│       │   ├── shot_001.json
+│       │   └── shot_002.json
+│       ├── camera_work/             # 运镜方案（按分镜拆分）
+│       │   ├── shot_001.json
+│       │   └── shot_002.json
+│       ├── keyframes/               # 关键帧（按分镜拆分）
+│       │   ├── shot_001.json
+│       │   └── shot_002.json
+│       └── video_prompts/           # 视频Prompt（按分镜拆分）
+│           ├── shot_001.json
+│           └── shot_002.json
 │
 ├── assets/
 │   ├── characters/
 │   │   └── {角色名}/
-│   │       ├── design.json          # 角色设计
-│   │       ├── front.png            # 正面图
-│   │       └── views.png            # 四视图
+│   │       ├── design.json
+│   │       ├── front.png
+│   │       └── views.png
 │   │
 │   ├── scenes/
 │   │   └── {场景名}/
-│   │       └── design.json          # 场景设计
+│   │       └── design.json
 │   │
 │   └── props/
 │       └── {道具名}/
-│           └── design.json          # 道具设计
+│           └── design.json
 │
 └── output/
     └── episode_001/
         ├── generation_report.json   # 生成报告
+        ├── verification_report.json # 验证报告
         └── asset_manifest.json      # 资源清单
 ```
 
@@ -135,11 +180,19 @@ works/{project}/
   "generated_at": "2024-01-15T10:30:00Z",
 
   "pipeline_status": {
+    "prepare": "completed",
     "analyze": "completed",
-    "storyboard": "completed",
     "design": "completed",
     "produce": "completed",
+    "verify": "completed",
     "output": "completed"
+  },
+
+  "parallel_processing": {
+    "total_shots": 12,
+    "max_concurrency": 5,
+    "batches_processed": 3,
+    "processing_time_seconds": 120
   },
 
   "statistics": {
@@ -153,9 +206,10 @@ works/{project}/
 
   "outputs": {
     "storyboard": "scripts/episode_001/storyboard.json",
-    "camera_work": "scripts/episode_001/camera_work.json",
-    "keyframes": "scripts/episode_001/keyframes.json",
-    "video_prompts": "scripts/episode_001/video_prompts.json"
+    "shots_directory": "scripts/episode_001/shots/",
+    "camera_work_directory": "scripts/episode_001/camera_work/",
+    "keyframes_directory": "scripts/episode_001/keyframes/",
+    "video_prompts_directory": "scripts/episode_001/video_prompts/"
   },
 
   "asset_manifest": {
@@ -168,7 +222,8 @@ works/{project}/
     "storyboard_valid": true,
     "all_shots_have_keyframes": true,
     "all_prompts_generated": true,
-    "character_consistency": true
+    "character_consistency": true,
+    "story_verification_passed": true
   },
 
   "errors": [],
@@ -187,12 +242,6 @@ works/{project}/
 | 场景资源缺失 | 场景未设计 | 先使用 scene-designer 创建 |
 | Prompt 生成失败 | 关键帧数据不完整 | 检查 keyframes.json |
 
-### 恢复机制
-
-```bash
-# 从指定步骤恢复
-/video-generator --project "穿书后我攻略了奸臣首辅" --episode episode_001 --resume-from produce
-```
 
 ## 配置选项
 

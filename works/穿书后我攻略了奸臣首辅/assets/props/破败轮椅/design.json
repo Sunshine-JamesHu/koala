@@ -1,0 +1,35 @@
+{
+  "prop_id": "prop_002",
+  "name": "破败轮椅",
+  "category": "家具",
+  "importance": "key",
+  "description": "沈清起日常使用的轮椅，是他腿疾后行动的唯一工具。轮椅破旧不堪，却承载着这位落难将门之后的残躯。满地碎瓷铺在轮椅脚边，残羹染污了车轮，整体呈现出废墟之上的颓败美感，与沈清起阴鸷的气质形成呼应。",
+  "dimensions": {
+    "seat_height": "约50cm",
+    "seat_width": "约45cm",
+    "overall_height": "约90cm（含靠背）",
+    "wheel_diameter": "约60cm"
+  },
+  "color": ["#8B4513", "#5D4037", "#3E2723", "#1A1A1A"],
+  "material": "老旧木材为主，铁质轮轴和连接件，部分铜质装饰已氧化",
+  "visual_features": {
+    "frame": "木质框架多处开裂，表面漆皮剥落露出原木，边角有磨损痕迹",
+    "wheels": "木制轮毂配铁质轮圈，轮辐有些许变形，转动时发出吱呀声",
+    "seat": "藤编坐垫部分破损，露出内部结构，边缘有污渍",
+    "armrest": "扶手处木质磨损光滑，有长久使用形成的凹陷"
+  },
+  "views": {
+    "front": "正面可见轮椅整体轮廓，两侧扶手不对称，一侧略有倾斜",
+    "side": "侧面可见靠背微微后倾，车轮不规整，有修补痕迹",
+    "detail": "木质纹理清晰可见，裂缝和剥落的漆皮细节丰富，轮轴处有铁锈"
+  },
+  "weathering": {
+    "paint": "原本的深色漆面大面积剥落，露出灰褐色木质",
+    "damage": "多处裂缝和缺口，有些用粗糙的方式修补过",
+    "dirt": "车轮和脚踏处沾染污渍和泥土"
+  },
+  "prompt_template": "ancient wooden wheelchair, broken and weathered, peeling paint revealing aged wood, wobbly wooden wheels with iron rims, rattan seat partially torn, dark brown and grey tones, rusted metal parts, creaking and old appearance, historical chinese furniture, impoverished setting, neglected but still functional, dim lighting, dust and grime accumulated",
+  "scene_integration": "置于昏暗室内，周围散落碎瓷片和残羹，青灯的光影在轮椅上投下斑驳",
+  "narrative_significance": "象征沈清起的残疾和落魄处境，是他从将门之后沦为阶下囚的物理体现，也是其阴郁气质的延伸",
+  "tags": ["家具", "轮椅", "破旧", "残疾", "落魄", "古代"]
+}

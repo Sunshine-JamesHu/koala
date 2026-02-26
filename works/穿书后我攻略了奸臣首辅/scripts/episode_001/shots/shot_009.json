@@ -1,0 +1,72 @@
+{
+  "shot_id": "shot_009",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "resolution",
+  "duration": 12.0,
+  "narrative_beat": "辛月影灵机一动，编造被神秘人威胁才下毒的谎言",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "冷暖交织",
+    "atmosphere": "智谋博弈，转机初现"
+  },
+  "camera": {
+    "shot_size": "medium_close",
+    "angle": "eye_level",
+    "movement": "static",
+    "movement_speed": "slow",
+    "framing_note": "双人镜头，辛月影和沈清起的对峙"
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "position": "frame_right",
+      "blocking": "缓缓站起，直视沈清起",
+      "expression": "镇定自若，带一丝委屈",
+      "action": "抬起头，眼神坚定地说出谎言",
+      "costume_version": "costume_001"
+    },
+    {
+      "character_id": "char_002",
+      "name": "沈清起",
+      "position": "frame_left",
+      "blocking": "坐在轮椅上，剑势未收",
+      "expression": "阴鸷多疑",
+      "action": "微微眯起眼睛，审视辛月影",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": "辛月影",
+    "text": "我下毒，是因为有人拿刀架在我脖子上逼我的。那个人说，不杀你，我全家都得死。",
+    "delivery_style": "镇定中带着一丝颤抖，表演逼真"
+  },
+  "sfx": [
+    {"type": "心跳声", "intensity": "medium"}
+  ],
+  "bgm": {
+    "track": "博弈_紧张钢琴分解",
+    "volume": 0.3
+  },
+  "transition": {
+    "type": "cut",
+    "duration": 0.5
+  },
+  "keyframe_description": "辛月影缓缓站起，直视沈清起的眼睛，烛光在她脸上投射出明暗交替的光影，眼神坚定",
+  "notes": "情绪高潮点3：主角展现智谋，开始反击，这是故事的重要转折"
+}

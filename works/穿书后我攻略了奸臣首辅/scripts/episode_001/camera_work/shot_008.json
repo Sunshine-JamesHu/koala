@@ -1,0 +1,73 @@
+{
+  "shot_id": "shot_008",
+  "episode": 1,
+  "duration": 10.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.4,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.5,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "近景辛月影眼睛，恐惧表情"
+    },
+    "end_frame": {
+      "shot_size": "close_up",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.5,
+        "z": 1.2
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.5,
+        "z": 0.0
+      },
+      "fov": 85,
+      "description": "近景辛月影眼睛，眼神转为坚定思考"
+    }
+  },
+  "movement": {
+    "type": "dolly_in",
+    "path_type": "linear",
+    "speed_profile": "ease_in_out",
+    "duration": 10.0,
+    "description": "极缓慢推近眼睛特写，捕捉情绪从恐惧转为冷静思考的过程"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/1.4",
+      "focus_point": "辛月影的眼睛",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "high"
+    },
+    "motion_blur": {
+      "enabled": false
+    },
+    "lens_flare": {
+      "enabled": true,
+      "intensity": 0.15,
+      "description": "烛光在眼中的微弱反光"
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Slow push-in on a young woman's face in close-up. Her expression transforms from fear to calculated thinking. Candlelight flickers across her features. Her eyes narrow slightly as she formulates a plan.",
+    "camera_motion_en": "Very slow dolly in, ease-in-out, linear path, 10 seconds, emotional transformation",
+    "technical_specs": "85mm portrait lens, f/1.4 shallow DOF, candlelight face lighting, subtle warmth in shadows"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "desperate",
+    "secondary_emotion": "calculated",
+    "intensity": 0.75,
+    "camera_rationale": "缓慢推近捕捉情绪转变，展现主角从被动到主动的心理转折"
+  }
+}

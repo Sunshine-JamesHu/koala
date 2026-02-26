@@ -1,0 +1,76 @@
+{
+  "shot_id": "shot_005",
+  "episode": 1,
+  "duration": 8.0,
+  "camera_setup": {
+    "start_frame": {
+      "shot_size": "full",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 4.0
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "fov": 24,
+      "description": "全景，辛月影开始奔跑"
+    },
+    "end_frame": {
+      "shot_size": "medium",
+      "angle": "eye_level",
+      "position_3d": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 1.5
+      },
+      "look_at": {
+        "x": 0.0,
+        "y": 1.2,
+        "z": 0.0
+      },
+      "fov": 35,
+      "description": "中景，辛月影被剑气逼退"
+    }
+  },
+  "movement": {
+    "type": "tracking",
+    "path_type": "linear",
+    "speed_profile": "constant",
+    "duration": 8.0,
+    "description": "快速跟拍辛月影的奔跑，然后急停转手持晃动"
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/2.8",
+      "focus_point": "辛月影",
+      "bokeh_type": "circular",
+      "bokeh_intensity": "medium"
+    },
+    "motion_blur": {
+      "enabled": true,
+      "intensity": 0.6,
+      "description": "快速跟拍产生的运动模糊"
+    },
+    "lens_flare": {
+      "enabled": false
+    },
+    "special_effect": {
+      "type": "speed_ramp",
+      "description": "后半段速度骤减，配合剑气逼退"
+    }
+  },
+  "ai_video_prompt": {
+    "movement_description": "Fast tracking shot following a young woman in ancient Chinese dress running desperately toward a door. A sword sweeps through the air, creating a cold glint of light that blocks her path. She stumbles back in terror.",
+    "camera_motion_en": "Fast dolly forward tracking, constant speed then sudden stop with handheld shake, speed ramp effect, 8 seconds",
+    "technical_specs": "24mm wide angle, fast tracking movement, speed ramp deceleration, motion blur, sword glint effect"
+  },
+  "emotion_mapping": {
+    "primary_emotion": "fear",
+    "intensity": 0.9,
+    "camera_rationale": "快速跟拍配合急停，营造逃跑失败的绝望感"
+  }
+}

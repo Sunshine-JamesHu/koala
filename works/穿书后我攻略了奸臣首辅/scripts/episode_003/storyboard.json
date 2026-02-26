@@ -1,0 +1,253 @@
+{
+  "episode": 3,
+  "title": "杀人了",
+  "chapter": "chapter_003",
+  "total_duration": 160,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574",
+      "blood_red": "#8B0000"
+    }
+  },
+  "characters": [
+    {"id": "char_001", "name": "辛月影", "role": "protagonist"},
+    {"id": "char_002", "name": "沈清起", "role": "male_lead"},
+    {"id": "char_003", "name": "霍齐", "role": "supporting"},
+    {"id": "char_004", "name": "老王", "role": "antagonist"}
+  ],
+  "scenes": [
+    {"id": "loc_001", "name": "破旧房屋", "type": "indoor"},
+    {"id": "loc_002", "name": "门外门廊", "type": "outdoor"}
+  ],
+  "shots": [
+    {
+      "shot_id": "shot_001",
+      "duration": 8.0,
+      "narrative_beat": "辛月影大声说话确保屋内人听见，暗示自己被威胁",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "机智应对"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_left", "expression": "急切", "action": "故意大声说话"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "疑惑", "action": "色眯眯打量辛月影"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "你今天是不是给了我一个纸包包。照做了！照做了的！都是按照你说的做的了！"},
+      "keyframe_description": "辛月影故意大声说话，确保背后屋子里的人能听清楚"
+    },
+    {
+      "shot_id": "shot_002",
+      "duration": 8.0,
+      "narrative_beat": "辛月影用唇语暗示老王，策划装作打斗",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "暗中谋划"},
+      "camera": {"shot_size": "close_up", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "急切暗示", "action": "嘴皮子不动，闭嘴哼哼"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "辛月影特写，嘴皮子不动，闭着嘴用唇语暗示老王"
+    },
+    {
+      "shot_id": "shot_003",
+      "duration": 8.0,
+      "narrative_beat": "老王假装要打辛月影，辛月影尖声大叫",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "假装打斗"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "handheld"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_left", "expression": "假装恐惧", "action": "尖声大叫"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "凶狠", "action": "扬起铁铲作势挥来"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "你不是说我照做了就不杀我的么！我通通照做了呀！别杀我啊！！！！"},
+      "keyframe_description": "老王假装要打辛月影，辛月影尖声大叫，制造混乱"
+    },
+    {
+      "shot_id": "shot_004",
+      "duration": 6.0,
+      "narrative_beat": "霍齐黑影闪过，瞬间制服老王",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "突然袭击"},
+      "camera": {"shot_size": "full", "angle": "low", "movement": "fast_tracking"},
+      "characters": [
+        {"character_id": "char_003", "position": "frame_center", "expression": "凶狠", "action": "黑影快若奔雷，一只手拎起老王"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "惊恐", "action": "被拎起"},
+        {"character_id": "char_001", "position": "frame_left", "expression": "震惊", "action": "目睹黑影闪过"}
+      ],
+      "dialogue": null,
+      "sfx": [{"type": "铁锨落地声", "intensity": "high"}, {"type": "风声", "intensity": "medium"}],
+      "keyframe_description": "黑影快若奔雷，辛月影还没看清，老王就消失在眼前，铁锨落地"
+    },
+    {
+      "shot_id": "shot_005",
+      "duration": 6.0,
+      "narrative_beat": "霍齐金刚怒目瞪着辛月影，辛月影自觉捡起铁锨跟上",
+      "scene": {"location_id": "loc_002", "time_of_day": "night", "atmosphere": "被押回"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_003", "position": "frame_left", "expression": "金刚怒目", "action": "一只手拎着老王，瞪着辛月影"},
+        {"character_id": "char_001", "position": "frame_right", "expression": "心虚", "action": "自觉捡起铁铲跟上"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "霍齐金刚怒目瞪着辛月影，辛月影自觉捡起铁铲跟着回屋"
+    },
+    {
+      "shot_id": "shot_006",
+      "duration": 8.0,
+      "narrative_beat": "黑暗房间内审讯老王",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "黑暗审讯"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_004", "name": "老王", "position": "frame_center", "expression": "惊恐", "action": "跪在地上，剑搭肩上"},
+        {"character_id": "char_003", "position": "frame_left", "expression": "凶狠", "action": "持剑逼问"},
+        {"character_id": "char_001", "position": "frame_right", "expression": "紧张", "action": "屏息凝神站在一旁"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "谁派你来的？！"},
+      "keyframe_description": "房间里一丝光也没有，老王跪在地上，霍齐持剑逼问"
+    },
+    {
+      "shot_id": "shot_007",
+      "duration": 6.0,
+      "narrative_beat": "火折子点亮油灯，照亮沈清起",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "揭露真相"},
+      "camera": {"shot_size": "medium", "angle": "low", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_center", "expression": "冷漠", "action": "倨坐在轮椅上，目光扫过辛月影"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "名字。"},
+      "keyframe_description": "火折子点亮油灯，明丽光影照亮坐在轮椅上的沈清起"
+    },
+    {
+      "shot_id": "shot_008",
+      "duration": 8.0,
+      "narrative_beat": "沈清起弹碎瓷刺入老王右眼",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "残忍酷刑"},
+      "camera": {"shot_size": "close_up", "angle": "eye_level", "movement": "fast"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_left", "expression": "冷笑", "action": "屈指一弹"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "惨叫", "action": "碎瓷刺入右眼"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "名字？"},
+      "sfx": [{"type": "碎瓷飞射声", "intensity": "high"}, {"type": "惨叫声", "intensity": "high"}],
+      "keyframe_description": "沈清起屈指一弹，碎瓷疾飞刺入老王右眼，血肉模糊"
+    },
+    {
+      "shot_id": "shot_009",
+      "duration": 6.0,
+      "narrative_beat": "老王假报姓名陈阿七",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "假名求生"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_004", "name": "老王", "position": "frame_center", "expression": "痛苦恐惧", "action": "面容扭曲，抖若筛糠"}
+      ],
+      "dialogue": {"speaker": "老王", "text": "陈阿七！我叫陈阿七！"},
+      "keyframe_description": "老王想起辛月影的话，仓皇报上假名陈阿七"
+    },
+    {
+      "shot_id": "shot_010",
+      "duration": 6.0,
+      "narrative_beat": "老王意识到被辛月影卖了，恶狠狠看向她",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "危机预感"},
+      "camera": {"shot_size": "close_up", "angle": "eye_level", "movement": "pan"},
+      "characters": [
+        {"character_id": "char_004", "name": "老王", "position": "frame_left", "expression": "恶狠狠", "action": "用剩下的眼狠厉看向辛月影"},
+        {"character_id": "char_001", "position": "frame_right", "expression": "警觉", "action": "察觉老王要反咬"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "老王意识到被辛月影卖了，恶狠狠转头，用剩眼狠厉看向她"
+    },
+    {
+      "shot_id": "shot_011",
+      "duration": 6.0,
+      "narrative_beat": "辛月影一铁锨把老王拍地上",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "先下手为强"},
+      "camera": {"shot_size": "medium", "angle": "low", "movement": "fast"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_left", "expression": "决绝", "action": "挥起铁铲直奔老王后脑勺"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_right", "expression": "惊愕", "action": "被铁锨拍倒"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "当心！刺客手里有暗器！"},
+      "sfx": [{"type": "铁锨击打声", "intensity": "high"}, {"type": "倒地声", "intensity": "high"}],
+      "keyframe_description": "辛月影生死关头挥起铁铲，一铁锨把老王拍地上"
+    },
+    {
+      "shot_id": "shot_012",
+      "duration": 6.0,
+      "narrative_beat": "辛月影取出小刀，声称老王要亮暗器",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "假装立功"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "急切解释", "action": "取出小刀晃晃"},
+        {"character_id": "char_002", "position": "frame_left", "expression": "冰冷审视", "action": "眼中暗含讥诮笑意"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "他适才要亮暗器！"},
+      "keyframe_description": "辛月影取出老王袖中小刀晃晃，沈清起眼中暗含讥诮，一眼看穿"
+    },
+    {
+      "shot_id": "shot_013",
+      "duration": 8.0,
+      "narrative_beat": "霍齐检查后宣布老王死了，辛月影震惊瘫软",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "震惊恐惧"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_003", "position": "frame_left", "expression": "冷漠", "action": "探鼻息后宣布"},
+        {"character_id": "char_001", "position": "frame_right", "expression": "震惊瘫软", "action": "两腿一软坐在地上"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "死了。"},
+      "keyframe_description": "霍齐冷声宣布死了，辛月影两腿一软坐在地上，震惊恐惧"
+    },
+    {
+      "shot_id": "shot_014",
+      "duration": 8.0,
+      "narrative_beat": "辛月影强压惊惶，主动说去埋尸",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "强作镇定"},
+      "camera": {"shot_size": "medium_close", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "强作镇定", "action": "嘴唇发抖，献殷勤"}
+      ],
+      "dialogue": {"speaker": "辛月影", "text": "我......我这就把他埋了，不劳你们动手。"},
+      "keyframe_description": "辛月影强压惊惶，嘴唇发抖，主动说去埋尸"
+    },
+    {
+      "shot_id": "shot_015",
+      "duration": 8.0,
+      "narrative_beat": "辛月影恐惧地拖动老王尸体",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "恐惧拖尸"},
+      "camera": {"shot_size": "full", "angle": "eye_level", "movement": "tracking"},
+      "characters": [
+        {"character_id": "char_001", "position": "frame_center", "expression": "恐惧颤抖", "action": "瑟瑟发抖的手拖着尸体"},
+        {"character_id": "char_004", "name": "老王", "position": "frame_bottom", "expression": "死不瞑目", "action": "尸体被拖动"}
+      ],
+      "dialogue": null,
+      "keyframe_description": "辛月影用铁锨盖住老王血肉模糊的脸，颤抖着拖动尸体"
+    },
+    {
+      "shot_id": "shot_016",
+      "duration": 8.0,
+      "narrative_beat": "沈清起和霍齐面无表情注视辛月影拖尸",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "冷漠注视"},
+      "camera": {"shot_size": "medium", "angle": "eye_level", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_left", "expression": "冷漠", "action": "面无表情注视"},
+        {"character_id": "char_003", "position": "frame_right", "expression": "怀疑", "action": "沉声发问"}
+      ],
+      "dialogue": {"speaker": "霍齐", "text": "那女的会不会有问题？会不会也是他们派来的？"},
+      "keyframe_description": "沈清起和霍齐冷漠注视辛月影拖尸，霍齐提出怀疑"
+    },
+    {
+      "shot_id": "shot_017",
+      "duration": 8.0,
+      "narrative_beat": "沈清起说辛月影和那男人都没问题，吩咐查王屠户",
+      "scene": {"location_id": "loc_001", "time_of_day": "night", "atmosphere": "悬念留存"},
+      "camera": {"shot_size": "close_up", "angle": "low", "movement": "static"},
+      "characters": [
+        {"character_id": "char_002", "position": "frame_center", "expression": "意味深长", "action": "哂然一笑"}
+      ],
+      "dialogue": {"speaker": "沈清起", "text": "她没问题，那男人也没问题。明日去查，那姓王的屠户是否还在。"},
+      "keyframe_description": "沈清起哂然一笑，说出意味深长的话，为下一章埋下悬念"
+    }
+  ]
+}

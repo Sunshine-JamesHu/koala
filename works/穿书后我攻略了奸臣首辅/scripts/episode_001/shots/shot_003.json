@@ -1,0 +1,64 @@
+{
+  "shot_id": "shot_003",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "cool",
+    "aspect_ratio": "16:9",
+    "fps": 24,
+    "color_palette": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "accent": "#E8E8E8",
+      "shadow": "#1A1A2E",
+      "warm_highlight": "#D4A574"
+    }
+  },
+  "beat_type": "rising",
+  "duration": 10.0,
+  "narrative_beat": "辛月影听到辛四娘这个名字，意识到自己穿越成恶毒女配",
+  "scene": {
+    "location_id": "loc_001",
+    "location_name": "破旧房屋",
+    "time_of_day": "night",
+    "lighting": "突兀的冷暖对比",
+    "atmosphere": "震惊与难以置信"
+  },
+  "camera": {
+    "shot_size": "extreme_close_up",
+    "angle": "eye_level",
+    "movement": "zoom",
+    "movement_speed": "fast",
+    "framing_note": "急推特写辛月影瞳孔放大的眼睛，背景虚化"
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "position": "frame_center",
+      "blocking": "震惊地僵住",
+      "expression": "极度震惊，瞳孔放大",
+      "action": "瞳孔急剧收缩又放大，呼吸急促",
+      "costume_version": "costume_001"
+    }
+  ],
+  "dialogue": {
+    "speaker": "沈清起",
+    "text": "辛四娘，你还要装到什么时候？",
+    "delivery_style": "嘲讽冷笑"
+  },
+  "sfx": [
+    {"type": "心跳声", "intensity": "high"},
+    {"type": "耳鸣音效", "intensity": "medium"}
+  ],
+  "bgm": {
+    "track": "穿越震撼_音符停顿",
+    "volume": 0.15
+  },
+  "transition": {
+    "type": "cut",
+    "duration": 0.3
+  },
+  "keyframe_description": "辛月影的眼睛极度特写，瞳孔放大的瞬间，背景中隐约闪现现代车祸的碎片画面",
+  "notes": "情绪高潮点1：穿越身份揭露的震撼，需要强调时间停滞的感觉"
+}

@@ -13,12 +13,30 @@
 
 ## 输入
 
+### 批量模式（传统）
 - 分镜脚本: `scripts/episode_XXX/storyboard.json`
+- 情绪映射: `cache/analysis/chapter_XXX_emotion.json`
+
+### 单分镜模式（并行处理）
+- 单个分镜数据: `scripts/episode_XXX/shots/shot_xxx.json`
 - 情绪映射: `cache/analysis/chapter_XXX_emotion.json`
 
 ## 输出
 
+### 批量模式
 保存到: `scripts/episode_XXX/camera_work.json`
+
+### 单分镜模式（并行处理）
+保存到: `scripts/episode_XXX/camera_work/shot_xxx.json`
+
+输出目录结构：
+```
+scripts/episode_XXX/
+└── camera_work/
+    ├── shot_001.json
+    ├── shot_002.json
+    └── ...
+```
 
 ## 运镜方案结构
 
@@ -214,11 +232,37 @@ Style: Smooth steadicam movement, shallow depth of field, focus stays locked on 
 
 当用户要求"设计运镜"或"规划镜头运动"时触发。
 
+### 批量模式
 Agent应该：
 1. 读取分镜脚本 `scripts/episode_XXX/storyboard.json`
 2. 读取情绪映射 `cache/analysis/chapter_XXX_emotion.json`
-3. 为每个镜头设计专业的运镜方案，包括首尾帧、运动类型、速度等
+3. 为每个镜头设计专业的运镜方案
 4. 输出到 `scripts/episode_XXX/camera_work.json`
+
+### 单分镜模式（并行处理）
+Agent应该：
+1. 读取单个分镜 `scripts/episode_XXX/shots/shot_xxx.json`
+2. 读取情绪映射 `cache/analysis/chapter_XXX_emotion.json`
+3. 为该分镜设计专业的运镜方案
+4. 输出到 `scripts/episode_XXX/camera_work/shot_xxx.json`
+
+## 单分镜运镜输出结构
+
+```json
+{
+  "shot_id": "shot_001",
+  "episode": 1,
+  "duration": 5.0,
+  "camera_setup": {
+    "start_frame": { ... },
+    "end_frame": { ... }
+  },
+  "movement": { ... },
+  "visual_effects": { ... },
+  "ai_video_prompt": { ... },
+  "emotion_mapping": { ... }
+}
+```
 
 ## 质量检查清单
 

@@ -1,0 +1,218 @@
+{
+  "shot_id": "shot_012",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_012_001",
+      "shot_id": "shot_012",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "结尾对峙 - 双人正反打，眼神交锋",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色与暗金色交织，烛光摇曳",
+        "atmosphere": "紧张对峙，命运未卜",
+        "environmental_details": "青灯摇曳，光影交错"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "站立不动，直视沈清起",
+          "expression": "坚定中带着紧张，微微握紧拳头",
+          "action": "等待回应，身体紧绷",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "全身，面部表情"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "坐在轮椅上，剑势依旧",
+          "expression": "审视与怀疑，目光如刀",
+          "action": "目光在辛月影身上游移，思考",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "上半身，轮椅，审视的表情"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium",
+        "camera_angle": "eye_level",
+        "framing": "双人中景，对角线构图",
+        "rule_of_thirds": "两人分别位于画面左右两侧，形成对角线",
+        "depth_layers": "前景辛月影，中景沈清起，背景黑暗空间"
+      },
+      "lighting_and_color": {
+        "key_light": "冷暖交织的光线，烛光在两人之间跳动",
+        "fill_light": "冷色环境光",
+        "shadow": "两人之间的阴影增加对峙感",
+        "color_temperature": "冷暖平衡",
+        "color_palette": ["#3A4A5C", "#D4A574", "#1A1A2E", "#B8D4E3"]
+      },
+      "image_prompt": {
+        "main_prompt": "Medium two-shot of tense standoff, young Chinese woman in green dress standing on right with determined expression and clenched fists, pale young man in black wheelchair on left watching with suspicious eyes, his sword still raised, candlelight flickering between them creating dancing shadows, diagonal composition, ancient Chinese anime style, unresolved confrontation",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "two-shot standoff",
+          "diagonal composition",
+          "unresolved tension"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "narrative composition"
+        ],
+        "negative_prompt": "peaceful resolution, bright lighting, static composition, modern elements, western style, low quality",
+        "full_prompt": "Medium two-shot of tense standoff, young Chinese woman in green dress standing on right with determined expression and clenched fists, pale young man in black wheelchair on left watching with suspicious eyes, his sword still raised, candlelight flickering between them creating dancing shadows, diagonal composition, ancient Chinese anime style, unresolved confrontation, anime style, ancient Chinese, two-shot standoff, diagonal composition, unresolved tension, masterpiece, best quality, highly detailed, 8k resolution, narrative composition"
+      }
+    },
+    {
+      "keyframe_id": "kf_012_002",
+      "shot_id": "shot_012",
+      "position_in_shot": 0.5,
+      "type": "mid",
+      "narrative_purpose": "镜头拉远 - 展现完整场景，留白构图",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "烛光摇曳，光影交错",
+        "atmosphere": "紧张对峙，悬而未决",
+        "environmental_details": "整个房间的布局逐渐展现，青灯在角落摇曳"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "站立不动，身体微微紧绷",
+          "expression": "坚定中带着等待",
+          "action": "微微握紧拳头，等待回应",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "全身，在画面中占据右侧"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "坐在轮椅上，剑势依旧",
+          "expression": "审视与怀疑",
+          "action": "目光如刀，在辛月影身上游移",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "全身轮椅，在画面中占据左侧"
+        }
+      ],
+      "composition": {
+        "shot_size": "full",
+        "camera_angle": "eye_level",
+        "framing": "全景双人，开始拉远，留白构图",
+        "rule_of_thirds": "两人形成对角线，画面开始留白",
+        "depth_layers": "前景两人，中景房间细节，背景黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光成为主要光源，在空间中跳动",
+        "fill_light": "冷色环境光",
+        "shadow": "大面积阴影增加悬念感",
+        "color_temperature": "冷暖交织",
+        "color_palette": ["#3A4A5C", "#D4A574", "#1A1A2E", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Full shot pull-back revealing entire dim room, two figures in tense standoff - young woman in green dress on right and pale man in wheelchair on left with sword, candlelight flickering and casting long shadows, diagonal positioning of characters, negative space increasing, ancient Chinese anime style, suspenseful wide composition",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "wide shot",
+          "pull-back reveal",
+          "suspense composition"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "atmospheric depth"
+        ],
+        "negative_prompt": "close framing, bright lighting, resolved tension, modern elements, western style, low quality",
+        "full_prompt": "Full shot pull-back revealing entire dim room, two figures in tense standoff - young woman in green dress on right and pale man in wheelchair on left with sword, candlelight flickering and casting long shadows, diagonal positioning of characters, negative space increasing, ancient Chinese anime style, suspenseful wide composition, anime style, ancient Chinese, wide shot, pull-back reveal, suspense composition, masterpiece, best quality, highly detailed, 8k resolution, atmospheric depth"
+      }
+    },
+    {
+      "keyframe_id": "kf_012_003",
+      "shot_id": "shot_012",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "结尾留白 - 悬而未决，为下一集埋下悬念",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷青色与暗金色交织，烛光渐弱",
+        "atmosphere": "紧张对峙，悬念留存",
+        "environmental_details": "整个房间的全貌展现，青灯摇曳，空气中弥漫着火药味"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "站立不动，成为画面中的光点",
+          "expression": "坚定中带着不确定",
+          "action": "等待命运的裁决",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙，在烛光中显得清冷",
+          "visible_parts": "全身剪影，在画面中形成焦点"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "坐在轮椅上，成为画面中的暗点",
+          "expression": "审视与怀疑，深不可测",
+          "action": "剑势依旧，危机未解",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍，与黑暗融为一体",
+          "visible_parts": "全身剪影，与阴影融合"
+        }
+      ],
+      "composition": {
+        "shot_size": "full",
+        "camera_angle": "eye_level",
+        "framing": "全景，最大留白，两人形成对角线构图",
+        "rule_of_thirds": "两人位于画面两侧，中间大量留白",
+        "depth_layers": "前景两人剪影，中景房间细节，背景黑暗空间"
+      },
+      "lighting_and_color": {
+        "key_light": "微弱的烛光作为唯一光源，营造朦胧感",
+        "fill_light": "冷色环境光主导",
+        "shadow": "大面积阴影占据画面，增加悬念",
+        "color_temperature": "以冷色为主，微弱暖色点缀",
+        "color_palette": ["#1A1A2E", "#3A4A5C", "#D4A574", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Wide full shot of entire dimly lit room, two silhouettes in tense standoff - young woman in pale green on right and man in black wheelchair on left, maximum negative space between them, single candle flickering weakly, shadows dominating composition, diagonal character placement, cold blue-grey atmosphere with warm candlelight accent, ancient Chinese anime style, cliffhanger ending, unresolved fate, fade to darkness aesthetic",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "cliffhanger ending",
+          "wide composition",
+          "fade to black"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "cinematic ending"
+        ],
+        "negative_prompt": "resolved tension, bright lighting, close framing, modern elements, western style, low quality",
+        "full_prompt": "Wide full shot of entire dimly lit room, two silhouettes in tense standoff - young woman in pale green on right and man in black wheelchair on left, maximum negative space between them, single candle flickering weakly, shadows dominating composition, diagonal character placement, cold blue-grey atmosphere with warm candlelight accent, ancient Chinese anime style, cliffhanger ending, unresolved fate, fade to darkness aesthetic, anime style, ancient Chinese, cliffhanger ending, wide composition, fade to black, masterpiece, best quality, highly detailed, 8k resolution, cinematic ending"
+      }
+    }
+  ]
+}

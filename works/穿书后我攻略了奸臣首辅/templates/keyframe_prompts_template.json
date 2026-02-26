@@ -1,0 +1,103 @@
+{
+  "_template": "关键帧Prompt模板 - 用于图生视频工作流",
+  "_version": "1.0",
+  "_usage": "将此模板复制到shot_xxx_prompts.json，根据分镜内容填写",
+
+  "shot_id": "shot_XXX",
+  "episode": 1,
+  "duration": 8.0,
+  "narrative_summary": "本分镜的故事摘要，一句话描述发生了什么",
+
+  "统一风格设定": {
+    "art_style": "ancient Chinese anime style",
+    "color_palette": ["#3A4A5C", "#1A1A2E", "#8B7355", "#D4A574", "#E8E8E8"],
+    "lighting_base": "dim candlelit room / moonlit night / daylight, warm/cool atmosphere description",
+    "quality_tags": "masterpiece, best quality, highly detailed, 8k resolution, cinematic",
+    "negative_prompt": "bright lighting, modern elements, western style, low quality, blurry, overexposed"
+  },
+
+  "角色参考": {
+    "角色名": {
+      "appearance": "外观描述：年龄、肤色、发型、眼睛颜色、体型等",
+      "costume": "服装描述：颜色、款式、状态（整洁/破旧）",
+      "current_state": "当前状态：情绪、姿态、行为动机"
+    }
+  },
+
+  "场景参考": {
+    "场景名": "场景描述：位置、时间、光线、氛围、关键道具"
+  },
+
+  "关键帧图片生成": {
+    "frame_1_start": {
+      "时间点": "0.0秒",
+      "镜头": "shot_size + camera_angle，如：medium close-up, eye level / low angle",
+      "构图": "画面构图描述，角色位置、前景中景背景",
+      "画面描述": "详细的画面内容描述",
+      "角色状态": "Character name: pose, expression, action, emotional state",
+      "情绪": "主要情绪关键词",
+      "图生图Prompt": "[完整的英文Prompt，可直接复制使用]",
+      "Negative": "[负面提示词]"
+    },
+
+    "frame_2_mid": {
+      "时间点": "中间时间点",
+      "镜头": "镜头设定",
+      "构图": "构图变化",
+      "画面描述": "中间状态描述",
+      "角色状态": "角色状态变化",
+      "情绪": "情绪变化",
+      "图生图Prompt": "[完整英文Prompt]",
+      "Negative": "[负面提示词]"
+    },
+
+    "frame_3_end": {
+      "时间点": "结束时间点",
+      "镜头": "最终镜头设定",
+      "构图": "最终构图",
+      "画面描述": "结束状态描述",
+      "角色状态": "最终角色状态",
+      "情绪": "最终情绪",
+      "图生图Prompt": "[完整英文Prompt]",
+      "Negative": "[负面提示词]"
+    }
+  },
+
+  "视频生成Prompt": {
+    "video_part_1": {
+      "输入": "frame_1 (首帧) + frame_2 (尾帧)",
+      "时长": "X秒",
+      "运动描述": "English description of camera movement and character actions",
+      "中文运动描述": "镜头运动和角色动作的中文描述",
+      "图生视频Prompt": "[完整的视频生成Prompt，描述从首帧到尾帧的运动]",
+      "运镜参数": {
+        "type": "dolly_in / dolly_out / pan / tilt / static / handheld",
+        "start": "起始镜头状态",
+        "end": "结束镜头状态",
+        "speed": "slow / medium / fast, ease-in-out",
+        "duration_seconds": 4
+      }
+    },
+
+    "video_part_2": {
+      "输入": "frame_2 (首帧) + frame_3 (尾帧)",
+      "时长": "X秒",
+      "运动描述": "English description",
+      "中文运动描述": "中文描述",
+      "图生视频Prompt": "[视频生成Prompt]",
+      "运镜参数": {
+        "type": "movement type",
+        "start": "start state",
+        "end": "end state",
+        "speed": "speed profile",
+        "duration_seconds": 4
+      }
+    }
+  },
+
+  "一键复制格式": {
+    "首帧图片Prompt": "[可直接复制给Midjourney/SD使用的完整Prompt，包含 --ar 16:9 --niji 6]",
+    "尾帧图片Prompt": "[可直接复制给Midjourney/SD使用的完整Prompt]",
+    "图生视频Prompt": "[可直接复制给可灵/Runway/Pika等图生视频模型使用的完整Prompt]"
+  }
+}

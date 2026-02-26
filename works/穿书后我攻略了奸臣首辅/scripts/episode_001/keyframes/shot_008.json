@@ -1,0 +1,207 @@
+{
+  "shot_id": "shot_008",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_008_001",
+      "shot_id": "shot_008",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "心理转折开始 - 从恐惧逐渐转为思考",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "冷光中略带暖意，烛光跳动",
+        "atmosphere": "生死抉择，智谋觉醒的前奏",
+        "environmental_details": "昏暗的室内，烛火在辛月影脸上投下跳动的光影"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "跪坐在地，缓缓抬起头",
+          "expression": "恐惧中带着一丝思考的萌芽",
+          "action": "眼神从涣散逐渐聚焦，开始思考对策",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "近景面部，眼睛特写"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景辛月影面部，眼睛特写",
+        "rule_of_thirds": "眼睛位于画面上方三分线",
+        "depth_layers": "前景虚化，中景面部清晰，背景黑暗"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光从侧面照射，在脸上形成明暗对比",
+        "fill_light": "冷色环境光填充阴影",
+        "shadow": "眼窝处的阴影增加深邃感",
+        "color_temperature": "冷暖交织",
+        "color_palette": ["#3A4A5C", "#D4A574", "#8B7355", "#E8E8E8"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up of young Chinese woman's face, almond eyes transitioning from fear to calculated thinking, tears still visible but determination emerging, candlelight flickering across her features creating dynamic shadows, ancient Chinese anime style, emotional transformation moment, subtle warmth in lighting",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "emotional transition",
+          "portrait close-up",
+          "candlelight drama"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "expressive eyes"
+        ],
+        "negative_prompt": "pure fear, bright lighting, full body, modern elements, western style, low quality",
+        "full_prompt": "Close-up of young Chinese woman's face, almond eyes transitioning from fear to calculated thinking, tears still visible but determination emerging, candlelight flickering across her features creating dynamic shadows, ancient Chinese anime style, emotional transformation moment, subtle warmth in lighting, anime style, ancient Chinese, emotional transition, portrait close-up, candlelight drama, masterpiece, best quality, highly detailed, 8k resolution, expressive eyes"
+      }
+    },
+    {
+      "keyframe_id": "kf_008_002",
+      "shot_id": "shot_008",
+      "position_in_shot": 0.5,
+      "type": "mid",
+      "narrative_purpose": "智谋觉醒 - 眼神中浮现出冷静和算计",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "烛光在她脸上跳动，明暗交替",
+        "atmosphere": "情绪转折的关键时刻",
+        "environmental_details": "背景中沈清起的轮椅隐约可见"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "缓缓抬起头，眼神聚焦",
+          "expression": "从恐惧转为冷静思考，眼中闪过一丝算计",
+          "action": "眼神逐渐坚定，脑中快速思索",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "近景面部，眼神细节清晰"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left_background",
+          "pose": "轮椅缓缓逼近",
+          "expression": "冷酷等待",
+          "action": "长剑始终指向辛月影",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "背景中的模糊轮廓"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景辛月影面部，背景虚化中可见沈清起轮廓",
+        "rule_of_thirds": "辛月影眼睛位于画面中心",
+        "depth_layers": "前景辛月影面部清晰，背景沈清起虚化"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光在辛月影脸上跳动，形成动态光影",
+        "fill_light": "冷色环境光",
+        "shadow": "眼窝阴影深邃，增加思考的深沉感",
+        "color_temperature": "冷暖交织",
+        "color_palette": ["#3A4A5C", "#D4A574", "#1A1A2E", "#8B7355"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up portrait of young Chinese woman, her almond eyes showing transformation from fear to calculated determination, candlelight dancing across her face, subtle sharp intelligence emerging in her gaze,模糊 silhouette of man in wheelchair visible in background, ancient Chinese anime style, psychological turning point, dramatic lighting contrast",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "psychological turning point",
+          "portrait close-up",
+          "candlelight portrait"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "character psychology"
+        ],
+        "negative_prompt": "pure fear, bright even lighting, no emotion change, modern elements, western style, low quality",
+        "full_prompt": "Close-up portrait of young Chinese woman, her almond eyes showing transformation from fear to calculated determination, candlelight dancing across her face, subtle sharp intelligence emerging in her gaze, blurred silhouette of man in wheelchair visible in background, ancient Chinese anime style, psychological turning point, dramatic lighting contrast, anime style, ancient Chinese, psychological turning point, portrait close-up, candlelight portrait, masterpiece, best quality, highly detailed, 8k resolution, character psychology"
+      }
+    },
+    {
+      "keyframe_id": "kf_008_003",
+      "shot_id": "shot_008",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "准备反击 - 眼神坚定，决定编造谎言求生",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "烛光稳定，明暗对比增强",
+        "atmosphere": "智谋博弈即将开始",
+        "environmental_details": "房间内的紧张氛围微妙变化"
+      },
+      "characters": [
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_center",
+          "pose": "抬起头，直视前方",
+          "expression": "坚定中带着紧张，眼神锐利",
+          "action": "眼神完全坚定，准备好开始反击",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "近景面部，眼神坚定清晰"
+        },
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "坐在轮椅上，剑势未收",
+          "expression": "冷酷等待，微微眯起眼睛",
+          "action": "审视辛月影的变化",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "背景中的半身轮廓"
+        }
+      ],
+      "composition": {
+        "shot_size": "close_up",
+        "camera_angle": "eye_level",
+        "framing": "近景辛月影面部，眼神坚定",
+        "rule_of_thirds": "眼睛位于画面中心偏上",
+        "depth_layers": "前景辛月影面部清晰，背景沈清起虚化"
+      },
+      "lighting_and_color": {
+        "key_light": "烛光从正面照射，眼神明亮",
+        "fill_light": "冷色环境光",
+        "shadow": "面部阴影增加立体感和坚定感",
+        "color_temperature": "冷暖平衡",
+        "color_palette": ["#3A4A5C", "#D4A574", "#8B7355", "#E8E8E8"]
+      },
+      "image_prompt": {
+        "main_prompt": "Close-up of young Chinese woman's determined face, her almond eyes now sharp and calculating, tears dried, lips slightly pressed together in resolve, candlelight illuminating her features with warm glow against cold background, pale man in wheelchair visible in soft focus on left side of frame, ancient Chinese anime style, moment of strategic decision, psychological drama climax",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "determination portrait",
+          "strategic moment",
+          "dramatic close-up"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "emotional depth"
+        ],
+        "negative_prompt": "fearful expression, bright lighting, uncertain gaze, modern elements, western style, low quality",
+        "full_prompt": "Close-up of young Chinese woman's determined face, her almond eyes now sharp and calculating, tears dried, lips slightly pressed together in resolve, candlelight illuminating her features with warm glow against cold background, pale man in wheelchair visible in soft focus on left side of frame, ancient Chinese anime style, moment of strategic decision, psychological drama climax, anime style, ancient Chinese, determination portrait, strategic moment, dramatic close-up, masterpiece, best quality, highly detailed, 8k resolution, emotional depth"
+      }
+    }
+  ]
+}

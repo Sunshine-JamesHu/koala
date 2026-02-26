@@ -1,0 +1,221 @@
+{
+  "shot_id": "shot_004",
+  "keyframes": [
+    {
+      "keyframe_id": "kf_004_001",
+      "shot_id": "shot_004",
+      "position_in_shot": 0.0,
+      "type": "start",
+      "narrative_purpose": "核心冲突 - 沈清起举剑威胁，揭示下毒事实",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "剑光闪烁的青白色，烛光摇曳",
+        "atmosphere": "生死威胁，极度恐惧",
+        "environmental_details": "破旧的墙壁，斑驳的纹理，角落堆放的杂物"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "坐在轮椅上，手中长剑缓缓举起",
+          "expression": "冷酷决绝，眼中毫无怜悯",
+          "action": "缓缓举起长剑，剑尖指向辛月影",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "上半身，手臂持剑动作"
+        },
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "瑟缩后退，身体紧贴墙壁",
+          "expression": "恐惧绝望，瞳孔收缩",
+          "action": "本能地向后退，背靠墙壁",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙，略显凌乱",
+          "visible_parts": "全身，面部表情清晰"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium",
+        "camera_angle": "dutch",
+        "angle_degree": 15,
+        "framing": "荷兰角构图，剑锋占据前景，增强不安感",
+        "rule_of_thirds": "剑锋位于画面左下角前景，两人分别位于两侧",
+        "depth_layers": "前景剑锋模糊，中景两人清晰，背景墙壁"
+      },
+      "lighting_and_color": {
+        "key_light": "青白色剑光与烛光交织",
+        "fill_light": "冷色环境光",
+        "shadow": "深邃的阴影增加恐惧感",
+        "color_temperature": "冷色调为主",
+        "color_palette": ["#3A4A5C", "#E8E8E8", "#1A1A2E", "#D4A574"]
+      },
+      "image_prompt": {
+        "main_prompt": "Dutch angle medium shot, sharp sword blade dominating the foreground pointing toward terrified young Chinese woman pressed against weathered wall, pale man in black robe sitting in wheelchair holding the sword with cold expression, cold blue candlelight casting harsh shadows, ancient Chinese anime style, tense threatening atmosphere, dynamic unstable composition",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "dutch angle",
+          "threatening composition",
+          "dramatic lighting"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "cinematic action shot"
+        ],
+        "negative_prompt": "peaceful mood, level camera, bright lighting, modern elements, western style, low quality, flat composition",
+        "full_prompt": "Dutch angle medium shot, sharp sword blade dominating the foreground pointing toward terrified young Chinese woman pressed against weathered wall, pale man in black robe sitting in wheelchair holding the sword with cold expression, cold blue candlelight casting harsh shadows, ancient Chinese anime style, tense threatening atmosphere, dynamic unstable composition, anime style, ancient Chinese, dutch angle, threatening composition, dramatic lighting, masterpiece, best quality, highly detailed, 8k resolution, cinematic action shot"
+      }
+    },
+    {
+      "keyframe_id": "kf_004_002",
+      "shot_id": "shot_004",
+      "position_in_shot": 0.5,
+      "type": "mid",
+      "narrative_purpose": "威胁加剧 - 剑尖直指咽喉，生死一线",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "剑光与阴影交替，冷光主导",
+        "atmosphere": "生死一线，恐惧达到顶点",
+        "environmental_details": "墙角的蛛网，摇曳的烛火"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "长剑平举，剑尖稳定指向辛月影咽喉",
+          "expression": "冷酷无情，凤眼中闪过一丝狠厉",
+          "action": "剑势稳定，毫无动摇",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "持剑的手臂，面部侧影"
+        },
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "背靠墙壁，无处可退",
+          "expression": "极度恐惧，眼中泛起泪光",
+          "action": "身体紧贴墙壁，双手护于胸前",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "面部特写，咽喉部位，护胸的双手"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium_close",
+        "camera_angle": "dutch",
+        "angle_degree": 18,
+        "framing": "荷兰角加剧，焦点在剑尖与辛月影咽喉之间",
+        "rule_of_thirds": "剑尖指向画面中心偏右，辛月影位于右侧",
+        "depth_layers": "前景剑身清晰，中景辛月影面部，背景虚化"
+      },
+      "lighting_and_color": {
+        "key_light": "剑身反射的冷光照射辛月影面部",
+        "fill_light": "微弱的烛光暖色",
+        "shadow": "剑身投下的阴影横切画面",
+        "color_temperature": "冷暖强烈对比",
+        "color_palette": ["#3A4A5C", "#E8E8E8", "#1A1A2E", "#D4A574"]
+      },
+      "image_prompt": {
+        "main_prompt": "Dutch angle medium close-up, cold steel sword tip pointing directly at terrified young Chinese woman's throat, her back against crumbling wall, tears forming in wide fearful eyes, hands raised defensively, pale man in black wheelchair visible on left with cold merciless expression, sword gleaming with cold blue light, harsh shadows, ancient Chinese anime style, life-or-death tension",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "life-threatening tension",
+          "dutch angle",
+          "dramatic shadows"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "intense emotional capture"
+        ],
+        "negative_prompt": "peaceful mood, level camera, happy expression, bright lighting, modern elements, western style, low quality",
+        "full_prompt": "Dutch angle medium close-up, cold steel sword tip pointing directly at terrified young Chinese woman's throat, her back against crumbling wall, tears forming in wide fearful eyes, hands raised defensively, pale man in black wheelchair visible on left with cold merciless expression, sword gleaming with cold blue light, harsh shadows, ancient Chinese anime style, life-or-death tension, anime style, ancient Chinese, life-threatening tension, dutch angle, dramatic shadows, masterpiece, best quality, highly detailed, 8k resolution, intense emotional capture"
+      }
+    },
+    {
+      "keyframe_id": "kf_004_003",
+      "shot_id": "shot_004",
+      "position_in_shot": 1.0,
+      "type": "end",
+      "narrative_purpose": "对峙定格 - 生死抉择的瞬间",
+      "scene_description": {
+        "location": "破旧房屋内部",
+        "time_of_day": "night",
+        "lighting": "剑光闪烁，冷青色主导",
+        "atmosphere": "剑拔弩张，命悬一线",
+        "environmental_details": "整个房间笼罩在紧张的氛围中，烛火几乎静止"
+      },
+      "characters": [
+        {
+          "character_id": "char_002",
+          "name": "沈清起",
+          "position": "frame_left",
+          "pose": "长剑稳定，随时可以刺出",
+          "expression": "冷酷等待，凤眼中透出多疑",
+          "action": "审视辛月影，等待她的反应",
+          "costume_id": "costume_001",
+          "costume_description": "玄色交领长袍",
+          "visible_parts": "侧脸，持剑的手臂，轮椅部分"
+        },
+        {
+          "character_id": "char_001",
+          "name": "辛月影",
+          "position": "frame_right",
+          "pose": "完全被困，身体僵硬",
+          "expression": "恐惧中开始闪过一丝思考",
+          "action": "眼神中恐惧与思考交织，开始寻找生机",
+          "costume_id": "costume_001",
+          "costume_description": "淡青色交领襦裙",
+          "visible_parts": "全身，面部表情"
+        }
+      ],
+      "composition": {
+        "shot_size": "medium",
+        "camera_angle": "dutch",
+        "angle_degree": 20,
+        "framing": "荷兰角最大倾斜，两人对峙形成视觉张力",
+        "rule_of_thirds": "对角线构图，剑身形成视觉引导线",
+        "depth_layers": "前景剑身，中景两人，背景阴暗空间"
+      },
+      "lighting_and_color": {
+        "key_light": "冷青色主光从侧上方照射",
+        "fill_light": "微弱的烛光暖色点缀",
+        "shadow": "深邃的阴影强调危机感",
+        "color_temperature": "以冷色为主",
+        "color_palette": ["#3A4A5C", "#1A1A2E", "#D4A574", "#E8E8E8"]
+      },
+      "image_prompt": {
+        "main_prompt": "Dutch angle two-shot medium composition, diagonal tension between pale young man in black wheelchair holding sword and terrified young woman trapped against wall, cold blue-grey lighting with warm candlelight accents, sword creating visual diagonal through frame, intense standoff moment, ancient Chinese anime style, psychological thriller atmosphere, man's cold suspicious eyes contrasting woman's fearful yet calculating expression",
+        "style_tags": [
+          "anime style",
+          "ancient Chinese",
+          "standoff composition",
+          "diagonal tension",
+          "psychological drama"
+        ],
+        "quality_tags": [
+          "masterpiece",
+          "best quality",
+          "highly detailed",
+          "8k resolution",
+          "narrative moment capture"
+        ],
+        "negative_prompt": "peaceful mood, level camera, bright lighting, no tension, modern elements, western style, low quality",
+        "full_prompt": "Dutch angle two-shot medium composition, diagonal tension between pale young man in black wheelchair holding sword and terrified young woman trapped against wall, cold blue-grey lighting with warm candlelight accents, sword creating visual diagonal through frame, intense standoff moment, ancient Chinese anime style, psychological thriller atmosphere, man's cold suspicious eyes contrasting woman's fearful yet calculating expression, anime style, ancient Chinese, standoff composition, diagonal tension, psychological drama, masterpiece, best quality, highly detailed, 8k resolution, narrative moment capture"
+      }
+    }
+  ]
+}

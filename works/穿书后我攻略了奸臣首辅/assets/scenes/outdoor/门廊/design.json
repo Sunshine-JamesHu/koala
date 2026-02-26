@@ -1,0 +1,96 @@
+{
+  "location_id": "loc_002",
+  "name": "房屋外门廊",
+  "type": "outdoor",
+  "era": "古代",
+  "description": "破旧房屋外的狭窄门廊，是霍齐守卫的位置，连接室内与外界的过渡空间。夜色笼罩，寒风萧瑟。",
+  "time_periods": {
+    "day": {
+      "lighting": "日光斜照，屋檐投下阴影，可见远处的边陲小镇轮廓",
+      "atmosphere": "萧索冷清，边陲小镇的贫瘠感",
+      "color_temperature": "灰蓝色调，带微弱暖光"
+    },
+    "night": {
+      "lighting": "月光微弱，偶有云层遮蔽，屋内青灯透出门缝的细弱光线",
+      "atmosphere": "阴冷寂寥，危机四伏，寒风呼啸",
+      "color_temperature": "冷蓝色调，暗青色阴影"
+    }
+  },
+  "architecture": {
+    "style": "古代边陲民居附属结构，简陋搭建",
+    "materials": ["粗糙木板", "石阶", "茅草屋檐", "泥土地面"],
+    "key_elements": [
+      {
+        "name": "破旧门廊",
+        "description": "狭窄的屋檐下空间，地面铺着不平的石板",
+        "position": "房屋正门外延伸"
+      },
+      {
+        "name": "石阶",
+        "description": "三级不平整的石阶，边缘磨损",
+        "position": "门廊前方，通向泥土地面"
+      },
+      {
+        "name": "残破柱子",
+        "description": "支撑屋檐的木柱，表面有裂纹和风雨痕迹",
+        "position": "门廊两侧"
+      },
+      {
+        "name": "茅草屋檐",
+        "description": "部分脱落的茅草，露出下方的木椽",
+        "position": "门廊顶部"
+      },
+      {
+        "name": "门缝透光",
+        "description": "从门缝透出的微弱青灯光线",
+        "position": "木门与门框之间的缝隙"
+      }
+    ]
+  },
+  "props_placement": [
+    {
+      "prop_id": "prop_101",
+      "name": "霍齐的佩刀",
+      "description": "霍齐腰间的兵器，刀鞘磨损",
+      "position": "霍齐腰间"
+    },
+    {
+      "prop_id": "prop_102",
+      "name": "破旧灯笼",
+      "description": "挂在柱子上的残破灯笼，可能熄灭或微亮",
+      "position": "门廊柱子上"
+    }
+  ],
+  "color_palette": {
+    "primary": "#1E272E",
+    "secondary": "#2C3E50",
+    "accent": "#34495E",
+    "moonlight": "#BDC3C7",
+    "shadow": "#0F1419",
+    "wood": "#4A3728",
+    "stone": "#5D6D7E"
+  },
+  "atmosphere_elements": {
+    "night_sky": "云层遮蔽的夜空，偶有月光穿透",
+    "wind": "呼啸的夜风，吹动屋檐的茅草",
+    "distant_sounds": "远处小镇的犬吠声，风吹树叶的沙沙声",
+    "shadows": "月光和屋内灯光交织的动态阴影"
+  },
+  "camera_angles": {
+    "wide_shot": "展示门廊全貌和远处夜色中的小镇轮廓",
+    "medium_shot": "聚焦霍齐守卫的姿态",
+    "over_shoulder": "从霍齐视角看向门内或门外",
+    "low_angle": "从地面仰拍门廊，强调高度和压迫感",
+    "silhouette": "人物剪影效果，背光呈现轮廓"
+  },
+  "prompt_template": "Ancient Chinese dilapidated house porch exterior at night, narrow wooden walkway, worn stone steps, crumbling support columns, thatched roof with missing sections, moonlit night sky with clouds, cold blue atmosphere, dim light leaking through door cracks, border town setting, desolate and isolated mood, traditional Chinese architecture in disrepair, anime art style, cinematic night lighting, dramatic shadows, cold color palette with subtle warm light accent from inside",
+  "variants": {
+    "tension_high": "Same scene with stronger contrast, more ominous clouds, wind effects visible, darker shadows, heightened sense of danger",
+    "tension_low": "Same scene with calmer atmosphere, gentler moonlight, less wind, more peaceful mood"
+  },
+  "spatial_relationship": {
+    "connects_to": "loc_001",
+    "connection_type": "wooden_door",
+    "blocking_position": "霍齐站在门廊中央，堵住进出通道"
+  }
+}

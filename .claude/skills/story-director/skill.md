@@ -21,7 +21,21 @@
 
 ## 输出
 
+### 主输出文件
 保存到: `scripts/episode_XXX/storyboard.json`
+
+### 分镜拆分输出（支持并行处理）
+同时输出到: `scripts/episode_XXX/shots/shot_xxx.json`
+
+每个分镜独立文件，便于后续并行处理：
+```
+scripts/episode_XXX/
+├── storyboard.json          # 完整分镜脚本（索引+全局设置）
+└── shots/
+    ├── shot_001.json        # 分镜1完整数据
+    ├── shot_002.json        # 分镜2完整数据
+    └── ...                  # 其他分镜
+```
 
 ## 分镜脚本结构
 
@@ -272,7 +286,36 @@ Agent应该：
 1. 读取故事分析 `cache/analysis/chapter_XXX_analysis.json`
 2. 读取情绪映射 `cache/analysis/chapter_XXX_emotion.json`
 3. 将故事事件转化为镜头序列，设计场景和角色的视觉呈现
-4. 输出到 `scripts/episode_XXX/storyboard.json`
+4. 输出完整的 `scripts/episode_XXX/storyboard.json`
+5. **同时拆分输出每个分镜到 `scripts/episode_XXX/shots/shot_xxx.json`**
+
+## 单个分镜文件结构
+
+每个 `shots/shot_xxx.json` 包含该分镜的完整信息：
+
+```json
+{
+  "shot_id": "shot_001",
+  "episode": 1,
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "warm|cool|neutral",
+    "aspect_ratio": "16:9",
+    "fps": 24
+  },
+  "scene": { ... },
+  "camera": { ... },
+  "characters": [ ... ],
+  "dialogue": { ... },
+  "narration": { ... },
+  "sound": { ... },
+  "transition": { ... },
+  "keyframe_moments": [ ... ],
+  "notes": { ... }
+}
+```
+
+**注意**：每个分镜文件都包含 `global_settings`，确保并行处理时无需读取主 storyboard.json。
 
 ## 质量检查清单
 

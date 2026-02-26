@@ -1,48 +1,64 @@
 {
+  "character_id": "char_001",
   "name": "辛月影",
-  "role": "女主角",
-  "gender": "女",
-
-  "appearance": {
-    "age": "24岁",
-    "height": "175cm，高挑修长",
-    "bodyType": "纤细，九头身完美比例",
-    "skin": "肌肤似雪，白皙透亮",
-    "face": "鹅蛋脸，五官精致如建模，完美无瑕",
-    "eyes": "杏眼，眼型优美，瞳孔漆黑明亮，眼神灵动机智",
-    "eyebrows": "柳叶眉，纤细自然",
-    "nose": "鼻梁高挺秀气",
-    "lips": "樱桃小口，唇色淡粉",
-    "hair": {
-      "length": "长发及腰",
-      "color": "乌黑如墨",
-      "style": "古代仕女发型，发髻高挽，留有几缕碎发垂于耳侧"
+  "base_info": {
+    "gender": "女",
+    "age": 18,
+    "body_type": "纤细匀称",
+    "height": "165cm"
+  },
+  "face": {
+    "skin_tone": "白皙透亮",
+    "face_shape": "鹅蛋脸，轮廓柔和",
+    "eyes": "杏眼，眼眸清亮灵动，眼角微微上挑，透着几分狡黠与机智",
+    "eyebrows": "柳叶眉，眉形纤细自然",
+    "nose": "鼻梁小巧挺秀",
+    "lips": "樱桃小口，唇色淡粉自然"
+  },
+  "hair": {
+    "style": "长发及腰，常梳半扎半散的少女发式，额前留有轻薄的碎刘海",
+    "color": "乌黑如墨，发质柔顺有光泽",
+    "arrangement": "发间点缀素雅簪钗，偶尔系淡色发带"
+  },
+  "costumes": [
+    {
+      "costume_id": "costume_001",
+      "name": "素雅日常装",
+      "era": "古代",
+      "season": "春秋",
+      "description": "淡青色交领襦裙，外罩月白色半臂，裙摆绣有淡雅兰草纹样，整体清丽脱俗，符合边陲小镇的朴素生活",
+      "color_palette": ["#B8D4E3", "#F5F5F5", "#E8F0E8"],
+      "accessories": [
+        {"type": "发簪", "description": "素银兰花簪", "color": "银白色"},
+        {"type": "腰饰", "description": "淡青色绣花香囊", "color": "淡青色"}
+      ],
+      "prompt_template": "ancient Chinese anime girl, 18 years old, slender figure, oval face, bright almond eyes with cunning glint, willow eyebrows, small cherry lips, fair skin, long flowing black hair with half-up style, light bangs, wearing pale green ruqun dress with white half-sleeve overlay, elegant orchid embroidery on skirt, simple silver hairpin, anime style, soft lighting, delicate features"
+    },
+    {
+      "costume_id": "costume_002",
+      "name": "居家便服",
+      "era": "古代",
+      "season": "四季",
+      "description": "月白色对襟短襦配淡粉色百褶裙，简单朴素，活动方便，适合在破旧房屋中的日常生活",
+      "color_palette": ["#F0F0F0", "#FFD6E0", "#FFFFFF"],
+      "accessories": [
+        {"type": "发带", "description": "淡粉色绸带", "color": "淡粉色"}
+      ],
+      "prompt_template": "ancient Chinese anime girl, 18 years old, casual home attire, white short jacket with pink pleated skirt, simple pink ribbon in hair, natural relaxed pose, soft expression, anime style, indoor lighting, humble dwelling background"
     }
+  ],
+  "expressions": {
+    "neutral": "面容平静，眼神清亮，嘴角微抿，神态自若",
+    "happy": "眉眼弯弯，嘴角上扬，露出浅笑，眼中闪烁着灵动的光芒",
+    "sad": "眉头轻蹙，眼眶微红，目光低垂，神情落寞",
+    "angry": "杏眼圆睁，眉头紧锁，嘴唇紧抿，面带愠色",
+    "surprised": "双眼圆睁，微张小嘴，神情错愕",
+    "fearful": "瞳孔收缩，面色苍白，身体微颤，神情惊恐"
   },
-
-  "clothing": {
-    "style": "古代",
-    "mainOutfit": "粗布长衫（初期贫苦），后改为素雅汉服襦裙",
-    "colors": ["淡青", "月白", "浅粉"],
-    "accessories": ["木簪（初期）", "玉簪（后期）", "腰间香囊"],
-    "shoes": "绣花布鞋"
-  },
-
-  "personality": {
-    "keywords": ["沙雕", "腹黑", "机智", "狡黠", "乐观"],
-    "vibe": "灵动活泼中带着一丝狡黠，表面楚楚可怜实则心机深沉",
-    "posture": "姿态慵懒随意，但关键时刻反应敏捷"
-  },
-
-  "special": {
-    "features": [],
-    "props": [],
-    "notes": "现代穿越者，气质中带有现代人的洒脱"
-  },
-
-  "artStyle": {
-    "base": "anime",
-    "reference": "古风国漫风格，精致唯美人设",
-    "colorTone": "清新明亮，暖色调为主"
-  }
+  "poses": [
+    "站立姿态：身姿挺拔，双手自然垂于身侧或交叠于腹前",
+    "端坐姿态：正襟危坐，双手置于膝上，姿态端庄",
+    "行走姿态：步态轻盈，裙摆随步伐轻轻摆动",
+    "惊慌姿态：后退半步，双手护于胸前，眼神警惕"
+  ]
 }

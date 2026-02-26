@@ -1,0 +1,136 @@
+{
+  "shot_id": "shot_011",
+  "episode": 1,
+  "duration": 8.0,
+  "target_model": "Sora2",
+  "prompts": {
+    "Sora2": {
+      "prompt": "Low angle close-up of a pale young Chinese man with a cold, menacing smile. His thin lips curve upward in an unsettling sneer while his narrow phoenix eyes remain completely icy and devoid of warmth. He sits in a wheelchair holding a long sword that gleams with cold light in the candlelit darkness. The camera slowly pushes in from a low angle over 8 seconds, emphasizing his threatening presence and oppressive aura. Cold blue-grey dramatic lighting from below creates haunting shadows on his angular face. Long black hair frames his pale features. Ancient Chinese anime style, villain's menacing reaction, psychological tension, cliffhanger moment with unresolved danger.",
+      "parameters": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "duration": 8,
+        "style": "anime",
+        "camera_movement": "slow_dolly_in",
+        "camera_angle": "low_angle",
+        "color_grading": "cold_blue"
+      }
+    },
+    "SeeDance": {
+      "prompt": "古风动漫风格，仰角近景特写镜头。苍白的年轻男子坐在轮椅上，嘴角挂着阴冷的笑容，狭长的凤眼却是一片冰冷。他手中握着长剑，剑身在烛光下闪烁着寒芒。镜头从仰角缓慢推近，强调他的压迫感和威胁气息。冷青色的光影从下方照射，在他棱角分明的脸上形成诡异的阴影。乌黑的长发垂落在肩侧。古代中国背景，反派角色的威胁性表情，危机未解的紧张氛围，悬念定格画面。8秒视频，缓慢推近运动。",
+      "parameters": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "duration": 8,
+        "style": "ancient_chinese_anime",
+        "camera_movement": "slow_push_in",
+        "emotion": "menacing_threat"
+      }
+    },
+    "Kling": {
+      "prompt": "ancient Chinese anime, low angle close-up, pale young man, cold smile, icy phoenix eyes, menacing expression, long sword gleaming, wheelchair, candlelight, cold blue lighting, dramatic shadows, slow push in, villain portrait, psychological tension, 8 seconds, 16:9, anime style, highly detailed, masterpiece quality",
+      "parameters": {
+        "aspect_ratio": "16:9",
+        "fps": 24,
+        "duration": 8,
+        "mode": "standard",
+        "camera_type": "push_in",
+        "style_strength": 0.8
+      }
+    }
+  },
+  "motion_guidance": {
+    "camera_movement": {
+      "type": "dolly_in",
+      "start_position": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 1.5
+      },
+      "end_position": {
+        "x": 0.0,
+        "y": 1.0,
+        "z": 1.2
+      },
+      "speed_profile": "ease_in_out",
+      "path_type": "linear",
+      "description": "仰角缓慢推近沈清起，强调压迫感和冷酷气质"
+    },
+    "character_motion": {
+      "primary_character": "沈清起",
+      "motion_type": "facial_expression_transition",
+      "description": "嘴角冷笑从浮现到完成，眼神始终冰冷威胁",
+      "intensity": "subtle",
+      "key_movements": [
+        {
+          "time": "0-2s",
+          "action": "嘴角开始微微上扬，冷笑浮现"
+        },
+        {
+          "time": "2-6s",
+          "action": "冷笑完成，嘴唇保持上扬但眼中无笑意"
+        },
+        {
+          "time": "6-8s",
+          "action": "表情定格，眼中带着审视和威胁"
+        }
+      ]
+    },
+    "environmental_motion": {
+      "sword_gleam": {
+        "description": "剑身在烛光下反射冷光",
+        "intensity": "subtle_shimmer"
+      },
+      "candlelight_flicker": {
+        "description": "烛火跳动在脸上形成微妙的光影变化",
+        "intensity": "subtle"
+      }
+    }
+  },
+  "visual_effects": {
+    "depth_of_field": {
+      "aperture": "f/1.8",
+      "focus_point": "沈清起的面部",
+      "bokeh_type": "hexagonal",
+      "bokeh_intensity": "high"
+    },
+    "lens_flare": {
+      "enabled": true,
+      "intensity": 0.2,
+      "description": "剑身反射的冷光光晕"
+    },
+    "color_grading": {
+      "primary": "#3A4A5C",
+      "secondary": "#8B7355",
+      "shadow": "#1A1A2E",
+      "highlight": "#E8E8E8",
+      "temperature": "cool"
+    }
+  },
+  "narrative_context": {
+    "beat_type": "resolution",
+    "narrative_beat": "沈清起冷笑回应，威胁要让来人下黄泉陪她",
+    "dialogue": "呵，有意思。那就让他们来吧，我会让他们去黄泉路上陪你。",
+    "delivery_style": "阴冷嘲讽，不怒自威",
+    "emotional_tone": "suspicious_menacing",
+    "tension_level": 0.8
+  },
+  "keyframe_references": [
+    {
+      "keyframe_id": "kf_011_001",
+      "position": 0.0,
+      "description": "沈清起冷笑开始 - 威胁并未解除"
+    },
+    {
+      "keyframe_id": "kf_011_002",
+      "position": 0.5,
+      "description": "冷笑进行中 - 威胁来人的话语"
+    },
+    {
+      "keyframe_id": "kf_011_003",
+      "position": 1.0,
+      "description": "定格 - 危机仍未解除，悬念留存"
+    }
+  ],
+  "notes": "反派男主展现多疑冷酷的性格，危机仍未解除。仰角拍摄强调压迫感，缓慢推近增强威胁氛围。"
+}

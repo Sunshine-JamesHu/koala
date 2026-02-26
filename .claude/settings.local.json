@@ -25,7 +25,10 @@
       "Bash(find:*)",
       "Bash(do:*)",
       "Bash(if:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Skill(video-generator)",
+      "Skill(prompt-engineer)",
+      "Bash(ffmpeg:*)"
     ]
   }
 }
