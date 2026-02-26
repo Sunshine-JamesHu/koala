@@ -1,3 +1,8 @@
+---
+name: Text to Image
+description: 使用火山引擎即梦AI文生图3.1 API生成图片。
+---
+
 # text-to-image
 
 使用火山引擎即梦AI文生图3.1 API生成图片。

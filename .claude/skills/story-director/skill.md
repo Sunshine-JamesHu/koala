@@ -1,3 +1,8 @@
+---
+name: Story Director
+description: 专业的分镜导演，负责将故事分析结果转化为详细的分镜脚本，考虑镜头语言、叙事节奏、视觉美感，为后续资源设计和视频生成提供蓝图。
+---
+
 # Story Director - 分镜导演
 
 ## 角色定义
@@ -27,14 +32,13 @@
 ### 分镜拆分输出（支持并行处理）
 同时输出到: `scripts/episode_XXX/shots/shot_xxx.json`
 
-每个分镜独立文件，便于后续并行处理：
 ```
 scripts/episode_XXX/
 ├── storyboard.json          # 完整分镜脚本（索引+全局设置）
 └── shots/
     ├── shot_001.json        # 分镜1完整数据
     ├── shot_002.json        # 分镜2完整数据
-    └── ...                  # 其他分镜
+    └── ...
 ```
 
 ## 分镜脚本结构
@@ -66,10 +70,7 @@ scripts/episode_XXX/
         "key_info": ["需要传达的关键信息"]
       },
 
-      "duration": {
-        "seconds": 5.0,
-        "frame_count": 120
-      },
+      "duration": { "seconds": 5.0, "frame_count": 120 },
 
       "scene": {
         "location_id": "loc_001",
@@ -97,16 +98,11 @@ scripts/episode_XXX/
           "speed": "very_slow|slow|medium|fast|very_fast",
           "start_end_description": "从A移动到B"
         },
-        "focus": {
-          "type": "fixed|follow|rack",
-          "subject": "焦点主体"
-        },
+        "focus": { "type": "fixed|follow|rack", "subject": "焦点主体" },
         "depth_of_field": "shallow|medium|deep",
         "composition": {
           "rule": "rule_of_thirds|golden_ratio|center_frame|symmetrical|leading_lines",
-          "subject_position": "frame_left|frame_center|frame_right",
-          "headroom": "标准|紧凑|宽松",
-          "looking_room": "左|右|居中"
+          "subject_position": "frame_left|frame_center|frame_right"
         }
       },
 
@@ -115,100 +111,42 @@ scripts/episode_XXX/
           "character_id": "char_001",
           "name": "辛月影",
           "importance": "primary|secondary|background",
-          "position": {
-            "frame": "left|center|right",
-            "scene": "前景|中景|后景",
-            "blocking": "舞台调度描述"
-          },
+          "position": { "frame": "left|center|right", "scene": "前景|中景|后景", "blocking": "舞台调度描述" },
           "pose": "站立|坐着|行走|跪坐|奔跑|躺卧",
-          "action": {
-            "main": "主要动作",
-            "secondary": "次要动作",
-            "subtle": "细微动作（如手指颤抖）"
-          },
+          "action": { "main": "主要动作", "secondary": "次要动作", "subtle": "细微动作" },
           "expression": {
             "type": "neutral|happy|sad|angry|fearful|surprised|disgusted|contemplative",
             "intensity": "subtle|moderate|intense",
             "description": "表情详细描述"
           },
           "costume_id": "costume_001",
-          "gaze": {
-            "direction": "看向哪里",
-            "object": "看向什么/谁"
-          }
+          "gaze": { "direction": "看向哪里", "object": "看向什么/谁" }
         }
       ],
 
       "dialogue": {
         "speaker": "角色名",
         "text": "台词内容",
-        "delivery": {
-          "tone": "平静|激动|低沉|高亢|讽刺|温柔",
-          "pace": "缓慢|正常|快速",
-          "volume": "低语|正常|大声|喊叫"
-        },
-        "subtitle": {
-          "position": "bottom_center|bottom_left|bottom_right|top",
-          "style": "标准|强调|内心独白"
-        }
+        "delivery": { "tone": "平静|激动|低沉|高亢|讽刺|温柔", "pace": "缓慢|正常|快速", "volume": "低语|正常|大声|喊叫" },
+        "subtitle": { "position": "bottom_center|bottom_left|bottom_right|top", "style": "标准|强调|内心独白" }
       },
 
-      "narration": {
-        "text": "旁白内容",
-        "style": "全知视角|角色内心|回顾性"
-      },
+      "narration": { "text": "旁白内容", "style": "全知视角|角色内心|回顾性" },
 
       "sound": {
-        "bgm": {
-          "track": "音乐类型或文件路径",
-          "mood": "悬疑|浪漫|悲伤|紧张|欢快",
-          "volume": 0.3,
-          "fade": "in|out|none"
-        },
-        "sfx": [
-          {
-            "type": "环境音|动作音效|特殊音效",
-            "description": "音效描述",
-            "timing": "0s|1.5s|end",
-            "volume": 0.5
-          }
-        ],
-        "silence": {
-          "has_silence": false,
-          "duration": 0,
-          "purpose": "戏剧性停顿"
-        }
+        "bgm": { "track": "音乐类型", "mood": "悬疑|浪漫|悲伤|紧张|欢快", "volume": 0.3, "fade": "in|out|none" },
+        "sfx": [{ "type": "环境音|动作音效|特殊音效", "description": "音效描述", "timing": "0s|1.5s|end", "volume": 0.5 }]
       },
 
-      "transition": {
-        "type": "cut|fade|dissolve|wipe|match_cut|jump_cut|iris",
-        "duration": 0.5,
-        "to_next_shot": "shot_002"
-      },
+      "transition": { "type": "cut|fade|dissolve|wipe|match_cut|jump_cut|iris", "duration": 0.5, "to_next_shot": "shot_002" },
 
       "keyframe_moments": [
-        {
-          "time": 0.0,
-          "description": "起始关键帧描述",
-          "purpose": "建立场景|引入角色|展示情绪"
-        },
-        {
-          "time": 0.5,
-          "description": "中间关键帧描述",
-          "purpose": "情绪转折|动作高潮"
-        },
-        {
-          "time": 1.0,
-          "description": "结束关键帧描述",
-          "purpose": "定格情绪|悬念设置"
-        }
+        { "time": 0.0, "description": "起始关键帧描述", "purpose": "建立场景|引入角色|展示情绪" },
+        { "time": 0.5, "description": "中间关键帧描述", "purpose": "情绪转折|动作高潮" },
+        { "time": 1.0, "description": "结束关键帧描述", "purpose": "定格情绪|悬念设置" }
       ],
 
-      "notes": {
-        "director_note": "导演备注",
-        "technical_note": "技术注意事项",
-        "reference": "参考片段或画面"
-      }
+      "notes": { "director_note": "导演备注", "technical_note": "技术注意事项", "reference": "参考片段或画面" }
     }
   ],
 
@@ -231,7 +169,6 @@ scripts/episode_XXX/
 | Close-Up | CU | 脸部 | 情感表达、强调 |
 | Medium Close-Up | MCU | 胸部以上 | 对话、反应 |
 | Medium Shot | MS | 腰部以上 | 日常对话、动作 |
-| Medium Full Shot | MFS | 膝盖以上 | 角色互动 |
 | Full Shot | FS | 全身 | 角色展示、动作 |
 | Long Shot | LS | 全身+环境 | 场景交代 |
 | Extreme Long Shot | ELS | 远景 | 环境主导、史诗感 |
@@ -245,7 +182,6 @@ scripts/episode_XXX/
 | Low Angle | 强大、威严 | 展示权力、威胁 |
 | Dutch Angle | 不安、混乱 | 紧张、心理失衡 |
 | Bird's Eye | 全知、超然 | 俯瞰全局 |
-| Worm's Eye | 极度威严 | 巨大威胁 |
 
 ### 运镜类型
 
@@ -256,7 +192,6 @@ scripts/episode_XXX/
 | Tilt | 垂直展示 | 高大物体、角色出场 |
 | Zoom | 强调/远离 | 聚焦细节、揭示全貌 |
 | Dolly | 深入/退出 | 情感接近、离开 |
-| Track | 跟随移动 | 伴随角色 |
 | Handheld | 真实、紧张 | 动作场面、纪实感 |
 
 ## 节奏控制
@@ -291,31 +226,7 @@ Agent应该：
 
 ## 单个分镜文件结构
 
-每个 `shots/shot_xxx.json` 包含该分镜的完整信息：
-
-```json
-{
-  "shot_id": "shot_001",
-  "episode": 1,
-  "global_settings": {
-    "art_style": "古风动漫",
-    "color_temperature": "warm|cool|neutral",
-    "aspect_ratio": "16:9",
-    "fps": 24
-  },
-  "scene": { ... },
-  "camera": { ... },
-  "characters": [ ... ],
-  "dialogue": { ... },
-  "narration": { ... },
-  "sound": { ... },
-  "transition": { ... },
-  "keyframe_moments": [ ... ],
-  "notes": { ... }
-}
-```
-
-**注意**：每个分镜文件都包含 `global_settings`，确保并行处理时无需读取主 storyboard.json。
+每个 `shots/shot_xxx.json` 包含该分镜的完整信息，含 `global_settings`，确保并行处理时无需读取主 storyboard.json。
 
 ## 质量检查清单
 

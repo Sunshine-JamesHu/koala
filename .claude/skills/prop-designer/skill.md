@@ -1,3 +1,8 @@
+---
+name: Prop Designer
+description: 专业的道具设计师，负责设计漫剧中出现的重要道具，确保道具与时代背景一致，设计细节丰富，为 AI 图像生成提供准确描述。
+---
+
 # Prop Designer - 道具设计师
 
 ## 角色定义
@@ -37,19 +42,10 @@
   "physical_description": {
     "type": "玉佩",
     "material": "白玉",
-    "dimensions": {
-      "length": "5cm",
-      "width": "3cm",
-      "thickness": "0.5cm"
-    },
+    "dimensions": { "length": "5cm", "width": "3cm", "thickness": "0.5cm" },
     "weight": "约30克",
-
     "shape": "椭圆形，边缘圆润",
-    "surface": {
-      "texture": "光滑温润",
-      "finish": "抛光，半透明"
-    },
-
+    "surface": { "texture": "光滑温润", "finish": "抛光，半透明" },
     "color": {
       "primary": "#F5F5F5",
       "primary_name": "乳白色",
@@ -57,14 +53,12 @@
       "secondary_name": "淡绿色沁",
       "pattern": "少量淡绿色天然纹理"
     },
-
     "decoration": {
       "carving": "正面刻有家族纹章——飞翔的凤凰",
       "engraving": "背面刻有古文字",
       "inlay": "无",
       "attachments": "红色丝绳，末端系小珠"
     },
-
     "condition": "完好，有年代感",
     "age_signs": ["边缘有轻微磨损", "局部有细小裂纹"]
   },
@@ -93,18 +87,9 @@
   },
 
   "context_usage": {
-    "holding": {
-      "description": "角色手持",
-      "prompt_additions": "held in delicate hand, fingers grasping the silk cord"
-    },
-    "examining": {
-      "description": "仔细端详",
-      "prompt_additions": "held up to light, translucent glow, examining expression"
-    },
-    "placing": {
-      "description": "放置状态",
-      "prompt_additions": "resting on wooden table, beside ink stone and scroll"
-    }
+    "holding": { "description": "角色手持", "prompt_additions": "held in delicate hand, fingers grasping the silk cord" },
+    "examining": { "description": "仔细端详", "prompt_additions": "held up to light, translucent glow, examining expression" },
+    "placing": { "description": "放置状态", "prompt_additions": "resting on wooden table, beside ink stone and scroll" }
   },
 
   "cultural_context": {

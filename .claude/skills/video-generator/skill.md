@@ -1,3 +1,8 @@
+---
+name: Video Generator
+description: 漫剧 Agent Teams 的主控协调器，负责统筹整个漫剧生成流程，协调各个专业 Agent 完成从小说章节到视频 Prompt 的全部工作。
+---
+
 # Video Generator - 视频生成协调器
 
 ## 角色定义
@@ -233,15 +238,12 @@ works/{project}/
 
 ## 错误处理
 
-### 常见错误
-
 | 错误类型 | 原因 | 解决方案 |
 |----------|------|----------|
 | 章节文件不存在 | 路径错误或文件未创建 | 检查 chapter_XXX.txt 路径 |
 | 角色资源缺失 | 角色目录不完整 | 先使用 character-designer 创建 |
 | 场景资源缺失 | 场景未设计 | 先使用 scene-designer 创建 |
 | Prompt 生成失败 | 关键帧数据不完整 | 检查 keyframes.json |
-
 
 ## 配置选项
 

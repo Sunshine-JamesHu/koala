@@ -1,3 +1,8 @@
+---
+name: Image to Image
+description: 使用火山引擎即梦AI图生图3.0智能参考API，基于参考图片和文本指令生成新图片。
+---
+
 # image-to-image
 
 使用火山引擎即梦AI图生图3.0智能参考API，基于参考图片和文本指令生成新图片。

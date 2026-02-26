@@ -1,3 +1,8 @@
+---
+name: Last Frame Extractor
+description: 视频帧提取工具，专门用于从视频中提取最后一帧并保存为PNG图片，用于视频制作流程中获取尾帧作为下一镜头首帧参考。
+---
+
 # Last Frame Extractor - 视频尾帧提取器
 
 ## 角色定义
@@ -127,13 +132,11 @@ ffmpeg -sseof -1 -i "/mnt/f/Projects/koala/output/clips/shot_001.mp4" -vframes 1
 
 ### 单个视频处理
 ```bash
-# 使用ffmpeg提取最后一帧
 ffmpeg -sseof -1 -i "视频路径" -vframes 1 -update 1 "输出路径/文件名_last_frame.png"
 ```
 
 ### 批量处理（多个视频）
 ```bash
-# 遍历目录下所有mp4文件
 for f in 目录路径/*.mp4; do
     ffmpeg -sseof -1 -i "$f" -vframes 1 -update 1 "${f%.mp4}_last_frame.png"
 done

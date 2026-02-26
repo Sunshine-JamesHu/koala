@@ -1,3 +1,8 @@
+---
+name: Scene Designer
+description: 专业的场景设计师，负责设计漫剧中的场景背景，确保场景与故事时代背景一致，为角色活动提供合适的空间，并营造恰当的氛围。
+---
+
 # Scene Designer - 场景设计师
 
 ## 角色定义
@@ -106,86 +111,22 @@
   ],
 
   "time_variations": {
-    "dawn": {
-      "lighting": "微弱的晨光透窗而入，室内昏暗",
-      "atmosphere": "宁静、清冷",
-      "color_temperature": "cool",
-      "shadow_quality": "柔和长影"
-    },
-    "morning": {
-      "lighting": "明亮的晨光充满房间",
-      "atmosphere": "清爽、充满活力",
-      "color_temperature": "warm_neutral",
-      "shadow_quality": "清晰"
-    },
-    "noon": {
-      "lighting": "强烈的阳光直射，室内明亮",
-      "atmosphere": "明亮、活跃",
-      "color_temperature": "neutral",
-      "shadow_quality": "短而清晰"
-    },
-    "afternoon": {
-      "lighting": "温暖的午后阳光斜射",
-      "atmosphere": "慵懒、舒适",
-      "color_temperature": "warm",
-      "shadow_quality": "柔和长影"
-    },
-    "dusk": {
-      "lighting": "金色余晖，与烛光交织",
-      "atmosphere": "温馨、略带忧郁",
-      "color_temperature": "golden",
-      "shadow_quality": "戏剧性长影"
-    },
-    "evening": {
-      "lighting": "主要依靠油灯，局部照明",
-      "atmosphere": "温馨、私密",
-      "color_temperature": "warm_orange",
-      "shadow_quality": "强烈对比"
-    },
-    "night": {
-      "lighting": "仅油灯照明，窗外或有月光",
-      "atmosphere": "静谧、神秘",
-      "color_temperature": "cool_with_warm_accents",
-      "shadow_quality": "深沉阴影"
-    },
-    "midnight": {
-      "lighting": "极昏暗，仅剩微弱烛光或月光",
-      "atmosphere": "神秘、压抑",
-      "color_temperature": "cool_blue",
-      "shadow_quality": "极深阴影"
-    }
+    "dawn": { "lighting": "微弱的晨光透窗而入，室内昏暗", "atmosphere": "宁静、清冷", "color_temperature": "cool" },
+    "morning": { "lighting": "明亮的晨光充满房间", "atmosphere": "清爽、充满活力", "color_temperature": "warm_neutral" },
+    "noon": { "lighting": "强烈的阳光直射，室内明亮", "atmosphere": "明亮、活跃", "color_temperature": "neutral" },
+    "afternoon": { "lighting": "温暖的午后阳光斜射", "atmosphere": "慵懒、舒适", "color_temperature": "warm" },
+    "dusk": { "lighting": "金色余晖，与烛光交织", "atmosphere": "温馨、略带忧郁", "color_temperature": "golden" },
+    "evening": { "lighting": "主要依靠油灯，局部照明", "atmosphere": "温馨、私密", "color_temperature": "warm_orange" },
+    "night": { "lighting": "仅油灯照明，窗外或有月光", "atmosphere": "静谧、神秘", "color_temperature": "cool_with_warm_accents" },
+    "midnight": { "lighting": "极昏暗，仅剩微弱烛光或月光", "atmosphere": "神秘、压抑", "color_temperature": "cool_blue" }
   },
 
   "weather_variations": {
-    "clear": {
-      "description": "晴朗天气",
-      "external_view": "可见蓝天白云",
-      "sound": "鸟鸣远传"
-    },
-    "cloudy": {
-      "description": "阴天",
-      "lighting_modifier": "光线平淡柔和",
-      "atmosphere_modifier": "压抑感"
-    },
-    "rain": {
-      "description": "下雨",
-      "external_view": "雨滴打在窗纸上",
-      "lighting_modifier": "昏暗阴沉",
-      "atmosphere_modifier": "忧郁、内敛",
-      "sound": "雨声"
-    },
-    "snow": {
-      "description": "下雪",
-      "external_view": "雪花飘落",
-      "lighting_modifier": "银白色反光",
-      "atmosphere_modifier": "宁静、寒冷"
-    },
-    "storm": {
-      "description": "暴风雨",
-      "external_view": "树木摇晃，雨势急促",
-      "lighting_modifier": "忽明忽暗，闪电",
-      "atmosphere_modifier": "紧张、不安"
-    }
+    "clear": { "description": "晴朗天气", "external_view": "可见蓝天白云", "sound": "鸟鸣远传" },
+    "cloudy": { "description": "阴天", "lighting_modifier": "光线平淡柔和", "atmosphere_modifier": "压抑感" },
+    "rain": { "description": "下雨", "external_view": "雨滴打在窗纸上", "lighting_modifier": "昏暗阴沉", "atmosphere_modifier": "忧郁、内敛", "sound": "雨声" },
+    "snow": { "description": "下雪", "external_view": "雪花飘落", "lighting_modifier": "银白色反光", "atmosphere_modifier": "宁静、寒冷" },
+    "storm": { "description": "暴风雨", "external_view": "树木摇晃，雨势急促", "lighting_modifier": "忽明忽暗，闪电", "atmosphere_modifier": "紧张、不安" }
   },
 
   "color_palette": {
@@ -199,26 +140,10 @@
   },
 
   "atmosphere_presets": {
-    "calm": {
-      "lighting": "柔和均匀",
-      "shadow": "轻微",
-      "mood": "宁静"
-    },
-    "tense": {
-      "lighting": "强烈对比",
-      "shadow": "戏剧性",
-      "mood": "紧张"
-    },
-    "romantic": {
-      "lighting": "温暖柔和",
-      "shadow": "柔和朦胧",
-      "mood": "浪漫"
-    },
-    "mysterious": {
-      "lighting": "昏暗局部",
-      "shadow": "深沉",
-      "mood": "神秘"
-    }
+    "calm": { "lighting": "柔和均匀", "shadow": "轻微", "mood": "宁静" },
+    "tense": { "lighting": "强烈对比", "shadow": "戏剧性", "mood": "紧张" },
+    "romantic": { "lighting": "温暖柔和", "shadow": "柔和朦胧", "mood": "浪漫" },
+    "mysterious": { "lighting": "昏暗局部", "shadow": "深沉", "mood": "神秘" }
   },
 
   "prompt_template": {
