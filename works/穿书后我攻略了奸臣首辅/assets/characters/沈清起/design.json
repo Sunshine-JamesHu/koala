@@ -1,0 +1,142 @@
+{
+    "character_id": "char_002",
+    "name": "沈清起",
+    "role": "male_lead",
+    "description": "名将之后，因蒙冤受酷刑双腿残疾，性格阴鸷偏执",
+    "base_profile": {
+        "gender": "male",
+        "age_appearance": 25,
+        "age_actual": 25,
+        "height": "180cm",
+        "body_type": "thin_but_strong",
+        "skin_tone": "deathly_pale"
+    },
+    "face": {
+        "shape": "angular",
+        "forehead": "宽阔",
+        "eyebrows": {
+            "shape": "sword",
+            "color": "black",
+            "description": "剑眉，微微上挑"
+        },
+        "eyes": {
+            "shape": "phoenix",
+            "color": "pitch_black",
+            "size": "narrow",
+            "expression_default": "冰冷如渊，阴鸷",
+            "description": "狭长的凤眼，常含寒意，偶有血丝"
+        },
+        "nose": {
+            "shape": "straight_high",
+            "description": "笔挺傲骨"
+        },
+        "lips": {
+            "shape": "thin",
+            "color_natural": "pale",
+            "description": "薄唇，常带讥诮笑意"
+        },
+        "ears": "正常"
+    },
+    "hair": {
+        "length": "long",
+        "color": "jet_black",
+        "texture": "slightly_messy",
+        "natural_style": "长发半束半散，略显凌乱沧桑",
+        "arrangements": {
+            "日常": "随意披散或用布条简单一束"
+        }
+    },
+    "distinctive_features": [
+        "双腿有烙痕和扭曲变形的残疾",
+        "手背青筋明显，指节分明有力",
+        "无时无刻不坐在破败轮椅上"
+    ],
+    "costumes": [
+        {
+            "costume_id": "costume_001",
+            "name": "落魄旧袍",
+            "usage": "开篇落难期",
+            "era": "ancient_chinese",
+            "season": "winter_spring",
+            "garments": {
+                "outer": {
+                    "type": "pao",
+                    "description": "深灰色/墨色素袍",
+                    "fabric": "陈旧的棉布/细绢",
+                    "pattern": "无"
+                },
+                "lower": {
+                    "type": "trousers",
+                    "description": "深色长裤（被毯子或衣摆遮盖）",
+                    "fabric": "棉质"
+                }
+            },
+            "accessories": [
+                {
+                    "type": "blanket",
+                    "name": "粗布掩盖",
+                    "color": "褐色",
+                    "position": "腿上"
+                },
+                {
+                    "type": "footwear",
+                    "name": "乌黑靴子",
+                    "color": "黑色",
+                    "position": "脚部"
+                }
+            ],
+            "color_palette": {
+                "primary": "#2F4F4F",
+                "secondary": "#1C1C1C",
+                "accent": "#000000"
+            },
+            "prompt_description": "ancient Chinese male robe, dark gray color, faded and old, sitting in wooden wheelchair, dark boots"
+        }
+    ],
+    "expressions": {
+        "neutral": {
+            "description": "无机质的冰冷，毫无波澜",
+            "prompt_tags": "neutral expression, deathly pale face, cold stare"
+        },
+        "sneer": {
+            "description": "嘴角勾起一抹讥诮残忍的笑意",
+            "prompt_tags": "sneering, cruel smile, cold smirk"
+        },
+        "angry_restrained": {
+            "description": "由于愤怒眼球充血红血丝，死捏碎瓷",
+            "prompt_tags": "bloodshot eyes, intense suppressed anger, terrifying stare"
+        },
+        "amused": {
+            "description": "看戏般颇有兴致的乖张笑意",
+            "prompt_tags": "amused but scary smile, sinister grin"
+        }
+    },
+    "poses": {
+        "sitting_wheelchair": "倨傲地坐在轮椅上，脊背挺直如松",
+        "leaning_back": "慵懒靠在轮椅背上，俯视看人",
+        "holding_sword": "单手持剑指向他人颈段"
+    },
+    "personality_traits": {
+        "primary": [
+            "阴鸷",
+            "病娇",
+            "偏执"
+        ],
+        "secondary": [
+            "极度隐忍",
+            "冷漠残酷"
+        ],
+        "affects_appearance": "气质如冰封下的深渊，病气与杀气并存"
+    },
+    "prompt_template": {
+        "base": "young Chinese man, 25 years old, deathly pale skin, angular sharp face, narrow phoenix eyes dark as abyss, sword eyebrows, thin lips, long black hair half-tied and slightly messy, anime style",
+        "with_costume": "{base}, {costume_prompt}",
+        "with_expression": "{base}, {expression_prompt}",
+        "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"
+    },
+    "reference_images": {
+        "front": "assets/characters/沈清起/front.png",
+        "views": "assets/characters/沈清起/views.png",
+        "expressions": "assets/characters/沈清起/expressions/"
+    }
+}

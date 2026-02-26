@@ -1,0 +1,137 @@
+{
+    "character_id": "char_001",
+    "name": "辛月影",
+    "role": "protagonist",
+    "description": "女主角，穿越者，性格坚韧聪慧，表面沙雕腹黑实则机智狡黠",
+    "base_profile": {
+        "gender": "female",
+        "age_appearance": 24,
+        "age_actual": 24,
+        "height": "170cm",
+        "body_type": "slender",
+        "skin_tone": "fair_pale"
+    },
+    "face": {
+        "shape": "oval",
+        "forehead": "饱满",
+        "eyebrows": {
+            "shape": "willow_leaf",
+            "color": "black",
+            "description": "柳叶眉，带有一丝狡黠"
+        },
+        "eyes": {
+            "shape": "almond",
+            "color": "brown",
+            "size": "medium",
+            "expression_default": "明亮有神带狡黠笑意",
+            "description": "杏眼明亮，眼底带不怀好意的笑"
+        },
+        "nose": {
+            "shape": "small_straight",
+            "description": "高挺秀气"
+        },
+        "lips": {
+            "shape": "cherry",
+            "color_natural": "pale_pink",
+            "description": "樱桃小口，淡粉色"
+        },
+        "ears": "小巧"
+    },
+    "hair": {
+        "length": "waist_length",
+        "color": "jet_black",
+        "texture": "straight_silky",
+        "natural_style": "长发及腰，梳成简单仕女发髻，几缕碎发垂落",
+        "arrangements": {
+            "日常": "木簪挽发"
+        }
+    },
+    "distinctive_features": [
+        "外表楚楚可怜，实则心里骂骂咧咧，反差极大",
+        "因干活手背有时会有灰尘或竹编痕迹"
+    ],
+    "costumes": [
+        {
+            "costume_id": "costume_001",
+            "name": "粗布村妇装",
+            "usage": "日常干活/贫困生存期",
+            "era": "ancient_chinese",
+            "season": "spring_autumn",
+            "garments": {
+                "outer": {
+                    "type": "ruqun",
+                    "description": "淡青色粗布裙配打补丁的短褂",
+                    "fabric": "粗布/麻布",
+                    "pattern": "无纹理，有补丁"
+                }
+            },
+            "accessories": [
+                {
+                    "type": "hairpin",
+                    "name": "木簪",
+                    "material": "木质",
+                    "color": "棕色",
+                    "position": "发髻"
+                },
+                {
+                    "type": "belt",
+                    "name": "粗布带",
+                    "color": "暗色",
+                    "position": "腰间"
+                }
+            ],
+            "color_palette": {
+                "primary": "#8FBC8F",
+                "secondary": "#A9A9A9",
+                "accent": "#8B4513"
+            },
+            "prompt_description": "ancient Chinese coarse cloth dress, pale green color, patched short jacket, simple wooden hairpin, poor village woman attire"
+        }
+    ],
+    "expressions": {
+        "neutral": {
+            "description": "平静，但眼底转动",
+            "prompt_tags": "neutral expression, calm face with cunning eyes"
+        },
+        "happy": {
+            "description": "露出狡黠的笑容，甚至有点邪气",
+            "prompt_tags": "smirking, cunning smile, happy expression"
+        },
+        "scared_fake": {
+            "description": "假装惶恐，瞪大眼睛落泪",
+            "prompt_tags": "fake scared expression, wide teary eyes, feigning innocence"
+        },
+        "angry": {
+            "description": "咬牙切齿，怒视",
+            "prompt_tags": "angry expression, gritting teeth, glaring"
+        }
+    },
+    "poses": {
+        "standing": "随性站立，有时为了装柔弱会瑟瑟发抖侧身",
+        "sitting": "随地坐下盘腿",
+        "working": "熟练地蹲着编竹藤"
+    },
+    "personality_traits": {
+        "primary": [
+            "沙雕",
+            "腹黑",
+            "机智"
+        ],
+        "secondary": [
+            "求生欲极强",
+            "巧言善辩"
+        ],
+        "affects_appearance": "表情极为丰富，变脸极快"
+    },
+    "prompt_template": {
+        "base": "young Chinese woman, 24 years old, slender figure, pale skin, oval face, almond-shaped brown eyes with cunning glint, willow leaf eyebrows, cherry lips, waist-length jet black hair in simple bun, anime style",
+        "with_costume": "{base}, {costume_prompt}",
+        "with_expression": "{base}, {expression_prompt}",
+        "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"
+    },
+    "reference_images": {
+        "front": "assets/characters/辛月影/front.png",
+        "views": "assets/characters/辛月影/views.png",
+        "expressions": "assets/characters/辛月影/expressions/"
+    }
+}
