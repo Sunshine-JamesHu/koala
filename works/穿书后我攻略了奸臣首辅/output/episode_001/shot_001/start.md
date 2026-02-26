@@ -21,7 +21,7 @@
 - 辛月影: works/穿书后我攻略了奸臣首辅/assets/characters/辛月影/views.png
 
 【场景参考图】
-- 古代房屋内部: works/穿书后我攻略了奸臣首辅/assets/scenes/indoor/破旧房屋/main.png
+- 古代房屋内部: works/穿书后我攻略了奸臣首辅/assets/scenes/indoor/破旧房屋/scene_破旧房屋_夜.png
 
 【上一分镜尾帧】
 - 路径: 无，本片为首镜

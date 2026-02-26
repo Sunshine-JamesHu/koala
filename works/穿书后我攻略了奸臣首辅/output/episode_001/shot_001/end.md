@@ -21,7 +21,7 @@
 - 辛月影: works/穿书后我攻略了奸臣首辅/assets/characters/辛月影/views.png
 
 【场景参考图】
-- 古代房屋内部: works/穿书后我攻略了奸臣首辅/assets/scenes/indoor/破旧房屋/main.png
+- 古代房屋内部: works/穿书后我攻略了奸臣首辅/assets/scenes/indoor/破旧房屋/scene_破旧房屋_夜.png
 
 【构图与运镜】
 镜头类型: 极度特写 (extreme close-up)

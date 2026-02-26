@@ -1,0 +1,1123 @@
+{
+    "episode": 5,
+    "title": "第5章 她有用处",
+    "source_chapter": "chapter_005",
+    "total_duration": 48.0,
+    "total_shots": 8,
+    "global_settings": {
+        "art_style": "古风动漫",
+        "color_temperature": "neutral",
+        "aspect_ratio": "16:9",
+        "fps": 24
+    },
+    "shots": [
+        {
+            "shot_id": "shot_001",
+            "sequence": 1,
+            "source_event": "evt_001",
+            "narrative": {
+                "beat_type": "opening",
+                "purpose": "延续上一章结尾，霍齐以报官做死亡威胁",
+                "key_info": [
+                    "霍齐背影",
+                    "辛月影视角",
+                    "死亡威胁"
+                ]
+            },
+            "duration": {
+                "seconds": 5.0,
+                "frame_count": 120
+            },
+            "scene": {
+                "location_id": "loc_001",
+                "location_name": "小厅",
+                "location_type": "indoor",
+                "time_of_day": "night",
+                "weather": "clear",
+                "lighting": {
+                    "type": "artificial",
+                    "direction": "back",
+                    "quality": "hard",
+                    "color": "暖色调",
+                    "description": "霍齐站在月光和油灯交界处"
+                },
+                "atmosphere": "充满威胁感",
+                "environmental_effects": []
+            },
+            "camera": {
+                "shot_size": "medium",
+                "angle": "low_angle",
+                "movement": {
+                    "type": "static",
+                    "direction": "",
+                    "speed": "",
+                    "start_end_description": ""
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "霍齐"
+                },
+                "depth_of_field": "shallow",
+                "composition": {
+                    "rule": "rule_of_thirds",
+                    "subject_position": "frame_right"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_003",
+                    "name": "霍齐",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "right",
+                        "scene": "中景",
+                        "blocking": "背对镜头/半侧身"
+                    },
+                    "pose": "站立",
+                    "action": {
+                        "main": "回头冷笑",
+                        "secondary": "",
+                        "subtle": ""
+                    },
+                    "expression": {
+                        "type": "angry",
+                        "intensity": "moderate",
+                        "description": "似笑非笑，皮笑肉不笑的警告"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "下",
+                        "object": "辛月影（屏外）"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "霍齐",
+                "text": "今夜你若敢跑，明日一早我便去官府，将你今夜杀入的恶事全都挑明了去。",
+                "delivery": {
+                    "tone": "冷酷",
+                    "pace": "正常",
+                    "volume": "大声"
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "标准"
+                }
+            },
+            "narration": {
+                "text": "",
+                "style": ""
+            },
+            "sound": {
+                "bgm": {
+                    "track": "不安的低频合成器",
+                    "mood": "紧张",
+                    "volume": 0.4,
+                    "fade": "in"
+                },
+                "sfx": [
+                    {
+                        "type": "动作音效",
+                        "description": "脚步声，挑开门帘声",
+                        "timing": "4s",
+                        "volume": 0.5
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_002"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.0,
+                    "description": "霍齐居高临下威胁的半侧脸",
+                    "purpose": "建立压迫感"
+                }
+            ],
+            "notes": {
+                "director_note": "主视角镜头（POV），让观众体会辛月影受到的压迫感。"
+            }
+        },
+        {
+            "shot_id": "shot_002",
+            "sequence": 2,
+            "source_event": "evt_002",
+            "narrative": {
+                "beat_type": "rising_action",
+                "purpose": "展示辛月影凄惨的处境",
+                "key_info": [
+                    "打地铺",
+                    "屋内的血案阴影",
+                    "孤独"
+                ]
+            },
+            "duration": {
+                "seconds": 6.0,
+                "frame_count": 144
+            },
+            "scene": {
+                "location_id": "loc_001",
+                "location_name": "小厅",
+                "location_type": "indoor",
+                "time_of_day": "night",
+                "weather": "clear",
+                "lighting": {
+                    "type": "artificial",
+                    "direction": "side",
+                    "quality": "soft",
+                    "color": "暖色调",
+                    "description": "一盏即将熬尽的油灯"
+                },
+                "atmosphere": "凄凉、孤独",
+                "environmental_effects": []
+            },
+            "camera": {
+                "shot_size": "full_shot",
+                "angle": "high_angle",
+                "movement": {
+                    "type": "pan",
+                    "direction": "down",
+                    "speed": "very_slow",
+                    "start_end_description": "从空荡破旧的小厅摇至墙角的辛月影"
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "辛月影"
+                },
+                "depth_of_field": "deep",
+                "composition": {
+                    "rule": "rule_of_thirds",
+                    "subject_position": "frame_bottom"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "center",
+                        "scene": "后景",
+                        "blocking": "蜷缩在地铺上"
+                    },
+                    "pose": "躺卧",
+                    "action": {
+                        "main": "扯被子盖住自己",
+                        "secondary": "环顾四周",
+                        "subtle": "瑟瑟发抖"
+                    },
+                    "expression": {
+                        "type": "fearful",
+                        "intensity": "moderate",
+                        "description": "眼神不安地打量四周"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "游移",
+                        "object": "空荡的房间"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "",
+                "text": "",
+                "delivery": {
+                    "tone": "",
+                    "pace": "",
+                    "volume": ""
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "标准"
+                }
+            },
+            "narration": {
+                "text": "(内心) 他们留着我还是有用的，应该不会贸然把我杀了...",
+                "style": "内心独白"
+            },
+            "sound": {
+                "bgm": {
+                    "track": "悲凉木管",
+                    "mood": "悲伤",
+                    "volume": 0.4,
+                    "fade": "none"
+                },
+                "sfx": [
+                    {
+                        "type": "环境音",
+                        "description": "夜晚风声、老鼠走动声",
+                        "timing": "0s",
+                        "volume": 0.2
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_003"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.5,
+                    "description": "高角度俯拍辛月影蜷缩在破被子里的全景",
+                    "purpose": "展示她弱小无助的处境"
+                }
+            ],
+            "notes": {
+                "director_note": "环境越是破败，越能凸显女主身处的恶劣环境。"
+            }
+        },
+        {
+            "shot_id": "shot_003",
+            "sequence": 3,
+            "source_event": "evt_003",
+            "narrative": {
+                "beat_type": "rising_action",
+                "purpose": "食物极度恶劣，强化生存危机",
+                "key_info": [
+                    "发霉的锅盖",
+                    "糙米野菜粥（刷锅水）",
+                    "极度恶心"
+                ]
+            },
+            "duration": {
+                "seconds": 7.0,
+                "frame_count": 168
+            },
+            "scene": {
+                "location_id": "loc_002",
+                "location_name": "灶房",
+                "location_type": "indoor",
+                "time_of_day": "night",
+                "weather": "clear",
+                "lighting": {
+                    "type": "artificial",
+                    "direction": "front",
+                    "quality": "soft",
+                    "color": "暖色调",
+                    "description": "模糊的暗光"
+                },
+                "atmosphere": "令人作呕",
+                "environmental_effects": []
+            },
+            "camera": {
+                "shot_size": "close_up",
+                "angle": "eye_level",
+                "movement": {
+                    "type": "static",
+                    "direction": "",
+                    "speed": "",
+                    "start_end_description": ""
+                },
+                "focus": {
+                    "type": "rack",
+                    "subject": "从勺底的粥转移到辛月影表情"
+                },
+                "depth_of_field": "shallow",
+                "composition": {
+                    "rule": "center_frame",
+                    "subject_position": "frame_center"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "center",
+                        "scene": "中景",
+                        "blocking": "端着碗拿着勺"
+                    },
+                    "pose": "站立",
+                    "action": {
+                        "main": "喝下一口",
+                        "secondary": "捂嘴干呕",
+                        "subtle": "皱缩眉头"
+                    },
+                    "expression": {
+                        "type": "disgusted",
+                        "intensity": "intense",
+                        "description": "极度嫌弃、恶心欲吐"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "下",
+                        "object": "粥碗"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "",
+                "text": "",
+                "delivery": {
+                    "tone": "",
+                    "pace": "",
+                    "volume": ""
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "标准"
+                }
+            },
+            "narration": {
+                "text": "(内心) 怪不得辛四娘会爱上屠户老王...老王那有肉啊！",
+                "style": "内心独白"
+            },
+            "sound": {
+                "bgm": {
+                    "track": "滑稽/心酸",
+                    "mood": "悲伤",
+                    "volume": 0.4,
+                    "fade": "none"
+                },
+                "sfx": [
+                    {
+                        "type": "动作音效",
+                        "description": "吞咽声，随后是干呕声",
+                        "timing": "1.0s",
+                        "volume": 0.6
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_004"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.0,
+                    "description": "特写勺子里可怜的几粒糙米和黏糊野菜",
+                    "purpose": "直观展示食物糟糕程度"
+                },
+                {
+                    "time": 1.0,
+                    "description": "辛月影捂嘴极度痛苦干呕的特写",
+                    "purpose": "传达恶心的感受"
+                }
+            ],
+            "notes": {
+                "director_note": "那个粥要画的真的像刷锅水一样难看。"
+            }
+        },
+        {
+            "shot_id": "shot_004",
+            "sequence": 4,
+            "source_event": "evt_004",
+            "narrative": {
+                "beat_type": "rising_action",
+                "purpose": "次日清晨的继续施压",
+                "key_info": [
+                    "两只死兔子",
+                    "霍齐逼迫",
+                    "你也配"
+                ]
+            },
+            "duration": {
+                "seconds": 6.0,
+                "frame_count": 144
+            },
+            "scene": {
+                "location_id": "loc_001",
+                "location_name": "小厅",
+                "location_type": "indoor",
+                "time_of_day": "morning",
+                "weather": "clear",
+                "lighting": {
+                    "type": "natural",
+                    "direction": "side",
+                    "quality": "hard",
+                    "color": "冷色调",
+                    "description": "清晨刺眼的阳光射入"
+                },
+                "atmosphere": "火药味、敌意",
+                "environmental_effects": [
+                    "扬尘"
+                ]
+            },
+            "camera": {
+                "shot_size": "medium",
+                "angle": "eye_level",
+                "movement": {
+                    "type": "tilt",
+                    "direction": "down",
+                    "speed": "fast",
+                    "start_end_description": "跟随丢下的兔子下摇"
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "死兔子和辛月影的脚"
+                },
+                "depth_of_field": "medium",
+                "composition": {
+                    "rule": "rule_of_thirds",
+                    "subject_position": "frame_bottom"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_003",
+                    "name": "霍齐",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "right",
+                        "scene": "前景",
+                        "blocking": "大步走入"
+                    },
+                    "pose": "站立",
+                    "action": {
+                        "main": "猛地将死兔子摔在地上",
+                        "secondary": "吐口水",
+                        "subtle": "满脸戾气"
+                    },
+                    "expression": {
+                        "type": "angry",
+                        "intensity": "intense",
+                        "description": "极其鄙夷、恶心"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "下",
+                        "object": "辛月影"
+                    }
+                },
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "secondary",
+                    "position": {
+                        "frame": "left",
+                        "scene": "中景",
+                        "blocking": "刚起身梳理头发"
+                    },
+                    "pose": "站立",
+                    "action": {
+                        "main": "惊愕抬头",
+                        "secondary": "气得发抖",
+                        "subtle": "握紧拳头"
+                    },
+                    "expression": {
+                        "type": "angry",
+                        "intensity": "intense",
+                        "description": "屈辱和愤怒"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "直视",
+                        "object": "霍齐"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "霍齐",
+                "text": "你别恶心我了，相公？你也配！？",
+                "delivery": {
+                    "tone": "鄙夷",
+                    "pace": "正常",
+                    "volume": "大声"
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "强调"
+                }
+            },
+            "narration": {
+                "text": "",
+                "style": ""
+            },
+            "sound": {
+                "bgm": {
+                    "track": "短促沉重的鼓击",
+                    "mood": "紧张",
+                    "volume": 0.6,
+                    "fade": "none"
+                },
+                "sfx": [
+                    {
+                        "type": "动作音效",
+                        "description": "死肉重重摔在木板上的声音",
+                        "timing": "0.5s",
+                        "volume": 0.8
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_005"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.5,
+                    "description": "死兔子被重重摔在地上的特写",
+                    "purpose": "视觉冲击力"
+                },
+                {
+                    "time": 1.0,
+                    "description": "辛月影屈辱地握紧发抖的拳头",
+                    "purpose": "情绪反应"
+                }
+            ],
+            "notes": {
+                "director_note": "强调霍齐的粗暴无礼和辛月影被迫忍受的屈辱。"
+            }
+        },
+        {
+            "shot_id": "shot_005",
+            "sequence": 5,
+            "source_event": "evt_005",
+            "narrative": {
+                "beat_type": "rising_action",
+                "purpose": "展示沈清起的封闭与辛月影想帮忙的决心",
+                "key_info": [
+                    "量腿长",
+                    "沈清起发呆"
+                ]
+            },
+            "duration": {
+                "seconds": 5.0,
+                "frame_count": 120
+            },
+            "scene": {
+                "location_id": "loc_003",
+                "location_name": "卧房",
+                "location_type": "indoor",
+                "time_of_day": "morning",
+                "weather": "clear",
+                "lighting": {
+                    "type": "natural",
+                    "direction": "side",
+                    "quality": "soft",
+                    "color": "冷色调",
+                    "description": "窗外透进来的清晨灰光"
+                },
+                "atmosphere": "死寂",
+                "environmental_effects": []
+            },
+            "camera": {
+                "shot_size": "medium_close",
+                "angle": "eye_level",
+                "movement": {
+                    "type": "static",
+                    "direction": "",
+                    "speed": "",
+                    "start_end_description": ""
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "沈清起侧脸"
+                },
+                "depth_of_field": "deep",
+                "composition": {
+                    "rule": "golden_ratio",
+                    "subject_position": "frame_left"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_002",
+                    "name": "沈清起",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "left",
+                        "scene": "中景",
+                        "blocking": "靠墙发呆"
+                    },
+                    "pose": "坐着",
+                    "action": {
+                        "main": "凝视窗外",
+                        "secondary": "一动不动",
+                        "subtle": "如同雕像"
+                    },
+                    "expression": {
+                        "type": "contemplative",
+                        "intensity": "intense",
+                        "description": "了无生趣的死寂"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "侧视",
+                        "object": "破洞的窗纸"
+                    }
+                },
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "secondary",
+                    "position": {
+                        "frame": "right",
+                        "scene": "前景",
+                        "blocking": "俯身拿长尺"
+                    },
+                    "pose": "弯腰",
+                    "action": {
+                        "main": "拿着木尺悄悄量沈清起的腿长",
+                        "secondary": "",
+                        "subtle": "动作非常轻微小心"
+                    },
+                    "expression": {
+                        "type": "neutral",
+                        "intensity": "subtle",
+                        "description": "专注、小心翼翼"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "下",
+                        "object": "沈清起的腿"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "",
+                "text": "",
+                "delivery": {
+                    "tone": "",
+                    "pace": "",
+                    "volume": ""
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "标准"
+                }
+            },
+            "narration": {
+                "text": "",
+                "style": ""
+            },
+            "sound": {
+                "bgm": {
+                    "track": "静谧忧伤",
+                    "mood": "悲伤",
+                    "volume": 0.3,
+                    "fade": "none"
+                },
+                "sfx": [
+                    {
+                        "type": "环境音",
+                        "description": "清晨鸟叫",
+                        "timing": "0s",
+                        "volume": 0.2
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_006"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.5,
+                    "description": "前景是辛月影拿尺子量腿，背景是发呆犹如木雕的沈清起",
+                    "purpose": "形成对比"
+                }
+            ],
+            "notes": {
+                "director_note": "凸显沈清起的抑郁状态和辛月影试图改变现状的对比。"
+            }
+        },
+        {
+            "shot_id": "shot_006",
+            "sequence": 6,
+            "source_event": "evt_006",
+            "narrative": {
+                "beat_type": "rising_action",
+                "purpose": "展示女主极强的动手能力和生存意志",
+                "key_info": [
+                    "砍竹子",
+                    "烤竹子",
+                    "弯折",
+                    "编织轮椅"
+                ]
+            },
+            "duration": {
+                "seconds": 9.0,
+                "frame_count": 216
+            },
+            "scene": {
+                "location_id": "loc_005",
+                "location_name": "树林/小院",
+                "location_type": "outdoor",
+                "time_of_day": "noon",
+                "weather": "clear",
+                "lighting": {
+                    "type": "natural",
+                    "direction": "top",
+                    "quality": "hard",
+                    "color": "暖色调",
+                    "description": "明亮的阳光"
+                },
+                "atmosphere": "充满活力和希望",
+                "environmental_effects": [
+                    "树影斑驳"
+                ]
+            },
+            "camera": {
+                "shot_size": "medium",
+                "angle": "eye_level",
+                "movement": {
+                    "type": "static",
+                    "direction": "",
+                    "speed": "",
+                    "start_end_description": "快速切分镜头（蒙太奇）"
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "辛月影的动作"
+                },
+                "depth_of_field": "shallow",
+                "composition": {
+                    "rule": "center_frame",
+                    "subject_position": "frame_center"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "center",
+                        "scene": "中景",
+                        "blocking": "在树下工作"
+                    },
+                    "pose": "变换",
+                    "action": {
+                        "main": "用树干把蒸软的竹子掰弯",
+                        "secondary": "脱下外衫垫着手",
+                        "subtle": "额头冒汗"
+                    },
+                    "expression": {
+                        "type": "happy",
+                        "intensity": "moderate",
+                        "description": "十分专注、熟练自信"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "下",
+                        "object": "手中的竹子"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "",
+                "text": "",
+                "delivery": {
+                    "tone": "",
+                    "pace": "",
+                    "volume": ""
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "标准"
+                }
+            },
+            "narration": {
+                "text": "(内心) 我得让沈清起明白，我有用处！",
+                "style": "内心独白"
+            },
+            "sound": {
+                "bgm": {
+                    "track": "节奏感强的打击乐",
+                    "mood": "欢快",
+                    "volume": 0.6,
+                    "fade": "in"
+                },
+                "sfx": [
+                    {
+                        "type": "动作音效",
+                        "description": "竹子弯折声，敲击声",
+                        "timing": "0s",
+                        "volume": 0.5
+                    }
+                ]
+            },
+            "transition": {
+                "type": "match_cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_007"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.2,
+                    "description": "辛月影用力掰弯竹子的画面",
+                    "purpose": "展示动手能力"
+                },
+                {
+                    "time": 0.8,
+                    "description": "满头大汗正在编织轮椅座位的特写",
+                    "purpose": "展示敬业和进展"
+                }
+            ],
+            "notes": {
+                "director_note": "一组快速蒙太奇，展现古代手工博主的实力，给这段压抑的女主戏增加一抹亮色。"
+            }
+        },
+        {
+            "shot_id": "shot_007",
+            "sequence": 7,
+            "source_event": "evt_007",
+            "narrative": {
+                "beat_type": "climax",
+                "purpose": "气氛突转，生死危机降临",
+                "key_info": [
+                    "霍齐归来",
+                    "谎言戳穿",
+                    "杀意"
+                ]
+            },
+            "duration": {
+                "seconds": 6.0,
+                "frame_count": 144
+            },
+            "scene": {
+                "location_id": "loc_005",
+                "location_name": "小院",
+                "location_type": "outdoor",
+                "time_of_day": "afternoon",
+                "weather": "clear",
+                "lighting": {
+                    "type": "natural",
+                    "direction": "back",
+                    "quality": "hard",
+                    "color": "暖色调",
+                    "description": "下午刺眼的逆光"
+                },
+                "atmosphere": "剑拔弩张、杀机四伏",
+                "environmental_effects": [
+                    "扬尘"
+                ]
+            },
+            "camera": {
+                "shot_size": "medium_full",
+                "angle": "dutch_angle",
+                "movement": {
+                    "type": "dolly",
+                    "direction": "in",
+                    "speed": "very_fast",
+                    "start_end_description": "猛烈推向气势汹汹走来的霍齐"
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "霍齐"
+                },
+                "depth_of_field": "medium",
+                "composition": {
+                    "rule": "center_frame",
+                    "subject_position": "frame_center"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_003",
+                    "name": "霍齐",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "center",
+                        "scene": "中景",
+                        "blocking": "带着杀气大步逼近"
+                    },
+                    "pose": "行走",
+                    "action": {
+                        "main": "怒气冲冲走向镜头",
+                        "secondary": "",
+                        "subtle": "双目圆睁"
+                    },
+                    "expression": {
+                        "type": "angry",
+                        "intensity": "intense",
+                        "description": "极度愤怒，杀意沸腾"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "直视",
+                        "object": "镜头（辛月影）"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "霍齐",
+                "text": "你果然是在骗我们，那昨夜的男人就是姓王的屠户！",
+                "delivery": {
+                    "tone": "暴怒",
+                    "pace": "快",
+                    "volume": "喊叫"
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "强调"
+                }
+            },
+            "narration": {
+                "text": "",
+                "style": ""
+            },
+            "sound": {
+                "bgm": {
+                    "track": "巨大的轰鸣音效",
+                    "mood": "紧张",
+                    "volume": 0.8,
+                    "fade": "none"
+                },
+                "sfx": [
+                    {
+                        "type": "动作音效",
+                        "description": "沉重的、极具压迫感的脚步声",
+                        "timing": "0s",
+                        "volume": 0.8
+                    }
+                ]
+            },
+            "transition": {
+                "type": "cut",
+                "duration": 0.0,
+                "to_next_shot": "shot_008"
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.5,
+                    "description": "霍齐逆光带着巨大杀意逼近的压迫感画面",
+                    "purpose": "建立生死危机"
+                }
+            ],
+            "notes": {
+                "director_note": "打破前面营造出的温馨努力氛围，瞬间拉回残酷现实。"
+            }
+        },
+        {
+            "shot_id": "shot_008",
+            "sequence": 8,
+            "source_event": "evt_007",
+            "narrative": {
+                "beat_type": "resolution",
+                "purpose": "定格死局，制造悬念",
+                "key_info": [
+                    "辛月影绝望反应",
+                    "你死定了"
+                ]
+            },
+            "duration": {
+                "seconds": 4.0,
+                "frame_count": 96
+            },
+            "scene": {
+                "location_id": "loc_005",
+                "location_name": "小院",
+                "location_type": "outdoor",
+                "time_of_day": "afternoon",
+                "weather": "clear",
+                "lighting": {
+                    "type": "natural",
+                    "direction": "front",
+                    "quality": "hard",
+                    "color": "暖色调",
+                    "description": "阳光刺眼"
+                },
+                "atmosphere": "绝望",
+                "environmental_effects": []
+            },
+            "camera": {
+                "shot_size": "close_up",
+                "angle": "high_angle",
+                "movement": {
+                    "type": "static",
+                    "direction": "",
+                    "speed": "",
+                    "start_end_description": ""
+                },
+                "focus": {
+                    "type": "fixed",
+                    "subject": "辛月影面部"
+                },
+                "depth_of_field": "shallow",
+                "composition": {
+                    "rule": "center_frame",
+                    "subject_position": "frame_center"
+                }
+            },
+            "characters": [
+                {
+                    "character_id": "char_001",
+                    "name": "辛月影",
+                    "importance": "primary",
+                    "position": {
+                        "frame": "center",
+                        "scene": "中景",
+                        "blocking": "盘腿坐在地上"
+                    },
+                    "pose": "坐着",
+                    "action": {
+                        "main": "惊恐地仰视霍齐",
+                        "secondary": "手中的竹条掉落",
+                        "subtle": "瞳孔地震"
+                    },
+                    "expression": {
+                        "type": "fearful",
+                        "intensity": "intense",
+                        "description": "极度绝望和惊愕"
+                    },
+                    "costume_id": "default",
+                    "gaze": {
+                        "direction": "上",
+                        "object": "霍齐"
+                    }
+                }
+            ],
+            "dialogue": {
+                "speaker": "霍齐",
+                "text": "你死定了！",
+                "delivery": {
+                    "tone": "杀意",
+                    "pace": "正常",
+                    "volume": "大声"
+                },
+                "subtitle": {
+                    "position": "bottom_center",
+                    "style": "强调"
+                }
+            },
+            "narration": {
+                "text": "",
+                "style": ""
+            },
+            "sound": {
+                "bgm": {
+                    "track": "高频尖锐音",
+                    "mood": "紧张",
+                    "volume": 0.7,
+                    "fade": "out"
+                },
+                "sfx": [
+                    {
+                        "type": "环境音",
+                        "description": "竹条掉落在地上的清脆声",
+                        "timing": "0s",
+                        "volume": 0.5
+                    }
+                ]
+            },
+            "transition": {
+                "type": "fade",
+                "duration": 1.0,
+                "to_next_shot": ""
+            },
+            "keyframe_moments": [
+                {
+                    "time": 0.5,
+                    "description": "辛月影惊恐绝望、瞳孔放大的特写定格",
+                    "purpose": "本章悬念收尾"
+                }
+            ],
+            "notes": {
+                "director_note": "这是本章结语，悬念拉满，让观众极度好奇下一章主角如何破局。"
+            }
+        }
+    ],
+    "metadata": {
+        "status": "final",
+        "version": "1.0"
+    }
+}

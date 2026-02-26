@@ -1,0 +1,134 @@
+{
+  "shot_id": "shot_008",
+  "sequence": 8,
+  "source_event": "evt_007",
+  "narrative": {
+    "beat_type": "resolution",
+    "purpose": "定格死局，制造悬念",
+    "key_info": [
+      "辛月影绝望反应",
+      "你死定了"
+    ]
+  },
+  "duration": {
+    "seconds": 4,
+    "frame_count": 96
+  },
+  "scene": {
+    "location_id": "loc_005",
+    "location_name": "小院",
+    "location_type": "outdoor",
+    "time_of_day": "afternoon",
+    "weather": "clear",
+    "lighting": {
+      "type": "natural",
+      "direction": "front",
+      "quality": "hard",
+      "color": "暖色调",
+      "description": "阳光刺眼"
+    },
+    "atmosphere": "绝望",
+    "environmental_effects": []
+  },
+  "camera": {
+    "shot_size": "close_up",
+    "angle": "high_angle",
+    "movement": {
+      "type": "static",
+      "direction": "",
+      "speed": "",
+      "start_end_description": ""
+    },
+    "focus": {
+      "type": "fixed",
+      "subject": "辛月影面部"
+    },
+    "depth_of_field": "shallow",
+    "composition": {
+      "rule": "center_frame",
+      "subject_position": "frame_center"
+    }
+  },
+  "characters": [
+    {
+      "character_id": "char_001",
+      "name": "辛月影",
+      "importance": "primary",
+      "position": {
+        "frame": "center",
+        "scene": "中景",
+        "blocking": "盘腿坐在地上"
+      },
+      "pose": "坐着",
+      "action": {
+        "main": "惊恐地仰视霍齐",
+        "secondary": "手中的竹条掉落",
+        "subtle": "瞳孔地震"
+      },
+      "expression": {
+        "type": "fearful",
+        "intensity": "intense",
+        "description": "极度绝望和惊愕"
+      },
+      "costume_id": "default",
+      "gaze": {
+        "direction": "上",
+        "object": "霍齐"
+      }
+    }
+  ],
+  "dialogue": {
+    "speaker": "霍齐",
+    "text": "你死定了！",
+    "delivery": {
+      "tone": "杀意",
+      "pace": "正常",
+      "volume": "大声"
+    },
+    "subtitle": {
+      "position": "bottom_center",
+      "style": "强调"
+    }
+  },
+  "narration": {
+    "text": "",
+    "style": ""
+  },
+  "sound": {
+    "bgm": {
+      "track": "高频尖锐音",
+      "mood": "紧张",
+      "volume": 0.7,
+      "fade": "out"
+    },
+    "sfx": [
+      {
+        "type": "环境音",
+        "description": "竹条掉落在地上的清脆声",
+        "timing": "0s",
+        "volume": 0.5
+      }
+    ]
+  },
+  "transition": {
+    "type": "fade",
+    "duration": 1,
+    "to_next_shot": ""
+  },
+  "keyframe_moments": [
+    {
+      "time": 0.5,
+      "description": "辛月影惊恐绝望、瞳孔放大的特写定格",
+      "purpose": "本章悬念收尾"
+    }
+  ],
+  "notes": {
+    "director_note": "这是本章结语，悬念拉满，让观众极度好奇下一章主角如何破局。"
+  },
+  "global_settings": {
+    "art_style": "古风动漫",
+    "color_temperature": "neutral",
+    "aspect_ratio": "16:9",
+    "fps": 24
+  }
+}
