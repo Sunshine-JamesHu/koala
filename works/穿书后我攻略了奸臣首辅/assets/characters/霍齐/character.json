@@ -32,7 +32,7 @@
         {"type": "头巾", "description": "深褐色布巾包头", "color": "深褐色"},
         {"type": "腰带", "description": "粗布腰带，可挂佩刀", "color": "暗褐色"}
       ],
-      "prompt_template": "ancient Chinese anime man, 35 years old, burly muscular build, tanned weathered skin, square rugged face, round fierce eyes, thick eyebrows, full beard and whiskers, short black hair tied with cloth wrap, wearing brown martial attire with tight sleeves, sturdy cloth belt, loyal warrior appearance, anime style, outdoor lighting, protective stance"
+      "prompt_template": "ancient Chinese anime man, 35 years old, burly muscular build, tanned weathered skin, square rugged face, round fierce eyes, thick eyebrows, full beard and whiskers, short black hair tied with cloth wrap, wearing brown martial attire with tight sleeves, sturdy cloth belt, loyal warrior appearance, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, outdoor lighting, protective stance"
     },
     {
       "costume_id": "costume_002",
@@ -45,7 +45,7 @@
         {"type": "短刀", "description": "腰间佩戴的护身短刀", "color": "黑色刀鞘"},
         {"type": "护腕", "description": "皮质护腕", "color": "深棕色"}
       ],
-      "prompt_template": "ancient Chinese anime man, 35 years old, muscular build, full beard, wearing black ninja-style outfit, short sword at waist, leather wrist guards, alert standing pose, dark clothing for stealth, anime style, night setting, vigilant expression"
+      "prompt_template": "ancient Chinese anime man, 35 years old, muscular build, full beard, wearing black ninja-style outfit, short sword at waist, leather wrist guards, alert standing pose, dark clothing for stealth, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, night setting, vigilant expression"
     }
   ],
   "expressions": {

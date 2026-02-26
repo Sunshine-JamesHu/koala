@@ -31,7 +31,7 @@
       "accessories": [
         {"type": "玉佩", "description": "残缺的白玉佩，是昔日身份的象征", "color": "灰白色"}
       ],
-      "prompt_template": "ancient Chinese anime man, 22 years old, pale sickly complexion, sharp angular face, narrow phoenix eyes with dark intense gaze, sword eyebrows, thin pale lips with cold sneer, long disheveled black hair, sitting in worn wooden wheelchair, wearing dark black traditional robe with subtle patterns, clothes slightly worn at edges, fallen noble aura, gloomy atmosphere, anime style, dim lighting"
+      "prompt_template": "ancient Chinese anime man, 22 years old, pale sickly complexion, sharp angular face, narrow phoenix eyes with dark intense gaze, sword eyebrows, thin pale lips with cold sneer, long disheveled black hair, sitting in worn wooden wheelchair, wearing dark black traditional robe with subtle patterns, clothes slightly worn at edges, fallen noble aura, gloomy atmosphere, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, dim lighting"
     },
     {
       "costume_id": "costume_002",
@@ -43,7 +43,7 @@
       "accessories": [
         {"type": "发带", "description": "深灰色布带，松散束发", "color": "深灰色"}
       ],
-      "prompt_template": "ancient Chinese anime man, 22 years old, extremely pale skin, sickly appearance, loose gray inner robe with dark blue outer garment, disheveled hair loosely tied, sitting posture, frail but sharp features, brooding expression, anime style, low light indoor setting"
+      "prompt_template": "ancient Chinese anime man, 22 years old, extremely pale skin, sickly appearance, loose gray inner robe with dark blue outer garment, disheveled hair loosely tied, sitting posture, frail but sharp features, brooding expression, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, low light indoor setting"
     }
   ],
   "special_features": {

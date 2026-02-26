@@ -124,7 +124,7 @@
         "affects_appearance": "表情极为丰富，变脸极快"
     },
     "prompt_template": {
-        "base": "young Chinese woman, 24 years old, slender figure, pale skin, oval face, almond-shaped brown eyes with cunning glint, willow leaf eyebrows, cherry lips, waist-length jet black hair in simple bun, anime style",
+        "base": "young Chinese woman, 24 years old, slender figure, pale skin, oval face, almond-shaped brown eyes with cunning glint, willow leaf eyebrows, cherry lips, waist-length jet black hair in simple bun, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"

@@ -126,7 +126,7 @@
         "affects_appearance": "外表虽然像个假小子或普通的村姑，但眼神透着谋士的精光"
     },
     "prompt_template": {
-        "base": "young Chinese girl, 18 years old, thin wiry build, wheat-colored skin, small round face, sharp phoenix eyes, straight thin eyebrows, black hair in single high ponytail, anime style",
+        "base": "young Chinese girl, 18 years old, thin wiry build, wheat-colored skin, small round face, sharp phoenix eyes, straight thin eyebrows, black hair in single high ponytail, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"

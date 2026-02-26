@@ -123,7 +123,7 @@
         "affects_appearance": "一副不好惹的市井主妇模样"
     },
     "prompt_template": {
-        "base": "middle-aged Chinese woman, 40 years old, stout strong build, tanned skin, round face, triangular shrewd eyes, short thick eyebrows, bulbous nose, black hair with gray streaks in cloth-wrapped bun, anime style",
+        "base": "middle-aged Chinese woman, 40 years old, stout strong build, tanned skin, round face, triangular shrewd eyes, short thick eyebrows, bulbous nose, black hair with gray streaks in cloth-wrapped bun, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"

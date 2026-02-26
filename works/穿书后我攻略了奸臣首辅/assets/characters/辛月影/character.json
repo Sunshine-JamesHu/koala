@@ -32,7 +32,7 @@
         {"type": "发簪", "description": "素银兰花簪", "color": "银白色"},
         {"type": "腰饰", "description": "淡青色绣花香囊", "color": "淡青色"}
       ],
-      "prompt_template": "ancient Chinese anime girl, 18 years old, slender figure, oval face, bright almond eyes with cunning glint, willow eyebrows, small cherry lips, fair skin, long flowing black hair with half-up style, light bangs, wearing pale green ruqun dress with white half-sleeve overlay, elegant orchid embroidery on skirt, simple silver hairpin, anime style, soft lighting, delicate features"
+      "prompt_template": "ancient Chinese anime girl, 18 years old, slender figure, oval face, bright almond eyes with cunning glint, willow eyebrows, small cherry lips, fair skin, long flowing black hair with half-up style, light bangs, wearing pale green ruqun dress with white half-sleeve overlay, elegant orchid embroidery on skirt, simple silver hairpin, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, soft lighting, delicate features"
     },
     {
       "costume_id": "costume_002",
@@ -44,7 +44,7 @@
       "accessories": [
         {"type": "发带", "description": "淡粉色绸带", "color": "淡粉色"}
       ],
-      "prompt_template": "ancient Chinese anime girl, 18 years old, casual home attire, white short jacket with pink pleated skirt, simple pink ribbon in hair, natural relaxed pose, soft expression, anime style, indoor lighting, humble dwelling background"
+      "prompt_template": "ancient Chinese anime girl, 18 years old, casual home attire, white short jacket with pink pleated skirt, simple pink ribbon in hair, natural relaxed pose, soft expression, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting, indoor lighting, humble dwelling background"
     }
   ],
   "expressions": {

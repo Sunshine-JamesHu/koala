@@ -118,7 +118,7 @@
         "affects_appearance": "清纯柔弱但也固执己见，典型的早期小白花女主长相"
     },
     "prompt_template": {
-        "base": "young Chinese girl, 20 years old, slender thin build, fair skin, melon seed face, clear almond eyes, willow eyebrows, thin lips, black hair in double bun with plain ribbon, anime style",
+        "base": "young Chinese girl, 20 years old, slender thin build, fair skin, melon seed face, clear almond eyes, willow eyebrows, thin lips, black hair in double bun with plain ribbon, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"

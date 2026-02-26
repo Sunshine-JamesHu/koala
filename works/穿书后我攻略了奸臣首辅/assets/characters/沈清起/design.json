@@ -129,7 +129,7 @@
         "affects_appearance": "气质如冰封下的深渊，病气与杀气并存"
     },
     "prompt_template": {
-        "base": "young Chinese man, 25 years old, deathly pale skin, angular sharp face, narrow phoenix eyes dark as abyss, sword eyebrows, thin lips, long black hair half-tied and slightly messy, anime style",
+        "base": "young Chinese man, 25 years old, deathly pale skin, angular sharp face, narrow phoenix eyes dark as abyss, sword eyebrows, thin lips, long black hair half-tied and slightly messy, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"

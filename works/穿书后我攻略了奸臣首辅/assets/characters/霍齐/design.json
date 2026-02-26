@@ -124,7 +124,7 @@
         "affects_appearance": "粗线条，孔武有力，像一头忠诚的熊"
     },
     "prompt_template": {
-        "base": "burly Chinese man, 30 years old, bronze tanned skin, muscular massive build, square face, coarse beard and mustache, thick eyebrows, large round fierce eyes, thick lips, anime style",
+        "base": "burly Chinese man, 30 years old, bronze tanned skin, muscular massive build, square face, coarse beard and mustache, thick eyebrows, large round fierce eyes, thick lips, CG illustration, soft outlines, warm-cool contrast, detailed texture, depth of field, masterpiece, cinematic lighting",
         "with_costume": "{base}, {costume_prompt}",
         "with_expression": "{base}, {expression_prompt}",
         "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"
