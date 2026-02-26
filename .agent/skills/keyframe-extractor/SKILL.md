@@ -20,13 +20,14 @@ description: 专业的关键帧提取师，从分镜脚本中提取关键帧，�
 ## 输入
 
 ### 批量模式（传统）
+- 项目配置: `project.json`
 - 分镜脚本: `scripts/episode_XXX/storyboard.json`
 - 运镜方案: `scripts/episode_XXX/camera_work.json`
 - 角色资源: `assets/characters/`
 - 场景资源: `assets/scenes/`
-- 风格参考: `assets/styles/`
 
 ### 单分镜模式（并行处理）
+- 项目配置: `project.json`
 - 单个分镜数据: `scripts/episode_XXX/shots/shot_xxx.json`
 - 单个运镜方案: `scripts/episode_XXX/camera_work/shot_xxx.json`
 - 角色资源: `assets/characters/`
@@ -55,7 +56,8 @@ scripts/episode_XXX/
   "total_keyframes": 3,
 
   "style_settings": {
-    "art_style": "anime|realistic|semi_realistic|painterly",
+    "global_prompt_style": "中国古风动漫风格，精细细腻的线条，柔和的色调，电影级光影效果，高质量渲染，4K画质（需从 project.json 读取）",
+    "art_style": "根据 global_prompt_style 定制",
     "era_style": "ancient_chinese|modern|fantasy|historical",
     "color_palette": ["#2C3E50", "#E74C3C", "#ECF0F1"],
     "quality_tags": ["masterpiece", "best quality", "highly detailed", "8k"]
@@ -130,10 +132,10 @@ scripts/episode_XXX/
 
       "image_prompt": {
         "main_prompt": "A young woman in ancient Chinese hanfu, standing by a wooden window, rain visible outside, dimly lit study room, candlelight illumination, contemplative expression, pale green ruqun dress, black hair in simple bun, traditional Chinese interior, bookshelves with scrolls",
-        "style_tags": ["anime style", "ancient Chinese", "detailed", "cinematic lighting"],
+        "style_tags": ["{global_project_style}"],
         "quality_tags": ["masterpiece", "best quality", "highly detailed", "8k resolution", "cinematic composition"],
         "negative_prompt": "modern objects, glasses, western clothing, bright lighting, flat colors, low quality, blurry, deformed",
-        "full_prompt": "A young woman in ancient Chinese hanfu, standing by a wooden window, rain visible outside, dimly lit study room, candlelight illumination, contemplative expression, pale green ruqun dress, black hair in simple bun, traditional Chinese interior, bookshelves with scrolls, anime style, ancient Chinese, detailed, cinematic lighting, masterpiece, best quality, highly detailed, 8k resolution, cinematic composition"
+        "full_prompt": "{main_prompt}, {style_tags}, {quality_tags}"
       }
     }
   ]
@@ -150,8 +152,9 @@ scripts/episode_XXX/
 
 ### 风格标签库
 
+**首选**：直接读取 `project.json` 中的 `style.globalPromptStyle`。
+如果未指定，可辅以：
 ```
-anime style           - 动漫风格
 ancient Chinese       - 古风
 semi-realistic        - 半写实
 cinematic lighting    - 电影光影
@@ -201,18 +204,20 @@ text, watermark       - 文字、水印
 
 ### 批量模式
 Agent应该：
-1. 读取 `scripts/episode_XXX/storyboard.json`
-2. 读取 `scripts/episode_XXX/camera_work.json`
-3. 读取 `assets/characters/` 获取角色设定
-4. 为每个分镜分析关键帧时刻
-5. 输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
+1. 读取 `project.json` 获取全局风格 `globalPromptStyle`
+2. 读取 `scripts/episode_XXX/storyboard.json`
+3. 读取 `scripts/episode_XXX/camera_work.json`
+4. 读取 `assets/characters/` 获取角色设定
+5. 为每个分镜分析关键帧时刻，并将全局画风拼入 Prompt
+6. 输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
 
 ### 单分镜模式（并行处理）
 Agent应该：
-1. 读取单个分镜 `scripts/episode_XXX/shots/shot_xxx.json`
-2. 读取单个运镜 `scripts/episode_XXX/camera_work/shot_xxx.json`
-3. 读取 `assets/characters/` 获取角色设定
-4. 输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
+1. 读取 `project.json` 获取全局风格 `globalPromptStyle`
+2. 读取单个分镜 `scripts/episode_XXX/shots/shot_xxx.json`
+3. 读取单个运镜 `scripts/episode_XXX/camera_work/shot_xxx.json`
+4. 读取 `assets/characters/` 获取角色设定
+5. 将全局画风拼入 Prompt，输出到 `scripts/episode_XXX/keyframes/shot_xxx.json`
 
 ## 质量检查清单
 

@@ -19,8 +19,9 @@ description: 专业的 Prompt 工程师，负责根据分镜数据生成视频AI
 
 ## 输入
 
+- 项目配置: `project.json`
 - 分镜数据: `scripts/episode_XXX/shots/shot_xxx.json`
-- 角色资源: `assets/characters/{角色名}/character.json`
+- 角色资源: `assets/characters/{角色名}/character_sheet.md` (或 design.json)
 - 场景资源: `assets/scenes/`
 
 ## 输出
@@ -60,7 +61,7 @@ output/episode_XXX/
 ```
 【图片基本信息】
 比例: 16:9
-风格: 古风动漫, 电影质感
+风格: [读取 project.json 中的 globalPromptStyle，如果不为空则填入，否则填"古风动漫, 电影质感"]
 
 【场景环境】
 [详细描述场景：位置、时间、光线、氛围、细节]
@@ -103,7 +104,7 @@ output/episode_XXX/
 ```
 【图片基本信息】
 比例: 16:9
-风格: 古风动漫, 电影质感
+风格: [读取 project.json 中的 globalPromptStyle]
 
 【场景环境】
 [详细描述场景]
@@ -143,7 +144,7 @@ output/episode_XXX/
 ```
 【视频基本信息】
 时长: [X]秒
-风格: 古风动漫, 电影质感, [情绪类型]
+风格: [读取 project.json 中的 globalPromptStyle], [情绪类型]
 比例: 16:9
 帧率: 24fps
 
@@ -195,14 +196,18 @@ output/episode_XXX/
 
 ### Agent应该：
 
-1. **读取分镜数据**
+1. **读取项目配置**
+   - 读取根目录的 `project.json`
+   - 获取 `style.globalPromptStyle`，用于填入 prompt 的【风格】区块
+
+2. **读取分镜数据**
    - 读取 `scripts/episode_XXX/shots/shot_xxx.json`
    - 提取: 场景、角色、运镜、台词、情绪、时长等信息
 
-2. **读取角色资源**
-   - 读取 `assets/characters/{角色名}/character.json`
+3. **读取角色资源**
+   - 读取 `assets/characters/{角色名}/character_sheet.md` (及其中的提示词和资产)
    - 获取角色外貌、服装、特征等详细信息
-   - **记录角色参考图路径** `assets/characters/{角色名}/front.png`
+   - **记录角色参考图路径** (优先views.png，如无则front.png)
 
 3. **读取场景资源**
    - 检查 `assets/scenes/` 下是否有对应场景的参考图
@@ -241,7 +246,7 @@ output/episode_XXX/
 - 提示词最长不超过1024个字符
 
 ### 一致性保障（重要）
-- **每个 md 文件都必须包含 `【角色参考图】` 字段**，列出所有出场角色的 `front.png` 路径
+- **每个 md 文件都必须包含 `【角色参考图】` 字段**，列出所有出场角色的图路径
 - **每个 md 文件都必须包含 `【场景参考图】` 字段**，列出场景参考图路径（如有）
 - **`start.md` 必须包含 `【上一分镜尾帧】` 字段**，写入上一 shot 的尾帧图片路径
 - 这些路径信息会被 `local-image-generator` 读取并传入 `generate_image` 的 `ImagePaths` 参数

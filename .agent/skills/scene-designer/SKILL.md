@@ -11,8 +11,9 @@ description: 专业的场景设计师，负责设计漫剧中的场景背景，�
 
 ## 核心职责
 
-1. 分析故事的时代背景和地域特色
-2. 设计场景的建筑风格和布局
+1. 读取 `project.json` 中的 `globalPromptStyle` 作为全局统一画风
+2. 分析故事的时代背景和地域特色
+3. 设计场景的建筑风格和布局
 3. 规划场景中的道具布置
 4. 设计不同时间/天气的场景变体
 5. 生成场景图像 Prompt
@@ -147,10 +148,10 @@ description: 专业的场景设计师，负责设计漫剧中的场景背景，�
   },
 
   "prompt_template": {
-    "base": "ancient Chinese study room interior, traditional wooden architecture, Ming-Qing dynasty style",
+    "base": "ancient Chinese study room interior, traditional wooden architecture, Ming-Qing dynasty style, {global_project_style}",
     "with_time": "{base}, {time_of_day} lighting, {lighting_description}",
     "with_weather": "{base}, {weather} weather visible through window",
-    "full": "ancient Chinese study room interior, traditional wooden architecture, {key_elements}, {time_of_day}, {weather}, {atmosphere} atmosphere, {lighting} lighting, anime style, highly detailed, cinematic"
+    "full": "ancient Chinese study room interior, traditional wooden architecture, {key_elements}, {time_of_day}, {weather}, {atmosphere} atmosphere, {lighting} lighting, {global_project_style}"
   },
 
   "reference_images": {
@@ -186,10 +187,12 @@ description: 专业的场景设计师，负责设计漫剧中的场景背景，�
 当用户要求"设计场景"或"创建场景背景"时触发。
 
 Agent应该：
-1. 读取故事分析结果，识别场景需求
-2. 分析场景的时代背景、建筑风格和布局需求
-3. 设计场景的关键元素、光线来源、时间/天气变体
-4. 输出到 `assets/scenes/{场景类型}/{场景名}/design.json`
+1. 读取 `project.json` 获取全局风格 `globalPromptStyle`
+2. 读取故事分析结果，识别场景需求
+3. 分析场景的时代背景、建筑风格和布局需求
+4. 设计场景的关键元素、光线来源、时间/天气变体
+5. 将配置好的全局风格拼接到最终和所有的 Prompt 模板中
+6. 输出到 `assets/scenes/{场景类型}/{场景名}/design.json`
 
 ## 质量检查清单
 

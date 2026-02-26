@@ -13,8 +13,9 @@ description: 专业的角色设计师，负责设计漫剧中角色的服化造�
 
 ## 核心职责
 
-1. 分析角色性格和背景
-2. 设计角色的基础外貌
+1. 读取 `project.json` 中的 `globalPromptStyle` 作为全局统一画风
+2. 分析角色性格和背景
+3. 设计角色的基础外貌
 3. 设计不同场景/状态的服装
 4. 管理角色表情库
 5. 生成角色图像 Prompt
@@ -178,7 +179,7 @@ assets/characters/{角色名}/
   },
 
   "prompt_template": {
-    "base": "young Chinese woman, 18 years old appearance, slender figure, 165cm tall, fair pale skin, oval face, willow leaf eyebrows, almond-shaped dark brown eyes, small straight nose, cherry lips, waist-length jet black hair, anime style",
+    "base": "young Chinese woman, 18 years old appearance, slender figure, 165cm tall, fair pale skin, oval face, willow leaf eyebrows, almond-shaped dark brown eyes, small straight nose, cherry lips, waist-length jet black hair, {global_project_style}",
     "with_costume": "{base}, {costume_prompt}",
     "with_expression": "{base}, {expression_prompt}",
     "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"
@@ -307,6 +308,13 @@ assets/characters/{角色名}/
 
 ---
 
+## 全局项目画风配置
+
+在生成图片或视频提示词前，**必须**读取项目根目录下的 `project.json` 文件：
+读取 `style.globalPromptStyle` 字段，并将其拼接到提示词末尾。不要使用写死的画风（如 anime style），而是使用项目中配置的统一风格。
+
+---
+
 ## 分镜引用标签
 
 供 prompt-engineer 等下游 Agent 引用的标准化角色描述标签：
@@ -342,7 +350,7 @@ assets/characters/{角色名}/
 {发型描述}。
 身穿{服装描述}，{配色}。
 {配饰描述}。
-{画风}，高质量动漫风格。
+{读取 project.json 中的 globalPromptStyle，作为全局画风}
 ```
 
 #### 正面图提示词
@@ -475,9 +483,10 @@ uv run python .agent/skills/image-to-image/image_to_image.py \
 ## 完整工作流程
 
 1. **收集信息** — 从小说文本或用户描述中提取角色信息
-2. **生成 `design.json`** — 程序可读的结构化角色设计数据
-3. **生成 `character_sheet.md`** — 人类可读的角色设计文档，含完整提示词
-4. **文生图生成正面图** — front.png 作为角色定稿和参考图
+2. **读取配置** — 读取项目 `project.json` 中配置的全局画风 `globalPromptStyle`
+3. **生成 `design.json`** — 程序可读的结构化角色设计数据
+4. **生成 `character_sheet.md`** — 人类可读的角色设计文档，含完整提示词（要在提示词末尾带上全局画风）
+5. **文生图生成正面图** — front.png 作为角色定稿和参考图
 5. **图生图生成四视图** — views.png（基于front.png，四视角在一张图中）
 6. **更新 `character_sheet.md`** — 补充参考图路径、调整描述
 7. 检查一致性，如有差异可调整编辑强度重新生成
@@ -508,13 +517,14 @@ uv run python .agent/skills/image-to-image/image_to_image.py \
 
 ## 注意事项
 
-1. **先生成主视图**：必须先生成 front.png，四视图基于它生成
-2. **双输出**：每个角色必须同时有 `design.json` 和 `character_sheet.md`
-3. **四视图在一张图中**：views.png 包含四个视角
-4. **图生图优势**：使用图生图生成四视图可保持角色特征一致性
-5. **编辑强度**：转换后角色变化过大降低强度，变化不够则提高强度
-6. **特殊状态**：轮椅、道具等需在提示词和 character_sheet.md 中体现
-7. **画风统一**：同一项目使用相同画风关键词
-8. **文化适配**：古代用古风词，现代用现代词
-9. **描述准确**：自然语言描述画面，短语描述美学风格
-10. **分镜引用标签**：`character_sheet.md` 中的标签供 prompt-engineer 直接引用
+1. **读取全局画风**：必须从 `project.json` 读取全局画风，不能在 Prompt 中写死画风。
+2. **先生成主视图**：必须先生成 front.png，四视图基于它生成
+3. **双输出**：每个角色必须同时有 `design.json` 和 `character_sheet.md`
+4. **四视图在一张图中**：views.png 包含四个视角
+5. **图生图优势**：使用图生图生成四视图可保持角色特征一致性
+6. **编辑强度**：转换后角色变化过大降低强度，变化不够则提高强度
+7. **特殊状态**：轮椅、道具等需在提示词和 character_sheet.md 中体现
+8. **画风统一**：同一项目严格使用相同画风配置
+9. **文化适配**：古代用古风词，现代用现代词
+10. **描述准确**：自然语言描述画面，短语描述美学风格
+11. **分镜引用标签**：`character_sheet.md` 中的标签供 prompt-engineer 直接引用

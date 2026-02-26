@@ -11,8 +11,9 @@ description: 专业的道具设计师，负责设计漫剧中出现的重要道�
 
 ## 核心职责
 
-1. 识别故事中的关键道具
-2. 设计道具的外观和细节
+1. 读取 `project.json` 中的 `globalPromptStyle` 作为全局统一画风
+2. 识别故事中的关键道具
+3. 设计道具的外观和细节
 3. 确保道具与时代风格一致
 4. 生成道具图像 Prompt
 
@@ -103,7 +104,7 @@ description: 专业的道具设计师，负责设计漫剧中出现的重要道�
     "base": "ancient Chinese jade pendant, milky white nephrite, oval shape, {size}",
     "with_detail": "{base}, {carving_description}, {texture}",
     "with_context": "{base}, {context_description}",
-    "full": "ancient Chinese jade pendant, milky white nephrite with pale green inclusions, oval shape 5cm by 3cm, carved phoenix design, smooth polished surface, red silk cord attachment, {view_description}, {lighting}, macro photography, highly detailed, 8k"
+    "full": "ancient Chinese jade pendant, milky white nephrite with pale green inclusions, oval shape 5cm by 3cm, carved phoenix design, smooth polished surface, red silk cord attachment, {view_description}, {lighting}, macro photography, highly detailed, {global_project_style}"
   },
 
   "reference_images": {
@@ -152,10 +153,12 @@ description: 专业的道具设计师，负责设计漫剧中出现的重要道�
 当用户要求"设计道具"或"创建道具设计"时触发。
 
 Agent应该：
-1. 读取故事分析结果，识别关键道具需求
-2. 分析道具的叙事意义、时代背景和材质特征
-3. 设计道具的外观、多角度视图和使用场景
-4. 输出到 `assets/props/{道具名}/design.json`
+1. 读取 `project.json` 获取全局风格 `globalPromptStyle`
+2. 读取故事分析结果，识别关键道具需求
+3. 分析道具的叙事意义、时代背景和材质特征
+4. 设计道具的外观、多角度视图和使用场景
+5. 将配置好的全局风格拼接到对应 Prompt 中
+6. 输出到 `assets/props/{道具名}/design.json`
 
 ## 质量检查清单
 

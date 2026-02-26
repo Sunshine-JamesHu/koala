@@ -42,7 +42,7 @@ description: 漫剧 Agent Teams 的主控协调器，负责统筹整个漫剧生
 │  1. PREPARE                                                     │
 │  ┌─────────────────────────────────────────────────────────┐   │
 │  │ • 验证项目结构                                           │   │
-│  │ • 检查必要资源                                           │   │
+│  │ • 检查必要资源 (含 project.json globalPromptStyle 设置)   │   │
 │  │ • 创建工作目录                                           │   │
 │  └─────────────────────────────────────────────────────────┘   │
 │                           ↓                                     │
@@ -115,7 +115,7 @@ shots/shot_*.json ─┴→ ... (并行处理，最多5个并发)
 当用户要求"生成视频"或"执行漫剧生成流程"时触发。
 
 Agent应该：
-1. **PREPARE阶段**: 验证项目结构和必要资源
+1. **PREPARE阶段**: 验证项目结构、必要资源，特别是**必须确保 project.json 中配置了 style.globalPromptStyle**。
 2. **ANALYZE阶段**: StoryAnalyzer 分析章节，EmotionAnalyzer 生成情绪曲线
 3. **DESIGN阶段**:
    - StoryDirector 生成分镜脚本，**同时拆分输出到 shots/shot_xxx.json**
