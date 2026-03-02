@@ -80,9 +80,9 @@
 
 9. **合并图片提示词** → 输出 `04_image_prompts.md`
 
-10. **分镜拼图师** → 生成8分镜拼图提示词 (读取 style.json)
+10. **分镜拼图师** → 为每个视频生成独立的分镜参考图提示词 (读取 style.json)
     - 技能: `@.claude/skills/storyboard-grid-artist/SKILL.md`
-    - 输出: `04b_storyboard_grid_prompts.md`（4x2布局分镜预览图提示词）
+    - 输出: `04c_video_storyboard_refs.md`（每个视频的4/6/8格分镜参考图，用作AI视频生成参考）
 
 11. **特效师** → 设计场景特效 (读取 style.json)
     - 技能: `@.claude/skills/effects-artist/SKILL.md`
@@ -158,7 +158,7 @@
 |----------|------|------|
 | `keyframe-artist` | AI原画师 | 生成角色关键帧图片提示词 (读取 style.json) |
 | `background-artist` | AI场景搭建师 | 生成背景图片提示词 (读取 style.json) |
-| `storyboard-grid-artist` | AI分镜拼图师 | 生成4x2布局8分镜拼图提示词 (读取 style.json) |
+| `storyboard-grid-artist` | AI分镜拼图师 | 为每个视频生成独立的分镜参考图提示词 (读取 style.json) |
 | `effects-artist` | AI特效师 | 设计光影、粒子、魔法特效 (读取 style.json) |
 | `motion-designer` | AI动作设计师 | 生成视频提示词（Veo+可灵，读取 style.json） |
 | `inbetween-artist` | AI中间画师 | 生成补间动画提示词 (读取 style.json) |
@@ -215,7 +215,7 @@ works/[剧名]/
 │       ├── 02_character_refs.md          # 角色参考
 │       ├── 03_scene_refs.md              # 场景参考
 │       ├── 04_image_prompts.md           # 图片生成提示词
-│       ├── 04b_storyboard_grid_prompts.md# 8分镜拼图提示词（4x2布局）
+│       ├── 04c_video_storyboard_refs.md  # 视频分镜参考图（每个视频独立）
 │       ├── 05_video_prompts_veo.md       # Veo3.1 Fast 视频提示词
 │       ├── 06_video_prompts_kling.md     # 可灵动画视频提示词
 │       ├── 07_color_grading.md           # 调色指南

@@ -27,7 +27,8 @@
       "Skill(story-supervisor)",
       "Bash(uv run python:*)",
       "Skill(storyboard-supervisor)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Skill(leegonzales-aiskills-veo3-prompter)"
     ]
   }
 }

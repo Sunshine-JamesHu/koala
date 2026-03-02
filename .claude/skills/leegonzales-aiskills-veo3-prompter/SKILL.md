@@ -348,6 +348,130 @@ Medium shot, she pushes open the heavy wooden door. Dust particles float in the 
 - 结尾位置: 殿门口内侧，面向殿内
 ```
 
+---
+
+## 跨章节视频衔接（最重要）⭐⭐⭐⭐⭐
+
+### 核心原则
+
+**后续章节（第2章及之后）的视频首帧必须基于前一章尾帧延展，确保角色外观和场景的完全一致性！**
+
+### 为什么这很重要？
+
+| 方式 | 结果 | 问题 |
+|------|------|------|
+| ❌ 每章第一个视频从头生成 | 角色外观每章都略有不同 | 严重穿帮，观众一眼看出不一致 |
+| ✅ 基于前一章尾帧延展 | 角色外观完全一致 | 保持连贯性，观看体验流畅 |
+
+### 章节首视频参考图策略
+
+| 章节 | 首视频策略 | 说明 |
+|------|------------|------|
+| **第1章** | 使用图片关键帧 | 建立视频的视觉基础 |
+| **第2章及之后** | **使用前一章最后一个视频的尾帧** | 确保角色外观完全一致 |
+
+### 跨章节衔接格式
+
+```yaml
+# 第2章及之后的首视频必须包含
+cross_chapter_continuity:
+  source_chapter: chapter_XXX
+  source_video: V0X (该章最后一个视频)
+  last_frame_reference: chapter_XXX/V0X 尾帧截图
+  ending_state:
+    character_position: 前一章结尾角色位置
+    character_expression: 前一章结尾表情
+    scene_state: 前一章结尾场景状态
+  transition_note: 如何从上一章状态继续
+```
+
+### Veo 3.1 跨章节提示词模板
+
+```
+# Chapter XXX, Shot 1 - Continuing from Previous Chapter
+
+**Cross-Chapter Continuity:**
+- Source: chapter_XXX/V0X (last video of previous chapter)
+- First Frame: [Upload chapter_XXX/V0X last frame as referenceImage]
+- Transition: [Describe how current shot continues from previous chapter]
+
+**Reference Images (upload in order):**
+1. chapter_XXX/V0X last frame (ensures character consistency)
+2. [Character reference from previous chapter keyframes]
+3. [Scene reference if scene has changed]
+
+**Prompt:**
+Continuing from previous chapter where [角色] was [上一章结尾动作].
+First frame matches the last frame of chapter_XXX/V0X.
+
+[00:00-00:04] [景别], [运镜],
+[当前镜头的完整动作描述，保持角色外观与前一章一致]
+
+[00:04-00:08] [景别], [运镜],
+[继续的动作描述]
+
+SFX: [音效]
+Ambient: [环境音]
+
+**Output for next shot:**
+- End frame: 第X秒
+- Ending action: [结尾动作]
+- Character position: [位置]
+- Expression: [表情]
+```
+
+### 示例：第3章首视频正确写法
+
+```
+# Chapter 003, Shot 1 - Ventriloquism Feint (8 sec)
+
+**Cross-Chapter Continuity:**
+- Source: chapter_002/V05 (last video of chapter 2)
+- First Frame: Upload chapter_002/V05 last frame
+- Transition: Chapter 3 continues the confrontation scene from chapter 2
+
+**Reference Images:**
+1. chapter_002/V05 last frame (ensures Xin Yueying's appearance consistency)
+2. chapter_002/KF-10 Xin Yueying reference
+3. chapter_002/KF-08 Wang Tuhu reference
+
+**Prompt:**
+Continuing from chapter 2 where Xin Yueying was confronting Wang Tuhu in the courtyard at night. First frame matches the last frame of chapter_002/V05.
+
+[00:00-00:04] Medium shot, camera static,
+Xin Yueying stands in the barren courtyard, speaking loudly with intentional volume. Her lips barely move as she uses ventriloquism. Wang Tuhu holding iron shovel, confused but cooperating.
+
+【【@Image1】, Xin Yueying, sweet clear voice, loudly says】: "Did you give me a paper packet today!"
+
+[00:04-00:08] Medium shot, slight push in,
+Wang Tuhu understands the plan, spits on his hands, raises the shovel. They pretend to fight.
+
+【【@Image2】, Wang Tuhu, rough voice, cooperatively shouts】: "I'll kill you!"
+【【@Image1】, Xin Yueying, terrified screams】: "You said you wouldn't kill me if I did what you asked!"
+
+SFX: wind howling, iron shovel swinging
+Ambient: cold winter night, distant insect sounds
+
+**Output for next shot:**
+- End frame: 8th second
+- Ending action: Iron shovel raised high, Xin Yueying screaming
+- Character position: Courtyard center, facing each other
+- Expression: Xin Yueying pretending fear, Wang Tuhu cooperating
+```
+
+### 章节间衔接检查清单
+
+**生成章节首视频前检查**:
+- [ ] 是否读取了前一章的视频提示词文件？
+- [ ] 是否获取了前一章最后一个视频的尾帧状态？
+- [ ] 首帧图片是否来自前一章尾帧？
+- [ ] 角色参考图是否来自前一章关键帧？
+
+**生成后检查**:
+- [ ] 角色外观与前一章完全一致
+- [ ] 场景细节与前一章衔接
+- [ ] 时间线连贯（无时间跳跃或错乱）
+
 ## References
 
 - `references/prompt-calibration.md` - Finding the right detail level
