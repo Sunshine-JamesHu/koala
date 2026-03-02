@@ -504,36 +504,172 @@ angry and fierce expression,
 3D animation render, Chinese Donghua Style, ancient Chinese background
 ```
 
-#### 完整版提示词
+---
+
+## 第一步：三视图（必须首先生成）⭐
+
+**三视图提示词（可直接复制使用）**:
 ```
 3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Huo Qi, supporting character, approximately 28 years old,
-square rugged face with full beard (luosaihu),
-round bull-like eyes with direct gaze,
+Character reference sheet of Huo Qi,
+28 years old male,
+square rugged face with thick full beard (luosaihu),
+round bull-like large eyes, direct straightforward gaze,
 bronze skin weathered from outdoor labor,
-burly and muscular body, tall and strong frame,
+black hair tied back in simple bun,
+burly and muscular body, tall and strong imposing frame,
 wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-angry and fierce expression, protective stance,
-standing guard at doorway, holding bow and arrow,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style
---ar 16:9
+Three views: front view, side view, back view,
+full body, standing in neutral pose,
+white background, character design sheet,
+consistent character design across all three views,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+--ar 3:1
 ```
 
-### 情绪变体
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed,
+multiple characters, different outfits, inconsistent design,
+dynamic pose, action pose, sitting, lying,
+text, watermark, signature,
+clean shaven, thin body, pale skin
+```
+
+---
+
+## 第二步：情绪表情卡（在三视图基础上生成）⭐
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 霍齐-三视图 | 确保角色一致性 |
+
+### 情绪变体（第1章）
 
 | 情绪状态 | 提示词附加 |
 |---------|-----------|
-| 愤怒 | angry expression, fierce gaze, scowling |
-| 警惕 | vigilant, watchful eyes, tense posture |
-| 忠诚护主 | protective stance, determined expression |
-| 嫌恶 | disgusted look, disdainful expression |
+| 愤怒 | angry expression, fierce gaze, scowling, furrowed brows |
+| 警惕 | vigilant, watchful eyes, tense posture, alert |
+| 忠诚护主 | protective stance, determined expression, resolute |
+| 嫌恶 | disgusted look, disdainful expression, nose wrinkled |
+| 震惊 | shocked, wide eyes, mouth open, stunned |
+| 沉默稳重 | stoic, calm, silent, composed |
+
+### 表情卡生成提示词
+
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Expression sheet of Huo Qi,
+28 years old male, square rugged face with thick full beard, round bull-like eyes, bronze skin, black hair in simple bun, burly muscular body, wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
+
+Six different expressions arranged in two rows:
+Row 1: 愤怒咆哮 (angry, fierce gaze, scowling, furrowed brows, aggressive) | 警惕戒备 (vigilant, watchful eyes, alert, tense) | 嫌恶鄙夷 (disgusted, disdainful, nose wrinkled, scornful)
+Row 2: 震惊意外 (shocked, wide eyes, mouth open, stunned) | 忠诚坚定 (loyal, determined, resolute, protective) | 沉默稳重 (stoic, calm, silent, composed)
+
+same character, same outfit, consistent design,
+white background, expression reference sheet,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+--ar 3:2
+```
+
+---
+
+## 第三步：动作参考卡（站立/守卫等基础姿势）⭐
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 霍齐-三视图 | 确保角色一致性 |
+| 参考图2 | 霍齐-表情卡 | 表情参考（如需要） |
+
+### 常用动作参考
+
+| 动作类型 | 中文描述 | 英文关键词 |
+|---------|---------|-----------|
+| 站立 | 直立站姿 | standing straight, neutral pose |
+| 守卫 | 守门站岗 | standing guard at doorway, vigilant |
+| 拦截 | 拦住去路 | blocking path, arm extended |
+| 愤怒 | 愤怒指人 | pointing angrily, accusing |
+| 抱臂 | 双臂交叉 | arms crossed over chest |
+| 持弓 | 手持弓箭 | holding bow and arrow |
+
+### 守卫参考卡（第1章常用）
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Huo Qi, 28 years old male,
+square rugged face with thick full beard (luosaihu),
+round bull-like large eyes, bronze skin,
+black hair tied back in simple bun,
+burly and muscular body, tall and strong frame,
+wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
+
+standing guard at wooden doorway, blocking entrance,
+vigilant and alert posture, arms crossed or ready stance,
+fierce protective expression, watching intently,
+
+dilapidated ancient Chinese cottage exterior background,
+night scene, cold winter, dim moonlight,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+--ar 16:9
+```
+
+### 拦截参考卡
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Huo Qi, 28 years old male,
+square rugged face with thick full beard (luosaihu),
+round bull-like large eyes, bronze skin,
+black hair tied back in simple bun,
+burly and muscular body, tall and strong frame,
+wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
+
+stepping forward to block path, arm extended,
+angry expression, fierce gaze, intimidating stance,
+body language conveying "you shall not pass",
+
+dilapidated ancient Chinese cottage doorway background,
+night scene, dim lighting,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+--ar 16:9
+```
+
+### 愤怒指人参考卡
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Huo Qi, 28 years old male,
+square rugged face with thick full beard (luosaihu),
+round bull-like large eyes, bronze skin,
+black hair tied back in simple bun,
+burly and muscular body, tall and strong frame,
+wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
+
+pointing finger accusingly, angry shouting expression,
+fierce gaze, furrowed brows, mouth open as if yelling,
+body leaning forward aggressively,
+
+dilapidated ancient Chinese cottage interior background,
+dim lighting,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+--ar 16:9
+```
 
 ### 角色色卡
 - **头发**: #2d2d2d（黑色）
 - **眼睛**: #3d3d3d（深褐色）
 - **肤色**: #a67c52（古铜色）
+- **胡须**: #1a1a1a（浓黑色）
 - **服装主色**: #8b7355（褐土色）
 
 ### 注意事项
@@ -542,12 +678,13 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 - 络腮胡（标志性特征）
 - 古铜色皮肤
 - 魁梧身材
-- 圆眼
+- 圆眼（牛眼般大）
 
 #### 常见错误提醒
 - **皮肤错误**: 霍齐是古铜色皮肤，不是白皙
 - **身材错误**: 必须魁梧健壮，不能瘦弱
 - **漏画胡须**: 络腮胡是他的标志
+- **眼睛错误**: 是圆眼，不是狭长凤眼
 
 ---
 

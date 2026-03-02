@@ -26,7 +26,8 @@
       "Skill(art-supervisor)",
       "Skill(story-supervisor)",
       "Bash(uv run python:*)",
-      "Skill(storyboard-supervisor)"
+      "Skill(storyboard-supervisor)",
+      "Bash(find:*)"
     ]
   }
 }

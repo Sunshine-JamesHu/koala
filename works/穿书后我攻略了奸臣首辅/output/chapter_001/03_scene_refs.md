@@ -53,6 +53,8 @@
 | 02 | 破败草屋·小厅 | 深夜 | 寒冬阴冷 | 阴森、血腥、恐怖 |
 | 03 | 破败草屋·门外 | 深夜 | 寒冬阴冷 | 绝望、寒冷、月光 |
 
+> **注**: 东厢房（霍齐住所）存在于院落东侧，但第1章未在该场景内发生剧情，故不列入本章场景总览。后续章节可能会使用该场景。
+
 ---
 
 ## 场景完整布局说明
@@ -60,9 +62,10 @@
 > **重要**: 此部分综合了小说多个章节中对该场景的描述，确保场景设计完整准确。
 
 ### 建筑整体结构
-- **类型**: 简陋的三间草屋（一列式布局）
-- **布局**: 共三间房，从左到右依次为：灶房 - 小厅 - 卧房
-- **主要建筑**: 单栋土坯房，茅草屋顶，破败不堪
+- **类型**: 简陋农家院落（主屋+厢房布局）
+- **主屋**: 三间草屋（一列式布局），从左到右依次为：灶房 - 小厅 - 卧房
+- **厢房**: 东厢房一间（霍齐居住）
+- **主要建筑**: 土坯房，茅草屋顶，破败不堪
 
 ### 室外空间
 - **院子**: 小型院落，地面泥土地，长有杂草，角落有水缸
@@ -71,64 +74,114 @@
 - **其他**: 木桩（拴驴用）、远处是树林和山脉
 
 ### 室内分区
-| 房间 | 功能 | 主要陈设 | 状态 |
-|------|------|---------|------|
-| 灶房（左） | 厨房 | 大锅、水缸、灶台、破碗筷、木头锅盖 | 凌乱破败 |
-| 小厅（中） | 通道/临时住所 | 缺腿木凳、掉皮方桌、樟木箱×3 | 破旧不堪 |
-| 卧房（右） | 主卧室 | 土炕、破褥子、小木桌、轮椅、破柜子 | 阴冷破败 |
+| 房间 | 功能 | 居住者 | 主要陈设 | 状态 |
+|------|------|--------|---------|------|
+| 灶房（主屋左） | 厨房 | 公用 | 大锅、水缸、灶台、破碗筷、木头锅盖 | 凌乱破败 |
+| 小厅（主屋中） | 通道/临时住所 | 公用 | 缺腿木凳、掉皮方桌、樟木箱×3 | 破旧不堪 |
+| 卧房（主屋右） | 主卧室 | 沈清起、辛月影 | 土炕、破褥子、小木桌、墙上扶手、破柜子 | 阴冷破败 |
+| 东厢房 | 下人住所 | 霍齐 | 简易木床、旧被褥、劳动工具 | 简陋整洁 |
 
-### 场景平面示意图
+> **注**: 轮椅为沈清起的角色道具，不列入场景固定陈设
+
+### 场景平面示意图（大全景）
 
 ```
                           【远处：树林/山脉】
                     ┌─────────────────────────┐
                     │                         │
-                    │        院 子             │
-                    │    （泥土地、杂草）        │
-                    │                         │
-                    │    ┌───┐      ┌───┐     │
-                    │    │水缸│      │木桩│     │
-                    │    └───┘      └───┘     │
-                    │                         │
-┌─────────────────────────────────────────────────────┐
-│  ┌──────────┐  ┌──────────┐  ┌──────────┐          │
-│  │          │  │          │  │          │          │
-│  │   灶房   │  │   小厅   │  │   卧房   │  ←朝南   │
-│  │  (厨房)  │  │  (通道)  │  │ (主场景) │          │
-│  │          │  │          │  │          │          │
-│  │ 灶台/锅  │  │桌/凳/箱  │  │炕/轮椅   │          │
-│  │  水缸    │  │          │  │  小桌    │          │
-│  │          │  │          │  │         │          │
-│  └──────────┘  └──────────┘  └──────────┘          │
-│                                                     │
-│                    ═══ 木门 ═══                     │
-└─────────────────────────────────────────────────────┘
-                          【大门朝南】
+          ┌─────────┤        院 子             ├──────────┐
+          │         │    （泥土地、杂草）        │          │
+          │         │                         │          │
+          │         │    ┌───┐      ┌───┐     │          │
+          │         │    │水缸│      │木桩│     │          │
+          │         │    └───┘      └───┘     │          │
+          │         │                         │          │
+┌─────────┴──┐   ┌───────────────────────────────────────────┐   ┌─┴──────────┐
+│            │   │  ┌────────┐ ┌────────┐ ┌────────┐         │   │            │
+│            │   │  │        │ │        │ │[窗]    │         │   │            │
+│  东厢房    │   │  │  灶房  │ │  小厅  │ │ 卧房  │ ←主屋   │   │   西侧     │
+│ (霍齐住)   │   │  │ (厨房) │ │ (通道) │ │(主场景)│  朝南   │   │   空地     │
+│            │   │  │        │ │        │ │        │         │   │            │
+│  简易木床  │   │  │灶台/锅 │ │桌/凳/箱│ │┌──────┐│         │   │            │
+│  劳动工具  │   │  │ 水缸   │ │        │ ││土炕  ││         │   │            │
+│            │   │  │        │ │        │ │└──────┘│         │   │            │
+│            │   │  │        │ │        │ │柜/青灯 │         │   │            │
+│   [窗]     │   │  └────────┘ └────────┘ └────────┘         │   │            │
+└────────────┘   │              ═══ 木门 ═══                 │   └────────────┘
+       ↑          └───────────────────────────────────────────┘          ↑
+    东厢房门                           ↑                              西侧空地
+    (朝西开)                        大门朝南
+
+建筑朝向说明:
+- 主屋：坐北朝南，共三间（灶房-小厅-卧房）
+- 东厢房：位于院子东侧，门朝西开，霍齐居住
+- 大门：朝南，通往院外
+- 西侧：空地，无建筑
+```
+
+### 东厢房详细布局（霍齐住所）
+
+```
+┌────────────────────────────┐
+│                            │
+│  ┌─────────────────────┐   │
+│  │     简易木床        │   │
+│  │   （靠后墙）        │   │
+│  │    旧被褥           │   │
+│  └─────────────────────┘   │
+│                            │
+│  ┌──────┐  ┌──────────┐    │
+│  │ 工具 │  │ 杂物堆   │    │
+│  │(墙角)│  │ (弓箭等) │    │
+│  └──────┘  └──────────┘    │
+│                            │
+│  📍小油灯                   │
+│  (角落)           ↑        │
+│            ┌───────────┐   │
+│            │  门(朝西)  │   │
+└────────────┴───────────┴───┘
+
+空间逻辑说明:
+- 简易木床靠后墙，铺旧被褥
+- 角落存放劳动工具和武器（弓箭等）
+- 小油灯为唯一光源
+- 整体简陋但整洁，体现霍齐朴实忠诚的性格
 ```
 
 ### 室内详细布局（卧房 - 主场景）
 
 ```
 ┌────────────────────────────────────┐
+│ 🪟 窗户 (破洞窗纸，月光射入)         │
+├────────────────────────────────────┤ ← 后墙
 │                                    │
-│  ┌──────┐                          │
-│  │ 柜子 │           ┌──────────┐   │
-│  │      │           │   轮椅   │   │
-│  └──────┘           │  (中央)  │   │
-│                     └──────────┘   │
 │  ┌─────────────────────────────┐   │
-│  │           土 炕             │   │
-│  │    （破褥子、小木桌）        │   │
-│  │  ┌─────────────────────┐   │   │
-│  │  │ 扶手(墙上)          │   │   │
-│  │  └─────────────────────┘   │   │
+│  │         土 炕               │   │
+│  │    （靠后墙搭建）            │   │
+│  │  破褥子、漏棉花              │   │
+│  │  ┌───────────────────────┐ │   │
+│  │  │ 墙上扶手(辅助起身)     │ │   │
+│  │  └───────────────────────┘ │   │
+│  │      🔸小木桌               │   │
 │  └─────────────────────────────┘   │
 │                                    │
-│       📍青灯                🪟窗   │
-│       (角落)              (破洞)   │
-└────────────────────────────────────┘
-         ↑
-       门口
+│  ┌──────┐                          │
+│  │ 柜子 │                          │
+│  │(墙角)│                          │
+│  └──────┘                          │
+│                                    │
+│  📍青灯                             │
+│  (角落)                   ↑        │
+│                    ┌───────────┐   │
+│                    │   门口    │   │
+└────────────────────┴───────────┴───┘
+
+空间逻辑说明:
+- 土炕沿后墙搭建（中国北方传统布局）
+- 柜子在墙角，不占用活动空间
+- 青灯在角落，作为主要光源照亮炕区域
+- 碎瓷片散落在地面各处（图中未全部标出）
+- 轮椅为沈清起的角色道具，不在此场景图中展示
 ```
 
 ---
@@ -155,16 +208,17 @@
 - **屋顶**: 茅草顶，有漏风处
 - **窗户**: 破旧木窗，窗纸破损有洞
 
-### 主要元素
+### 主要元素（场景固定陈设）
 | 元素 | 位置 | 描述 |
 |------|------|------|
 | 土炕 | 靠后墙 | 简陋通炕，破褥子漏棉花 |
-| 轮椅 | 房间中央 | 破败木制轮椅，沉重 |
 | 青灯 | 角落/炕桌 | 唯一光源，火焰摇曳 |
 | 小木桌 | 炕上 | 简陋木桌 |
 | 柜子 | 墙角 | 破旧木柜 |
 | 碎瓷 | 地面散落 | 满地碎瓷片 |
-| 三尺剑 | 沈清起手边/刺入木柱 | 锋利长剑 |
+| 墙上扶手 | 炕边墙面 | 辅助起身用（为轮椅使用者安装） |
+
+> **角色道具说明**: 轮椅（沈清起使用）、三尺剑（沈清起武器）为角色随身道具，不属于场景固定陈设，详见角色参考文件。
 
 ### 光影设定
 - **主光源**: 青灯（昏黄烛光），位置在角落或炕桌上
@@ -198,8 +252,8 @@ late night, cold winter, northern wind howling outside,
 single flickering blue oil lamp (qingdeng) as main light source,
 pale moonlight streaming through holes in torn window paper,
 mud floor covered with shattered porcelain pieces and spilled food,
-old worn wooden wheelchair sitting in center of room,
-traditional kang bed platform against wall with worn bedding,
+traditional kang bed platform against back wall with worn bedding,
+handrail mounted on wall beside kang (for wheelchair user assistance),
 oppressive and eerie atmosphere,
 
 masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
@@ -221,6 +275,7 @@ dust particles floating visible in light beams, atmospheric depth,
 
 traditional kang bed platform against back wall, thin worn bedding with exposed cotton,
 small wooden table on kang, simple wooden cabinet in corner,
+wooden handrail mounted on wall beside kang for assistance,
 
 moldy spotted earthen walls, thatched roof with gaps letting in cold air,
 broken wooden window frame with torn paper,
@@ -312,16 +367,16 @@ bright colors, warm cozy atmosphere, clean tidy room, new furniture
 
 ```
 3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-Interior of a dilapidated ancient Chinese cottage bedroom, poverty-stricken rural home, late night, single flickering blue oil lamp, moonlight through torn window paper, mud floor with shattered porcelain, worn wooden wheelchair in center, traditional kang bed, oppressive eerie atmosphere,
+Interior of a dilapidated ancient Chinese cottage bedroom, poverty-stricken rural home, late night, single flickering blue oil lamp, moonlight through torn window paper, mud floor with shattered porcelain, traditional kang bed against back wall, wooden handrail on wall, oppressive eerie atmosphere,
 
-| 全景远景 | 整个卧房全貌，青灯在角落摇曳，月光照入，轮椅在中央，炕在后墙 | wide establishing shot, full room view, eye-level |
-| 轮椅特写 | 聚焦破败木制轮椅，周围碎瓷散落，昏暗光线下 | close-up of worn wooden wheelchair, shattered porcelain around |
+| 全景远景 | 整个卧房全貌，青灯在角落摇曳，月光照入，土炕靠后墙，墙上有扶手 | wide establishing shot, full room view, eye-level |
+| 炕区特写 | 聚焦土炕区域，破褥子、小木桌、墙上扶手，昏暗光线下 | close-up of kang bed area, worn bedding, small table, wall handrail |
 | 地面细节 | 碎瓷片和残羹散落的泥土地面，在微弱光线下，尘埃飘浮 | close-up of floor, broken porcelain shards, spilled food, dust particles |
 | 窗户光效 | 月光穿过破洞窗纸，形成体积光束，尘埃粒子可见 | moonlight through torn window paper, volumetric light beams, dust particles |
 | 青灯摇曳 | 青灯特写，火焰跳动，光影在墙上舞动，昏黄光芒 | flickering blue oil lamp, dancing flame, dynamic shadows on wall |
-| 炕上视角 | 从炕上看向房间，轮椅剪影，门口轮廓，阴冷氛围 | view from kang platform, wheelchair silhouette, doorway outline |
+| 炕上视角 | 从炕上看向房间，门口轮廓，阴冷氛围 | view from kang platform, doorway outline, cold atmosphere |
 | 门口视角 | 从门口看向卧房内，整体布局，青灯和月光交织 | view toward interior from doorway, room layout, lamp and moonlight |
-| 俯视全景 | 从屋顶向下看，整个卧房布局，角色位置参考 | aerial top-down view, room layout, character placement reference |
+| 俯视全景 | 从屋顶向下看，整个卧房布局，土炕靠后墙 | aerial top-down view, room layout, kang against back wall |
 
 masterpiece, best quality, 8k resolution, highly detailed background, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
 
@@ -398,18 +453,20 @@ masterpiece, best quality, 8k resolution, highly detailed background, soft cinem
          ┌─────────────────────────────────┐
          │  🌙月光光束穿过破窗             │
          │     ↓                           │
-         │     ↓                           │
-         │  ┌─────┐                        │
-[青灯] → │  │     │   ← 烛光照亮区域       │
-  🪔     │  │轮椅 │                        │
-         │  │     │                        │
-         │  └─────┘                        │
+         │  ┌─────────────────────────┐    │
+         │  │        土 炕            │    │
+         │  │   (烛光+月光混合)       │    │
+         │  │   🔸小木桌               │    │
+         │  └─────────────────────────┘    │
          │                                 │
-         │     ↓ 月光继续                  │
-         │  ┌─────────┐                    │
-         │  │   炕     │  ← 烛光+月光混合  │
-         │  └─────────┘                    │
+         │     ┌──────┐                    │
+[青灯] → │     │ 柜子 │                    │
+  🪔     │     │(墙角)│                    │
+         │     └──────┘                    │
+         │                                 │
          └─────────────────────────────────┘
+              ↑
+            门口
 ```
 
 ---
