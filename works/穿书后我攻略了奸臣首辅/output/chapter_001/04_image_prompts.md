@@ -295,6 +295,108 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 
 ---
 
+# 第一部分（续）：角色动作参考卡（上传三视图）
+
+> **用途**: 确保角色在本章常用姿势下的视觉表现一致
+
+---
+
+## AC-01: 辛月影 - 躺卧参考卡
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 辛月影-三视图 | 角色外观基础参考 |
+
+**提示词**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Xin Yueying, 20 years old female,
+two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
+beautiful almond-shaped eyes, long thick eyelashes,
+delicate oval face, slightly upturned nose, fair porcelain skin,
+petite and slender body,
+wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+
+| 趴伏姿态 | 趴在地上，头枕在交叠双臂上，闭眼沉睡 | lying prone on ground, head resting on crossed arms, eyes closed, sleeping pose |
+| 侧卧支颊 | 侧身躺地，一手支着脸颊，慵懒姿态 | lying on side, one hand propping up cheek, lazy relaxed pose |
+| 惊惶坐起 | 从地上撑起上半身，手肘支地，茫然环顾 | propping up from ground on elbows, looking around dazed |
+
+white background, character pose reference sheet,
+consistent character design across all poses,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+
+按一行生成，三个姿态，只生一张 1*3 的动作参考图片
+```
+
+---
+
+## AC-02: 沈清起 - 坐轮椅参考卡
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 沈清起-三视图 | 角色外观基础参考 |
+
+**提示词**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Shen Qingqi, 25 years old male,
+long black hair tied back in ancient Chinese style,
+narrow phoenix eyes, thin lips, pale almost bloodless skin,
+handsome and refined face with sharp defined features,
+tall and slender body, sitting in worn wooden wheelchair,
+wearing dark blue-black ancient Chinese scholar robe,
+cold and gloomy aura,
+
+| 端坐冷漠 | 端坐轮椅，双手搭在扶手上，凤眼冷漠下视 | sitting upright in wheelchair, hands on armrests, cold downward gaze |
+| 前倾威压 | 微微前倾，一手捏碎瓷片，指间滴血，薄唇似笑非笑 | leaning forward slightly, holding broken porcelain shard, blood dripping from fingers, ambiguous sinister smile |
+| 持剑审判 | 单手持剑平举，剑尖指向前方，凤眼冰冷 | one hand holding sword horizontally, sword tip pointing forward, icy phoenix eyes |
+
+white background, character pose reference sheet,
+consistent character design across all poses,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+
+按一行生成，三个姿态，只生一张 1*3 的动作参考图片
+```
+
+---
+
+## AC-03: 霍齐 - 站立守门参考卡
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 霍齐-三视图 | 角色外观基础参考 |
+
+**提示词**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Huo Qi, 28 years old male,
+full beard, round bull-like eyes,
+bronze skin weathered from outdoor labor,
+burly and muscular body, tall and strong frame,
+wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
+
+| 守门站立 | 叉手站在门口，居高临下，表情严肃 | standing in doorway with arms crossed, looking down, stern expression |
+| 愤怒推搡 | 双手前推姿态，圆眼怒瞪，络腮胡颤动 | pushing forward with both hands, round eyes glaring furiously, beard bristling |
+| 抱拳禀报 | 抱拳站立，微微躬身，表情恭敬 | standing with fists clasped, slight bow, respectful expression |
+
+white background, character pose reference sheet,
+consistent character design across all poses,
+
+masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+
+按一行生成，三个姿态，只生一张 1*3 的动作参考图片
+```
+
+---
+
 # 第二部分：场景背景参考
 
 > **用途**: 作为关键帧的背景图层或视频背景合成
