@@ -116,33 +116,29 @@
     - 技能: `@.claude/skills/voice-director/SKILL.md`
     - 输出: `10_voice_direction.md`（配音指导）
 
-18. **字幕师** → 设计字幕样式和片头片尾
-    - 技能: `@.claude/skills/subtitle-artist/SKILL.md`
-    - 输出: `11_subtitle_style.md`（字幕设计）
-
 #### 阶段4: 质量审核
 
-19. **风格统一师** → 检查所有提示词的风格一致性 (读取 style.json)
+18. **风格统一师** → 检查所有提示词的风格一致性 (读取 style.json)
     - 技能: `@.claude/skills/style-unifier/SKILL.md`
     - 输出: 风格统一检查报告，必要时调整提示词
 
-20. **分镜审核师** → 审核分镜脚本和视频提示词的分镜设计
+19. **分镜审核师** → 审核分镜脚本和视频提示词的分镜设计
     - 技能: `@.claude/skills/storyboard-supervisor/SKILL.md`
     - 职责:
       - 审查分镜脚本是否合理流畅、准确表达剧本
       - 审核视频提示词中的分镜设计是否合适
       - 检查跨镜头衔接是否连贯
-    - 输出: `12_storyboard_review.md`（分镜审核报告）
+    - 输出: `11_storyboard_review.md`（分镜审核报告）
 
-21. **艺术监督** → 审核画面质量
+20. **艺术监督** → 审核画面质量
     - 技能: `@.claude/skills/art-supervisor/SKILL.md`
     - 输出: 视觉质量审核报告
 
-22. **剧情监督** → 审核故事逻辑和情感表达
+21. **剧情监督** → 审核故事逻辑和情感表达
     - 技能: `@.claude/skills/story-supervisor/SKILL.md`
     - 输出: 叙事质量审核报告
 
-23. **生成用户操作手册** → 输出 `00_user_guide.md`
+22. **生成用户操作手册** → 输出 `00_user_guide.md`
 
 ---
 
@@ -174,7 +170,6 @@
 | `sound-designer` | AI音效设计师 | 设计环境音、动作音效 |
 | `music-composer` | AI配乐师 | 设计背景音乐 |
 | `voice-director` | AI配音导演 | 设计角色配音指导 |
-| `subtitle-artist` | AI字幕师 | 设计字幕样式、片头片尾 |
 
 ### 监督链路角色
 | 技能目录 | 角色 | 职责 |
@@ -227,8 +222,7 @@ works/[剧名]/
 │       ├── 08_sound_design.md            # 音效设计方案
 │       ├── 09_music_guide.md             # 配乐方案
 │       ├── 10_voice_direction.md         # 配音指导
-│       ├── 11_subtitle_style.md          # 字幕设计
-│       └── 12_storyboard_review.md       # 分镜审核报告
+│       └── 11_storyboard_review.md       # 分镜审核报告
 └── assets/                    # 生成的图片和视频素材
     ├── images/
     └── videos/

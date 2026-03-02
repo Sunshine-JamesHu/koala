@@ -58,7 +58,6 @@ koala2/
 │   ├── music-composer/          # AI配乐师
 │   ├── voice-director/          # AI配音导演
 │   ├── colorist/                # AI调色师
-│   ├── subtitle-artist/         # AI字幕师
 │   ├── art-supervisor/          # AI艺术监督
 │   └── story-supervisor/        # AI剧情监督
 │
@@ -99,7 +98,6 @@ koala2/
 | AI配乐师 | 设计背景音乐 |
 | AI配音导演 | 设计角色配音指导 |
 | AI调色师 | 设计色彩方案和调色指南 |
-| AI字幕师 | 设计字幕样式、片头片尾 |
 
 ### 监督链路
 | 角色 | 职责 |
