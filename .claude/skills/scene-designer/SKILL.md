@@ -1,201 +1,341 @@
 ---
-name: Scene Designer
-description: 专业的场景设计师，负责设计漫剧中的场景背景，确保场景与故事时代背景一致，为角色活动提供合适的空间，并营造恰当的氛围。
+name: scene-designer
+description: AI场景设计师 - 设计动画中的场景环境，建立世界观视觉基础，为AI背景生成提供精确的场景描述。当需要设计场景的视觉特征、光影设定、色彩规划时使用此技能。
 ---
 
-# Scene Designer - 场景设计师
+# AI场景设计师 (Scene Designer)
 
-## 角色定义
+## 角色定位
+负责设计动画中的场景环境，建立世界观视觉基础，为AI背景生成提供精确的场景描述。
 
-你是一位专业的场景设计师，负责设计漫剧中的场景背景。你需要确保场景与故事时代背景一致，为角色活动提供合适的空间，并营造恰当的氛围。
+## 前置依赖
+
+### 章节上下文读取 (重要)
+
+**开始工作前，必须读取以下内容以确保连贯性：**
+
+1. **当前章节**: `novel/chapters/chapter_XXX.txt` (必须)
+2. **上一章节**: `novel/chapters/chapter_XXX-1.txt` (如存在)
+   - 了解场景的延续性
+   - 确保时间和天气的合理过渡
+3. **下一章节**: `novel/chapters/chapter_XXX+1.txt` (如存在)
+   - 了解场景后续发展
+   - 为下一章场景做铺垫
+4. **风格配置**: `style.json` (必须)
+
+### 场景全景读取 (非常重要) ⭐
+
+**为了避免场景设计片面化，必须读取更多章节以获取完整的场景信息：**
+
+1. **同场景相关章节**: 搜索并读取所有涉及当前场景的章节
+   - 使用 Grep 工具搜索场景关键词（如地点名、建筑名）
+   - 读取至少 20-30 个相关章节片段
+   - 提取所有关于场景布局、建筑结构、家具陈设的描述
+
+2. **场景元素清单**: 从多章节中收集以下信息
+   - 建筑整体布局（几进院落、几间房）
+   - 室外空间（院子、花园、围墙、大门）
+   - 室内分区（正房、偏房、厢房、厨房等）
+   - 道具和家具（床、桌、椅、柜等）
+   - 特殊元素（井、树、花架、走廊等）
+
+3. **场景俯视图**: 输出中必须包含场景的平面布局示意,示意图必须精准，千万不要出现 左右排列的绘制成上下排列，生成后要再次对比原文进行确认。
+
+**在输出中必须包含：**
+- 场景与前后章节的时空连贯性说明
+- 时间线/天气变化的合理性检查
+- **场景完整布局说明**（从多章节提取的综合信息）
+- **场景平面示意图**
+
+### 风格配置读取
+
+**必须先读取** `works/[剧名]/style.json` 获取风格配置，使用以下字段：
+- `scene_style.detail` - 细节程度 (high/medium/low)
+- `scene_style.effects` - 氛围效果 (雾气/粒子/光晕)
+- `scene_style.depth_rendering` - 景深渲染
+- `scene_style.background_style` - 背景风格
+- `color.*` - 全部色彩参数
+- `lighting.*` - 全部光影参数
+- `world_setting.*` - 世界观设定
 
 ## 核心职责
+1. **场景设定**: 定义各场景地点的视觉特征
+2. **氛围营造**: 确定光影、天气、时间等环境要素
+3. **色彩规划**: 为场景建立统一的色彩基调
+4. **世界观构建**: 通过环境细节传达世界观
 
-1. 分析故事的时代背景和地域特色
-2. 设计场景的建筑风格和布局
-3. 规划场景中的道具布置
-4. 设计不同时间/天气的场景变体
-5. 生成场景图像 Prompt
+## 输出规范
 
-## 输出结构
+### 文件顶部必须有场景全景说明
 
-保存到: `assets/scenes/{场景类型}/{场景名}/design.json`
+```markdown
+# 场景参考 - 第X章
 
-```json
-{
-  "location_id": "loc_001",
-  "name": "辛府书房",
-  "type": "indoor",
-  "category": "residence",
+> **如何使用本文件**:
+> 1. 本文件是场景设计参考，供后续背景图片生成使用
+> 2. "AI提示词核心片段"可直接复制用于生成场景图
+> 3. 与 04_image_prompts.md 配合使用，确保场景一致性
 
-  "era": {
-    "period": "ancient_chinese",
-    "dynasty": "fictitious_ming_qing",
-    "description": "架空古代，融合明清风格"
-  },
+---
 
-  "architectural_style": {
-    "overall": "江南园林风格，木质结构为主",
-    "roof": "歇山顶，青瓦",
-    "walls": "木质格扇门，纸窗",
-    "floor": "青砖地面"
-  },
+## 场景总览
 
-  "layout": {
-    "shape": "矩形",
-    "approximate_size": "5m x 6m",
-    "entrances": ["正门通往走廊", "侧门通往内院"],
-    "windows": ["东面雕花窗两扇", "南面临窗可看庭院"]
-  },
+| 场景编号 | 场景名 | 时间 | 天气 | 情绪氛围 |
+|----------|--------|------|------|----------|
+| 01 | [场景名] | [时间] | [天气] | [氛围] |
 
-  "key_elements": [
-    {
-      "name": "书架",
-      "type": "furniture",
-      "description": "红木书架，五层，摆满古籍卷轴",
-      "position": "西侧墙壁",
-      "size": "2m宽 x 2.5m高"
-    },
-    {
-      "name": "书桌",
-      "type": "furniture",
-      "description": "紫檀木书桌，雕刻云纹",
-      "position": "房间中央偏南",
-      "size": "1.5m x 0.8m",
-      "items_on": ["笔墨纸砚", "油灯", "几卷书"]
-    },
-    {
-      "name": "太师椅",
-      "type": "furniture",
-      "description": "红木太师椅，配坐垫",
-      "position": "书桌后方"
-    },
-    {
-      "name": "窗棂",
-      "type": "architectural",
-      "description": "雕花木窗，糊白纸，可推开",
-      "position": "东侧和南侧"
-    },
-    {
-      "name": "屏风",
-      "type": "furniture",
-      "description": "山水画屏风，四扇",
-      "position": "房间角落"
-    },
-    {
-      "name": "香炉",
-      "type": "prop",
-      "description": "铜制香炉，青烟袅袅",
-      "position": "书桌一角的香几上"
-    }
-  ],
+---
 
-  "lighting_sources": [
-    {
-      "type": "natural",
-      "source": "窗户",
-      "daytime_effect": "柔和自然光从侧面射入",
-      "description": "通过纸窗过滤的散射光"
-    },
-    {
-      "type": "artificial",
-      "source": "油灯",
-      "description": "书桌上的铜油灯，暖黄色烛光",
-      "flicker": true
-    },
-    {
-      "type": "artificial",
-      "source": "灯笼",
-      "description": "可悬挂的红色灯笼"
-    }
-  ],
+## 场景完整布局说明
 
-  "time_variations": {
-    "dawn": { "lighting": "微弱的晨光透窗而入，室内昏暗", "atmosphere": "宁静、清冷", "color_temperature": "cool" },
-    "morning": { "lighting": "明亮的晨光充满房间", "atmosphere": "清爽、充满活力", "color_temperature": "warm_neutral" },
-    "noon": { "lighting": "强烈的阳光直射，室内明亮", "atmosphere": "明亮、活跃", "color_temperature": "neutral" },
-    "afternoon": { "lighting": "温暖的午后阳光斜射", "atmosphere": "慵懒、舒适", "color_temperature": "warm" },
-    "dusk": { "lighting": "金色余晖，与烛光交织", "atmosphere": "温馨、略带忧郁", "color_temperature": "golden" },
-    "evening": { "lighting": "主要依靠油灯，局部照明", "atmosphere": "温馨、私密", "color_temperature": "warm_orange" },
-    "night": { "lighting": "仅油灯照明，窗外或有月光", "atmosphere": "静谧、神秘", "color_temperature": "cool_with_warm_accents" },
-    "midnight": { "lighting": "极昏暗，仅剩微弱烛光或月光", "atmosphere": "神秘、压抑", "color_temperature": "cool_blue" }
-  },
+> **重要**: 此部分综合了小说多个章节中对该场景的描述，确保场景设计完整准确。
 
-  "weather_variations": {
-    "clear": { "description": "晴朗天气", "external_view": "可见蓝天白云", "sound": "鸟鸣远传" },
-    "cloudy": { "description": "阴天", "lighting_modifier": "光线平淡柔和", "atmosphere_modifier": "压抑感" },
-    "rain": { "description": "下雨", "external_view": "雨滴打在窗纸上", "lighting_modifier": "昏暗阴沉", "atmosphere_modifier": "忧郁、内敛", "sound": "雨声" },
-    "snow": { "description": "下雪", "external_view": "雪花飘落", "lighting_modifier": "银白色反光", "atmosphere_modifier": "宁静、寒冷" },
-    "storm": { "description": "暴风雨", "external_view": "树木摇晃，雨势急促", "lighting_modifier": "忽明忽暗，闪电", "atmosphere_modifier": "紧张、不安" }
-  },
+### 建筑整体结构
+- **类型**: [四合院/三合院/独栋/其他]
+- **布局**: [几进院落/几间房]
+- **主要建筑**: [正房、偏房、厢房等]
 
-  "color_palette": {
-    "primary": "#8B4513",
-    "primary_name": "木质棕",
-    "secondary": "#DEB887",
-    "secondary_name": "原木色",
-    "accent": "#2F4F4F",
-    "accent_name": "墨绿",
-    "highlights": ["#FAEBD7", "#D2691E"]
-  },
+### 室外空间
+- **院子**: [大小、地面材质、植物]
+- **围墙**: [材质、高度、状态]
+- **大门**: [位置、样式、状态]
+- **其他**: [井、树、走廊等]
 
-  "atmosphere_presets": {
-    "calm": { "lighting": "柔和均匀", "shadow": "轻微", "mood": "宁静" },
-    "tense": { "lighting": "强烈对比", "shadow": "戏剧性", "mood": "紧张" },
-    "romantic": { "lighting": "温暖柔和", "shadow": "柔和朦胧", "mood": "浪漫" },
-    "mysterious": { "lighting": "昏暗局部", "shadow": "深沉", "mood": "神秘" }
-  },
+### 室内分区
+| 房间 | 功能 | 主要陈设 | 状态 |
+|------|------|---------|------|
+| 正房 | [用途] | [家具列表] | [破旧/完好] |
+| 偏房1 | [用途] | [家具列表] | [破旧/完好] |
+| 偏房2 | [用途] | [家具列表] | [破旧/完好] |
 
-  "prompt_template": {
-    "base": "ancient Chinese study room interior, traditional wooden architecture, Ming-Qing dynasty style",
-    "with_time": "{base}, {time_of_day} lighting, {lighting_description}",
-    "with_weather": "{base}, {weather} weather visible through window",
-    "full": "ancient Chinese study room interior, traditional wooden architecture, {key_elements}, {time_of_day}, {weather}, {atmosphere} atmosphere, {lighting} lighting, anime style, highly detailed, cinematic"
-  },
-
-  "reference_images": {
-    "main": "assets/scenes/indoor/辛府书房/main.png",
-    "variations": "assets/scenes/indoor/辛府书房/variations/"
-  }
-}
+### 场景平面示意图
+```
+┌─────────────────────────────────────┐
+│              院 子                   │
+│    ┌──────┐              ┌──────┐   │
+│    │ 偏房1 │              │ 偏房2 │   │
+│    │      │              │      │   │
+│    └──────┘              └──────┘   │
+│                                      │
+│         ┌────────────────┐          │
+│         │     正房        │          │
+│         │   (主场景)      │          │
+│         └────────────────┘          │
+│                                      │
+│    ═══════════════════════          │
+│            大门                      │
+└─────────────────────────────────────┘
 ```
 
-## 场景类型分类
+---
 
-### 室内场景 (Indoor)
+## 场景 [编号]: [场景名]
 
-| 类别 | 示例 | 特点 |
-|------|------|------|
-| 住宅 | 卧房、书房、厅堂 | 私密、生活化 |
-| 宫殿 | 大殿、寝宫、御花园 | 华丽、宏大 |
-| 官府 | 衙门、大堂 | 庄重、正式 |
-| 商业 | 客栈、酒楼、商铺 | 热闹、多样 |
-| 宗教 | 寺庙、道观 | 神圣、肃穆 |
+### 基础信息
+- **地点类型**: [室内/室外/半室外]
+- **时代风格**: [现代/古代/未来/架空]
+- **建筑风格**: [简约/繁复/工业/奇幻]
 
-### 室外场景 (Outdoor)
+### 时间与天气
+- **时间**: [具体时间]
+- **天气**: [晴/阴/雨/雪/雾]
+- **光线来源**: [自然光/人造光/混合]
 
-| 类别 | 示例 | 特点 |
-|------|------|------|
-| 庭院 | 内院、花园 | 私密、精致 |
-| 街道 | 市集、巷弄 | 热闹、生活化 |
-| 自然 | 山林、河流、田野 | 开阔、自然 |
-| 建筑 | 城门、桥、塔 | 宏大、标志 |
+### 整体氛围
+[一句话描述场景给人的感觉]
 
-## 触发方式
+### 空间结构
+[描述场景的整体布局和主要元素位置]
 
-当用户要求"设计场景"或"创建场景背景"时触发。
+### 光影设定
+- **主光源**: [方向、强度、颜色]
+- **阴影风格**: [硬阴影/软阴影]
 
-Agent应该：
-1. 读取故事分析结果，识别场景需求
-2. 分析场景的时代背景、建筑风格和布局需求
-3. 设计场景的关键元素、光线来源、时间/天气变体
-4. 输出到 `assets/scenes/{场景类型}/{场景名}/design.json`
+### 色彩设定
+- **主色调**: [颜色]
+- **辅助色**: [颜色]
+- **整体色温**: [暖色/冷色/中性]
 
-## 质量检查清单
+### 氛围元素
+- **空气感**: [清晰/薄雾/浓雾]
+- **粒子效果**: [尘埃/雨滴/雪花]
 
-- [ ] 建筑风格与时代背景一致
-- [ ] 关键元素位置合理
-- [ ] 光线来源明确
-- [ ] 时间/天气变体完整
-- [ ] 色彩搭配和谐
-- [ ] Prompt 模板完整
+---
+
+## AI提示词核心片段
+
+### 提示词构建公式（重要）⭐
+
+**完整公式**: `风格前缀 + 场景主体描述 + 环境细节 + 光影氛围 + 色彩基调 + 构图运镜 + 质量标签`
+
+### 详细版提示词结构
+
+```
+[风格前缀 - 从 style.json 获取],
+
+[场景类型 - 室内/室外/半室外],
+[时代背景 - 古代中国/现代/未来/架空],
+[具体地点 - 卧室/街道/森林等],
+[时间设定 - 清晨/正午/黄昏/深夜],
+[天气状态 - 晴朗/阴天/雨天/雪天/雾天],
+
+[主体结构描述 - 建筑外观、空间布局、主要物体],
+[细节元素描述 - 家具陈设、装饰物、地面材质],
+[氛围元素 - 尘埃粒子、烟雾、光晕、动态效果],
+
+[主光源描述 - 光源类型、方向、强度、颜色],
+[辅助光描述 - 反光、环境光、补光],
+[阴影效果 - 硬阴影/软阴影、阴影方向、阴影深度],
+
+[主色调 - 主要颜色],
+[辅助色 - 次要颜色],
+[强调色 - 点缀颜色],
+[整体色温 - 暖色/冷色/中性],
+[情绪氛围 - 温馨/压抑/神秘/紧张],
+
+[构图类型 - 远景/中景/近景/特写],
+[视角角度 - 平视/俯视/仰视/斜角],
+[景深效果 - 清晰/景深模糊/虚化背景],
+
+[质量标签 - 从 style.json 获取],
+--ar [宽高比]
+```
+
+### 详细版示例
+
+**室内场景（破败草屋）**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+ancient Chinese dilapidated cottage interior, poverty-stricken rural home,
+late night scene, cold winter night, northern wind howling outside,
+
+single flickering blue oil lamp (qingdeng) as main light source, casting dancing shadows,
+pale moonlight streaming through holes in torn window paper, creating eerie light beams,
+mud floor covered with shattered porcelain pieces and spilled food remnants,
+old worn wooden wheelchair sitting in center of room, broken and decrepit,
+traditional kang bed platform against wall, small wooden table, simple dressing stand,
+
+dramatic chiaroscuro lighting, soft shadows from flickering flame,
+volumetric moonlight beams cutting through darkness,
+dust particles floating visible in light, atmospheric depth,
+
+color palette: cold blue-grey dominant, warm yellow candlelight accent, pale moonlight highlights,
+oppressive and eerie atmosphere, suffocating sense of poverty and desperation,
+
+wide establishing shot, eye-level angle, depth of field blur on background,
+
+masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
+--ar 16:9
+```
+
+**室外场景（古代街道）**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+ancient Chinese town street, bustling marketplace during day,
+sunny morning, clear blue sky with wispy clouds,
+
+traditional wooden buildings lining both sides of cobblestone street,
+red lanterns hanging from eaves, colorful shop banners fluttering,
+street vendors' stalls with fruits and vegetables, wooden carts,
+stone bridge over small canal, willow trees swaying gently,
+
+warm natural sunlight from upper right, soft shadows on ground,
+dappled light through tree branches, ambient sky illumination,
+
+color palette: warm ochre and terracotta dominant, fresh green accents, bright blue sky,
+cheerful and lively atmosphere, peaceful daily life scene,
+
+medium wide shot, slight low angle looking up at buildings, shallow depth of field,
+
+masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
+--ar 16:9
+```
+
+### 负向提示词模板
+
+**通用负向提示词**:
+```
+people, characters, faces, figures, text, watermark, signature,
+low quality, worst quality, blurry, distorted, deformed,
+modern elements, western style, electric lights, cars, buildings,
+2d flat, sketch, line art, photo realistic, plastic look
+```
+
+### 场景视角卡生成提示词（可直接复制使用）**:
+```
+[风格前缀],
+
+[场景核心描述 - 包含场景类型、时代、时间、天气、主要元素],
+
+| [视角名1] | [视角描述1 - 详细描述该视角的画面内容] | [英文关键词1 - 包含景别、角度、焦点] |
+| [视角名2] | [视角描述2] | [英文关键词2] |
+| [视角名3] | [视角描述3] | [英文关键词3] |
+| [视角名4] | [视角描述4] | [英文关键词4] |
+| [视角名5] | [视角描述5] | [英文关键词5] |
+| [视角名6] | [视角描述6] | [英文关键词6] |
+| [视角名7] | [视角描述7] | [英文关键词7] |
+| [视角名8] | [视角描述8] | [英文关键词8] |
+
+[风格后缀]
+
+按2行生成，每行4个视角，只生一张 4*2 的场景8视角图片
+```
+
+### 视角卡示例
+
+**破败草屋室内 8视角**:
+```
+3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+Interior of a dilapidated ancient Chinese cottage, poverty-stricken rural home, late night, single flickering oil lamp, moonlight through torn window paper, mud floor with shattered porcelain, worn wooden wheelchair, oppressive atmosphere,
+
+| 全景远景 | 整个房间全貌，从高处俯视，展示破败环境，青灯在角落，月光照入 | wide establishing shot, full room view, top-down aerial view |
+| 轮椅特写 | 聚焦破败轮椅，木制框架，破旧坐垫，周围碎瓷散落 | close-up of worn wheelchair, broken wood texture, shattered porcelain around |
+| 地面细节 | 碎瓷片和残羹散落的泥土地面，在微弱光线下 | close-up of floor, broken porcelain shards, spilled food, mud texture |
+| 窗户光效 | 月光穿过破洞窗纸，形成光束，尘埃粒子可见 | moonlight through torn window paper, volumetric light beams, dust particles |
+| 烛光摇曳 | 青灯特写，火焰跳动，光影在墙上舞动 | flickering oil lamp, dancing flame, dynamic shadows on wall |
+| 角落阴影 | 房间阴暗角落，蛛网悬挂，压抑感 | dark corner, spider webs, oppressive shadows, hidden details |
+| 门口视角 | 从室内看向门口，木门轮廓，门外月光 | view toward doorway from inside, door frame silhouette, moonlight outside |
+| 俯视全景 | 从屋顶向下看，整个房间布局，角色位置参考 | aerial top-down view, room layout, character placement reference |
+
+masterpiece, best quality, 8k resolution, highly detailed background, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+
+按2行生成，每行4个视角，只生一张 4*2 的场景8视角图片
+```
+
+### 常用视角参考
+
+| 视角类型 | 描述 | 英文关键词 |
+|---------|------|-----------|
+| 远景全景 | 场景全貌 | wide establishing shot, full view |
+| 中景视角 | 场景主要部分 | medium shot, main area |
+| 近景视角 | 场景细节 | close-up shot, detail view |
+| 侧面视角 | 侧面角度 | side angle view |
+| 俯视角度 | 从上往下看 | aerial top-down view |
+| 仰视角度 | 从下往上看 | low angle view |
+| 特写细节 | 聚焦某元素 | extreme close-up, focused detail |
+| 氛围空镜 | 无人物氛围 | atmospheric shot, empty scene |
+```
+
+## 场景类型设计指南
+
+### 室内场景
+- 关注空间大小和布局
+- 光源位置（窗户/灯具）
+- 家具和陈设
+
+### 城市室外
+- 建筑风格和高度
+- 街道宽度和布局
+- 霓虹灯/广告牌
+
+### 自然场景
+- 地形特征
+- 植被类型
+- 天空和天气
+
+### 科幻/奇幻场景
+- 独特世界观元素
+- 特殊光源和色彩
+- 未来/魔法元素

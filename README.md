@@ -1,189 +1,134 @@
-# 考拉动漫
+# Koala2 - AI动画制作系统
 
-考拉动漫是一个使用 AI 为小说生成漫剧视频的项目。支持多部小说的并行开发，每部作品独立管理。
+从小说到AI动画提示词的自动化生成工具。
+
+## 核心功能
+
+输入小说章节，自动生成：
+1. **图片提示词** → 用于 Nano Banana Pro
+2. **视频提示词** → 用于 Veo3.1 Fast (8秒) 或 可灵动画 (5秒/10秒)
 
 ## 快速开始
 
-### 1. 创建新项目
-
-```bash
-# 复制示例项目模板
-cp -r works/.example works/你的小说名
-
-# 编辑项目配置
-vim works/你的小说名/project.json
-```
-
-### 2. 准备小说原文
-
-将小说按章节拆分，放入 `novel/chapters/` 目录：
+### 使用方式
 
 ```
-novel/
-├── chapters/
-│   ├── chapter_001.txt    # 第一章
-│   ├── chapter_002.txt    # 第二章
-│   └── ...
-├── outline.md             # 故事大纲
-└── metadata.json          # 元数据（作者、字数等）
+构建 @novel/chapters/0001.txt
+```
+或
+```
+为 @novel/chapters/0001.txt 生成完整提示词
 ```
 
-### 3. 准备角色资源
+### 输出内容
 
-为每个主要角色创建主视图和四视图设计图：
+系统会自动生成以下文件：
 
-```
-assets/characters/萧炎/
-├── front.png          # 主视图（正面立绘）
-├── views.png          # 四视图设计图（正面+左侧+右侧+背面在一张图中）
-├── expressions/       # 表情变体
-│   ├── happy.png
-│   ├── angry.png
-│   ├── sad.png
-│   └── ...
-└── poses/             # 常用姿态
-    ├── standing.png
-    └── fighting.png
-```
+| 文件 | 内容 | 用途 |
+|------|------|------|
+| `00_user_guide.md` | 用户操作手册 | 总览和操作步骤 |
+| `01_storyboard.md` | 分镜脚本 | 镜头划分和内容 |
+| `02_character_refs.md` | 角色参考 | 角色视觉设定 |
+| `03_scene_refs.md` | 场景参考 | 场景视觉设定 |
+| `04_image_prompts.md` | 图片提示词 | 生成参考图片 |
+| `05_video_prompts_veo.md` | Veo视频提示词 | Veo3.1 视频生成 |
+| `06_video_prompts_kling.md` | 可灵视频提示词 | 可灵动画视频生成 |
 
-### 4. 准备道具和场景
+## 目录结构
 
 ```
-assets/
-├── props/                 # 重要道具（贯穿剧情的）
-│   └── 玄重尺/
-│       ├── front.png
-│       └── detail.png
+koala2/
+├── CLAUDE.md                    # AI协调者指令
+├── config.md                    # 全局配置
+├── VideoGenerationPromptGuide.md # 视频提示词指南
 │
-└── scenes/                # 场景背景
-    ├── outdoor/           # 室外
-    │   ├── forest.png
-    │   └── mountain.png
-    └── indoor/            # 室内
-        ├── hall.png
-        └── room.png
+├── .claude/skills/              # AI角色技能
+│   ├── creative-director/       # AI创意总监
+│   ├── scriptwriter/            # AI编剧
+│   ├── character-designer/      # AI角色设计师
+│   ├── scene-designer/          # AI场景设计师
+│   ├── storyboard-artist/       # AI分镜师
+│   ├── keyframe-artist/         # AI原画师
+│   ├── background-artist/       # AI场景搭建师
+│   ├── motion-designer/         # AI动作设计师
+│   ├── inbetween-artist/        # AI中间画师
+│   ├── effects-artist/          # AI特效师
+│   ├── style-unifier/           # AI风格统一师
+│   ├── sound-designer/          # AI音效设计师
+│   ├── music-composer/          # AI配乐师
+│   ├── voice-director/          # AI配音导演
+│   ├── colorist/                # AI调色师
+│   ├── subtitle-artist/         # AI字幕师
+│   ├── art-supervisor/          # AI艺术监督
+│   └── story-supervisor/        # AI剧情监督
+│
+└── works/                       # 作品目录
+    └── [剧名]/
+        ├── novel/
+        │   ├── outline.md       # 故事大纲
+        │   └── chapters/        # 章节原文
+        ├── output/              # 生成的提示词
+        └── assets/              # 生成的素材
 ```
 
-### 5. 制作分镜剧本
+## AI角色团队
 
-在 `scripts/` 目录按剧集组织，每集包含四个 JSON 文件：
+### 核心链路（前期创意）
+| 角色 | 职责 |
+|------|------|
+| AI创意总监 | 确定视觉风格、世界观设定 |
+| AI编剧 | 将小说转化为分场剧本 |
+| AI角色设计师 | 设计角色外观、表情库 |
+| AI场景设计师 | 设计场景环境、色彩基调 |
+| AI分镜师 | 将剧本转化为分镜头脚本 |
 
-```
-scripts/episode_001/
-├── storyboard.json      # 分镜配置（镜头、台词、时长等）
-├── keyframes.json       # 关键帧定义（场景、角色、构图）
-├── camera_work.json     # 运镜设置（起止帧、运动类型、速度）
-└── video_prompts.json   # 视频生成提示词
-```
+### 制作链路（提示词生成）
+| 角色 | 职责 |
+|------|------|
+| AI原画师 | 生成角色关键帧图片提示词 |
+| AI场景搭建师 | 生成背景图片提示词 |
+| AI动作设计师 | 生成视频提示词（Veo+可灵） |
+| AI中间画师 | 生成补间动画提示词 |
+| AI特效师 | 设计光影、粒子、魔法特效 |
+| AI风格统一师 | 确保画面风格一致 |
 
-`storyboard.json` 定义每个镜头的详细信息：
+### 后期链路
+| 角色 | 职责 |
+|------|------|
+| AI音效设计师 | 设计环境音、动作音效 |
+| AI配乐师 | 设计背景音乐 |
+| AI配音导演 | 设计角色配音指导 |
+| AI调色师 | 设计色彩方案和调色指南 |
+| AI字幕师 | 设计字幕样式、片头片尾 |
 
-```json
-{
-  "episode": 1,
-  "title": "第一集 少年萧炎",
-  "shots": [
-    {
-      "id": "shot_001",
-      "duration": 5.0,
-      "scene": { "location": "萧家大院" },
-      "camera": { "angle": "long" },
-      "characters": [{ "name": "萧炎", "expression": "sad" }],
-      "dialogue": { "speaker": "萧炎", "text": "三十年河东..." }
-    }
-  ]
-}
-```
+### 监督链路
+| 角色 | 职责 |
+|------|------|
+| AI艺术监督 | 审核画面质量、风格一致性 |
+| AI剧情监督 | 审核故事逻辑、情感表达 |
 
-### 6. 准备音频资源
+## 视频工具支持
 
-```
-assets/audio/
-├── bgm/                    # 背景音乐
-│   ├── tense.mp3
-│   └── emotional.mp3
-├── sfx/                    # 音效
-│   ├── sword_clash.wav
-│   └── wind.wav
-└── voice/                  # 配音
-    └── episode_001/
-        ├── shot_001.wav
-        └── shot_002.wav
-```
+| 工具 | 时长 | 特点 |
+|------|------|------|
+| Veo3.1 Fast | 8秒/片段 | 适合中等长度镜头、流畅动作 |
+| 可灵动画 | 5秒或10秒/片段 | 5秒适合快速动作、10秒适合完整场景 |
 
-### 7. 生成视频
+## 使用流程
 
-输出目录结构：
+1. **准备小说** - 在 `works/[剧名]/novel/` 下放置 `outline.md` 和章节文件
+2. **运行构建** - 使用 `构建 @novel/chapters/XXXX.txt` 命令
+3. **生成图片** - 使用提示词在 Nano Banana Pro 生成参考图
+4. **生成视频** - 使用提示词在 Veo 或 可灵生成视频
+5. **整合输出** - 按顺序拼接视频片段
 
-```
-output/
-├── episode_XXX/            # 每集输出（可执行的提示词）
-│   ├── README.md               # 该集说明
-│   └── shot_sheet.md           # 分镜提示词表（中文）
-├── episodes/               # 完整剧集（最终发布）
-│   ├── episode_001.mp4
-│   └── episode_002.mp4
-├── clips/                  # 单个镜头片段
-│   └── episode_001/
-│       ├── clip_001.mp4
-│       └── clip_002.mp4
-└── previews/               # 预览版（快速查看效果）
-    └── episode_001_preview.mp4
-```
+## 提示词质量要求
 
-`shot_sheet.md` 包含每个镜头的中文提示词，可直接复制到 AI 图片/视频生成工具（如即梦）中使用。
+- 每个提示词至少 50 字
+- 包含：Subject + Action + Scene + Camera + Style
+- 可直接拷贝使用，无需二次修改
+- 遵循视频生成工具的安全规范
 
-## 目录说明
+## 许可证
 
-| 目录 | 用途 | 是否必需 |
-|------|------|----------|
-| `novel/chapters/` | 存放拆分好的章节原文 | 是 |
-| `novel/outline.md` | 故事大纲、角色设定 | 建议 |
-| `scripts/` | 分镜剧本（四个JSON文件），按剧集组织 | 是 |
-| `assets/characters/` | 角色设计图、设定、表情、姿态 | 是 |
-| `assets/props/` | 重要道具图 | 按需 |
-| `assets/scenes/` | 场景背景图 | 是 |
-| `assets/audio/` | BGM、音效、配音 | 是 |
-| `output/episode_XXX/` | 每集的分镜提示词表（中文） | 自动生成 |
-| `output/episodes/` | 生成的完整剧集视频 | 自动生成 |
-| `output/clips/` | 生成的镜头片段 | 自动生成 |
-| `cache/` | AI 中间文件，可清理 | 自动生成 |
-
-## 模板文件
-
-`templates/` 目录提供配置模板：
-
-- `project.json` - 项目基础配置（分辨率、风格等）
-- `storyboard.json` - 分镜脚本结构模板
-- `color_palette.json` - 全局配色方案
-
-## 工作流程
-
-```
-小说原文 → 章节拆分 → 分镜剧本 → 提示词表 → AI生成 → 视频合成
-    ↓          ↓          ↓          ↓          ↓         ↓
- novel/   chapters/  scripts/   output/    cache/   output/
-```
-
-1. **原文处理**：将小说拆分为章节文件
-2. **剧本改编**：根据章节生成分镜脚本（四个 JSON 文件）
-3. **提示词生成**：将 JSON 转换为可执行的中文提示词（shot_sheet.md）
-4. **AI 生成**：使用提示词生成关键帧图片和视频片段
-5. **视频合成**：组合片段、添加音频，输出成片
-
-## 多项目管理
-
-每个小说独立一个文件夹，互不干扰：
-
-```
-works/
-├── 斗破苍穹/
-│   ├── project.json
-│   ├── novel/
-│   └── ...
-├── 遮天/
-│   ├── project.json
-│   └── ...
-└── 完美世界/
-    └── ...
-```
+MIT License

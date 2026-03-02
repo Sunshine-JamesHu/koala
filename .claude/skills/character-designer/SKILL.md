@@ -1,520 +1,276 @@
 ---
-name: Character Designer
-description: 专业的角色设计师，负责设计漫剧中角色的服化造（服装、化妆、造型），确保角色形象与故事背景、性格特征相符，输出结构化 design.json 和人类可读的 character_sheet.md，并生成 AI 绘图用的四视图参考图。
+name: character-designer
+description: AI角色设计师 - 定义和维护角色视觉设定，为AI图片生成提供精确的角色描述。当需要设计角色的外观特征、服装设定、表情库时使用此技能。
 ---
 
-# Character Designer - 角色设计师
+# AI角色设计师 (Character Designer)
 
-## 角色定义
+## 角色定位
+负责定义和维护角色视觉设定，确保角色在所有场景中保持外观一致性，为AI图片生成提供精确的角色描述。
 
-你是一位专业的角色设计师，负责设计漫剧中角色的服化造（服装、化妆、造型）。你需要确保角色形象与故事背景、性格特征相符，并为后续 AI 图像生成提供详细描述。
+## 前置依赖
 
-本技能整合了角色设计（design.json）和角色四视图生成（front.png / views.png / character_sheet.md）的全部能力。
+### 章节上下文读取 (重要)
+
+**开始工作前，必须读取以下内容以确保连贯性：**
+
+1. **当前章节**: `novel/chapters/chapter_XXX.txt` (必须)
+2. **上一章节**: `novel/chapters/chapter_XXX-1.txt` (如存在)
+   - 了解角色在前一章的状态和服装
+   - 确保服装和状态的一致性
+3. **下一章节**: `novel/chapters/chapter_XXX+1.txt` (如存在)
+   - 了解角色后续的变化
+   - 提前规划角色发展
+4. **风格配置**: `style.json` (必须)
+
+### 角色全景读取 (非常重要) ⭐
+
+**为了避免角色设计片面化，必须读取更多章节以获取完整的角色信息：**
+
+1. **同角色相关章节**: 搜索并读取所有涉及当前角色的章节
+   - 使用 Grep 工具搜索角色名字关键词
+   - 读取至少 5-10 个相关章节片段
+   - 提取所有关于角色外貌、服装、性格、背景的描述
+
+2. **角色信息清单**: 从多章节中收集以下信息
+   - **外貌描述**: 详细的五官、身材、发型描述
+   - **服装演变**: 不同时期/场景的服装变化
+   - **性格特征**: 通过对话和行为展现的性格
+   - **背景故事**: 角色的来历、身份、经历
+   - **关键道具**: 角色随身携带或使用的特殊物品
+   - **重要关系**: 与其他角色的关系发展
+
+3. **角色成长线**: 输出中必须包含角色的发展轨迹
+
+**在输出中必须包含：**
+- 角色在本章的服装/状态变化说明
+- 与前后章节的角色一致性检查
+- **角色完整信息汇总**（从多章节提取的综合信息）
+- **角色成长/变化时间线**
+
+### 风格配置读取
+
+**必须先读取** `works/[剧名]/style.json` 获取风格配置，使用以下字段：
+- `character_style.proportion` - 人物比例 (realistic/chibi/exaggerated)
+- `character_style.line` - 线条风格 (clean/rough/soft)
+- `character_style.coloring` - 上色方式 (flat/thick/watercolor/cel_shaded)
+- `character_style.face_style` - 脸部风格
+- `character_style.body_style` - 身体风格
+- `visual_style.keywords` - 视觉风格关键词
+- `color.primary` - 主色调参考
 
 ## 核心职责
+1. **外观定义**: 详细描述角色的视觉特征
+2. **服装设定**: 规划角色的服装和配饰
+3. **表情库**: 定义常用表情和情绪表现
+4. **一致性维护**: 确保角色描述在不同提示词中保持一致
 
-1. 分析角色性格和背景
-2. 设计角色的基础外貌
-3. 设计不同场景/状态的服装
-4. 管理角色表情库
-5. 生成角色图像 Prompt
-6. 生成四视图参考图（front.png + views.png）
-7. 输出人类可读的 `character_sheet.md`
+## 输出规范
 
-## 输入
-
-- 角色基础信息（来自小说或项目配置）
-- 场景需求
-- 情绪状态
-
-## 触发条件
-
-当用户请求：
-- 设计角色 / 创建角色设计
-- 为角色生成四视图 / 三视图
-- 生成角色设计图
-- 创建角色提示词
-- 绘制角色参考图
-
-## 目录结构
-
-```
-assets/characters/{角色名}/
-├── design.json             # 程序可读的角色设计数据（JSON）
-├── character_sheet.md      # 人类可读的角色设计文档（Markdown）
-├── front.png               # 主视图（正面）
-├── views.png               # 四视图设计图（正面+左侧+右侧+背面）
-├── expressions/            # 表情集
-└── poses/                  # 姿态集
-```
-
----
-
-## 第一部分：角色设计数据 (design.json)
-
-保存到: `assets/characters/{角色名}/design.json`
-
-```json
-{
-  "character_id": "char_001",
-  "name": "辛月影",
-  "role": "protagonist|antagonist|supporting|minor",
-  "description": "女主角，穿越者，性格坚韧聪慧",
-
-  "base_profile": {
-    "gender": "female",
-    "age_appearance": 18,
-    "age_actual": 25,
-    "height": "165cm",
-    "body_type": "slender",
-    "skin_tone": "fair_pale"
-  },
-
-  "face": {
-    "shape": "oval",
-    "forehead": "光滑饱满",
-    "eyebrows": {
-      "shape": "willow_leaf",
-      "color": "black",
-      "description": "柳叶眉，淡黑，自然弯曲"
-    },
-    "eyes": {
-      "shape": "almond",
-      "color": "dark_brown",
-      "size": "medium",
-      "expression_default": "灵动聪慧",
-      "description": "杏眼，瞳色深棕，眼神灵动"
-    },
-    "nose": {
-      "shape": "small_straight",
-      "description": "小巧挺拔"
-    },
-    "lips": {
-      "shape": "cherry",
-      "color_natural": "pale_pink",
-      "description": "樱桃小口，唇色淡粉"
-    },
-    "ears": "耳垂较小，佩戴简单耳饰"
-  },
-
-  "hair": {
-    "length": "waist_length",
-    "color": "jet_black",
-    "texture": "straight_silky",
-    "natural_style": "长发及腰，乌黑如墨，顺滑光亮",
-    "arrangements": {
-      "日常": "简单发髻，玉簪固定，几缕碎发垂落",
-      "正式": "精致发髻，金钗点缀，发带装饰",
-      "睡眠": "散开长发，自然披散"
-    }
-  },
-
-  "distinctive_features": [
-    "左眉角有一细小疤痕",
-    "思考时会微微皱眉"
-  ],
-
-  "costumes": [
-    {
-      "costume_id": "costume_001",
-      "name": "日常居家服",
-      "usage": "日常室内场景",
-      "era": "ancient_chinese",
-      "season": "spring_autumn",
-      "garments": {
-        "outer": {
-          "type": "ruqun",
-          "description": "淡青色襦裙",
-          "fabric": "丝绸质感",
-          "pattern": "简单暗纹"
-        },
-        "inner": {
-          "type": "neiyi",
-          "description": "白色内衬",
-          "fabric": "棉质"
-        },
-        "accessory": {
-          "type": "pibo",
-          "description": "浅碧色披帛",
-          "wear": "搭于双肩"
-        }
-      },
-      "accessories": [
-        { "type": "hairpin", "name": "玉簪", "material": "白玉", "color": "乳白色", "position": "发髻" },
-        { "type": "waist_pendant", "name": "香囊", "color": "淡绿色", "position": "腰间" }
-      ],
-      "color_palette": {
-        "primary": "#A8D8B9",
-        "secondary": "#FAFAFA",
-        "accent": "#B2EBF2"
-      },
-      "prompt_description": "ancient Chinese ruqun dress, pale green color, white inner robe, light blue pibo shawl, simple and elegant"
-    }
-  ],
-
-  "expressions": {
-    "neutral": { "description": "平静自然", "prompt_tags": "neutral expression, calm face" },
-    "happy": { "description": "眉眼弯弯，嘴角上扬，露出浅笑", "prompt_tags": "happy expression, smiling, eyes curving" },
-    "sad": { "description": "眼眶微红，泪光闪烁，嘴角下垂", "prompt_tags": "sad expression, teary eyes, downturned mouth" },
-    "angry": { "description": "眉头紧蹙，眼神凌厉，抿唇", "prompt_tags": "angry expression, furrowed brows, sharp eyes" },
-    "surprised": { "description": "双眼圆睁，微微张嘴", "prompt_tags": "surprised expression, wide eyes, open mouth" },
-    "contemplative": { "description": "目光深远，眉头微蹙，若有所思", "prompt_tags": "contemplative expression, distant gaze, thoughtful" },
-    "determined": { "description": "目光坚定，下颚微抬", "prompt_tags": "determined expression, resolute gaze, firm" },
-    "shy": { "description": "脸颊微红，目光低垂", "prompt_tags": "shy expression, blushing cheeks, averted gaze" }
-  },
-
-  "poses": {
-    "standing": "直立，双手自然下垂或交叠于身前",
-    "sitting": "端坐，背挺直，双手置于膝上",
-    "walking": "缓步行走，姿态优雅",
-    "kneeling": "跪坐，姿态端正",
-    "lying": "侧卧，姿态放松"
-  },
-
-  "personality_traits": {
-    "primary": ["聪慧", "坚韧", "谨慎"],
-    "secondary": ["善良", "有主见"],
-    "affects_appearance": "眼神常带思考，姿态端庄"
-  },
-
-  "prompt_template": {
-    "base": "young Chinese woman, 18 years old appearance, slender figure, 165cm tall, fair pale skin, oval face, willow leaf eyebrows, almond-shaped dark brown eyes, small straight nose, cherry lips, waist-length jet black hair, anime style",
-    "with_costume": "{base}, {costume_prompt}",
-    "with_expression": "{base}, {expression_prompt}",
-    "full": "{base}, {costume_prompt}, {expression_prompt}, {pose}, {scene_context}"
-  },
-
-  "reference_images": {
-    "front": "assets/characters/辛月影/front.png",
-    "views": "assets/characters/辛月影/views.png",
-    "expressions": "assets/characters/辛月影/expressions/"
-  }
-}
-```
-
----
-
-## 第二部分：人类可读文档 (character_sheet.md)
-
-**必须同步输出 `character_sheet.md` 文件到角色目录**，供人类审阅、编辑，也供其他 Agent（如 prompt-engineer、local-image-generator）读取角色信息。
-
-保存到: `assets/characters/{角色名}/character_sheet.md`
-
-### 模板格式
+### 文件顶部必须有用户操作指南
 
 ```markdown
-# {角色名} - 角色设计文档
+# 角色参考 - 第X章
 
-> 生成时间: {时间}  |  项目: {项目名}  |  状态: 初稿/已定稿
-
----
-
-## 基本信息
-
-【角色定位】
-角色名: {角色名}
-角色ID: {char_id}
-定位: 主角/配角/反派
-性别: {性别}
-年龄: {年龄}
-
-【性格气质】
-关键词: {性格关键词}
-整体感觉: {气质描述}
-姿态特点: {站姿/坐姿/习惯动作}
+> **如何使用本文件**:
+> 1. 本文件是角色设计参考，供后续图片生成使用
+> 2. "AI提示词核心片段"可直接复制用于生成角色图
+> 3. 与 04_image_prompts.md 配合使用，确保角色一致性
 
 ---
 
-## 外貌特征
+## 本章登场角色速查表
 
-【身体】
-身高: {身高}
-体型: {体型}
-肤色: {肤色}
-
-【面部】
-脸型: {脸型}
-眼睛: {眼睛描述}
-眉毛: {眉毛描述}
-鼻子: {鼻子描述}
-嘴唇: {嘴唇描述}
-
-【发型】
-发色: {发色}
-发型: {发型描述}
-发饰: {发饰（如有）}
+| 角色 | 身份 | 本章状态 | 关键特征 |
+|------|------|---------|---------|
+| 角色A | 女主 | 状态描述 | 双螺髻、杏眼、娇小 |
+| 角色B | 男主 | 状态描述 | 凤眼、苍白、坐轮椅 |
+| 角色C | 配角 | 状态描述 | 络腮胡、古铜色皮肤 |
 
 ---
+
+## 角色 1: [角色名]
+```
+
+## 角色卡生成优先级（重要）⭐⭐⭐
+
+**角色卡的生成必须按照以下顺序进行，确保AI能够建立完整的角色认知：**
+
+### 生成顺序
+1. **三视图** (必须首先生成) → 建立角色基础外观
+2. **情绪表情卡** → 在三视图基础上丰富面部表现
+3. **动作参考卡** (躺/坐/靠等基础姿势) → 完善角色的动态表现
+
+### 为什么这个顺序很重要？
+- AI需要先"认识"角色的完整外观（三视图）
+- 在此基础上才能准确生成各种表情变化
+- 最后才能理解角色在不同姿势下的表现
+
+---
+
+### 角色参考卡结构
+```markdown
+### 基础信息
+- **姓名**: [角色名]
+- **年龄**: [年龄]
+- **性别**: [性别]
+- **身份**: [故事中的身份]
+- **性格关键词**: [3-5个性格词]
+
+### 外观特征
+
+### 面部特征
+- **脸型**: [圆形/方型/瓜子脸]
+- **眼睛**: [形状 + 颜色 + 特点]
+- **发型**: [长度 + 颜色 + 样式]
+- **肤色**: [肤色描述]
+
+### 身体特征
+- **身高**: [高/中/矮]
+- **体型**: [纤细/标准/健壮]
 
 ## 服装设定
+上衣: [详细描述]
+下装: [详细描述]
+鞋子: [详细描述]
+配饰: [详细描述]
+颜色搭配: [主要颜色]
 
-【默认服装】
-风格: {古代/现代/奇幻}
-上装: {上装描述}
-下装: {下装描述}
-配色: 主色 {主色} / 辅色 {辅色}
-配饰: {配饰列表}
-鞋履: {鞋履描述}
-
-【其他服装】（如有）
-- 服装2名称: {描述}
-
----
-
-## 特殊设定
-
-【特殊外貌】
-{如有特殊外貌描述；无则填「无」}
-
-【随身道具】
-{道具名}: {道具描述}
-
-【身体状态】
-{如有残疾、轮椅等特殊状态；无则填「健康」}
+## AI提示词核心片段
+[角色名], [年龄] years old [性别],
+[发型描述], [眼睛描述],
+[体型], [身高],
+wearing [服装描述],
+[风格关键词]
 
 ---
 
-## 参考图路径
+## 第一步：三视图（必须首先生成）⭐
 
-【主视图】
-- 正面图: works/{项目名}/assets/characters/{角色名}/front.png
-- 四视图: works/{项目名}/assets/characters/{角色名}/views.png
-
-【表情集】
-- 表情: works/{项目名}/assets/characters/{角色名}/expressions.png（如有）
-
----
-
-## AI 绘图提示词
-
-### 正面图提示词 (front.png)
-
+**三视图提示词（可直接复制使用）**:
 ```
-{完整的正面图提示词，可直接复制使用}
+[STYLE_PREFIX],
+
+Character reference sheet of [角色名],
+[年龄] years old [性别],
+[发型描述 - 详细],
+[眼睛描述 - 详细],
+[脸型描述],
+[肤色描述],
+[体型], [身高],
+wearing [服装详细描述],
+
+Three views: front view, side view, back view,
+full body, standing in neutral pose,
+white background, character design sheet,
+consistent character design across all three views,
+
+[STYLE_SUFFIX],
+[QUALITY_TAGS],
+--ar 3:1
 ```
 
-### 四视图提示词 (views.png)
-
+**负向提示词**:
 ```
-{完整的四视图提示词，可直接复制使用}
-```
-
-### 负面词
-
-```
-{完整的负面词列表}
+[NEGATIVE_PROMPT],
+multiple characters, different outfits, inconsistent design,
+dynamic pose, action pose, sitting, lying
 ```
 
 ---
 
-## 分镜引用标签
+## 第二步：情绪表情卡（在三视图基础上生成）⭐
 
-供 prompt-engineer 等下游 Agent 引用的标准化角色描述标签：
+| 情绪状态 | 提示词附加 |
+|---------|-----------|
+| [情绪1] | [英文关键词] |
+| [情绪2] | [英文关键词] |
+| [情绪3] | [英文关键词] |
 
-【中文标签】
-{角色名}: {一句话概括外貌+服装的中文描述}
+**表情卡生成提示词（可直接复制使用）**:
+```
+[STYLE_PREFIX],
 
-【英文标签】
-{角色名}: {一句话概括外貌+服装的英文描述，用于英文提示词}
+Expression sheet of [角色名],
+[角色核心提示词，不含风格部分],
+
+Six different expressions arranged in two rows:
+Row 1: [表情名1] ([英文关键词1]) | [表情名2] ([英文关键词2]) | [表情名3] ([英文关键词3])
+Row 2: [表情名4] ([英文关键词4]) | [表情名5] ([英文关键词5]) | [表情名6] ([英文关键词6])
+
+same character, same outfit, consistent design,
+white background, expression reference sheet,
+
+[STYLE_SUFFIX],
+[QUALITY_TAGS],
+--ar 3:2
+```
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | [角色名]-三视图 | 确保角色一致性 |
 
 ---
 
-## 备注
+## 第三步：动作参考卡（躺/坐/靠等基础姿势）⭐
 
-{任何需特别注意的事项}
+**常用动作参考**:
+
+| 动作类型 | 中文描述 | 英文关键词 |
+|---------|---------|-----------|
+| 站立 | 直立站姿 | standing straight, neutral pose |
+| 坐姿 | 坐在椅子上 | sitting on chair, seated position |
+| 躺卧 | 躺在床上 | lying on bed, reclining |
+| 倚靠 | 靠在墙上 | leaning against wall |
+| 蹲姿 | 蹲在地上 | crouching, squatting |
+| 行走 | 行走中 | walking, mid-stride |
+
+**动作卡生成提示词示例**:
+
+### 坐姿参考卡
 ```
+[STYLE_PREFIX],
+
+[角色核心提示词],
+sitting gracefully on a wooden chair,
+hands resting on lap, legs crossed,
+relaxed seated posture,
+[场景背景描述 or simple background],
+
+[STYLE_SUFFIX],
+[QUALITY_TAGS],
+--ar 16:9
+```
+
+**需要上传的图片**:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | [角色名]-三视图 | 确保角色一致性 |
+| 参考图2 | [角色名]-表情卡 | 表情参考（如需要） |
 
 ---
 
-## 第三部分：四视图生成流程
-
-### 提示词模板
-
-**重要原则**：四视图必须保持角色一致性，使用统一的角色描述基础 + 视角变化。
-
-#### 基础角色描述（所有视图共用）
-
-```
-{性别}，{年龄}岁，{身高}，{体型}。
-{肤色}，{脸型}，{五官特征}。
-{眼睛描述}，{眉毛描述}。
-{鼻子描述}，{嘴唇描述}。
-{发型描述}。
-身穿{服装描述}，{配色}。
-{配饰描述}。
-{画风}，高质量动漫风格。
-```
-
-#### 正面图提示词
-
-```
-角色设计图，正面视角，全身站立，
-{基础角色描述}
-对称正面姿势，双臂自然下垂，中性表情，
-纯白背景，正面参考图，
-杰作，最佳画质，细节丰富，8k分辨率。
-```
-
-#### 四视图提示词
-
-```
-角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，
-同一角色不同角度展示，全身站立，
-{基础角色描述}
-纯白背景，参考图布局，设计图风格，
-杰作，最佳画质，细节丰富，8k分辨率。
-```
-
-#### 表情图提示词（可选）
-
-```
-角色表情图，{角色名}，
-纯白背景上的多个表情，
-9个表情3x3排列：开心、悲伤、愤怒、惊讶、平静、害羞、困惑、坚定、恐惧，
-同一角色脸部，设计一致，仅头部特写，
-{基础角色描述（仅头部）}
-杰作，最佳画质，细节丰富。
-```
-
-### 负面词
-
-```
-低质量，人体结构错误，最差质量，变形，畸形，
-缺少肢体，多余肢体，模糊，水印，签名，
-文字，标志，裁剪，画框外，比例失调，
-不同的脸，特征不一致，多人，
-背景杂乱，复杂背景，深色背景。
-```
-
-### 特殊情况处理
-
-#### 坐姿角色（如轮椅）
-
-在所有提示词中添加：
-```
-坐在轮椅上，上半身特写，腿部被遮盖，
-```
-在 `character_sheet.md` 的【身体状态】中标注：`坐轮椅，双腿残疾`
-
-#### 持有道具
-
-在所有提示词中保持道具一致：
-```
-手持{道具名}，{道具描述}，
-```
-
-### 图片生成调用
-
-#### 步骤1：使用文生图生成正面主视图
-
-```bash
-set -a && source .env && set +a && \
-uv run python .agent/skills/text-to-image/text_to_image.py \
-  --prompt "完整的正面图提示词文本" \
-  --output "works/{项目名}/assets/characters/{角色名}" \
-  --filename "front"
-```
-
-#### 步骤2：使用图生图生成四视图设计图
-
-```bash
-set -a && source .env && set +a && \
-uv run python .agent/skills/image-to-image/image_to_image.py \
-  --image "works/{项目名}/assets/characters/{角色名}/front.png" \
-  --prompt "角色设计参考图，包含四个视角：正面视角、左侧视角、右侧视角、背面视角，同一角色不同角度展示，全身站立，纯白背景，参考图布局，保持所有角色特征完全一致" \
-  --strength 0.6 \
-  --output "works/{项目名}/assets/characters/{角色名}" \
-  --filename "views"
-```
-
-### 编辑强度建议
-
-| 生成内容 | 建议强度 | 说明 |
-|---------|---------|------|
-| 正面 → 四视图设计图 | 0.5-0.7 | 中高强度，将单视角转换为多视角设计图 |
-| 表情变化 | 0.2-0.4 | 低强度，仅调整表情 |
-
----
-
-## 第四部分：服装设计参考
-
-### 时代风格匹配
-
-| 时代 | 特点 | 典型元素 |
-|------|------|----------|
-| 先秦 | 庄重古朴 | 深衣、曲裾 |
-| 汉代 | 大气飘逸 | 襦裙、曲裾深衣 |
-| 唐代 | 华丽开放 | 齐胸襦裙、大袖衫 |
-| 宋代 | 素雅清秀 | 褙子、宋裤 |
-| 明代 | 端庄秀丽 | 袄裙、披风 |
-| 清代 | 繁复精致 | 旗装、马褂 |
-
-### 颜色寓意
-
-| 颜色 | 寓意 | 适用角色 |
-|------|------|----------|
-| 红 | 热情、权力、喜庆 | 主角、重要角色 |
-| 白 | 纯洁、高贵、哀悼 | 纯真角色、悲剧角色 |
-| 黑 | 神秘、威严、权力 | 反派、权臣 |
-| 青/蓝 | 清雅、沉稳、文雅 | 书生、智者 |
-| 紫 | 高贵、神秘 | 贵族、神秘角色 |
-| 黄 | 皇权、富贵 | 皇室 |
-
-### 身份标识
-
-| 身份 | 服装特点 |
-|------|----------|
-| 皇室 | 明黄、龙凤纹、金丝 |
-| 贵族 | 鲜艳色彩、精致刺绣 |
-| 文人 | 青蓝色调、素雅 |
-| 武将 | 深色、实用剪裁 |
-| 平民 | 素色、简单款式 |
-
----
-
-## 完整工作流程
-
-1. **收集信息** — 从小说文本或用户描述中提取角色信息
-2. **生成 `design.json`** — 程序可读的结构化角色设计数据
-3. **生成 `character_sheet.md`** — 人类可读的角色设计文档，含完整提示词
-4. **文生图生成正面图** — front.png 作为角色定稿和参考图
-5. **图生图生成四视图** — views.png（基于front.png，四视角在一张图中）
-6. **更新 `character_sheet.md`** — 补充参考图路径、调整描述
-7. 检查一致性，如有差异可调整编辑强度重新生成
-8. 最后生成表情集（可选）：expressions.png
-
-## 输出格式
-
-| 输出类型 | 文件名 | 说明 |
-|---------|--------|------|
-| 设计数据 | `design.json` | 程序可读，含完整角色数据 |
-| 设计文档 | `character_sheet.md` | 人类可读，含提示词和分镜引用标签 |
-| 主视图 | `front.png` | 正面单视角参考图 |
-| 四视图 | `views.png` | 正面+左侧+右侧+背面 |
-| 表情集 | `expressions.png` | 可选 |
-
-## 质量检查清单
-
-- [ ] 角色外貌与小说描述一致
-- [ ] 服装与时代背景匹配
-- [ ] 服装与角色身份匹配
-- [ ] 颜色搭配和谐
-- [ ] 表情描述完整
-- [ ] Prompt 模板完整
-- [ ] `design.json` 结构完整
-- [ ] `character_sheet.md` 输出完整，含分镜引用标签
-- [ ] 四视图保持角色一致性
-- [ ] 分镜引用【中文标签】和【英文标签】准确
+## 角色色卡
+- **头发**: [HEX/颜色名]
+- **眼睛**: [HEX/颜色名]
+- **肤色**: [HEX/颜色名]
 
 ## 注意事项
+### 必须保持一致的元素
+- [元素1]
+- [元素2]
 
-1. **先生成主视图**：必须先生成 front.png，四视图基于它生成
-2. **双输出**：每个角色必须同时有 `design.json` 和 `character_sheet.md`
-3. **四视图在一张图中**：views.png 包含四个视角
-4. **图生图优势**：使用图生图生成四视图可保持角色特征一致性
-5. **编辑强度**：转换后角色变化过大降低强度，变化不够则提高强度
-6. **特殊状态**：轮椅、道具等需在提示词和 character_sheet.md 中体现
-7. **画风统一**：同一项目使用相同画风关键词
-8. **文化适配**：古代用古风词，现代用现代词
-9. **描述准确**：自然语言描述画面，短语描述美学风格
-10. **分镜引用标签**：`character_sheet.md` 中的标签供 prompt-engineer 直接引用
+### 常见错误提醒
+- [错误1]: [如何避免]
+
+### 生成顺序提醒
+- ⚠️ 必须先生成三视图，再生成表情卡和动作卡
+- ⚠️ 后续生成必须上传三视图作为参考
+- ⚠️ 不按顺序生成会导致角色不一致
+```
+
+## 设计原则
+- **一致性优先**: 选择AI容易保持一致的特征
+- **辨识度设计**: 与其他角色有明显区分
+- **动画友好**: 服装不宜过于复杂
