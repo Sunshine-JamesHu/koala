@@ -1,4 +1,4 @@
-# 9分镜组合图提示词 - S01-06 废墟之上的男人
+# 9分镜组合图提示词 - S01-07 废墟之上的男人
 
 ## 用途
 作为视频的动作参考图，展示整个视频的动作分解。
@@ -79,4 +79,4 @@ standing figure, healthy legs, warm smile, clean environment
 ```
 
 ## 保存为
-`shot_006_storyboard_grid.png`
+`shot_007_storyboard_grid.png`

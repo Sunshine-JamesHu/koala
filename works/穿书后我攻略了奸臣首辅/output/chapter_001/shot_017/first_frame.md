@@ -1,4 +1,4 @@
-# 首帧图片提示词 - S01-15 再次面对沈清起
+# 首帧图片提示词 - S01-17 再次面对沈清起
 
 ## 用途
 作为视频的首帧钉定图，定义视频的开场画面。
@@ -51,4 +51,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_015_first_frame.png`
+`shot_017_first_frame.png`

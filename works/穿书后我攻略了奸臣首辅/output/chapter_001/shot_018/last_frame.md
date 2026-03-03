@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-16 急智生花
+# 尾帧图片提示词 - S01-18 急智生花
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -42,4 +42,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_016_last_frame.png`
+`shot_018_last_frame.png`

@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-08 记忆闪回·车祸与小说
+# 尾帧图片提示词 - S01-09 记忆闪回·车祸与小说
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -34,4 +34,4 @@ Negative prompt: low quality, worst quality, blurry, distorted, deformed, ugly, 
 ```
 
 ## 保存为
-`shot_008_last_frame.png`
+`shot_009_last_frame.png`

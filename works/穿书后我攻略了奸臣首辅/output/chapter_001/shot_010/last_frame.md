@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-09 三尺剑锋
+# 尾帧图片提示词 - S01-10 三尺剑锋
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -36,4 +36,4 @@ Negative prompt: low quality, worst quality, blurry, distorted, deformed, ugly, 
 ```
 
 ## 保存为
-`shot_009_last_frame.png`
+`shot_010_last_frame.png`

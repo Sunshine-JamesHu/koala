@@ -16,7 +16,8 @@
       "Bash(find:*)",
       "Bash(start chrome:*)",
       "Bash(mv:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(node:*)"
     ]
   }
 }

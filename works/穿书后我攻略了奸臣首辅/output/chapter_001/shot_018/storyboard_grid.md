@@ -1,4 +1,4 @@
-# 9分镜组合图提示词 - S01-16 急智生花
+# 9分镜组合图提示词 - S01-18 急智生花
 
 ## 用途
 作为视频的动作参考图，展示整个视频的动作分解。
@@ -59,4 +59,4 @@ masterpiece, best quality, 8k resolution, highly detailed, ultra detailed, elega
 ```
 
 ## 保存为
-`shot_016_storyboard_grid.png`
+`shot_018_storyboard_grid.png`

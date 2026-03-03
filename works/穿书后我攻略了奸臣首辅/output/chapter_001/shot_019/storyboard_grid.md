@@ -1,4 +1,4 @@
-# 9分镜组合图提示词 - S01-17 编造谎言
+# 9分镜组合图提示词 - S01-19 编造谎言
 
 ## 用途
 作为视频的动作参考图，展示整个视频的动作分解。
@@ -60,4 +60,4 @@ masterpiece, best quality, 8k resolution, highly detailed, ultra detailed, elega
 ```
 
 ## 保存为
-`shot_017_storyboard_grid.png`
+`shot_019_storyboard_grid.png`

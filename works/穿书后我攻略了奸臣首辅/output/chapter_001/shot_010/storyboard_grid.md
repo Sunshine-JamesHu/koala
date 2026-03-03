@@ -1,4 +1,4 @@
-# 9分镜组合图提示词 - S01-09 三尺剑锋
+# 9分镜组合图提示词 - S01-10 三尺剑锋
 
 ## 用途
 作为视频的动作参考图，展示整个视频的动作分解。
@@ -79,4 +79,4 @@ inconsistent art style, different swords, modern sword, shiny new blade, bright 
 ```
 
 ## 保存为
-`shot_009_storyboard_grid.png`
+`shot_010_storyboard_grid.png`

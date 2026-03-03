@@ -1,4 +1,4 @@
-# 操作手册 - S01-08 记忆闪回·车祸与小说
+# 操作手册 - S01-09 记忆闪回·车祸与小说
 
 > **按以下步骤操作即可，无需思考**
 
@@ -6,10 +6,10 @@
 
 ## 第一步：准备首帧图
 
-此镜头与上一镜头 (shot_007) 连续，**无需单独生成首帧图**。
+此镜头与上一镜头 (shot_008) 连续，**无需单独生成首帧图**。
 
-1. 复制 `shot_007_last_frame.png`
-2. 重命名为：`shot_008_first_frame.png`
+1. 复制 `shot_008_last_frame.png`
+2. 重命名为：`shot_009_first_frame.png`
 
 ---
 
@@ -17,10 +17,10 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_008_first_frame.png（刚才准备的首帧）
+   - shot_009_first_frame.png（刚才准备的首帧）
 3. 复制 `last_frame.md` 中的提示词
 4. 点击生成
-5. 保存为：`shot_008_last_frame.png`
+5. 保存为：`shot_009_last_frame.png`
 
 ---
 
@@ -28,10 +28,10 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_008_first_frame.png
+   - shot_009_first_frame.png
 3. 复制 `storyboard_grid.md` 中的提示词
 4. 点击生成
-5. 保存为：`shot_008_storyboard_grid.png`
+5. 保存为：`shot_009_storyboard_grid.png`
 
 ---
 
@@ -41,13 +41,13 @@
 2. 选择模型：**视频 2.6**
 3. 选择时长：**8秒**
 4. 上传图片（按顺序，最多5张）：
-   - shot_008_first_frame.png（首帧钉定）
-   - shot_008_last_frame.png（尾帧钉定）
-   - shot_008_storyboard_grid.png（动作参考）
-   - shot_007_last_frame.png（承接上一镜头）
+   - shot_009_first_frame.png（首帧钉定）
+   - shot_009_last_frame.png（尾帧钉定）
+   - shot_009_storyboard_grid.png（动作参考）
+   - shot_008_last_frame.png（承接上一镜头）
 5. 复制 `video_prompt.md` 中的提示词
 6. 点击生成
-7. 保存为：`shot_008_video.mp4`
+7. 保存为：`shot_009_video.mp4`
 
 ---
 

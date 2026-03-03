@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-18 死亡威胁·悬念收尾
+# 尾帧图片提示词 - S01-21 死亡威胁·悬念收尾
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -47,4 +47,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_018_last_frame.png`
+`shot_021_last_frame.png`

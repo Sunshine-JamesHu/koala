@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-12 辛月影夺门而逃
+# 尾帧图片提示词 - S01-14 辛月影夺门而逃
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -45,4 +45,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_012_last_frame.png`
+`shot_014_last_frame.png`

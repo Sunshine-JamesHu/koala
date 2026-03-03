@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-07 辛月影意识到穿越
+# 尾帧图片提示词 - S01-08 辛月影意识到穿越
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -38,4 +38,4 @@ Negative prompt: low quality, worst quality, blurry, distorted, deformed, ugly, 
 ```
 
 ## 保存为
-`shot_007_last_frame.png`
+`shot_008_last_frame.png`

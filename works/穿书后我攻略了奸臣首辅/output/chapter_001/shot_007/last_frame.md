@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-06 废墟之上的男人
+# 尾帧图片提示词 - S01-07 废墟之上的男人
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -49,4 +49,4 @@ Negative prompt: low quality, worst quality, blurry, distorted, deformed, ugly, 
 ```
 
 ## 保存为
-`shot_006_last_frame.png`
+`shot_007_last_frame.png`

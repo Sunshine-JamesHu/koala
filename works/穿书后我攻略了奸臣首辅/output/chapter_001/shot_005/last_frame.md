@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-04 辛月影翻身调侃
+# 尾帧图片提示词 - S01-05 辛月影翻身调侃
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -52,4 +52,4 @@ Negative prompt: low quality, worst quality, blurry, distorted, deformed, ugly, 
 ```
 
 ## 保存为
-`shot_004_last_frame.png`
+`shot_005_last_frame.png`

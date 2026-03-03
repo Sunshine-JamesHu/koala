@@ -1,4 +1,4 @@
-# 9分镜组合图提示词 - S01-03 阴影中的男人
+# 9分镜组合图提示词 - S01-04 阴影中的男人
 
 ## 用途
 作为视频的动作参考图，展示整个视频的动作分解。
@@ -79,4 +79,4 @@ well-lit scenes, fully visible faces, standing figure
 ```
 
 ## 保存为
-`shot_003_storyboard_grid.png`
+`shot_004_storyboard_grid.png`

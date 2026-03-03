@@ -1,4 +1,4 @@
-# 操作手册 - S01-10 辛月影惊恐后退
+# 操作手册 - S01-11 辛月影惊恐后退
 
 > **按以下步骤操作即可，无需思考**
 
@@ -6,10 +6,10 @@
 
 ## 第一步：准备首帧图
 
-此镜头与上一镜头 (shot_009) 连续，**无需单独生成首帧图**。
+此镜头与上一镜头 (shot_011) 连续，**无需单独生成首帧图**。
 
-1. 复制 `shot_009_last_frame.png`
-2. 重命名为：`shot_010_first_frame.png`
+1. 复制 `shot_011_last_frame.png`
+2. 重命名为：`shot_011_first_frame.png`
 
 ---
 
@@ -17,12 +17,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_010_first_frame.png（刚才准备的首帧）
+   - shot_011_first_frame.png（刚才准备的首帧）
    - 辛月影-表情卡.png
    - 破旧草屋-定场镜头.png
 3. 复制 `last_frame.md` 中的提示词
 4. 点击生成
-5. 保存为：`shot_010_last_frame.png`
+5. 保存为：`shot_011_last_frame.png`
 
 ---
 
@@ -30,12 +30,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_010_first_frame.png
+   - shot_011_first_frame.png
    - 辛月影-三视图.png
    - 破旧草屋-定场镜头.png
 3. 复制 `storyboard_grid.md` 中的提示词
 4. 点击生成
-5. 保存为：`shot_010_storyboard_grid.png`
+5. 保存为：`shot_011_storyboard_grid.png`
 
 ---
 
@@ -45,14 +45,14 @@
 2. 选择模型：**视频 2.6**
 3. 选择时长：**5秒**
 4. 上传图片（按顺序，最多5张）：
-   - shot_010_first_frame.png（首帧钉定）
-   - shot_010_last_frame.png（尾帧钉定）
-   - shot_010_storyboard_grid.png（动作参考）
+   - shot_011_first_frame.png（首帧钉定）
+   - shot_011_last_frame.png（尾帧钉定）
+   - shot_011_storyboard_grid.png（动作参考）
    - 辛月影-三视图.png（角色一致性）
    - 破旧草屋-定场镜头.png（场景一致性）
 5. 复制 `video_prompt.md` 中的提示词
 6. 点击生成
-7. 保存为：`shot_010_video.mp4`
+7. 保存为：`shot_011_video.mp4`
 
 ---
 

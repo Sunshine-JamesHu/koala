@@ -1,4 +1,4 @@
-# 操作手册 - S01-04 辛月影翻身调侃
+# 操作手册 - S01-05 辛月影翻身调侃
 
 > **按以下步骤操作即可，无需思考**
 
@@ -6,10 +6,10 @@
 
 ## 第一步：准备首帧图
 
-> **连续性说明**：此镜头与上一镜头 (shot_003) 连续，直接使用上一镜头尾帧。
+> **连续性说明**：此镜头与上一镜头 (shot_004) 连续，直接使用上一镜头尾帧。
 
-1. 使用 `shot_003_last_frame.png` 作为本镜头首帧
-2. 将文件复制并重命名为：`shot_004_first_frame.png`
+1. 使用 `shot_004_last_frame.png` 作为本镜头首帧
+2. 将文件复制并重命名为：`shot_005_first_frame.png`
 
 ---
 
@@ -17,12 +17,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_004_first_frame.png（刚才准备的首帧）
+   - shot_005_first_frame.png（刚才准备的首帧）
    - 辛月影-表情卡.png
    - 破旧草屋-定场镜头.png
 3. **打开 `last_frame.md` 文件，复制其中的完整提示词**
 4. 点击生成
-5. 保存为：`shot_004_last_frame.png`
+5. 保存为：`shot_005_last_frame.png`
 
 ---
 
@@ -30,12 +30,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_004_first_frame.png
+   - shot_005_first_frame.png
    - 辛月影-三视图.png
    - 破旧草屋-定场镜头.png
 3. **打开 `storyboard_grid.md` 文件，复制其中的完整提示词**
 4. 点击生成
-5. 保存为：`shot_004_storyboard_grid.png`
+5. 保存为：`shot_005_storyboard_grid.png`
 
 ---
 
@@ -45,14 +45,14 @@
 2. 选择模型：**视频 2.6**
 3. 选择时长：**5秒**
 4. 上传图片（按顺序，最多5张）：
-   - shot_004_first_frame.png（首帧钉定）
-   - shot_004_last_frame.png（尾帧钉定）
-   - shot_004_storyboard_grid.png（动作参考）
+   - shot_005_first_frame.png（首帧钉定）
+   - shot_005_last_frame.png（尾帧钉定）
+   - shot_005_storyboard_grid.png（动作参考）
    - 辛月影-三视图.png（角色一致性）
    - 破旧草屋-定场镜头.png（场景一致性）
 5. **打开 `video_prompt.md` 文件，复制其中的完整提示词**
 6. 点击生成
-7. 保存为：`shot_004_video.mp4`
+7. 保存为：`shot_005_video.mp4`
 
 ---
 

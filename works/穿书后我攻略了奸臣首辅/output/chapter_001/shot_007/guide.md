@@ -1,4 +1,4 @@
-# 操作手册 - S01-06 废墟之上的男人
+# 操作手册 - S01-07 废墟之上的男人
 
 > **按以下步骤操作即可，无需思考**
 
@@ -6,10 +6,10 @@
 
 ## 第一步：准备首帧图
 
-> **连续性说明**：此镜头与上一镜头 (shot_005) 连续，直接使用上一镜头尾帧。
+> **连续性说明**：此镜头与上一镜头 (shot_006) 连续，直接使用上一镜头尾帧。
 
-1. 使用 `shot_005_last_frame.png` 作为本镜头首帧
-2. 将文件复制并重命名为：`shot_006_first_frame.png`
+1. 使用 `shot_006_last_frame.png` 作为本镜头首帧
+2. 将文件复制并重命名为：`shot_007_first_frame.png`
 
 ---
 
@@ -17,12 +17,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_006_first_frame.png（刚才准备的首帧）
+   - shot_007_first_frame.png（刚才准备的首帧）
    - 沈清起-表情卡.png
    - 破旧草屋-定场镜头.png
 3. **打开 `last_frame.md` 文件，复制其中的完整提示词**
 4. 点击生成
-5. 保存为：`shot_006_last_frame.png`
+5. 保存为：`shot_007_last_frame.png`
 
 ---
 
@@ -30,12 +30,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_006_first_frame.png
+   - shot_007_first_frame.png
    - 沈清起-三视图.png
    - 破旧草屋-定场镜头.png
 3. **打开 `storyboard_grid.md` 文件，复制其中的完整提示词**
 4. 点击生成
-5. 保存为：`shot_006_storyboard_grid.png`
+5. 保存为：`shot_007_storyboard_grid.png`
 
 ---
 
@@ -45,14 +45,14 @@
 2. 选择模型：**视频 2.6**
 3. 选择时长：**7秒**
 4. 上传图片（按顺序，最多5张）：
-   - shot_006_first_frame.png（首帧钉定）
-   - shot_006_last_frame.png（尾帧钉定）
-   - shot_006_storyboard_grid.png（动作参考）
+   - shot_007_first_frame.png（首帧钉定）
+   - shot_007_last_frame.png（尾帧钉定）
+   - shot_007_storyboard_grid.png（动作参考）
    - 沈清起-三视图.png（角色一致性）
    - 破旧草屋-定场镜头.png（场景一致性）
 5. **打开 `video_prompt.md` 文件，复制其中的完整提示词**
 6. 点击生成
-7. 保存为：`shot_006_video.mp4`
+7. 保存为：`shot_007_video.mp4`
 
 ---
 

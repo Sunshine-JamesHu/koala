@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-11 剑尖相指
+# 尾帧图片提示词 - S01-13 剑尖相指
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -41,4 +41,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_011_last_frame.png`
+`shot_013_last_frame.png`

@@ -1,4 +1,4 @@
-# 操作手册 - S01-13 撞上霍齐
+# 操作手册 - S01-15 撞上霍齐
 
 > **按以下步骤操作即可，无需思考**
 
@@ -6,9 +6,9 @@
 
 ## 第一步：准备首帧图
 
-> **连续性说明**：此镜头与上一镜头 (shot_012) 连续，无需单独生成首帧图。
+> **连续性说明**：此镜头与上一镜头 (shot_014) 连续，无需单独生成首帧图。
 
-1. 直接使用 `shot_012_last_frame.png` 作为本镜头的首帧钉定图
+1. 直接使用 `shot_014_last_frame.png` 作为本镜头的首帧钉定图
 
 ---
 
@@ -16,12 +16,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_012_last_frame.png（上一镜头尾帧）
+   - shot_014_last_frame.png（上一镜头尾帧）
    - 霍齐-三视图.png
    - 辛月影-表情卡.png
 3. 打开 `last_frame.md` 文件，复制提示词
 4. 点击生成
-5. 保存为：`shot_013_last_frame.png`
+5. 保存为：`shot_015_last_frame.png`
 
 ---
 
@@ -29,12 +29,12 @@
 
 1. 打开 **Nano Banana Pro**
 2. 上传参考图（按顺序）：
-   - shot_012_last_frame.png
+   - shot_014_last_frame.png
    - 辛月影-三视图.png
    - 霍齐-三视图.png
 3. 打开 `storyboard_grid.md` 文件，复制提示词
 4. 点击生成
-5. 保存为：`shot_013_storyboard_grid.png`
+5. 保存为：`shot_015_storyboard_grid.png`
 
 ---
 
@@ -44,14 +44,14 @@
 2. 选择模型：**视频 2.6**
 3. 选择时长：**4秒**
 4. 上传图片（按顺序，最多5张）：
-   - shot_012_last_frame.png（首帧钉定）
-   - shot_013_last_frame.png（尾帧钉定）
-   - shot_013_storyboard_grid.png（动作参考）
+   - shot_014_last_frame.png（首帧钉定）
+   - shot_015_last_frame.png（尾帧钉定）
+   - shot_015_storyboard_grid.png（动作参考）
    - 辛月影-三视图.png（角色一致性）
    - 霍齐-三视图.png（角色一致性）
 5. 打开 `video_prompt.md` 文件，复制提示词
 6. 点击生成
-7. 保存为：`shot_013_video.mp4`
+7. 保存为：`shot_015_video.mp4`
 
 ---
 

@@ -1,4 +1,4 @@
-# 尾帧图片提示词 - S01-14 霍齐怒斥
+# 尾帧图片提示词 - S01-16 霍齐怒斥
 
 ## 用途
 作为视频的尾帧钉定图，定义视频的结束画面。
@@ -48,4 +48,4 @@ masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighti
 ```
 
 ## 保存为
-`shot_014_last_frame.png`
+`shot_016_last_frame.png`
