@@ -14,7 +14,9 @@
       "Skill(kling-prompter)",
       "Skill(leegonzales-aiskills-veo3-prompter)",
       "Bash(find:*)",
-      "Bash(start chrome:*)"
+      "Bash(start chrome:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)"
     ]
   }
 }

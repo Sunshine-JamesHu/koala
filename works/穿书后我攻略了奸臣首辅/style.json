@@ -9,7 +9,7 @@
   "visual_style": {
     "type": "3d_animation",
     "keywords": [
-      "3D动画渲染",
+      "电影级3D动画渲染",
       "国漫风格",
       "Chinese Donghua Style",
       "古风唯美",
@@ -87,19 +87,19 @@
   },
   "prompts": {
     "image": {
-      "style_prefix": "3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景, ",
+      "style_prefix": "电影级3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景, ",
       "style_suffix": ", masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style",
       "quality_tags": "masterpiece, best quality, 8k resolution, highly detailed, ultra detailed, elegant, beautiful, 3D render, cinematic lighting, depth of field",
       "negative_prompt": "low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look"
     },
     "video_veo": {
-      "style_suffix": "3D动画渲染, Unreal Engine 5质感,国漫质感, Chinese Donghua Style, 精致细腻的3D动画质感, 流畅的动作, 柔和电影级光影效果, 景深模糊, 电影级画面, Unreal Engine 5 quality",
+      "style_suffix": "电影级3D动画渲染, Unreal Engine 5质感, 国漫质感, Chinese Donghua Style, 精致细腻的3D动画质感, 流畅的动作, 柔和电影级光影效果, 景深模糊, 电影级画面, Unreal Engine 5 quality",
       "cinematography": "cinematic lighting, professional cinematography, elegant camera movement, soft focus background, depth of field",
       "camera_style": "缓慢运镜，注重氛围营造，使用推拉摇移等古典镜头语言，3D电影级运镜"
     },
     "video_kling": {
-      "style_prefix": "3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, ",
-      "style_suffix": "精致细节, 流畅动作, 柔和电影级光影, 景深模糊, 8k画质, Unreal Engine 5质感, 电影级3D动画",
+      "style_prefix": "电影级3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 精致细节, 流畅动作, 柔和电影级光影, 景深模糊, 8k画质 ",
+      "style_suffix": "",
       "quality_tags": "masterpiece, best quality, 8k resolution, highly detailed, 流畅动作, 3D国风美学, cinematic lighting"
     }
   },
