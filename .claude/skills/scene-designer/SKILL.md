@@ -1,6 +1,6 @@
 ---
 name: scene-designer
-description: AI场景设计师 - 设计动画中的场景环境，建立世界观视觉基础，为AI背景生成提供精确的场景描述。当需要设计场景的视觉特征、光影设定、色彩规划时使用此技能。
+description: AI场景设计师 - 设计动画中的场景环境，建立世界观视觉基础。输出到全局共享目录，跨章节复用。当需要设计场景的视觉特征、光影设定、色彩规划时使用此技能。
 ---
 
 # AI场景设计师 (Scene Designer)
@@ -8,27 +8,23 @@ description: AI场景设计师 - 设计动画中的场景环境，建立世界�
 ## 角色定位
 负责设计动画中的场景环境，建立世界观视觉基础，为AI背景生成提供精确的场景描述。
 
+## 核心变更（v2）
+- **输出位置变更**: 从 `output/chapter_XXX/03_scene_refs.md` 改为 `output/scene/[场景名].md`
+- **全局共享**: 场景文件跨章节复用，不再每章重新生成
+- **增量跳过**: 已存在的场景文件自动跳过，只处理新场景
+- **视角方案变更**: 取消8视角卡，改为"定场镜头 + 平面图 + 关键角度"方案
+
 ## 前置依赖
 
-### 章节上下文读取 (重要)
+### 必须读取
+1. **分镜脚本**: `output/[章节编号]/storyboard.md`（获取本章场景列表）
+2. **风格配置**: `works/[剧名]/style.json`（必须）
 
-**开始工作前，必须读取以下内容以确保连贯性：**
-
-1. **当前章节**: `novel/chapters/chapter_XXX.txt` (必须)
-2. **上一章节**: `novel/chapters/chapter_XXX-1.txt` (如存在)
-   - 了解场景的延续性
-   - 确保时间和天气的合理过渡
-3. **下一章节**: `novel/chapters/chapter_XXX+1.txt` (如存在)
-   - 了解场景后续发展
-   - 为下一章场景做铺垫
-4. **风格配置**: `style.json` (必须)
-
-### 场景全景读取 (非常重要) ⭐
+### 场景全景读取（非常重要）⭐
 
 **为了避免场景设计片面化，必须读取更多章节以获取完整的场景信息：**
 
-1. **同场景相关章节**: 搜索并读取所有涉及当前场景的章节
-   - 使用 Grep 工具搜索场景关键词（如地点名、建筑名）
+1. **同场景相关章节**: 使用 Grep 工具搜索场景关键词（地点名、建筑名）
    - 读取至少 20-30 个相关章节片段
    - 提取所有关于场景布局、建筑结构、家具陈设的描述
 
@@ -36,125 +32,68 @@ description: AI场景设计师 - 设计动画中的场景环境，建立世界�
    - 建筑整体布局（几进院落、几间房）
    - 室外空间（院子、花园、围墙、大门）
    - 室内分区（正房、偏房、厢房、厨房等）
-   - 道具和家具（床、桌、椅、柜等）
+   - 固定家具（床、桌、椅、柜等）
    - 特殊元素（井、树、花架、走廊等）
-
-3. **场景俯视图**: 输出中必须包含场景的平面布局示意,示意图必须精准，千万不要出现 左右排列的绘制成上下排列，生成后要再次对比原文进行确认。
-
-### 室内布局示意图规范 (重要) ⭐⭐⭐
-
-**室内布局必须符合现实逻辑，禁止出现反常识的设计：**
-
-1. **床/炕的位置**:
-   - 床/炕必须靠墙放置，这是基本常识
-   - 中国北方土炕通常沿后墙或侧墙搭建
-   - 床头靠墙，不能悬空在房间中央
-
-2. **家具布局原则**:
-   - 大件家具（床、柜子、桌子）靠墙或靠窗放置
-   - 房间中央应留出活动空间
-   - 门窗位置要合理，不能被家具遮挡
-
-3. **特殊场景元素**:
-   - 场景中只包含固定环境元素
-   - 角色道具（如轮椅、武器）不在场景图中展示
-   - 在文字描述中可提及关键道具的"常见停放位置"供参考
-
-4. **正确的室内布局示例**:
-```
-┌────────────────────────────────────┐
-│ 🪟窗                               │
-│ (破洞窗纸)                          │
-├────────────────────────────────────┤
-│                                    │
-│  ┌─────────────────────────────┐   │
-│  │         土 炕 (靠后墙)       │   │
-│  │   （破褥子、小木桌）          │   │
-│  │                              │   │
-│  └─────────────────────────────┘   │
-│                                    │
-│       ┌──────┐                     │
-│       │ 柜子 │                     │
-│       │(墙角)│                     │
-│       └──────┘                     │
-│                                    │
-│       📍青灯                        │
-│       (角落)              ↑        │
-└────────────────────────────────────┘
-                         门口
-注: 轮椅是角色道具，不在场景图中展示
-```
-
-5. **错误的室内布局示例（禁止）**:
-```
-❌ 错误：床/炕在房间中央
-❌ 错误：家具布局像是"悬浮"在房间中间
-❌ 错误：没有考虑墙、窗、门的合理位置
-```
-
-### 角色道具与场景元素的区分 (重要) ⭐⭐⭐
-
-**场景图中只应包含固定环境元素，不应包含角色相关道具：**
-
-1. **属于角色的道具（不应出现在场景图中）**:
-   - 轮椅（角色使用的工具，随角色移动）
-   - 角色的武器（剑、刀等，随角色携带）
-   - 角色的随身物品（书包、佩饰等）
-   - 角色的服装配饰
-
-2. **属于场景的固定元素（应出现在场景图中）**:
-   - 建筑结构（墙、门、窗、屋顶）
-   - 固定家具（床/炕、柜子、桌子、椅子）
-   - 环境道具（灯具、水缸、灶台）
-   - 装饰物（挂画、窗帘、地毯）
-
-3. **区分原则**:
-   - 如果物品随角色移动 → 角色道具
-   - 如果物品固定在场景中 → 场景元素
-   - 轮椅虽然较大，但它随使用者移动，属于角色道具
-
-**在输出中必须包含：**
-- 场景与前后章节的时空连贯性说明
-- 时间线/天气变化的合理性检查
-- **场景完整布局说明**（从多章节提取的综合信息）
-- **场景平面示意图**
 
 ### 风格配置读取
 
-**必须先读取** `works/[剧名]/style.json` 获取风格配置，使用以下字段：
-- `scene_style.detail` - 细节程度 (high/medium/low)
-- `scene_style.effects` - 氛围效果 (雾气/粒子/光晕)
-- `scene_style.depth_rendering` - 景深渲染
-- `scene_style.background_style` - 背景风格
+**必须先读取** `works/[剧名]/style.json`，使用以下字段：
+- `scene_style.*` - 场景风格参数
 - `color.*` - 全部色彩参数
 - `lighting.*` - 全部光影参数
 - `world_setting.*` - 世界观设定
+- `prompts.image.*` - 图片提示词风格标签
 
-## 核心职责
-1. **场景设定**: 定义各场景地点的视觉特征
-2. **氛围营造**: 确定光影、天气、时间等环境要素
-3. **色彩规划**: 为场景建立统一的色彩基调
-4. **世界观构建**: 通过环境细节传达世界观
+## 工作流程
 
-## 输出规范
+### 步骤1: 检查已有场景文件
 
-### 文件顶部必须有场景全景说明
+对于分镜脚本中列出的每个场景：
+1. 检查 `works/[剧名]/output/scene/[场景名].md` 是否已存在
+2. **如果已存在 → 跳过该场景**
+3. 如果不存在 → 执行场景设计流程
+
+### 步骤2: 场景全景读取
+
+对每个新场景：
+1. 使用 Grep 搜索场景名在所有章节中的出现
+2. 读取相关章节片段，提取布局、陈设、氛围等信息
+3. 汇总为完整的场景画像
+
+### 步骤3: 生成场景文件
+
+每个场景输出一个独立文件到 `output/scene/[场景名].md`
+
+## 输出路径
+
+```
+works/[剧名]/output/scene/[场景名].md
+```
+
+**示例：**
+```
+works/穿书后我攻略了奸臣首辅/output/scene/沈家小院.md
+works/穿书后我攻略了奸臣首辅/output/scene/破旧草屋.md
+works/穿书后我攻略了奸臣首辅/output/scene/京城大街.md
+```
+
+## 输出模板
 
 ```markdown
-# 场景参考 - 第X章
+# 场景参考 - [场景名]
 
 > **如何使用本文件**:
-> 1. 本文件是场景设计参考，供后续背景图片生成使用
+> 1. 本文件是场景设计参考，供 shot-builder 生成背景图片提示词使用
 > 2. "AI提示词核心片段"可直接复制用于生成场景图
-> 3. 与 04_image_prompts.md 配合使用，确保场景一致性
+> 3. 定场镜头必须首先生成，后续所有场景图都需要上传定场镜头作为参考
 
 ---
 
-## 场景总览
-
-| 场景编号 | 场景名 | 时间 | 天气 | 情绪氛围 |
-|----------|--------|------|------|----------|
-| 01 | [场景名] | [时间] | [天气] | [氛围] |
+## 基本信息
+- **场景名称**: [场景名]
+- **地点类型**: [室内/室外/半室外]
+- **时代风格**: [现代/古代/未来/架空]
+- **建筑风格**: [描述]
 
 ---
 
@@ -171,243 +110,144 @@ description: AI场景设计师 - 设计动画中的场景环境，建立世界�
 - **院子**: [大小、地面材质、植物]
 - **围墙**: [材质、高度、状态]
 - **大门**: [位置、样式、状态]
-- **其他**: [井、树、走廊等]
 
 ### 室内分区
 | 房间 | 功能 | 主要陈设 | 状态 |
 |------|------|---------|------|
-| 正房 | [用途] | [家具列表] | [破旧/完好] |
-| 偏房1 | [用途] | [家具列表] | [破旧/完好] |
-| 偏房2 | [用途] | [家具列表] | [破旧/完好] |
+| [房间名] | [用途] | [家具列表] | [破旧/完好] |
 
-### 场景平面示意图
+---
+
+## 场景平面示意图
+
+> 示意图必须精准，千万不要出现左右排列的绘制成上下排列，生成后要再次对比原文确认。
+
 ```
-┌─────────────────────────────────────┐
-│              院 子                   │
-│    ┌──────┐              ┌──────┐   │
-│    │ 偏房1 │              │ 偏房2 │   │
-│    │      │              │      │   │
-│    └──────┘              └──────┘   │
-│                                      │
-│         ┌────────────────┐          │
-│         │     正房        │          │
-│         │   (主场景)      │          │
-│         └────────────────┘          │
-│                                      │
-│    ═══════════════════════          │
-│            大门                      │
-└─────────────────────────────────────┘
+[ASCII平面图]
 ```
 
 ---
 
-## 场景 [编号]: [场景名]
+## 光影与色彩设定
 
-### 基础信息
-- **地点类型**: [室内/室外/半室外]
-- **时代风格**: [现代/古代/未来/架空]
-- **建筑风格**: [简约/繁复/工业/奇幻]
-
-### 时间与天气
-- **时间**: [具体时间]
-- **天气**: [晴/阴/雨/雪/雾]
-- **光线来源**: [自然光/人造光/混合]
-
-### 整体氛围
-[一句话描述场景给人的感觉]
-
-### 空间结构
-[描述场景的整体布局和主要元素位置]
-
-### 光影设定
+### 默认光影
 - **主光源**: [方向、强度、颜色]
 - **阴影风格**: [硬阴影/软阴影]
 
-### 色彩设定
+### 默认色彩
 - **主色调**: [颜色]
 - **辅助色**: [颜色]
 - **整体色温**: [暖色/冷色/中性]
 
 ### 氛围元素
 - **空气感**: [清晰/薄雾/浓雾]
-- **粒子效果**: [尘埃/雨滴/雪花]
+- **粒子效果**: [尘埃/雨滴/雪花/无]
 
 ---
 
-## AI提示词核心片段
+## 第一步：定场镜头（Establishing Shot）⭐
 
-### 提示词构建公式（重要）⭐
+> **必须首先生成**，作为后续所有该场景图片的参考。
+>
+> 定场镜头是场景的"身份证"，后续所有该场景的图片都应上传此图作为参考。
 
-**完整公式**: `风格前缀 + 场景主体描述 + 环境细节 + 光影氛围 + 色彩基调 + 构图运镜 + 质量标签`
-
-### 详细版提示词结构
-
+**定场镜头提示词（详细版）**:
 ```
-[风格前缀 - 从 style.json 获取],
+[STYLE_PREFIX - 从 style.json 获取],
 
-[场景类型 - 室内/室外/半室外],
-[时代背景 - 古代中国/现代/未来/架空],
-[具体地点 - 卧室/街道/森林等],
-[时间设定 - 清晨/正午/黄昏/深夜],
-[天气状态 - 晴朗/阴天/雨天/雪天/雾天],
+[场景类型 - 如：ancient Chinese courtyard], [时代背景 - 如：Ming dynasty style],
+[具体地点描述 - 如：exterior view of dilapidated rural residence],
+[时间设定 - 如：late night], [天气状态 - 如：clear starry sky],
 
-[主体结构描述 - 建筑外观、空间布局、主要物体],
-[细节元素描述 - 家具陈设、装饰物、地面材质],
-[氛围元素 - 尘埃粒子、烟雾、光晕、动态效果],
+[主体结构描述 - 如：single-story wooden structure with curved roof tiles],
+[细节元素描述 - 如：weathered wooden pillars, cracked stone steps, overgrown weeds],
+[氛围元素 - 如：single bronze oil lamp glowing from inside window, casting warm light],
 
-[主光源描述 - 光源类型、方向、强度、颜色],
-[辅助光描述 - 反光、环境光、补光],
-[阴影效果 - 硬阴影/软阴影、阴影方向、阴影深度],
+[主光源描述 - 如：moonlight from above, warm oil lamp glow from inside],
+[阴影效果 - 如：soft shadows with high contrast between lit and dark areas],
 
-[主色调 - 主要颜色],
-[辅助色 - 次要颜色],
-[强调色 - 点缀颜色],
-[整体色温 - 暖色/冷色/中性],
-[情绪氛围 - 温馨/压抑/神秘/紧张],
+[主色调 - 如：deep blue night sky], [辅助色 - 如：warm amber from lamp],
+[情绪氛围 - 如：melancholic, desolate yet peaceful],
 
-[构图类型 - 远景/中景/近景/特写],
-[视角角度 - 平视/俯视/仰视/斜角],
-[景深效果 - 清晰/景深模糊/虚化背景],
+wide establishing shot, eye-level angle,
+no people, empty scene, architectural focus,
 
-[质量标签 - 从 style.json 获取],
---ar [宽高比]
-```
+[STYLE_SUFFIX - 从 style.json 获取],
+[QUALITY_TAGS - 从 style.json 获取],
 
-### 详细版示例
-
-**室内场景（破败草屋）**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-ancient Chinese dilapidated cottage interior, poverty-stricken rural home,
-late night scene, cold winter night, northern wind howling outside,
-
-single flickering blue oil lamp (qingdeng) as main light source, casting dancing shadows,
-pale moonlight streaming through holes in torn window paper, creating eerie light beams,
-mud floor covered with shattered porcelain pieces and spilled food remnants,
-old worn wooden wheelchair sitting in center of room, broken and decrepit,
-traditional kang bed platform against wall, small wooden table, simple dressing stand,
-
-dramatic chiaroscuro lighting, soft shadows from flickering flame,
-volumetric moonlight beams cutting through darkness,
-dust particles floating visible in light, atmospheric depth,
-
-color palette: cold blue-grey dominant, warm yellow candlelight accent, pale moonlight highlights,
-oppressive and eerie atmosphere, suffocating sense of poverty and desperation,
-
-wide establishing shot, eye-level angle, depth of field blur on background,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
 --ar 16:9
 ```
 
-**室外场景（古代街道）**:
+**负向提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-ancient Chinese town street, bustling marketplace during day,
-sunny morning, clear blue sky with wispy clouds,
-
-traditional wooden buildings lining both sides of cobblestone street,
-red lanterns hanging from eaves, colorful shop banners fluttering,
-street vendors' stalls with fruits and vegetables, wooden carts,
-stone bridge over small canal, willow trees swaying gently,
-
-warm natural sunlight from upper right, soft shadows on ground,
-dappled light through tree branches, ambient sky illumination,
-
-color palette: warm ochre and terracotta dominant, fresh green accents, bright blue sky,
-cheerful and lively atmosphere, peaceful daily life scene,
-
-medium wide shot, slight low angle looking up at buildings, shallow depth of field,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
---ar 16:9
+[NEGATIVE_PROMPT - 从 style.json 获取],
+people, characters, faces, figures, human silhouette,
+modern elements, anachronistic objects, cars, electric lights
 ```
 
-### 负向提示词模板
+**保存为**: `[场景名]-定场镜头.png`
 
-**通用负向提示词**:
+**用途**:
+1. 作为场景的"身份证"上传到所有该场景的图片生成
+2. 作为视频生成的场景参考图（5张参考图之一）
+
+---
+
+## 第二步：关键角度（供 shot-builder 使用）
+
+根据分镜需要，提供以下常用角度的提示词片段：
+
+### 室内全景（从门口看向内部）
 ```
-people, characters, faces, figures, text, watermark, signature,
-low quality, worst quality, blurry, distorted, deformed,
-modern elements, western style, electric lights, cars, buildings,
-2d flat, sketch, line art, photo realistic, plastic look
-```
-
-### 场景视角卡生成提示词（可直接复制使用）**:
-```
-[风格前缀],
-
-[场景核心描述 - 包含场景类型、时代、时间、天气、主要元素],
-
-| [视角名1] | [视角描述1 - 详细描述该视角的画面内容] | [英文关键词1 - 包含景别、角度、焦点] |
-| [视角名2] | [视角描述2] | [英文关键词2] |
-| [视角名3] | [视角描述3] | [英文关键词3] |
-| [视角名4] | [视角描述4] | [英文关键词4] |
-| [视角名5] | [视角描述5] | [英文关键词5] |
-| [视角名6] | [视角描述6] | [英文关键词6] |
-| [视角名7] | [视角描述7] | [英文关键词7] |
-| [视角名8] | [视角描述8] | [英文关键词8] |
-
-[风格后缀]
-
-按2行生成，每行4个视角，只生一张 4*2 的场景8视角图片
+[场景核心描述],
+interior wide shot from doorway looking inward,
+[光影和氛围],
 ```
 
-### 视角卡示例
-
-**破败草屋室内 8视角**:
+### 角落特写（聚焦某个区域）
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-Interior of a dilapidated ancient Chinese cottage, poverty-stricken rural home, late night, single flickering oil lamp, moonlight through torn window paper, mud floor with shattered porcelain, worn wooden wheelchair, oppressive atmosphere,
-
-| 全景远景 | 整个房间全貌，从高处俯视，展示破败环境，青灯在角落，月光照入 | wide establishing shot, full room view, top-down aerial view |
-| 轮椅特写 | 聚焦破败轮椅，木制框架，破旧坐垫，周围碎瓷散落 | close-up of worn wheelchair, broken wood texture, shattered porcelain around |
-| 地面细节 | 碎瓷片和残羹散落的泥土地面，在微弱光线下 | close-up of floor, broken porcelain shards, spilled food, mud texture |
-| 窗户光效 | 月光穿过破洞窗纸，形成光束，尘埃粒子可见 | moonlight through torn window paper, volumetric light beams, dust particles |
-| 烛光摇曳 | 青灯特写，火焰跳动，光影在墙上舞动 | flickering oil lamp, dancing flame, dynamic shadows on wall |
-| 角落阴影 | 房间阴暗角落，蛛网悬挂，压抑感 | dark corner, spider webs, oppressive shadows, hidden details |
-| 门口视角 | 从室内看向门口，木门轮廓，门外月光 | view toward doorway from inside, door frame silhouette, moonlight outside |
-| 俯视全景 | 从屋顶向下看，整个房间布局，角色位置参考 | aerial top-down view, room layout, character placement reference |
-
-masterpiece, best quality, 8k resolution, highly detailed background, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
-
-按2行生成，每行4个视角，只生一张 4*2 的场景8视角图片
+[场景核心描述],
+close-up detail shot of [specific area],
+[光影和氛围],
 ```
 
-### 常用视角参考
-
-| 视角类型 | 描述 | 英文关键词 |
-|---------|------|-----------|
-| 远景全景 | 场景全貌 | wide establishing shot, full view |
-| 中景视角 | 场景主要部分 | medium shot, main area |
-| 近景视角 | 场景细节 | close-up shot, detail view |
-| 侧面视角 | 侧面角度 | side angle view |
-| 俯视角度 | 从上往下看 | aerial top-down view |
-| 仰视角度 | 从下往上看 | low angle view |
-| 特写细节 | 聚焦某元素 | extreme close-up, focused detail |
-| 氛围空镜 | 无人物氛围 | atmospheric shot, empty scene |
+### 窗户视角（从窗外/窗内）
+```
+[场景核心描述],
+view through window, [inside looking out / outside looking in],
+[光影和氛围],
 ```
 
-## 场景类型设计指南
+### 俯瞰视角
+```
+[场景核心描述],
+aerial top-down view showing room layout,
+[光影和氛围],
+```
 
-### 室内场景
-- 关注空间大小和布局
-- 光源位置（窗户/灯具）
-- 家具和陈设
+---
 
-### 城市室外
-- 建筑风格和高度
-- 街道宽度和布局
-- 霓虹灯/广告牌
+## 角色道具与场景元素的区分
 
-### 自然场景
-- 地形特征
-- 植被类型
-- 天空和天气
+**场景图中只应包含固定环境元素：**
 
-### 科幻/奇幻场景
-- 独特世界观元素
-- 特殊光源和色彩
-- 未来/魔法元素
+| 类型 | 示例 | 是否出现在场景图中 |
+|------|------|-------------------|
+| 建筑结构 | 墙、门、窗、屋顶 | 是 |
+| 固定家具 | 床/炕、柜子、桌子 | 是 |
+| 环境道具 | 灯具、水缸、灶台 | 是 |
+| 角色道具 | 轮椅、武器、随身物品 | **否** |
+```
+
+## 室内布局规范（重要）⭐⭐⭐
+
+**室内布局必须符合现实逻辑：**
+
+1. **床/炕的位置**: 必须靠墙放置
+2. **家具布局**: 大件家具靠墙或靠窗放置，中央留出活动空间
+3. **门窗位置**: 合理且不被家具遮挡
+
+## 设计原则
+- **一致性优先**: 同一场景在不同镜头中保持环境一致
+- **功能明确**: 场景布局要服务于故事需要
+- **氛围为王**: 光影和色彩要传达正确的情绪

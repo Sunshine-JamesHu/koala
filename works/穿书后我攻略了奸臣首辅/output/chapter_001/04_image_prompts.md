@@ -1,1130 +1,1137 @@
 # 图片生成提示词 - 第1章 你自尽吧
 
 > **使用说明**:
-> - 本文件是完整的图片生成提示词合集
 > - 将"提示词"内容直接复制到 Nano Banana Pro
-> - **重要**: 按"推荐生成顺序"依次生成
-> - **重要**: 生成关键帧前，先上传对应的参考图片
+> - 负向提示词用于避免常见问题
+> - 图片比例根据需要调整 --ar 参数
+> - **参考图**: 第1章是首次建立角色视觉，请先上传三视图+场景大全景
 
 ---
 
-## 推荐生成顺序（重要）⭐⭐⭐
+## 风格配置（从 style.json 提取）
 
-**必须按照以下顺序生成，确保角色和场景一致性：**
-
-### 第一步：生成角色三视图（必须首先生成）
-1. 辛月影-三视图
-2. 沈清起-三视图
-3. 霍齐-三视图
-
-### 第二步：生成角色表情卡（上传三视图作为参考）
-1. 辛月影-表情卡（上传辛月影-三视图）
-2. 沈清起-表情卡（上传沈清起-三视图）
-3. 霍齐-表情卡（上传霍齐-三视图）
-
-### 第三步：生成角色动作卡（上传三视图作为参考）
-1. 辛月影-躺卧参考卡（第1章常用姿势）
-2. 沈清起-坐轮椅参考卡
-3. 霍齐-站立守门参考卡
-
-### 第四步：生成场景大全景（必须首先生成）
-1. BG-01 卧房大全景（建立空间架构）
-2. BG-06 门外大全景
-
-### 第五步：生成场景中景/局部（上传大全景作为参考）
-1. BG-02 卧房（沈清起区域）- 上传BG-01作为参考
-2. BG-03 卧房（门口视角）- 上传BG-01作为参考
-3. BG-05 门外近景 - 上传BG-06作为参考
-
-### 第六步：生成角色关键帧（上传三视图+场景大全景）
-1. 按镜头顺序生成
-2. 每次必须上传：角色三视图 + 场景大全景
-
----
-
-## 衍生图片一致性要求（重要）⭐⭐⭐
-
-### 角色衍生图
-- 必须上传三视图作为参考
-- 保持发型、服装、配饰一致
-- 保持角色与场景的比例合理
-
-### 场景衍生图
-- 必须上传大全景作为参考
-- 保持空间位置、光影方向一致
-- 保持道具位置和材质一致
-
----
-
-## 图片总清单
-
-| 类型 | 编号 | 名称 | 优先级 | 说明 |
-|------|------|------|--------|------|
-| 三视图 | TV-01 | 辛月影-三视图 | 必须 | 首先生成 |
-| 三视图 | TV-02 | 沈清起-三视图 | 必须 | 首先生成 |
-| 三视图 | TV-03 | 霍齐-三视图 | 必须 | 首先生成 |
-| 表情卡 | EX-01 | 辛月影-表情卡 | 必须 | 上传TV-01 |
-| 表情卡 | EX-02 | 沈清起-表情卡 | 必须 | 上传TV-02 |
-| 表情卡 | EX-03 | 霍齐-表情卡 | 必须 | 上传TV-03 |
-| 动作卡 | AC-01 | 辛月影-躺卧参考 | 高 | 上传TV-01 |
-| 动作卡 | AC-02 | 沈清起-坐轮椅参考 | 高 | 上传TV-02 |
-| 动作卡 | AC-03 | 霍齐-站立守门参考 | 高 | 上传TV-03 |
-| 背景 | BG-01 | 卧房大全景 | 必须 | 首先生成场景 |
-| 背景 | BG-02 | 卧房（沈清起区域） | 高 | 上传BG-01 |
-| 背景 | BG-03 | 卧房（门口视角） | 高 | 上传BG-01 |
-| 背景 | BG-05 | 门外近景 | 高 | 上传BG-06 |
-| 背景 | BG-06 | 门外大全景 | 必须 | 首先生成场景 |
-| 背景 | BG-08 | 卧房8视角卡 | 中 | 可选 |
-| 关键帧 | KF-01 | 辛月影-穿书苏醒 | 高 | 上传TV-01+BG-01 |
-| 关键帧 | KF-02 | 辛月影-以为是梦 | 高 | 上传TV-01+BG-01 |
-| 关键帧 | KF-03 | 辛月影-穿书意识 | 高 | 上传TV-01 |
-| 关键帧 | KF-04 | 沈清起-病娇亮相 | 高 | 上传TV-02+BG-02 |
-| 关键帧 | KF-05 | 沈清起-碎瓷流血 | 高 | 上传TV-02 |
-| 关键帧 | KF-06 | 沈清起-阴鸷冷笑 | 高 | 上传TV-02 |
-| 关键帧 | KF-07 | 辛月影+霍齐-撞上 | 高 | 上传TV-01+TV-03+BG-05 |
-| 关键帧 | KF-08 | 霍齐-守门拦人 | 高 | 上传TV-03+BG-05 |
-| 关键帧 | KF-09 | 辛月影-谎言表演 | 高 | 上传TV-01+BG-01 |
-
----
-
-# 第一部分：角色三视图（必须首先生成）⭐
-
-> **用途**: 建立角色基础外观，后续所有图片必须参考三视图
-
----
-
-## TV-01: 辛月影（女主）- 三视图
-
-**提示词**:
+**风格前缀**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+```
 
-Character reference sheet of Xin Yueying,
-20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes, long thick eyelashes,
-delicate oval face, slightly upturned nose, fair porcelain skin,
-petite and slender body, small frame,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+**风格后缀**:
+```
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style
+```
 
-Three views: front view, side view, back view,
-full body, standing in neutral pose,
-white background, character design sheet,
-consistent character design across all three views,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
---ar 3:1
+**质量标签**:
+```
+masterpiece, best quality, 8k resolution, highly detailed, ultra detailed, elegant, beautiful, 3D render, cinematic lighting, depth of field
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-multiple characters, different outfits, inconsistent design,
-dynamic pose, action pose, sitting, lying,
-text, watermark, signature
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look
 ```
 
 ---
 
-## TV-02: 沈清起（男主）- 三视图
+## 角色关键帧
+
+---
+
+### 辛月影 系列提示词
+
+#### KF-01: 辛月影 - 苏醒
+
+**图片用途**: 关键帧（开篇第一个镜头）
+
+**画面描述**:
+辛月影趴在阴冷的泥地上，缓缓睁开眼睛，视线从模糊到清晰。她的脸贴在地面，能看到地面上散落的碎瓷片和泥土纹理。青灰色的色调，压抑的氛围。
+
+**参考图来源说明**:
+- 本关键帧是首次建立角色视觉（第1章）
+- 参考图来源: 三视图 + 场景大全景
+- 延展理由: N/A（首次生成）
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | 辛月影-三视图 | 角色外观基础（首次建立） |
+| 参考图2 | 辛月影-表情卡（惊恐/迷茫） | 表情参考 |
+| 参考图3 | 草屋内-大全景 | 场景空间参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Character reference sheet of Shen Qingqi,
-25 years old male,
-long black hair tied back in ancient Chinese style,
-narrow phoenix eyes, thin lips, pale almost bloodless skin,
-handsome and refined face with sharp defined features,
-tall and slender body type,
-wearing dark blue-black ancient Chinese scholar robe,
+Xin Yueying, 20 years old young Chinese woman,
+pretty and sweet face with almond-shaped eyes (xing yan), long dark eyelashes,
+small delicate oval face, slightly upturned nose, soft pink lips,
+petite and slender body, graceful figure,
+double spiral hair bun (shuang luo ji) on sides of head, traditional Chinese hairstyle, glossy black hair,
+wearing patched coarse cloth robe in dark gray and brown colors, worn-out ancient Chinese peasant dress,
 
-Three views: front view, side view, back view,
-full body sitting in worn wooden wheelchair, neutral pose,
-white background, character design sheet,
-consistent character design across all three views,
-disabled legs covered by robe,
+lying face down on cold earthen ground, cheek pressed against the floor,
+slowly opening eyes, dazed and confused expression,
+disoriented look, groggy from just waking up,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
---ar 3:1
+ancient Chinese dilapidated cottage bedroom interior,
+mud floor texture visible, scattered broken porcelain shards on ground,
+dim blue oil lamp light in corner, cold moonlight through torn window paper,
+oppressive and suffocating atmosphere of poverty,
+
+close-up shot from low angle, eye-level with the floor,
+depth of field blur on background, focus on her face and the floor texture,
+
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-multiple characters, different outfits, inconsistent design,
-standing, walking, dynamic pose, action pose,
-text, watermark, signature
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+standing, sitting, bright lighting, clean floor, luxurious clothes, red dress
 ```
 
 ---
 
-## TV-03: 霍齐（配角）- 三视图
+#### KF-02: 辛月影 - 轻松调侃
+
+**图片用途**: 关键帧（以为在做梦的轻松时刻）
+
+**画面描述**:
+辛月影翻身侧卧，一手支着脸颊，另一只手放在大腿上，慵懒地望着前方，嘴角挂着轻松的笑意。她以为自己还在梦里。
+
+**参考图来源说明**:
+- 本关键帧基于 KF-01 延展
+- 延展理由: 服装、外观完全一致，仅姿态和表情变化
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | KF-01_辛月影-苏醒 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 辛月影-表情卡（轻松/调皮） | 新表情参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Character reference sheet of Huo Qi,
-28 years old male,
-full beard, round bull-like eyes,
-bronze skin weathered from outdoor labor,
-burly and muscular body, tall and strong frame,
-wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-
-Three views: front view, side view, back view,
-full body, standing in neutral pose,
-white background, character design sheet,
-consistent character design across all three views,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
---ar 3:1
-```
-
-**负向提示词**:
-```
-low quality, worst quality, blurry, distorted, deformed,
-multiple characters, different outfits, inconsistent design,
-dynamic pose, action pose, sitting, lying,
-text, watermark, signature
-```
-
----
-
-# 第二部分：角色表情参考卡（上传三视图）
-
-> **用途**: 确保角色在所有图片中保持一致的外观
-
----
-
-## EX-01: 辛月影（女主）- 基础表情
-
-**角色核心描述**（所有表情共用）:
-```
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes, long thick eyelashes,
-delicate oval face, slightly upturned nose, fair porcelain skin,
+Xin Yueying, 20 years old young Chinese woman,
+pretty and sweet face with almond-shaped bright eyes, playful glint in eyes,
+small delicate oval face, soft smile on lips,
+double spiral hair bun (shuang luo ji), glossy black hair,
 petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
-3D animation render, Chinese Donghua Style, ancient Chinese background
+wearing patched coarse cloth robe in dark gray and brown, worn-out peasant dress,
+
+lying on side on the ground, one hand propping up cheek,
+other hand resting on thigh,
+relaxed and lazy posture, casual confident attitude,
+slight playful smile, dreamy relaxed expression,
+teasing look as if talking to someone,
+
+ancient Chinese dilapidated cottage interior,
+dim oil lamp lighting, cold moonlight through window,
+scattered debris on floor,
+
+medium close-up shot, low angle,
+focus on her face and relaxed expression,
+soft depth of field on background,
+
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
 ```
 
-### 表情卡生成提示词（5合1）
-
+**负向提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Xin Yueying, 20 years old female, two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair, beautiful almond-shaped eyes, long thick eyelashes, delicate oval face, slightly upturned nose, fair porcelain skin, petite and slender body, wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
-
-| 困惑迷茫 | 刚醒来迷迷糊糊，眼神迷茫，微微皱眉，嘴唇微张 | confused, dazed, blinking slowly, slight frown, lips slightly parted |
-| 惊恐万状 | 瞪大杏眼，面色苍白，嘴巴张大，浑身颤抖 | terrified, wide-eyed, pale face, mouth agape, trembling |
-| 强颜欢笑 | 勉强挤出笑容，眼神慌张，嘴角僵硬 | forced smile, nervous eyes, stiff smile corners |
-| 绝望无助 | 垂下眼帘，嘴角下垂，神情绝望，肩膀塌陷 | hopeless, downcast eyes, despondent expression, slumped shoulders |
-| 诚恳表演 | 双手合十，表情诚恳，眼神真挚，微微仰头 | sincere, hands clasped together, pleading eyes, slightly looking up |
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
-
-按两行生成，第一行三个表情，第二行两个表情，只生一张 3*2 的面部表情图片
-```
-
----
-
-## EX-02: 沈清起（男主）- 基础表情
-
-**角色核心描述**（所有表情共用）:
-```
-Shen Qingqi, 25 years old male,
-long black hair tied back in ancient Chinese style,
-narrow phoenix eyes, thin lips, pale almost bloodless skin,
-handsome and refined face with sharp defined features,
-tall and slender body, sitting in worn wooden wheelchair,
-wearing dark blue-black ancient Chinese scholar robe,
-cold and gloomy aura,
-3D animation render, Chinese Donghua Style, ancient Chinese background
-```
-
-### 表情卡生成提示词（5合1）
-
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Shen Qingqi, 25 years old male, long black hair tied back in ancient Chinese style, narrow phoenix eyes, thin lips, pale almost bloodless skin, handsome and refined face with sharp defined features, tall and slender body, sitting in worn wooden wheelchair, wearing dark blue-black ancient Chinese scholar robe, cold and gloomy aura,
-
-| 冷漠无情 | 面无表情，眼神冰冷，目空一切，薄唇紧抿 | cold indifferent, emotionless, icy gaze, thin lips pressed |
-| 阴鸷危险 | 眯起凤眼，眼神阴沉，杀意凛然，令人胆寒 | gloomy and sinister, menacing gaze, murderous intent, intimidating |
-| 戏谑嘲弄 | 嘴角微扬，似笑非笑，眼神玩味，略带讥讽 | mocking smile, sarcastic expression, playful eyes, slightly mocking |
-| 病态微笑 | 苍白脸上浮现诡异笑意，令人不寒而栗 | eerie smile, unsettling grin, pale sickly face, chilling |
-| 淡漠审判 | 眼神平静却充满压迫感，居高临下 | indifferent judgment, calm but oppressive gaze, looking down |
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
-
-按两行生成，第一行三个表情，第二行两个表情，只生一张 3*2 的面部表情图片
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+standing, sitting on bed, bright lighting, scared expression, crying
 ```
 
 ---
 
-## EX-03: 霍齐（配角）- 基础表情
+#### KF-03: 辛月影 - 瞳孔骤缩
 
-**角色核心描述**（所有表情共用）:
-```
-Huo Qi, 28 years old male,
-full beard, round bull-like eyes,
-bronze skin weathered from outdoor labor,
-burly and muscular body, tall and strong frame,
-wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-3D animation render, Chinese Donghua Style, ancient Chinese background
-```
+**图片用途**: 关键帧（听到"辛四娘"震惊瞬间）
 
-### 表情卡生成提示词（3合1）
+**画面描述**:
+辛月影的大特写，聚焦她的眼睛。听到"辛四娘"三字，她的瞳孔瞬间收缩，眼神从轻松变为震惊和恐惧。
 
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+**参考图来源说明**:
+- 本关键帧基于 KF-02 延展
+- 延展理由: 服装、外观完全一致，仅表情变化
 
-Huo Qi, 28 years old male, full beard, round bull-like eyes, bronze skin weathered from outdoor labor, burly and muscular body, tall and strong frame, wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-
-| 愤怒质问 | 圆眼怒瞪，络腮胡颤动，眉头紧锁，怒火中烧 | angry, fierce round eyes, beard trembling, furrowed brows, furious |
-| 鄙视厌恶 | 眼神轻蔑，嘴角下撇，满脸不屑 | disdainful, contemptuous eyes, mouth corners down, disgusted |
-| 警惕戒备 | 眼神锐利，身体紧绷，随时准备行动 | vigilant, sharp eyes, tense posture, ready to act |
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
-
-按一行生成，三个表情，只生一张 1*3 的面部表情图片
-```
-
----
-
-# 第一部分（续）：角色动作参考卡（上传三视图）
-
-> **用途**: 确保角色在本章常用姿势下的视觉表现一致
-
----
-
-## AC-01: 辛月影 - 躺卧参考卡
-
-**需要上传的图片**:
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 辛月影-三视图 | 角色外观基础参考 |
+| 参考图1 | KF-02_辛月影-轻松调侃 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 辛月影-表情卡（震惊/恐惧） | 新表情参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes, long thick eyelashes,
-delicate oval face, slightly upturned nose, fair porcelain skin,
+Extreme close-up of Xin Yueying's eyes,
+20 years old young Chinese woman,
+almond-shaped eyes suddenly wide with shock,
+pupils contracted in terror,
+fear and disbelief in her gaze,
+blood draining from face,
+
+double spiral hair bun (shuang luo ji) visible at edge of frame,
+wearing patched coarse cloth robe,
+
+expression of sudden realization and horror,
+moment of truth dawning on her,
+frozen in shock,
+
+dark background with faint candlelight,
+dramatic lighting on her face,
+high contrast shadows,
+
+extreme close-up shot, focus on eyes,
+shallow depth of field, sharp focus on pupils,
+
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
+```
+
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+full face, body visible, relaxed expression, smiling, bright lighting
+```
+
+---
+
+#### KF-04: 辛月影 - 惊恐撞柱
+
+**图片用途**: 关键帧（沈清起长剑逼来，辛月影后退撞木柱）
+
+**画面描述**:
+辛月影惊惶起身，踉跄后退，脊背猝不及防撞在了背后的木柱之上。她浑身颤抖，艰涩地开口试图解释。
+
+**参考图来源说明**:
+- 本关键帧基于 KF-03 延展
+- 延展理由: 服装、外观完全一致，姿态和表情变化
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | KF-03_辛月影-瞳孔骤缩 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 草屋内-大全景 | 场景空间参考（木柱位置） |
+
+**提示词**:
+```
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Xin Yueying, 20 years old young Chinese woman,
+pretty face with almond-shaped eyes wide with terror,
+pale complexion from fear, trembling lips,
+small oval face, expression of desperation,
+double spiral hair bun (shuang luo ji), slightly disheveled,
 petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+wearing patched coarse cloth robe in dark gray and brown,
 
-| 趴伏姿态 | 趴在地上，头枕在交叠双臂上，闭眼沉睡 | lying prone on ground, head resting on crossed arms, eyes closed, sleeping pose |
-| 侧卧支颊 | 侧身躺地，一手支着脸颊，慵懒姿态 | lying on side, one hand propping up cheek, lazy relaxed pose |
-| 惊惶坐起 | 从地上撑起上半身，手肘支地，茫然环顾 | propping up from ground on elbows, looking around dazed |
+back pressed against a rough wooden pillar,
+standing but trembling, body language showing fear,
+shoulders hunched, hands raised defensively,
+looking up with terrified pleading eyes,
 
-white background, character pose reference sheet,
-consistent character design across all poses,
+ancient Chinese dilapidated cottage interior,
+wooden pillar visible behind her,
+dim oil lamp casting long shadows,
+cold moonlight from side window,
+scattered porcelain shards on floor,
+sword light glinting in foreground,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
+medium close-up shot, eye-level angle,
+depth of field blur on background,
+dramatic chiaroscuro lighting,
 
-按一行生成，三个姿态，只生一张 1*3 的动作参考图片
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
+```
+
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+sitting, lying, calm expression, smiling, bright lighting, clean room
 ```
 
 ---
 
-## AC-02: 沈清起 - 坐轮椅参考卡
+#### KF-05: 辛月影 - 声泪俱下
 
-**需要上传的图片**:
+**图片用途**: 关键帧（演技爆发，编造谎言求生）
+
+**画面描述**:
+辛月影声泪俱下地表演，双手合掌，眼泪恰到好处地流下。她表情真挚委屈，试图让沈清起相信她的谎言。
+
+**参考图来源说明**:
+- 本关键帧基于 KF-04 延展
+- 延展理由: 服装、外观完全一致，仅姿态和表情变化
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 沈清起-三视图 | 角色外观基础参考 |
+| 参考图1 | KF-04_辛月影-惊恐撞柱 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 辛月影-表情卡（哭泣/委屈） | 新表情参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Shen Qingqi, 25 years old male,
-long black hair tied back in ancient Chinese style,
-narrow phoenix eyes, thin lips, pale almost bloodless skin,
-handsome and refined face with sharp defined features,
-tall and slender body, sitting in worn wooden wheelchair,
-wearing dark blue-black ancient Chinese scholar robe,
-cold and gloomy aura,
-
-| 端坐冷漠 | 端坐轮椅，双手搭在扶手上，凤眼冷漠下视 | sitting upright in wheelchair, hands on armrests, cold downward gaze |
-| 前倾威压 | 微微前倾，一手捏碎瓷片，指间滴血，薄唇似笑非笑 | leaning forward slightly, holding broken porcelain shard, blood dripping from fingers, ambiguous sinister smile |
-| 持剑审判 | 单手持剑平举，剑尖指向前方，凤眼冰冷 | one hand holding sword horizontally, sword tip pointing forward, icy phoenix eyes |
-
-white background, character pose reference sheet,
-consistent character design across all poses,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
-
-按一行生成，三个姿态，只生一张 1*3 的动作参考图片
-```
-
----
-
-## AC-03: 霍齐 - 站立守门参考卡
-
-**需要上传的图片**:
-| 顺序 | 图片名称 | 用途 |
-|------|----------|------|
-| 参考图1 | 霍齐-三视图 | 角色外观基础参考 |
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Huo Qi, 28 years old male,
-full beard, round bull-like eyes,
-bronze skin weathered from outdoor labor,
-burly and muscular body, tall and strong frame,
-wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-
-| 守门站立 | 叉手站在门口，居高临下，表情严肃 | standing in doorway with arms crossed, looking down, stern expression |
-| 愤怒推搡 | 双手前推姿态，圆眼怒瞪，络腮胡颤动 | pushing forward with both hands, round eyes glaring furiously, beard bristling |
-| 抱拳禀报 | 抱拳站立，微微躬身，表情恭敬 | standing with fists clasped, slight bow, respectful expression |
-
-white background, character pose reference sheet,
-consistent character design across all poses,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, Unreal Engine 5 render, 3D animation style
-
-按一行生成，三个姿态，只生一张 1*3 的动作参考图片
-```
-
----
-
-# 第二部分：场景背景参考
-
-> **用途**: 作为关键帧的背景图层或视频背景合成
-
----
-
-## BG-01: 破败草屋·卧房全景
-
-**用途**: 开场远景，辛月影躺地的场景背景
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-ancient Chinese dilapidated cottage bedroom interior, poverty-stricken rural home,
-late night scene, cold winter night, northern wind howling outside,
-
-single flickering blue oil lamp (qingdeng) as main light source, casting dancing shadows on mud walls,
-pale cold moonlight streaming through holes in torn window paper, creating eerie volumetric light beams cutting through darkness,
-
-mud floor covered with shattered porcelain pieces and spilled food remnants,
-dust particles floating visible in light beams, atmospheric depth,
-
-old worn wooden wheelchair sitting in center of room, broken and decrepit, heavy wooden construction,
-traditional kang bed platform against back wall, thin worn bedding with exposed cotton,
-small wooden table on kang, simple wooden cabinet in corner,
-
-moldy spotted earthen walls, thatched roof with gaps letting in cold air,
-broken wooden window frame with torn paper,
-
-dramatic chiaroscuro lighting, soft flickering shadows from candle,
-volumetric moonlight beams, dust motes dancing in light,
-
-color palette: cold blue-grey dominant, warm yellow candlelight accent, pale moonlight highlights,
-oppressive and eerie atmosphere, suffocating sense of poverty and desperation, threatening mood,
-
-wide establishing shot, eye-level angle, depth of field blur on background,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
---ar 16:9
-```
-
-**负向提示词**:
-```
-people, characters, faces, figures, human shape, silhouette, person,
-text, watermark, signature,
-low quality, worst quality, blurry, distorted, deformed,
-modern elements, western style, electric lights, cars, buildings, concrete,
-2d flat, sketch, line art, photo realistic, plastic look,
-bright colors, warm cozy atmosphere, clean tidy room, new furniture
-```
-
----
-
-## BG-02: 破败草屋·卧房（沈清起区域）
-
-**用途**: 沈清起病娇亮相的场景背景
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-ancient Chinese dilapidated cottage bedroom interior focusing on center area,
-late night, dramatic lighting, cold winter atmosphere,
-
-moonlight and candlelight interweaving, creating dramatic light and shadow contrast,
-cold pale moonlight beam streaming through holes in torn window paper, illuminating center area,
-warm flickering candlelight from corner casting dancing shadows,
-
-scattered broken porcelain pieces on mud floor around center,
-old worn wooden wheelchair positioned in room center, broken and decrepit,
-traditional kang bed visible against wall in background,
-simple wooden cabinet in shadowy corner,
-
-blood stains faintly visible on mud floor near wheelchair area,
-atmospheric depth, dust particles floating in light beams,
-
-color palette: cold blue-grey dominant, warm yellow candlelight accent on edges,
-oppressive and mysterious atmosphere, sense of danger and death,
-
-medium shot, eye-level angle, focus on wheelchair area,
-dramatic chiaroscuro lighting with deep shadows in corners,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
---ar 16:9
-```
-
-**负向提示词**:
-```
-people, characters, faces, figures, human silhouette, person sitting,
-text, watermark,
-low quality, worst quality, blurry, distorted
-```
-
----
-
-## BG-03: 破败草屋·卧房（门口视角）
-
-**用途**: 辛月影夺门逃跑的场景背景
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-view from inside dilapidated cottage bedroom toward doorway,
-late night scene, dramatic lighting,
-
-old worn wooden door frame in center of view, door slightly ajar,
-pale moonlight streaming through doorway from outside,
-thick wooden pillar visible beside doorway, weathered wood texture,
-
-mud floor with scattered broken porcelain pieces,
-warm flickering candlelight from side illuminating the scene,
-long shadows cast toward doorway,
-
-earthen walls visible on sides, thatched roof above,
-dark corners with deep shadows,
-
-sense of desperation and hope, doorway as only escape,
-cold blue moonlight outside contrasting with warm candlelight inside,
-
-medium shot, eye-level angle looking toward doorway,
-depth of field with doorway in focus,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
---ar 16:9
-```
-
-**负向提示词**:
-```
-people, characters, faces, figures, human shape,
-text, watermark,
-low quality, worst quality, blurry, distorted,
-sword in pillar, weapon
-```
-
----
-
-## BG-05: 破败草屋·门外（近景）
-
-**用途**: 辛月影撞上霍齐的场景背景
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-exterior of ancient Chinese dilapidated cottage doorway at night, close-up view,
-cold winter night, crescent moon in dark starry sky,
-
-old worn wooden door frame, door open,
-warm flickering candlelight visible through doorway from inside,
-dim yellow glow spilling onto ground outside,
-
-bare mud ground in front of door, scattered dead leaves,
-wild grass growing near walls,
-cold northern wind blowing, dead leaves scattering in air,
-
-moonlight illuminating the scene from above,
-long shadows cast by door frame,
-cold blue moonlight contrasting with warm indoor light,
-
-in background, distant forest silhouettes and mountain outlines barely visible in darkness,
-
-lonely and desolate atmosphere, ominous feeling,
-sense of coldness and isolation,
-
-medium close shot, slight low angle looking up at doorway,
-moonlight as key light,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
---ar 16:9
-```
-
-**负向提示词**:
-```
-people, characters, faces, figures, human silhouette in doorway,
-text, watermark,
-low quality, worst quality, blurry, distorted,
-indoor scene, bright lighting
-```
-
----
-
-## BG-06: 破败草屋·门外（远景）
-
-**用途**: 展现草屋外观和周围环境
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-exterior wide shot of ancient Chinese dilapidated cottage at night,
-three connected rooms with thatched roof, poverty-stricken rural home,
-cold winter night, crescent moon in dark sky, stars twinkling,
-
-small barren courtyard with bare mud ground,
-water jar in corner, wooden stake for donkey,
-wild grass and weeds growing in yard,
-
-dim warm light visible through cracks in walls and window,
-cold pale moonlight bathing the scene,
-long dramatic shadows cast by building,
-
-distant forest silhouettes and mountain outlines against night sky,
-northern wind blowing, dead leaves scattering,
-
-color palette: dark blue night sky, silver moonlight, grey-brown earth,
-lonely and desolate atmosphere, ominous feeling,
-sense of isolation and danger,
-
-wide establishing shot, eye-level angle,
-moonlight as key light, atmospheric depth,
-
-masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
---ar 16:9
-```
-
-**负向提示词**:
-```
-people, characters, faces, figures, human shapes,
-text, watermark,
-low quality, worst quality, blurry, distorted,
-modern elements, electric lights, bright cheerful atmosphere
-```
-
----
-
-## BG-08: 卧房8视角卡（场景参考）
-
-**用途**: 一次性生成8个不同视角的场景参考图
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Interior of a dilapidated ancient Chinese cottage bedroom, poverty-stricken rural home, late night, single flickering blue oil lamp, moonlight through torn window paper, mud floor with shattered porcelain, worn wooden wheelchair in center, traditional kang bed, oppressive eerie atmosphere,
-
-| 全景远景 | 整个卧房全貌，青灯在角落摇曳，月光照入，轮椅在中央，炕在后墙 | wide establishing shot, full room view, eye-level |
-| 轮椅特写 | 聚焦破败木制轮椅，周围碎瓷散落，昏暗光线下 | close-up of worn wooden wheelchair, shattered porcelain around |
-| 地面细节 | 碎瓷片和残羹散落的泥土地面，在微弱光线下，尘埃飘浮 | close-up of floor, broken porcelain shards, spilled food, dust particles |
-| 窗户光效 | 月光穿过破洞窗纸，形成体积光束，尘埃粒子可见 | moonlight through torn window paper, volumetric light beams, dust particles |
-| 青灯摇曳 | 青灯特写，火焰跳动，光影在墙上舞动，昏黄光芒 | flickering blue oil lamp, dancing flame, dynamic shadows on wall |
-| 炕上视角 | 从炕上看向房间，轮椅剪影，门口轮廓，阴冷氛围 | view from kang platform, wheelchair silhouette, doorway outline |
-| 门口视角 | 从门口看向卧房内，整体布局，青灯和月光交织 | view toward interior from doorway, room layout, lamp and moonlight |
-| 俯视全景 | 从屋顶向下看，整个卧房布局，角色位置参考 | aerial top-down view, room layout, character placement reference |
-
-masterpiece, best quality, 8k resolution, highly detailed background, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
-
-按2行生成，每行4个视角，只生一张 4*2 的场景8视角图片
-```
-
----
-
-# 第三部分：角色关键帧
-
-> **用途**: 章节关键画面的完整图片（角色+背景）
-> **重要**: 生成前需上传对应的表情卡和背景图
-
----
-
-## KF-01: 辛月影 - 穿书苏醒（镜头 1-1-1）
-
-**需要上传的图片**:
-| 顺序 | 图片名称 | 用途 |
-|------|----------|------|
-| 参考图1 | 辛月影-表情参考卡 | 角色一致性 |
-| 参考图2 | BG-01 卧房全景 | 场景背景 |
-
-**提示词**:
-```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
-
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes closed, long thick eyelashes,
-delicate oval face, fair porcelain skin,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Xin Yueying, 20 years old young Chinese woman,
+pretty face with almond-shaped eyes brimming with tears,
+tears streaming down her cheeks, glistening in candlelight,
+expression of genuine distress and pleading,
+small oval face, quivering lips,
+double spiral hair bun (shuang luo ji), glossy black hair,
 petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color, clothes disheveled,
+wearing patched coarse cloth robe in dark gray and brown,
 
-lying prone on cold mud floor, body limp, just waking up,
-eyes closed, slight frown on face, unconscious pose,
+hands pressed together in pleading gesture,
+kneeling or crouching position, body language showing desperation,
+looking up with tearful pleading eyes,
+acting distressed but calculating,
 
-in dilapidated ancient Chinese cottage bedroom, poverty-stricken rural home,
-late night, single flickering blue oil lamp in corner,
-cold pale moonlight beam streaming through torn window paper, pointing toward her,
-scattered broken porcelain pieces on floor around her,
+ancient Chinese dilapidated cottage interior,
+dim oil lamp flickering, casting warm yellow glow on her face,
+cold moonlight from window creating contrast,
+emotional dramatic atmosphere,
 
-in the far dark corner, a silhouette of a seated figure barely visible in shadows,
-mysterious presence in the darkness, ominous atmosphere,
+medium close-up shot, slightly low angle looking up at her,
+focus on her tearful expression,
+depth of field blur on background,
+cinematic emotional lighting,
 
-dramatic overhead high-angle shot, wide establishing view,
-cold blue-grey and warm yellow lighting contrast,
-dust particles floating in moonlight beam, atmospheric depth,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands, missing fingers,
-extra limbs, disconnected limbs,
-smiling, happy expression, clean clothes, bright colors,
-wheelchair visible, clear figure in corner
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+standing tall, angry expression, dry eyes, bright lighting, clean background
 ```
 
 ---
 
-## KF-02: 辛月影 - 以为是梦（镜头 1-1-2）
+### 沈清起 系列提示词
 
-**需要上传的图片**:
+#### KF-06: 沈清起 - 隐匿阴影中
+
+**图片用途**: 关键帧（开篇神秘亮相，隐匿在黑暗中）
+
+**画面描述**:
+草屋角落的黑暗中，一个神秘人的剪影若隐若现。烛光从侧面照来，只能勉强照亮他苍白的面容，身体和座位完全隐没在阴影中。
+
+**参考图来源说明**:
+- 本关键帧是首次建立角色视觉（第1章）
+- 参考图来源: 三视图 + 场景大全景
+- 延展理由: N/A（首次生成）
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 辛月影-表情参考卡 | 角色一致性 |
-| 参考图2 | BG-01 卧房全景 | 场景背景 |
+| 参考图1 | 沈清起-三视图 | 角色外观基础（首次建立） |
+| 参考图2 | 沈清起-表情卡（冷漠/阴鸷） | 表情参考 |
+| 参考图3 | 草屋内-大全景 | 场景空间参考 |
+
+**⚠️ 隐匿元素处理**:
+- 沈清起在本镜头中是**隐匿在黑暗中的**，身体和轮椅几乎看不见
+- **不要直接写 "wheelchair"**，AI会生成清晰的轮椅
+- 使用 "seated figure" 和 "hidden in shadow" 描述
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes with confused but amused look, long thick eyelashes,
-delicate oval face, slightly upturned nose, fair porcelain skin,
-soft smile on lips, relaxed expression,
-petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+In the deep dark corner of a dilapidated cottage,
+a silhouette of a seated figure barely visible in the shadows,
+only a pale face faintly illuminated by flickering candlelight from the side,
+the rest of the figure completely hidden in darkness,
+mysterious and ominous presence,
 
-lying on side on cold mud floor, one hand propping up cheek,
-lazy relaxed pose, looking toward shadows with curious amusement,
-as if watching an interesting dream,
+Shen Qingqi, 25 years old young Chinese man,
+handsome refined face barely visible, sharp angular features,
+narrow phoenix eyes (feng yan) with cold dark gaze visible in dim light,
+thin lips, pale almost bloodless complexion,
+long black hair tied in traditional topknot,
+wearing dark ancient Chinese scholar robe, only collar visible,
 
-in dilapidated ancient Chinese cottage bedroom,
-late night, warm yellow candlelight from side illuminating her face,
-cold moonlight beam in background,
+faint blue oil lamp (qingdeng) as main light source,
+moonlight through torn window paper creating eerie atmosphere,
+dramatic chiaroscuro lighting, high contrast between light and shadow,
+oppressive and tense mood,
 
-in the opposite dark corner, a silhouette of a seated figure barely visible in shadows,
-faint outline in darkness, mysterious presence,
+medium shot from slight distance,
+figure emerging from darkness,
+atmospheric depth with volumetric shadows,
+cinematic noir lighting,
 
-medium shot, eye-level angle, side lighting from candle,
-warm candlelight on her face contrasting with cold blue background,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands, missing fingers,
-scared expression, terrified, crying,
-wheelchair clearly visible, clear figure in corner
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+wheelchair visible, standing, walking, bright lighting, clearly visible body, happy expression, smiling
 ```
 
 ---
 
-## KF-03: 辛月影 - 穿书意识（镜头 1-2-2）
+#### KF-07: 沈清起 - 月下阴鸷
 
-**需要上传的图片**:
+**图片用途**: 关键帧（月光洒落，阴鸷面容清晰展现）
+
+**画面描述**:
+清白的月辉穿过破了洞的窗纸，泻在沈清起英挺的脸上，将那张本就毫无血色的脸庞镀了一层森森的寒光。他狭长的凤眼淬着浓烈的寒意，薄唇衔着一抹混沌的笑意。
+
+**参考图来源说明**:
+- 本关键帧基于 KF-06 延展
+- 延展理由: 服装、外观完全一致，光线和角度变化
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 辛月影-表情参考卡 | 角色一致性 |
+| 参考图1 | KF-06_沈清起-隐匿阴影中 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 沈清起-表情卡（阴鸷/冷笑） | 新表情参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes wide open in shock, pupils constricted, long thick eyelashes,
-delicate oval face, slightly upturned nose, fair porcelain skin going pale,
-expression changing from smile to shock and terror,
-mouth slightly open, breath caught in throat,
-petite and slender body,
+Shen Qingqi, 25 years old young Chinese man,
+handsome and refined face, sharp angular features,
+narrow phoenix eyes (feng yan) with intense cold gaze,
+thin lips with a cold mysterious smile,
+pale almost bloodless complexion,
+long black hair tied in traditional topknot, strands catching moonlight,
+wearing dark ink-black ancient Chinese scholar robe,
 
-frozen in shock, realization hitting her,
-eyes wide with terror and disbelief,
+seated figure, upper body visible,
+face illuminated by pale cold moonlight streaming through torn window paper,
+moonlight creating a ghostly silver glow on his pale features,
+eerie and haunting atmosphere,
 
-in dilapidated ancient Chinese cottage bedroom,
-late night, warm yellow candlelight illuminating her face,
-background heavily blurred and dark,
+ancient Chinese dilapidated cottage interior,
+window with torn paper visible, moonlight beams cutting through darkness,
+broken porcelain scattered on floor, dilapidated setting,
 
-extreme close-up on face, focusing on eyes and expression,
-dramatic lighting highlighting her shocked face,
-sharp focus on face, bokeh background,
+medium close-up shot focusing on face,
+dramatic side lighting from moonlight,
+strong contrast between lit face and dark background,
+cinematic atmospheric lighting,
+cold blue-white color temperature,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad face,
-smiling, happy, calm expression,
-detailed background, many objects visible
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+wheelchair clearly visible, standing, warm lighting, smiling happily, bright colors
 ```
 
 ---
 
-## KF-04: 沈清起 - 病娇亮相（镜头 1-2-1）
+#### KF-08: 沈清起 - 碎瓷渗血
 
-**需要上传的图片**:
+**图片用途**: 关键帧（特写镜头，手中碎瓷渗血）
+
+**画面描述**:
+沈清起指骨分明的手在轻轻的摩挲着碎瓷。碎瓷锋利的边缘已经割破皮肤，鲜血自他的指缝之间涔涔流出，坠在地面。他的手苍白冰冷，手背上耸着根根分明的青筋。
+
+**参考图来源说明**:
+- 本关键帧是特写镜头，不展示角色面部
+- 参考图来源: KF-07（确认手的造型一致）
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 沈清起-表情参考卡 | 角色一致性 |
-| 参考图2 | BG-02 卧房（沈清起区域） | 场景背景 |
+| 参考图1 | KF-07_沈清起-月下阴鸷 | 确保手的造型与角色一致 |
+| 参考图2 | 草屋内-大全景 | 场景空间参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Shen Qingqi, 25 years old male,
-long black hair tied back in ancient Chinese style,
-narrow phoenix eyes with cold penetrating gaze, slight sinister glint in eyes,
-thin lips curving into ambiguous unsettling smile,
-pale almost bloodless skin, sickly beautiful appearance, moonlight making skin appear ethereal and cold,
-handsome and refined face with sharp defined features, chiseled jawline,
-tall and slender body type,
-sitting in worn wooden wheelchair, broken and decrepit wooden construction,
-wearing dark blue-black ancient Chinese scholar robe, dark colors absorbing light,
+Extreme close-up of a man's hand,
+pale slender fingers with visible veins on back of hand,
+long elegant fingers, bony knuckles,
+cold pale skin tone,
 
-leaning slightly forward, one hand holding a piece of broken porcelain, fingers elegant,
-scattered broken porcelain pieces around wheelchair feet,
-dark gloomy intimidating presence,
+holding a sharp broken porcelain shard,
+gripping it tightly, blood dripping from between fingers,
+red blood drops falling toward ground,
+fresh cuts on palm from sharp edges,
+blood droplets glistening in dim light,
 
-in dilapidated ancient Chinese cottage bedroom,
-late night, dramatic lighting,
-cold pale moonlight beam streaming through holes in torn window paper, illuminating his face like spotlight,
-single flickering blue oil lamp in corner casting dancing shadows,
+dark background with faint candlelight glow,
+blood drops catching the warm yellow light,
+dramatic lighting contrast,
+focus on hand and falling blood,
 
-dramatic chiaroscuro lighting, moonlight as key light creating cold ethereal glow,
-sharp contrast between lit face and dark surroundings,
+extreme close-up shot, macro detail,
+shallow depth of field, sharp focus on hand,
+blood drops in mid-fall frozen in time,
 
-medium to close-up shot, eye-level angle,
-focus on his face and upper body,
-cold blue moonlight on face, warm candlelight accent,
-mysterious and dangerous atmosphere,
-
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, Octane Render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands,
-warm friendly expression, smiling happily, bright colors,
-healthy skin tone, rosy cheeks,
-standing, walking
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+full body, face visible, bright lighting, clean hand, no blood, healthy skin color
 ```
 
 ---
 
-## KF-05: 沈清起 - 碎瓷流血（镜头 1-6-1）
+#### KF-09: 沈清起 - 阴鸷冷笑
 
-**需要上传的图片**:
+**图片用途**: 关键帧（结尾悬念，阴鸷的笑容）
+
+**画面描述**:
+沈清起扬着唇角，他的笑声变得绵长，眼中闪烁着危险的光芒。他冷笑着说出"让他下黄泉去陪你"的威胁。
+
+**参考图来源说明**:
+- 本关键帧基于 KF-07 延展
+- 延展理由: 服装、外观完全一致，仅表情变化
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 沈清起-表情参考卡 | 手部风格参考 |
+| 参考图1 | KF-07_沈清起-月下阴鸷 | 前一关键帧（确保角色一致性） |
+| 参考图2 | 沈清起-表情卡（冷笑/威胁） | 新表情参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-extreme close-up of male hand,
-Shen Qingqi's hand, slender elegant fingers, prominent knuckles,
-fair pale skin, veins visible on back of hand,
-holding a piece of broken porcelain, sharp jagged edges,
-fingertips gently tracing the sharp edge,
-blood seeping from palm where porcelain cut the skin,
-crimson red blood drops trickling between fingers,
-falling toward ground,
+Shen Qingqi, 25 years old young Chinese man,
+handsome refined face with cold threatening smile,
+narrow phoenix eyes (feng yan) with sinister glint,
+thin lips curved in chilling smirk,
+pale almost bloodless complexion,
+long black hair tied in traditional topknot,
+wearing dark ink-black ancient Chinese scholar robe,
 
-worn dark blue-black ancient Chinese robe sleeve visible at wrist,
+seated position, upper body visible,
+head slightly tilted, looking down with menacing gaze,
+cold calculating expression, threatening aura,
+smile that doesn't reach his eyes,
 
-dim lighting from flickering blue oil lamp,
-dramatic chiaroscuro, deep shadows,
-blood drops catching the dim light,
+ancient Chinese dilapidated cottage interior,
+dim oil lamp casting dramatic shadows,
+moonlight from window creating eerie atmosphere,
+oppressive tense mood,
 
-extreme close-up shot, shallow depth of field,
-focus on hand and blood drops,
-artistic and slightly unsettling composition,
+medium close-up shot focusing on face,
+dramatic low-key lighting,
+strong contrast between light and shadow,
+cinematic noir atmosphere,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands, extra fingers, missing fingers,
-bright lighting, cheerful atmosphere,
-female hand, rough skin
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+wheelchair visible, standing, warm smile, friendly expression, bright lighting
 ```
 
 ---
 
-## KF-06: 沈清起 - 阴鸷冷笑（镜头 1-7-3）
+### 霍齐 系列提示词
 
-**需要上传的图片**:
+#### KF-10: 霍齐 - 怒视守门
+
+**图片用途**: 关键帧（霍齐首次登场，拦住辛月影）
+
+**画面描述**:
+霍齐的仰视镜头。他蓄着络腮胡，虎目圆睁，孔武有力。月光在他身后形成轮廓光，使他的形象更加威严可怕。他愤怒地盯着辛月影。
+
+**参考图来源说明**:
+- 本关键帧是首次建立角色视觉（第1章）
+- 参考图来源: 三视图 + 场景大全景
+- 延展理由: N/A（首次生成）
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 沈清起-表情参考卡 | 角色一致性 |
+| 参考图1 | 霍齐-三视图 | 角色外观基础（首次建立） |
+| 参考图2 | 霍齐-表情卡（愤怒） | 表情参考 |
+| 参考图3 | 草屋门口-大全景 | 场景空间参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Shen Qingqi, 25 years old male,
-extreme close-up on face focusing on eyes,
-narrow phoenix eyes with cold sinister glint, menacing and dangerous gaze,
-thin lips slightly parted in chilling smile,
-pale almost bloodless skin, cold ethereal appearance,
-handsome features cast in ominous shadow,
+Huo Qi, 28 years old Chinese man,
+rugged masculine face with full beard covering jaw,
+round fierce tiger eyes glaring with anger,
+tanned bronze skin, weathered features,
+tall and muscular powerful build,
+wearing coarse brown short jacket and worn trousers,
+straw sandals, simple rope belt at waist,
 
-expression of cold amusement mixed with menace,
-eyes gleaming with dark intent,
-unsettling and intimidating presence,
+standing like an iron tower, blocking the doorway,
+arms crossed or at sides, intimidating posture,
+furious expression, veins visible on neck from anger,
+looking down with righteous wrath,
 
-in dilapidated ancient Chinese cottage bedroom,
-late night, dramatic moody lighting,
-cold moonlight from side creating sharp shadows on face,
-warm candlelight accent flickering,
+ancient Chinese cottage doorway,
+old wooden door frame with peeling paint,
+bright moonlight behind creating rim lighting effect,
+silhouette effect with moonlight outlining his figure,
 
-extreme close-up shot, shallow depth of field,
-focus on eyes and mouth,
-vignette effect darkening edges,
-suspenseful and ominous atmosphere,
+medium close-up shot from low angle looking up,
+emphasizing his imposing presence,
+dramatic backlighting from moon,
+strong contrast between dark figure and bright moon,
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad face,
-warm friendly expression, happy smile, bright eyes,
-healthy skin tone,
-wide shot, full body
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+clean shaven, slender build, smiling, bright frontal lighting, indoor scene
 ```
 
 ---
 
-## KF-07: 辛月影 + 霍齐 - 撞上（镜头 1-5-2）
+## 关键帧总表
 
-**需要上传的图片**:
+| 编号 | 角色 | 状态 | 对应镜头 | 参考图来源 |
+|------|------|------|----------|------------|
+| KF-01 | 辛月影 | 苏醒 | 1-1 | 三视图（首次建立） |
+| KF-02 | 辛月影 | 轻松调侃 | 1-4 | KF-01 |
+| KF-03 | 辛月影 | 瞳孔骤缩 | 2-2 | KF-02 |
+| KF-04 | 辛月影 | 惊恐撞柱 | 3-1 | KF-03 |
+| KF-05 | 辛月影 | 声泪俱下 | 4-3 | KF-04 |
+| KF-06 | 沈清起 | 隐匿阴影中 | 1-2, 1-3 | 三视图（首次建立） |
+| KF-07 | 沈清起 | 月下阴鸷 | 2-1 | KF-06 |
+| KF-08 | 沈清起 | 碎瓷渗血 | 2-3 | KF-07 |
+| KF-09 | 沈清起 | 阴鸷冷笑 | 4-4 | KF-07 |
+| KF-10 | 霍齐 | 怒视守门 | 3-4 | 三视图（首次建立） |
+
+---
+
+## 关键帧延展关系图
+
+```
+第1章关键帧延展链:
+
+辛月影:
+三视图 → KF-01(苏醒) → KF-02(轻松) → KF-03(震惊) → KF-04(恐惧) → KF-05(演戏)
+         ↑首次建立    └──────── 基于前一帧延展 ────────────────→
+
+沈清起:
+三视图 → KF-06(隐匿) → KF-07(月下) → KF-08(手特写)
+         ↑首次建立    └──── 基于前一帧延展 ────→
+                              └──→ KF-09(冷笑)
+                                  (基于KF-07)
+
+霍齐:
+三视图 → KF-10(怒视)
+         ↑首次建立
+```
+
+---
+
+## 隐匿元素处理说明
+
+**KF-06（沈清起-隐匿阴影中）使用了隐匿元素处理**:
+- 角色在画面中是"隐匿在黑暗中的"，身体几乎看不见
+- 不直接写 "wheelchair"，AI会生成清晰的轮椅
+- 使用 "seated figure"、"silhouette"、"hidden in shadow" 描述
+- 只描述可见的部分：苍白的面容
+
+---
+
+*由 AI原画师 生成*
+
+
+---
+
+# 背景场景提示词
+
+
+
+### BG-01: 破败草屋·主屋 - 大全景
+
+**场景状态**: 首次建立（第1章）
+
+**画面描述**:
+破败草屋主屋的完整内部空间。昏暗的室内，只有一盏青灯和月光照明。泥土地面，土炕靠后墙，角落有柜子，满地碎瓷片。青灰色的压抑氛围。
+
+**空间关系说明**:
+- 主建筑结构: 土墙围合的长方形房间，约10-12平方米
+- 土炕位置: 靠后墙，占据房间约1/3宽度
+- 柜子位置: 房间角落
+- 青灯位置: 角落桌上
+- 窗户位置: 侧墙，窗纸有破洞
+- 门的位置: 通往小厅
+
+**光影说明**:
+- 主光源: 角落青灯（昏黄、摇曳）
+- 辅助光: 月光透过窗纸（冷白）
+- 光影方向: 从左上角斜射
+- 色彩基调: 青灰色、暗褐色、昏黄色
+
+**场景延展说明**:
+- 本场景是首次建立（第1章）
+- 参考图来源: 场景参考图
+- 变化描述: N/A（首次生成）
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 辛月影-表情参考卡 | 角色一致性 |
-| 参考图2 | 霍齐-表情参考卡 | 配角一致性 |
-| 参考图3 | BG-05 门外近景 | 场景背景 |
+| 参考图1 | 草屋内-布局参考 | 场景布局参考（从03_scene_refs.md） |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes looking up in terror, long thick eyelashes,
-delicate oval face, fair porcelain skin pale with fear,
-expression of despair and hopelessness,
-petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+Wide establishing shot of ancient Chinese dilapidated cottage bedroom interior,
+poverty-stricken rural home in border village,
+late night scene, cold winter atmosphere,
 
-just crashed into someone, looking up in terror and despair,
-feet barely visible at bottom of frame,
-small frame emphasizing vulnerability,
+Complete room layout:
+- Packed dirt floor with scattered broken porcelain shards and spilled food remnants
+- Traditional kang bed platform against back wall, worn-out cotton quilt with leaking stuffing
+- Small wooden table on the kang surface
+- Old wooden cabinet in corner covered in dust
+- Single blue oil lamp (qingdeng) flickering on corner table
+- Small window with torn paper letting in cold moonlight
+- Wooden door frame leading to hallway
+- Earthen walls with visible cracks and mold patches
+- Low ceiling with exposed wooden beams
 
-viewing from low angle looking up at imposing figure,
-Huo Qi, 28 years old male, full beard, round angry bull-like eyes,
-bronze skin weathered from outdoor labor,
-burly and muscular body, tall and strong frame, blocking the doorway,
-wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-standing in doorway like a guard dog, arms crossed, looking down with contempt,
+Lighting:
+- Single flickering blue oil lamp as main warm light source in corner
+- Cold pale moonlight streaming through holes in torn window paper
+- Creating eerie volumetric light beams cutting through darkness
+- Dramatic chiaroscuro lighting with strong contrast
+- Dust particles floating visible in light beams
 
-outside dilapidated cottage at night,
-cold moonlight from behind creating rim lighting on Huo Qi's silhouette,
-ominous and oppressive atmosphere,
+Atmosphere:
+- Oppressive and suffocating atmosphere of poverty and desperation
+- Cold blue-grey dominant color palette with warm yellow candlelight accent
+- Dark and gloomy, tense mysterious mood
+- Sense of decay and abandonment
 
-medium shot, low angle looking up,
-dramatic contrast between tiny Xin Yueying and massive Huo Qi,
-moonlight silhouette effect, intimidating perspective,
+Composition:
+- Wide establishing shot, eye-level angle
+- Full room visible from doorway perspective
+- Depth of field blur on far corners
+- Cinematic atmospheric depth
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands,
-happy expression, calm scene,
-bright lighting, indoor scene
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, wheelchair, sword, weapon, bright lighting, clean tidy room, luxurious furniture, warm cozy atmosphere
 ```
 
 ---
 
-## KF-08: 霍齐 - 守门拦人（镜头 1-5-2）
+### BG-06: 草屋门口 - 月光下大全景
 
-**需要上传的图片**:
+**场景状态**: 首次建立（第1章）
+
+**画面描述**:
+草屋门口的外景，月光洒落。破旧的木门，掉了漆皮。门口有小片空地，远处是漆黑的树林。深夜的寒冷氛围。
+
+**空间关系说明**:
+- 木门位置: 中央
+- 门槛: 破旧
+- 门前空地: 泥土地面
+- 远处: 树林剪影
+- 月光方向: 从上方/侧后方
+
+**光影说明**:
+- 主光源: 月光（冷白）
+- 光影方向: 从上方斜射
+- 色彩基调: 月白色、墨蓝色、暗褐色
+
+**场景延展说明**:
+- 本场景是首次建立（第1章）
+- 参考图来源: 场景参考图
+- 变化描述: N/A（首次生成）
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 霍齐-表情参考卡 | 角色一致性 |
-| 参考图2 | BG-05 门外近景 | 场景背景 |
+| 参考图1 | 草屋门口-布局参考 | 场景布局参考 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Huo Qi, 28 years old male,
-full beard, round bull-like eyes glaring with anger,
-bronze skin weathered from outdoor labor,
-square rugged face,
-burly and muscular body, tall and strong frame,
-broad shoulders, powerful build,
-wearing coarse cloth ancient Chinese laborer clothes, brown and earth tones,
-thick fabric short jacket and pants,
+Wide establishing shot of ancient Chinese cottage doorway exterior,
+rural border village at late night,
+cold winter scene with pale moonlight,
 
-standing in cottage doorway like a guard dog,
-arms at sides, fists clenched,
-blocking the exit, imposing and threatening stance,
-looking down with contempt and anger,
+Scene elements:
+- Old wooden door with peeling paint and worn threshold
+- Cracked mud walls of cottage exterior
+- Thatched roof silhouette against night sky
+- Small patch of bare earth ground in front of door
+- Bare tree branches visible on sides casting shadows
+- Dense forest visible in far background as dark silhouettes
+- Stone step leading to doorway
 
-outside dilapidated cottage at night,
-cold winter night, crescent moon in dark sky,
-moonlight from behind creating dramatic rim lighting,
-silhouette effect emphasizing his powerful build,
+Lighting:
+- Cold pale moonlight as main light source from above
+- Creating dramatic rim lighting on door frame edges
+- Soft blue-white color temperature
+- Long shadows cast by door frame and trees
+- Stars faintly visible in dark blue night sky
 
-medium shot, low angle looking up at him,
-emphasizing his intimidating size and presence,
-oppressive and hopeless atmosphere,
+Atmosphere:
+- Eerie and mysterious nighttime atmosphere
+- Cold and desolate, tense mood
+- Sense of isolation and danger
+- Fog near ground in distance
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+Composition:
+- Wide shot, eye-level angle
+- Door centered in frame
+- Depth of field blur on distant forest
+- Cinematic noir night lighting
+
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy,
-friendly expression, smiling, relaxed pose,
-bright lighting, indoor scene,
-slim build, clean shaven
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, bright lighting, daytime, sunny, warm colors, indoor scene
 ```
 
 ---
 
-## KF-09: 辛月影 - 谎言表演（镜头 1-7-1）
+## 第二层：中景/局部（基于大全景延展）
 
-**需要上传的图片**:
+---
+
+### BG-02: 破败草屋·角落阴影 - 中景
+
+**基于**: BG-01 大全景
+
+**画面描述**:
+草屋内阴暗角落的特写。这里光线最暗，只有微弱的青灯光芒从远处照来。角落有旧柜子，蛛网悬挂，阴影浓重。
+
+**场景延展说明**:
+- 本场景基于 BG-01 延展
+- 变化描述: 聚焦角落区域，更暗的光线
+
+**需要上传的图片**（按顺序上传）:
 | 顺序 | 图片名称 | 用途 |
 |------|----------|------|
-| 参考图1 | 辛月影-表情参考卡 | 角色一致性 |
-| 参考图2 | BG-01 卧房全景 | 场景背景 |
+| 参考图1 | BG-01_草屋内-大全景 | 确保空间一致性 |
 
 **提示词**:
 ```
-3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
 
-Xin Yueying, 20 years old female,
-two spiral hair buns on sides of head, traditional Chinese shuangluoji hairstyle, black hair,
-beautiful almond-shaped eyes wide with exaggerated shock, long thick eyelashes,
-delicate oval face, fair porcelain skin,
-dramatic exaggerated expression, eyes wide, mouth open in fake surprise,
-petite and slender body,
-wearing worn coarse cloth ancient Chinese peasant dress with patches, drab gray-brown color,
+Medium shot of dark corner in dilapidated cottage bedroom,
+Based on the room panorama, focusing on the shadowed corner area,
 
-hands clasped together dramatically in front of chest,
-acting performance, exaggerated gestures,
-body language showing feigned innocence and shock,
+Corner elements:
+- Old wooden cabinet with peeling lacquer, covered in thick dust
+- Spider webs hanging from ceiling to cabinet
+- Cracks in earthen wall visible in faint light
+- Pile of old fabric or rags on floor
+- Deepest shadows in the room
 
-in dilapidated ancient Chinese cottage bedroom,
-late night, warm yellow candlelight and cold moonlight,
-scattered broken porcelain on floor,
+Lighting:
+- Very dim lighting, almost complete darkness
+- Faint warm glow from distant oil lamp barely reaching this corner
+- High contrast between deep shadows and faint light
+- Mysterious and ominous atmosphere
 
-medium shot, eye-level angle,
-dramatic lighting highlighting her theatrical performance,
-contrasting emotions of performance versus fear,
+Atmosphere:
+- Oppressive and claustrophobic feeling
+- Sense of decay and neglect
+- Cold damp air suggested
+- Uneasy tension
 
-masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, Unreal Engine 5 render, 3D animation style
+Composition:
+- Medium shot, slight low angle
+- Focus on the cabinet and shadows
+- Depth of field on background
+- Cinematic noir lighting
+
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
 --ar 16:9
 ```
 
 **负向提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed,
-bad anatomy, bad hands, missing fingers,
-genuine happy expression, relaxed pose,
-bright cheerful atmosphere
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, bright lighting, clean corner, new furniture
 ```
 
 ---
 
-# 第四部分：附录
+### BG-03: 破败草屋·土炕区域 - 中景
 
-## 通用负向提示词
+**基于**: BG-01 大全景
 
+**画面描述**:
+土炕区域的中景。破旧的土炕靠墙，上面铺着漏棉花的破褥子，还有一个小木桌。月光从窗户斜照进来。
+
+**场景延展说明**:
+- 本场景基于 BG-01 延展
+- 变化描述: 聚焦土炕区域，月光照射
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | BG-01_草屋内-大全景 | 确保空间一致性 |
+
+**提示词**:
 ```
-low quality, worst quality, blurry, distorted, deformed, ugly,
-bad anatomy, bad proportions, bad hands, missing fingers, extra fingers,
-modern elements, western style, electric lights, cars, buildings,
-2d flat, sketch, line art, text, watermark, signature,
-photo realistic, plastic look
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Medium shot of kang bed platform area in dilapidated cottage,
+Based on the room panorama, focusing on the sleeping area,
+
+Kang bed area elements:
+- Traditional earthen kang platform against wall
+- Worn-out cotton quilt with stuffing leaking out
+- Tears and patches visible on the quilt fabric
+- Small wooden table on the kang surface
+- Simple pillow made of rough fabric
+- Wall behind showing cracks and faded color
+- Window visible at edge of frame with torn paper
+
+Lighting:
+- Pale cold moonlight streaming through window
+- Creating diagonal light beam across the kang
+- Soft shadows from window frame
+- Warm candlelight from distant lamp creating color contrast
+- Peaceful yet melancholic atmosphere
+
+Atmosphere:
+- Sense of poverty and hardship
+- Quiet and still
+- Cold winter night feeling
+- Desolate but dignified
+
+Composition:
+- Medium shot, eye-level
+- Kang platform centered
+- Moonlight as visual focal point
+- Depth of field on background
+
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
 ```
 
-## 风格配置参考
-
-来自 `style.json`:
-- **风格前缀**: `3D动画渲染, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景, `
-- **风格后缀**: `, masterpiece, best quality, 8k resolution, highly detailed, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style`
-- **图片比例**: `--ar 16:9`
-
-## 关键帧与原文对应
-
-| 关键帧 | 原文段落 | 视觉化决策 |
-|--------|----------|------------|
-| KF-01 穿书苏醒 | 第5-7行 | 俯视远景，隐匿剪影 |
-| KF-02 以为是梦 | 第11-19行 | 慵懒支颊，反差感 |
-| KF-03 穿书意识 | 第35-39行 | 瞳孔收缩，震惊 |
-| KF-04 病娇亮相 | 第20-28行 | 月光+青灯，病态美 |
-| KF-05 碎瓷流血 | 第133-135行 | 危险优雅细节 |
-| KF-06 阴鸷冷笑 | 第155-157行 | 悬念结尾 |
-| KF-07 撞上霍齐 | 第115-127行 | 仰视压迫感 |
-| KF-09 谎言表演 | 第141-151行 | 夸张表演动作 |
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, modern bed, mattress, bright lighting, clean bedding
+```
 
 ---
 
-*由 AI原画师 + AI场景搭建师 联合生成*
+## 第三层：特写/细节（基于中景延展）
+
+---
+
+### BG-04: 破败草屋·窗户光效 - 特写
+
+**基于**: BG-03 土炕区域
+
+**画面描述**:
+窗户的特写。破洞的窗纸，月光穿过形成光束。可以看见窗外的夜空和树影。
+
+**场景延展说明**:
+- 本场景基于 BG-03 延展
+- 变化描述: 聚焦窗户细节，强调光束效果
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | BG-01_草屋内-大全景 | 空间参考 |
+| 参考图2 | BG-03_土炕区域 | 细节延展参考 |
+
+**提示词**:
+```
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Close-up shot of window with torn paper in ancient cottage,
+Based on the kang bed area scene,
+
+Window details:
+- Traditional wooden window frame
+- White paper lining with multiple tears and holes
+- Moonlight streaming through holes creating light beams
+- Dust particles visible floating in the light beams
+- Tree branch silhouette visible through paper
+- Window lattice pattern partially broken
+
+Lighting:
+- Cold pale moonlight as main light source
+- Volumetric light beams cutting through darkness
+- Dramatic chiaroscuro contrast
+- Dust motes catching the light
+- Ethereal and atmospheric
+
+Atmosphere:
+- Poetic and melancholic
+- Sense of cold night outside
+- Fragile beauty in decay
+- Quiet stillness
+
+Composition:
+- Close-up shot, slight angle
+- Window centered in frame
+- Light beams as compositional element
+- Shallow depth of field
+
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
+```
+
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, glass window, intact paper, daytime, bright lighting
+```
+
+---
+
+### BG-05: 破败草屋·青灯特写 - 特写
+
+**基于**: BG-02 角落阴影
+
+**画面描述**:
+青灯的特写。昏黄的火焰跳动，油灯的陶制灯身，灯光在墙上投下摇曳的影子。
+
+**场景延展说明**:
+- 本场景基于 BG-02 延展
+- 变化描述: 聚焦青灯细节，强调火焰动态
+
+**需要上传的图片**（按顺序上传）:
+| 顺序 | 图片名称 | 用途 |
+|------|----------|------|
+| 参考图1 | BG-01_草屋内-大全景 | 空间参考 |
+| 参考图2 | BG-02_角落阴影 | 细节延展参考 |
+
+**提示词**:
+```
+3D动画渲染, Unreal Engine 5质感, 国漫风格, Chinese Donghua Style, 古风唯美, 精致细腻, 中国古代背景,
+
+Close-up shot of traditional Chinese oil lamp (qingdeng),
+Based on the dark corner scene,
+
+Lamp details:
+- Clay or ceramic oil lamp with simple elegant shape
+- Small flame flickering and dancing
+- Warm yellow-orange light emanating
+- Oil visible in lamp bowl
+- Simple wick visible
+- Lamp sitting on worn wooden surface
+
+Lighting effects:
+- Warm golden glow from the flame
+- Dynamic shadows dancing on nearby wall
+- Flickering light creating atmospheric movement
+- Bokeh effect from flame in background
+- Contrast between warm light and surrounding darkness
+
+Atmosphere:
+- Intimate and focused
+- Sense of fragile light in darkness
+- Quiet and contemplative
+- Traditional and timeless
+
+Composition:
+- Close-up shot, eye-level with lamp
+- Flame as focal point
+- Dark background with hint of wall texture
+- Shallow depth of field
+
+, masterpiece, best quality, 8k resolution, highly detailed environment, soft cinematic lighting, depth of field blur, elegant composition, Unreal Engine 5 render, Octane Render, 3D animation style,
+--ar 16:9
+```
+
+**负向提示词**:
+```
+low quality, worst quality, blurry, distorted, deformed, ugly, bad anatomy, bad proportions, modern elements, western style, 2d flat, sketch, line art, text, watermark, signature, photo realistic, plastic look,
+people, characters, person, human, figure, silhouette, face, body, electric light, light bulb, modern lamp, bright lighting
+```
+
+---
+
+## 背景图总表
+
+| 编号 | 场景名 | 层级 | 时间 | 主要光源 | 参考图来源 |
+|------|--------|------|------|----------|------------|
+| BG-01 | 草屋内-大全景 | 大全景 | 深夜 | 青灯+月光 | 场景参考（首次建立） |
+| BG-02 | 草屋内-角落阴影 | 中景 | 深夜 | 微弱青灯 | BG-01 |
+| BG-03 | 草屋内-土炕区域 | 中景 | 深夜 | 月光 | BG-01 |
+| BG-04 | 草屋内-窗户光效 | 特写 | 深夜 | 月光 | BG-01, BG-03 |
+| BG-05 | 草屋内-青灯特写 | 特写 | 深夜 | 青灯 | BG-01, BG-02 |
+| BG-06 | 草屋门口-月光下 | 大全景 | 深夜 | 月光 | 场景参考（首次建立） |
+
+---
+
+## 背景延展关系图
+
+```
+第1章背景延展链:
+
+草屋内部:
+场景参考 → BG-01(大全景) → BG-02(角落) → BG-05(青灯特写)
+           ↑首次建立      └── 基于BG-01延展 ──→
+                         └→ BG-03(土炕) → BG-04(窗户特写)
+                             └── 基于BG-01延展 ──→
+
+草屋门口:
+场景参考 → BG-06(门口大全景)
+           ↑首次建立
+```
+
+---
+
+## 与原文场景描述对应说明
+
+| 原文描述 | 背景图编号 | 场景元素 |
+|----------|------------|----------|
+| "伏在阴冷的地面上，昏暗的室内只燃一盏青灯" | BG-01 | 泥土地面、青灯 |
+| "视线并不明朗，在她的对面，依稀可以望见一个男人坐在一团阴翳之中" | BG-02 | 阴暗角落 |
+| "清白的月辉穿过破了洞的窗纸，泻在他英挺的脸上" | BG-04 | 破洞窗纸、月光 |
+| "他坐在一把破败的轮椅之上，满地碎瓷铺在他的脚边" | BG-01 | 碎瓷片、地面 |
+| "残羹也渐染了他乌黑的靴子" | BG-01 | 残羹、地面 |
+| "长剑...刺入她身后的木柱之上" | BG-01 | 木柱 |
+
+---
+
+## 场景完整性检查
+
+**检查清单**:
+- [x] 所有分镜中需要的场景元素都已包含
+- [x] 光影方向在所有背景图中保持一致
+- [x] 时间和天气设定连贯（都是深夜、寒冬）
+- [x] 色彩基调一致（青灰、暗褐、昏黄）
+- [x] 负向提示词排除了所有人物元素
+- [x] 大全景已先生成
+- [x] 中景和特写都上传了大全景作为参考
+
+---
+
+*由 AI场景搭建师 生成*

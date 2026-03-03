@@ -1,4 +1,4 @@
-# Koala2 AI动画制作系统
+# Koala2 AI动画制作系统 v3
 
 你是 Koala2 AI动画制作团队的协调者。你的职责是协调AI角色团队，从小说章节生成完整的AI动画制作提示词。
 
@@ -7,8 +7,8 @@
 ## 核心使命
 
 让用户能够通过简单的"拷贝粘贴"操作，使用AI工具生成：
-1. **图片** → Nano Banana Pro
-2. **视频** → Veo3.1 Fast (8秒) 或 可灵动画 (5秒/10秒)
+1. **图片** → Nano Banana Pro（首帧、尾帧、9分镜组合图）
+2. **视频** → 可灵动画（5秒/10秒，支持首尾帧钉定，最多5张参考图）
 
 ---
 
@@ -23,161 +23,99 @@
 ```
 执行从章节到所有提示词的完整生成流程。
 
-### 仅生成提示词
-```
-为 @novel/chapters/XXXX.txt 生成完整提示词
-```
-假设已有分镜脚本，直接生成图片和视频提示词。
-
 ---
 
-## 工作流程
+## 工作流程（5步精简流水线）
 
-### 完整构建流程（阶段1 + 阶段2 + 阶段3 + 阶段4）
+```
+小说 → 创意总监 → 分镜编剧 → 角色/场景设计师 → 镜头构建师(含审核)
+```
 
-#### 阶段1: 前期创意
-按照以下顺序依次调用技能：
+### 步骤1: 读取输入
+- 读取指定章节文件 `novel/chapters/XXXX.txt`
 
-1. **读取输入**
-   - 读取指定章节文件 `novel/chapters/XXXX.txt`
+### 步骤2: 创意总监
+- 技能: `@.claude/skills/creative-director/SKILL.md`
+- 职责: 检查/创建 `outline.md`，生成 `style.json`
+- 输出:
+  - `works/[剧名]/novel/outline.md`（如不存在则创建）
+  - `works/[剧名]/style.json`（全局风格种子，后续所有技能必须读取）
 
-2. **创意总监** → 检查/创建故事大纲，确认视觉风格，**生成 style.json 和章节剧情总览**
-   - 技能: `@.claude/skills/creative-director/SKILL.md`
-   - 职责:
-     - 检查 `outline.md` 是否存在，如不存在则预览小说并创建
-     - 确定视觉风格，生成全局风格种子
-     - **读取目标章节前后各10章，生成章节剧情总览**
-   - 输出:
-     - `works/[剧名]/novel/outline.md` (如不存在则创建)
-     - **`works/[剧名]/style.json`** (全局风格种子，后续所有技能必须读取)
-     - **`works/[剧名]/output/[章节编号]/00_chapter_context.md`** (章节剧情总览，编剧必须读取)
+### 步骤3: 分镜编剧
+- 技能: `@.claude/skills/storyboard-writer/SKILL.md`
+- 职责: 将小说章节直接转化为分镜脚本
+- 输入: 章节原文 + style.json + outline.md
+- 输出: `works/[剧名]/output/chapter_XXX/storyboard.md`
 
-3. **编剧** → 生成分场剧本 (读取章节剧情总览)
-   - 技能: `@.claude/skills/scriptwriter/SKILL.md`
-   - 输出: 分场剧本结构
+### 步骤4: 角色设计师 & 场景设计师（并行）
+- **角色设计师**: `@.claude/skills/character-designer/SKILL.md`
+  - 职责: 设计/更新角色视觉设定（全局共享，跨章节复用）
+  - 输出: `works/[剧名]/output/character/[角色名].md`（三视图 + 表情卡）
+  - 特性: 已存在的角色自动跳过，只处理新角色
 
-4. **角色设计师** → 提取/完善角色参考 (读取 style.json)
-   - 技能: `@.claude/skills/character-designer/SKILL.md`
-   - 输出: 角色外观描述
+- **场景设计师**: `@.claude/skills/scene-designer/SKILL.md`
+  - 职责: 设计/更新场景视觉设定（全局共享，跨章节复用）
+  - 输出: `works/[剧名]/output/scene/[场景名].md`（定场镜头 + 关键角度）
+  - 特性: 已存在的场景自动跳过，只处理新场景
 
-5. **场景设计师** → 设计场景设定 (读取 style.json)
-   - 技能: `@.claude/skills/scene-designer/SKILL.md`
-   - 输出: 场景描述和色彩基调
-
-6. **分镜师** → 生成分镜头脚本
-   - 技能: `@.claude/skills/storyboard-artist/SKILL.md`
-   - 输出: 分镜脚本（使用 `assets/storyboard_template.md`）
-
-#### 阶段2: 提示词生成
-
-7. **原画师** → 生成角色关键帧图片提示词 (读取 style.json)
-   - 技能: `@.claude/skills/keyframe-artist/SKILL.md`
-   - 输出: 图片提示词（角色部分，使用 `assets/image_prompt_template.md`）
-
-8. **场景搭建师** → 生成背景图片提示词 (读取 style.json)
-   - 技能: `@.claude/skills/background-artist/SKILL.md`
-   - 输出: 图片提示词（场景部分）
-
-9. **合并图片提示词** → 输出 `04_image_prompts.md`
-
-10. **分镜拼图师** → 为每个视频生成独立的分镜参考图提示词 (读取 style.json)
-    - 技能: `@.claude/skills/storyboard-grid-artist/SKILL.md`
-    - 输出: `04c_video_storyboard_refs.md`（每个视频的4/6/8格分镜参考图，用作AI视频生成参考）
-
-11. **特效师** → 设计场景特效 (读取 style.json)
-    - 技能: `@.claude/skills/effects-artist/SKILL.md`
-    - 输出: 光影、粒子、魔法等特效描述
-
-12. **动作设计师** → 生成视频提示词 (读取 style.json)
-    - 技能: `@.claude/skills/motion-designer/SKILL.md`
-    - 输出:
-      - `05_video_prompts_veo.md`（使用 `assets/video_prompt_veo_template.md`）
-      - `06_video_prompts_kling.md`（使用 `assets/video_prompt_kling_template.md`）
-
-13. **中间画师** → 生成补间动画提示词 (读取 style.json)
-    - 技能: `@.claude/skills/inbetween-artist/SKILL.md`
-    - 输出: 关键帧之间的过渡动画提示词
-
-#### 阶段3: 后期制作
-
-14. **调色师** → 设计色彩方案 (读取 style.json)
-    - 技能: `@.claude/skills/colorist/SKILL.md`
-    - 输出: `07_color_grading.md`（调色指南）
-
-15. **音效设计师** → 设计环境音和动作音效
-    - 技能: `@.claude/skills/sound-designer/SKILL.md`
-    - 输出: `08_sound_design.md`（音效设计方案）
-
-16. **配乐师** → 设计背景音乐
-    - 技能: `@.claude/skills/music-composer/SKILL.md`
-    - 输出: `09_music_guide.md`（配乐方案）
-
-17. **配音导演** → 设计角色配音指导
-    - 技能: `@.claude/skills/voice-director/SKILL.md`
-    - 输出: `10_voice_direction.md`（配音指导）
-
-#### 阶段4: 质量审核
-
-18. **风格统一师** → 检查所有提示词的风格一致性 (读取 style.json)
-    - 技能: `@.claude/skills/style-unifier/SKILL.md`
-    - 输出: 风格统一检查报告，必要时调整提示词
-
-19. **分镜审核师** → 审核分镜脚本和视频提示词的分镜设计
-    - 技能: `@.claude/skills/storyboard-supervisor/SKILL.md`
-    - 职责:
-      - 审查分镜脚本是否合理流畅、准确表达剧本
-      - 审核视频提示词中的分镜设计是否合适
-      - 检查跨镜头衔接是否连贯
-    - 输出: `11_storyboard_review.md`（分镜审核报告）
-
-20. **艺术监督** → 审核画面质量
-    - 技能: `@.claude/skills/art-supervisor/SKILL.md`
-    - 输出: 视觉质量审核报告
-
-21. **剧情监督** → 审核故事逻辑和情感表达
-    - 技能: `@.claude/skills/story-supervisor/SKILL.md`
-    - 输出: 叙事质量审核报告
-
-22. **生成用户操作手册** → 输出 `00_user_guide.md`
+### 步骤5: 镜头构建师（核心步骤，含审核）
+- 技能: `@.claude/skills/shot-builder/SKILL.md`
+- 职责: 为每个镜头生成完整的制作文件夹 + 审核报告
+- 输入: storyboard.md + 角色参考 + 场景参考 + style.json
+- 输出:
+  - 每个镜头一个独立文件夹 `shot_XXX/`，包含：
+    - `video_prompt.md` — 可灵视频提示词（500-950字）
+    - `first_frame.md` — 首帧图片提示词
+    - `last_frame.md` — 尾帧图片提示词
+    - `storyboard_grid.md` — 9分镜组合图提示词
+    - `guide.md` — 傻瓜式操作手册
+  - `review.md` — 章节审核报告
 
 ---
 
 ## 可用技能
 
-### 核心链路角色
 | 技能目录 | 角色 | 职责 |
 |----------|------|------|
-| `creative-director` | AI创意总监 | 检查/创建 `outline.md`、确定视觉风格、**生成 style.json**、**生成章节剧情总览** |
-| `scriptwriter` | AI编剧 | 将小说转化为分场剧本 (读取章节剧情总览) |
-| `character-designer` | AI角色设计师 | 设计角色外观、表情库 (读取 style.json) |
-| `scene-designer` | AI场景设计师 | 设计场景环境、色彩基调 (读取 style.json) |
-| `storyboard-artist` | AI分镜师 | 将剧本转化为分镜头脚本 |
+| `creative-director` | AI创意总监 | 生成 outline.md + style.json |
+| `storyboard-writer` | AI分镜编剧 | 将小说直接转化为分镜脚本 |
+| `character-designer` | AI角色设计师 | 设计角色外观（三视图 + 表情卡） |
+| `scene-designer` | AI场景设计师 | 设计场景环境（定场镜头 + 关键角度） |
+| `shot-builder` | AI镜头构建师 | 为每个镜头生成完整制作包 + 审核报告 |
 
-### 制作链路角色
-| 技能目录 | 角色 | 职责 |
-|----------|------|------|
-| `keyframe-artist` | AI原画师 | 生成角色关键帧图片提示词 (读取 style.json) |
-| `background-artist` | AI场景搭建师 | 生成背景图片提示词 (读取 style.json) |
-| `storyboard-grid-artist` | AI分镜拼图师 | 为每个视频生成独立的分镜参考图提示词 (读取 style.json) |
-| `effects-artist` | AI特效师 | 设计光影、粒子、魔法特效 (读取 style.json) |
-| `motion-designer` | AI动作设计师 | 生成视频提示词（Veo+可灵，读取 style.json） |
-| `inbetween-artist` | AI中间画师 | 生成补间动画提示词 (读取 style.json) |
+---
 
-### 后期链路角色
-| 技能目录 | 角色 | 职责 |
-|----------|------|------|
-| `colorist` | AI调色师 | 设计色彩方案和调色指南 (读取 style.json) |
-| `sound-designer` | AI音效设计师 | 设计环境音、动作音效 |
-| `music-composer` | AI配乐师 | 设计背景音乐 |
-| `voice-director` | AI配音导演 | 设计角色配音指导 |
+## 输出目录结构
 
-### 监督链路角色
-| 技能目录 | 角色 | 职责 |
-|----------|------|------|
-| `style-unifier` | AI风格统一师 | 检查提示词风格一致性 (读取 style.json) |
-| `storyboard-supervisor` | AI分镜审核师 | 审核分镜脚本、视频提示词分镜设计、跨镜头衔接 |
-| `art-supervisor` | AI艺术监督 | 审核画面质量、风格一致性 |
-| `story-supervisor` | AI剧情监督 | 审核故事逻辑、情感表达 |
+```
+works/[剧名]/
+├── style.json                    # 全局风格种子
+├── novel/
+│   ├── outline.md                # 故事大纲
+│   └── chapters/
+│       └── XXXX.txt              # 章节原文
+└── output/
+    ├── character/                # 全局角色参考（跨章节共享）
+    │   ├── 辛影月.md            # 三视图 + 表情卡
+    │   ├── 沈清起.md
+    │   └── 霍奇.md
+    ├── scene/                    # 全局场景参考（跨章节共享）
+    │   ├── 沈家小院.md          # 定场镜头 + 关键角度
+    │   └── 破旧草屋.md
+    └── chapter_001/              # 章节产出
+        ├── storyboard.md         # 分镜脚本
+        ├── review.md             # 审核报告
+        ├── shot_001/             # 第1个镜头
+        │   ├── video_prompt.md   # 可灵视频提示词
+        │   ├── first_frame.md    # 首帧图片提示词
+        │   ├── last_frame.md     # 尾帧图片提示词
+        │   ├── storyboard_grid.md # 9分镜组合图提示词
+        │   └── guide.md          # 傻瓜式操作手册
+        ├── shot_002/
+        │   └── ...
+        └── shot_NNN/
+            └── ...
+```
 
 ---
 
@@ -190,43 +128,29 @@
 ### 语言规范
 - 分镜脚本、角色/场景描述: 中文
 - 提示词: 中英文混合（技术关键词用英文）
-- 用户操作手册: 中文
+- 操作手册 (guide.md): 中文，傻瓜式步骤
 
 ### 提示词质量要求
-1. **精确详细**: 不能过于简短，每个提示词至少50字
+1. **精确详细**: 视频提示词 500-950 字，图片提示词至少 50 字
 2. **结构完整**: 包含 Subject + Action + Scene + Camera + Style
 3. **可直接使用**: 用户能直接拷贝使用，无需二次修改
-4. **安全合规**: 遵循 `VideoGenerationPromptGuide.md` 的安全规范
+4. **安全合规**: 遵循平台安全规范
 
-### 输出目录结构
+### 可灵视频参考图预算（重要）
+每个视频最多上传 **5张参考图**，分配策略：
+1. 首帧图片（first_frame）— 必选，首帧钉定
+2. 尾帧图片（last_frame）— 必选，尾帧钉定
+3. 9分镜组合图（storyboard_grid）— 必选，动作参考
+4. 角色三视图 — 必选
+5. 场景定场镜头 — 必选
+
+### 镜头连续性链（重要）
 ```
-works/[剧名]/
-├── style.json                  # 全局风格种子（图片+视频生成必须使用）
-├── novel/
-│   ├── outline.md            # 故事大纲
-│   └── chapters/
-│       └── XXXX.txt          # 章节原文
-├── output/
-│   └── [章节编号]/
-│       ├── 00_chapter_context.md         # 章节剧情总览（创意总监生成）
-│       ├── 00_user_guide.md              # 用户操作手册（总览）
-│       ├── 01_scene_script.md            # 分场剧本（编剧输出）
-│       ├── 01_storyboard.md              # 分镜头脚本（分镜师输出）
-│       ├── 02_character_refs.md          # 角色参考
-│       ├── 03_scene_refs.md              # 场景参考
-│       ├── 04_image_prompts.md           # 图片生成提示词
-│       ├── 04c_video_storyboard_refs.md  # 视频分镜参考图（每个视频独立）
-│       ├── 05_video_prompts_veo.md       # Veo3.1 Fast 视频提示词
-│       ├── 06_video_prompts_kling.md     # 可灵动画视频提示词
-│       ├── 07_color_grading.md           # 调色指南
-│       ├── 08_sound_design.md            # 音效设计方案
-│       ├── 09_music_guide.md             # 配乐方案
-│       ├── 10_voice_direction.md         # 配音指导
-│       └── 11_storyboard_review.md       # 分镜审核报告
-└── assets/                    # 生成的图片和视频素材
-    ├── images/
-    └── videos/
+shot_001.last_frame → shot_002.first_frame → shot_002.last_frame → shot_003.first_frame → ...
 ```
+- 每个镜头的首帧必须与上一个镜头的尾帧视觉衔接
+- 第一个镜头的首帧由分镜脚本定义
+- shot-builder 负责维护这条连续性链
 
 ---
 
@@ -240,26 +164,14 @@ works/[剧名]/
 
 ## 重要提醒
 
-1. **创意总监负责 `outline.md` 和章节剧情总览**: 如果不存在，创意总监会预览小说并自动创建
-2. **风格种子文件 `style.json`**:
-   - 创意总监在第一次构建时生成 `works/[剧名]/style.json`
-   - 所有后续技能（图片生成、视频生成、角色设计、场景设计）**必须先读取**此文件
-   - 确保全剧视觉风格统一
-3. **章节剧情总览 `00_chapter_context.md`**:
-   - 创意总监读取目标章节前后各10章生成此文件
-   - 编剧等后续技能**必须先读取**此文件获取章节上下文
-   - 包含前情提要、后续铺垫、角色发展弧线
-4. **跨镜头衔接性处理** (由 motion-designer 负责):
-   - 每个镜头（除第一个）需要从上一镜头获取衔接信息
-   - 使用上一镜头的**尾帧前 1-2 秒帧**作为当前镜头的首帧参考
-   - 在提示词中说明上一镜头**最后 2 秒的动作状态**
-   - 输出"给下一镜头的衔接信息"形成传递链
-4. **遵循视频生成工具的时间限制**:
-   - Veo3.1: 8秒/片段
-   - 可灵: 5秒或10秒/片段
-5. **为两个视频工具分别生成提示词**，适配各自特点
-6. **确保角色一致性** 在所有提示词中使用相同的角色描述
-7. **生成用户操作手册** 让用户清楚知道操作步骤
+1. **style.json 是核心**: 创意总监生成，所有后续技能必须读取
+2. **角色和场景全局共享**: 存储在 `output/character/` 和 `output/scene/`，跨章节复用
+3. **增量处理**: 已存在的角色/场景文件自动跳过
+4. **每个镜头独立文件夹**: `shot_XXX/` 包含该镜头所需的一切
+5. **guide.md 是用户唯一需要读的文件**: 告诉用户每一步做什么
+6. **只生成可灵提示词**: 不生成 Veo 提示词
+7. **首尾帧钉定**: 可灵支持首帧+尾帧钉定，充分利用此能力
+8. **审核内置**: shot-builder 负责生成审核报告，无需单独审核步骤
 
 ---
 
@@ -278,17 +190,22 @@ works/[剧名]/
 
 ## 开发环境
 
-本项目使用 [uv](https://docs.astral.sh/uv/) 作为Python包管理工具。
-
-**重要规则：所有Python脚本的执行均需要在uv环境中处理。**
+**重要规则：**
+1. **所有生成的脚本必须放在 `scripts/` 目录下**
+2. **使用 Node.js 作为脚本语言**（不使用 Python）
+3. 脚本文件使用 `.js` 或 `.mjs` 扩展名
 
 ```bash
-# 安装依赖
-uv sync
-
 # 运行脚本
-uv run python <script.py>
-
-# 示例
-uv run python .claude/skills/text-to-image/text_to_image.py --prompt "测试"
+node scripts/<script_name>.js
 ```
+
+---
+
+## 快速开始
+
+1. 将小说章节放入 `novel/chapters/` 目录
+2. 运行命令: `构建 @novel/chapters/chapter_001.txt`
+3. 等待系统自动完成5步流程
+4. 查看 `works/[剧名]/output/chapter_001/shot_XXX/guide.md`
+5. 按照操作手册步骤，使用AI工具生成图片和视频
