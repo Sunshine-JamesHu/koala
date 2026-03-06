@@ -1,0 +1,35 @@
+{
+    "id": "butcher_wang",
+    "name": "老王 (屠户)",
+    "role": "minor",
+    "gender": "male",
+    "age": "40s",
+    "body_type": {
+        "build": "thin and narrow",
+        "height": "average"
+    },
+    "appearance": {
+        "face": "narrow face (脸窄), squinty eyes (眯缝眼), thin lips (薄片嘴)",
+        "distinguishing_features": "a piece of dog-skin plaster (狗皮膏药) stuck on his temple",
+        "hair": "unkempt, typical ancient peasant style"
+    },
+    "clothing": {
+        "style": "ancient Chinese peasant/butcher clothes",
+        "material": "coarse cheap fabric",
+        "colors": "dirty grey or brown",
+        "accessories": "carrying an iron shovel (铁锨)"
+    },
+    "personality": {
+        "traits": [
+            "sneaky",
+            "ugly",
+            "malicious",
+            "cowardly but greedy"
+        ],
+        "demeanor": "creepy, looking for an opportunity to do bad deeds"
+    },
+    "references": {
+        "first_appearance": "Chapter 2",
+        "description": "他脸窄身薄，眯缝眼，薄片嘴，太阳穴上贴着一记狗皮膏药。拿铁锨。"
+    }
+}

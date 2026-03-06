@@ -1,0 +1,23 @@
+{
+    "theme": "Dark historical romance / Suspense thriller",
+    "art_style": "High-end 3D Chinese anime style (Donghua), Unreal Engine 5 render, similar to 'A Record of a Mortal's Journey to Immortality' (凡人修仙传). Perfect realistic materials for fabrics and skin, extremely high polygon count, ray tracing.",
+    "lighting": {
+        "default_quality": "High-contrast cinematic lighting, heavy chiaroscuro, low-key lighting, UE5 Lumen lighting.",
+        "ambiance": "Cold, tense, melancholic, often utilizing moonlight, realistic volumetric fog, firelight or dim oil lamps to create strong shadows with subsurface scattering on character skin."
+    },
+    "color_palette": {
+        "primary": [
+            "#0c1421",
+            "#1a1c29",
+            "#3b3c36"
+        ],
+        "accents": [
+            "#8b0000 (blood red)",
+            "#ffd700 (dim gold)",
+            "#e0e0e0 (pale moonlight)"
+        ],
+        "description": "Desaturated, heavy on cool tones (blues, blacks, greys) for environments, contrasted with warm but dim light sources (orange/yellow flames)."
+    },
+    "texture": "Ultra-realistic material textures (silk, rough linen, wood grain, wet stone), subtle film grain, depth of field effects, highly detailed 3D hair physics and rendering.",
+    "camera_lens": "35mm for environmental wide shots, 85mm for intimate/intense character close-ups. Deep depth of field for wide shots, shallow depth of field (bokeh) for character emotional focus."
+}

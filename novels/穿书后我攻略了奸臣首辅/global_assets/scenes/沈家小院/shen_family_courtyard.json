@@ -1,0 +1,26 @@
+{
+    "name_cn": "沈家小院",
+    "name_en": "Shen family courtyard",
+    "type": "exterior",
+    "time_of_day": [
+        "night",
+        "day"
+    ],
+    "atmosphere": "Rustic, dilapidated, overgrown, isolated.",
+    "key_elements": [
+        "Uneven dirt ground with patches of wild weeds",
+        "A low, crumbling stone and mud wall surrounding the yard",
+        "A dilapidated wooden gate, slightly lopsided",
+        "The exterior facade of the ruined earthen cottage with a thatched roof in disrepair",
+        "A chopping block (stump) or water vat in the corner",
+        "Dead leaves scattered on the ground"
+    ],
+    "lighting_defaults": {
+        "night": "Cold, desaturated moonlight illuminating the yard. Deep shadows cast by the cottage and the walls. Perhaps a faint warm glow seeping from a crack in the cottage window."
+    },
+    "camera_angles": {
+        "Angle_A": "Wide shot of the entire courtyard from just inside the gate, looking at the cottage.",
+        "Angle_B": "Looking toward the wooden gate from inside the yard.",
+        "Angle_C": "Close-up of the weeds and dirt near the cottage wall."
+    }
+}

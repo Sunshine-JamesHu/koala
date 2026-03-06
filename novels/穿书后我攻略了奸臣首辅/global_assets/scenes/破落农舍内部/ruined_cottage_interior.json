@@ -1,0 +1,27 @@
+{
+    "name_cn": "破落农舍内部",
+    "name_en": "Ruined cottage interior",
+    "type": "interior",
+    "time_of_day": [
+        "night",
+        "day"
+    ],
+    "atmosphere": "Cold, damp, decrepit, oppressive, moldy smell.",
+    "key_elements": [
+        "Cold dirty stone/earth floor",
+        "Scattered broken porcelain shards and spilled food scraps on the floor",
+        "A single crude wooden table to the side",
+        "A faint, flickering oil lamp (qing deng) sitting on the wooden table",
+        "Broken window with torn paper, letting in cold moonlight",
+        "Peeling paint on wooden pillars and doors",
+        "Deep shadows in the corners"
+    ],
+    "lighting_defaults": {
+        "night": "Very heavy chiaroscuro. Faint warm amber glow from the single oil lamp on the table. Cold pale moonlight streaming through the broken east window. Deep impenetrable shadows in the background."
+    },
+    "camera_angles": {
+        "Angle_A": "Wide establishing shot of the front hall showing the floor, table, and dark background.",
+        "Angle_B": "Low angle from the floor looking up toward the table or the window.",
+        "Angle_C": "Close-up on the wooden table with the oil lamp."
+    }
+}

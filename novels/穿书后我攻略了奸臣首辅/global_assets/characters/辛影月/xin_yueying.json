@@ -1,0 +1,26 @@
+{
+    "character_id": "xin_yueying",
+    "name": "辛月影",
+    "name_en": "Xin Yueying",
+    "role": "Female Lead (女主)",
+    "age": "18",
+    "gender": "Female",
+    "description": "穿书而来的现代灵魂，寄宿在原身辛月影的身体里。她聪慧、演技极强，善于伪装。外表看似柔弱，内心极其坚韧果断。",
+    "appearance": {
+        "face": "Delicate oval face, large expressive almond-shaped eyes, a small straight nose, slightly full lips. Her face can shift between innocent and cunning expressions effortlessly.",
+        "skin": "Pale, slightly sallow from malnutrition.",
+        "hair": "Long, black, slightly messy hair, often loosely tied or disheveled. Thin and lacking luster due to poverty.",
+        "body": "Slender and thin, malnourished build. Average height for a young woman."
+    },
+    "clothing": {
+        "default": "Thin, torn, heavily patched rustic linen clothes (粗布麻衣). The fabric is rough, faded, and shows signs of extreme poverty. Inner clothing is a simple white undershirt.",
+        "fabric_material": "Rough linen, faded cotton, visible patches and stitching."
+    },
+    "four_views": {
+        "front_face_closeup": "Delicate oval face, large almond-shaped eyes with a sharp, intelligent gleam. Small straight nose. Slightly full lips. Pale, sallow skin. Hair parted in the middle, framing her face.",
+        "front_full_body": "Standing pose, thin frame in torn linen clothes. Hands clasped or at her sides. Visible patches on clothing. Barefoot or in simple worn cloth shoes.",
+        "back_full_body": "Long, messy black hair reaching mid-back. The back of her patched linen clothes shows the extent of poverty. Thin shoulders.",
+        "side_profile": "Sharp side profile, small nose, defined chin line. Hair falling loosely. The thinness of her frame is most visible from the side."
+    },
+    "personality_visual_cues": "Her eyes are the most expressive feature. She can convey fake tears, genuine fear, cunning calculation, and earnest desperation all convincingly. Her body language is dramatic and deliberate when performing."
+}

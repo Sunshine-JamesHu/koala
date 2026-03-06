@@ -1,0 +1,16 @@
+{
+    "name_cn": "霍齐",
+    "name_en": "Huo Qi",
+    "role": "Loyal guard to Shen Qingqi",
+    "age": 25,
+    "appearance": {
+        "face": "Rough, weather-beaten face. Unkempt full thick beard (络腮胡). Strong jawline, thick eyebrows, deep-set glaring eyes.",
+        "hair": "Messy, thick dark hair tied roughly or loose.",
+        "body": "Very tall, extremely muscular and broad-shouldered like an iron tower. Intimidating physical presence.",
+        "clothing": "Sturdy, practical martial arts clothing or rough leather armor. Dark colors suitable for a fugitive guard."
+    },
+    "personality": "Extremely loyal to Shen Qingqi, fiercely protective, quick to anger, hates Xin Yueying deeply, blunt and straightforward.",
+    "signature_props": [
+        "A long sword (usually kept sheathed unless provoked)"
+    ]
+}
